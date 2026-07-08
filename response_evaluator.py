@@ -18,14 +18,14 @@ class ResponseEvaluator:
             ("system", response_system_prompt),
             ("human", response_human_prompt)
         ])
+
+        self.chain = self.prompt | self.llm_judge
     
     @traceable(name="response_evaluation")
     def judge_response(self, inputs: dict, outputs: dict):
         response_model_output = outputs["response"]
 
-        chain = self.prompt | self.llm_judge
-
-        response_eval = chain.invoke({
+        response_eval = self.chain.invoke({
             "response_model_output": response_model_output
         })
 
@@ -50,3 +50,6 @@ class ResponseEvaluator:
             "score": cumulative_score,
             "comment": response_eval.content
         }
+
+    def judge_response_manually(model_response: str):
+        return

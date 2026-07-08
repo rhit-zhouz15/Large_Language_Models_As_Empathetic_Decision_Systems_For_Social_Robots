@@ -133,23 +133,30 @@ response_eval_prompt:
     that doesn't include any indication based on tone, language, and pace that it's attempting to be empathetic
     when the learner is in a bad trajectory and needs more empathy.
 
-    Rubric:
-    Using the scoring metric, score each of the following sections from 1-5 using the scoring metric:
-    1. Addresses Learner Input - How much does the response address what the learner is talking about or asking for? Does the response
-    give sense given what the learner input into the system?
-    2. Level of Filler Text - How much filler text is there in the response? Does the opening include a lot of fluff that
-    does not need to be there? The higher the score, the less filler text there is.
-    3. Appropriate Amount of Empathy - Is the response doing too much for empathy or an explanation that takes away from a learner's ability to learn?
-    Bad example: The response goes on and on about understanding the learner
-    4. Appropriate Depth of Explanation - Does the response contain enough of an explanation? Is it too much for the amount the learner wanted
-    or too little for an in-depth explanation?
+    Rubric and Scoring Metric:
+    Using the rubric and scoring metric, you will score each of the following sections from a scale of 1-5:
 
     Scoring Metrics:
-    Level of Filler Text:
+    Addresses Learner Input (How much does the response address the learner's input based on context?):
+    1: Response is off-topic or doesn't address the learner's input completely
+    3: Response mostly addresses the learner's input but not completely
+    5: Response completely covers everything it needs to based on context and learner input
+
+    Level of Filler (How much of the response is empathetic filler or generic opening fluff? Higher score = less filler):
     1: Response starts with generic reassurance or restating the input ("Seriously, that's what we want in tutoring")
     3: Response starts with short acknowledgement or reassurance but addresses the input soon after ("That's a good way to look at it. Here's an example")
     5: Response is near perfect to what the learner would ideally get in that situation
-    
+
+    Level of Empathy (Is the empathy of the response appropriate, without over or under doing it?):
+    1: Empathetic language present when the learner's internal state is neutral/good or absent when the learner needs it (internal state is trending badly)
+    3: Empathy present in the correct scenarios but uses generic empathetic phrases that might not make the learner feel better (i.e., "Seriously, that's what we want in tutoring")
+    5: Empathy present and absent in the right situations and uses specific/effective phrases without excessive amounts of generic empathy filler
+
+    Depth of Response (Is the response too much or too little to help the learner learn given the context?):
+    1: The response is shallow (i.e., too basic or short for the context) or too long given the situation
+    3: Acceptable response depth, with some depth of explanation needed or simpler explanation needed for quick questions
+    5: Depth exactly matches what the learner needs 
+
     You should DEFAULT to a score of 3. For each score, cite evidence in the response that warrants that score.
     Only give out higher scores when you feel the response is not filler text that does not help address the learner's needs.
     Also, higher scores should be given out when you can not find much to improve in the response, so 4 should be given out if
@@ -159,7 +166,7 @@ response_eval_prompt:
     hallucinations that aren't on topic to the input. REMEMBER, the MAIN FACTORS I'm looking for is that the response is on topic
     and not filled with useless filler text that might make the learner's internal state worse.
 
-    Output:
+    Output Format:
     Your output should be in the following format for each section of the rubric, making sure that you seperate each section with 2 new lines
     so that it's easy to read as a reader. The output format is the same as the rubrics as follows:
     Number of the section. Section name: score | evidence: <short quote/paraphrase> | reasoning: <why this evidence

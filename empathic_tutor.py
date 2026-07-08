@@ -45,6 +45,8 @@ def run_manually():
                 print(f"{response}\n")
                 print("==============================================================================================================\n")
 
+                
+
 if __name__ == "__main__":
     with open("config/evaluator_prompts.yaml", "r", encoding="utf-8") as f:
            eval_prompts = yaml.safe_load(f)
@@ -53,8 +55,6 @@ if __name__ == "__main__":
     response_prompts = eval_prompts["response_eval_prompt"]
     appraisal_prompts = eval_prompts["appraisal_eval_prompt"]
 
-    print(type(consistency_prompts["system"]))
-
     consistency_evaluator = ConsistencyEvaluator(consistency_prompts["system"], consistency_prompts["human"])
     response_evaluator = ResponseEvaluator(response_prompts["system"], response_prompts["human"])
     appraisal_evaluator = AppraisalEvaluator(appraisal_prompts["system"], appraisal_prompts["human"])
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     consistency_eval_results = evaluate(
         target,
         data="Varying Valence LLM Tutor Test Script",
-        evaluators=[consistency_evaluator.judge_consistency, appraisal_evaluator.judge_appraisal, response_evaluator.judge_response],
+        evaluators=[response_evaluator.judge_response],
         experiment_prefix="testing",
     )
 
