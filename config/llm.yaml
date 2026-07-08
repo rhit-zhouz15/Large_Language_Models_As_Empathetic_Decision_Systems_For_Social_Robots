@@ -1,0 +1,22 @@
+models:
+  gemma4_e4b:
+    model: "gemma4:e4b"
+    temperature: 0.8
+
+  mistral_7b:
+    model: "mistral:7b"
+    temperature: 0.8
+  
+  qwen2.5_7b:
+    model: "qwen2.5:7b"
+    temperature: 0.8
+
+  gemma4_e2b:
+    model: "gemma4:e2b"
+    temperature: 0.8
+
+  deepseek_r1_14b:
+    mode: "deepseek-r1:14b"
+    temperature:: 0.0
+
+
