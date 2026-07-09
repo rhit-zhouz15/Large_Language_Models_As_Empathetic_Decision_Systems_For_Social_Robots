@@ -45,6 +45,11 @@ def run_manually():
                 print(f"{response}\n")
                 print("==============================================================================================================\n")
 
+def run_evaluation(response: str, consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator):
+       appr_eval = appraisal_evaluator.judge_appraisal(response)
+       resp_eval = response_evaluator.judge_response(response)
+       cons_eval = consistency_evaluator.judge_consistency(response)
+
                 
 
 if __name__ == "__main__":
@@ -62,7 +67,7 @@ if __name__ == "__main__":
     consistency_eval_results = evaluate(
         target,
         data="Varying Valence LLM Tutor Test Script",
-        evaluators=[response_evaluator.judge_response, appraisal_evaluator.judge_appraisal],
+        evaluators=[response_evaluator.judge_response, appraisal_evaluator.judge_appraisal, consistency_evaluator.judge_consistency],
         experiment_prefix="testing",
     )
 

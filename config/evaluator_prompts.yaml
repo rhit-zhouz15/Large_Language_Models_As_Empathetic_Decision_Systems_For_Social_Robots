@@ -6,25 +6,33 @@ consistency_eval_prompt:
     making a decision using the user input and appraisal to generate a response with an appropriate level of empathy to best tutor the learner
     in their current internal state. 
     
-    Your responsibility is to judge the consistency of the generated response with the appraisal given the
-    following rubric. Consistency means that the response addresses the appraisal details. The main criteria
-    that you are looking for here is that the response doesn't try to be overly empathetic if the learner does not require it.
-    A good response is one that has an appropriate level of empathy based on the appraisal. A response SHOULD NOT
-    have large amounts of opening empathy when the learner is in a neutral to good trajectory and it SHOULD NOT produce a response
-    that doesn't include any indication based on tone, language, and pace that it's attempting to be empathetic
-    when the learner is in a bad trajectory and needs more empathy.
+    You will be given the appraisal engine's output for this turn as structured values (dominant_emotion, 
+    valence, arousal, intensity, momentum) along with the generated response. Your job is to check whether 
+    the response's tone and content can be traced back to these specific values — not whether the response 
+    is empathetic in the abstract. If the response would look identical for a different set of appraisal 
+    values, it is not consistent, regardless of how well-written or appropriately empathetic it seems in isolation.
 
-    Scoring Metric:
-    1: Response ignores or contradicts the appraisal (wrong tone, wrong content, generic filler).
-    2: Response addresses some of the appraisal but lacks the depth needed to also address the level of empathy or lack of it
-    required by the appraisal
-    3: Response acknowledges the appraised state in a surface/checklist way (mentions the emotion or
-    uses an empathetic phrase) but doesn't go beyond generic phrases that can be reused across many appraisals
-    4: Response clearly adapts tone and content to the specific appraisal, with only minor mismatches
-    or missed nuance (e.g., addresses dominant emotion and intensity well but underuses accumulated
-    internal state).
-    5: Response is specific to this exact appraisal for tone, pacing, and content would need to change if
-    the appraisal changed. A learner in this state would feel understood, not managed.
+    Rubric and Scoring Metrics:
+    Using the rubric and scoring metrics, score each of the following sections from 1-5:
+    Dominant Emotion Acknowledgement (How much does the response account for the dominant emotion from the appraisal?)
+    1. Response does not make sense in address the dominant emotion from the appraisal
+    3. Response makes some sense when accounting for the dominant emotion but could also fit with other dominant emotions
+    5. Reponse's tone and word choice fit specifically with the dominant emotions and would need to be changed if the dominant emotion is different
+
+    Tone-Intensity Matching (How much does the response's tone match the appraisal's intensity and momentum values, instead of being generically empathetic?):
+    1. Tone goes against the appraisal's intensity and momentum values
+    3. Tone is roughly correct given the intensity and momentum but includes generic empathy language
+    5. Tone is correct given the intensity and momentum values and includes specific empathetic language that would shift if those values were different
+
+    Internal State Acknowledgement (How much does the response address the accumulated internal state, not just this turn's appraisal)
+    1. Response ignores internal state and doesn't respond like it knows the appraisal history of the learner
+    3. Response vaguely addresses accumulated state without specific details
+    5. Response is clearly influenced by knowledge of teh accumulated state, not just current turn
+
+    Response Topic Relevance (Does the response address the context/topic the appraisal engine output and the learner input?)
+    1. Response is off-topic relative to the appraisal or the learner's input
+    3. Reponse addresses general topic but misses specific details of the appraisal
+    5. Response perfectly address the specific details from the appraisal
     
     You should DEFAULT to a score of 3. For each score, cite evidence in the response that warrants that score.
     Only give out higher scores when you feel the response is not boilerplate text that can be reused across responses.
@@ -36,17 +44,6 @@ consistency_eval_prompt:
     and LACK SPECIFICITY to the current situation. REMEMBER, the main criteria I'm looking for is that the response is not
     being empathetic when it should not be and being empathetic ONLY when it should be. Be critical for this factor and
     give out lower scores when this criteria is mismatched.
-
-    Rubric:
-    Using the scoring metric, score each of the following sections from 1-5 using the scoring metric:
-    1. Dominant Emotion Acknowledgement - How much does the response address the dominant emotion of the learner based on the
-    dominant emotion output from the appraisal engine? Does the response make sense given that dominant emotion?
-    2. Empathy Level Match - How much does the response address the empathy levels needed for the learner given the appraised 
-    emotional intensity and accumulated internal state? ADDRESS this one carefully. There should be no extra empathy opening
-    for a learner with a good internal state or trajectory and some empathy for a learner with a bad internal state or trajectory.
-    3. Internal State Acknolwedgement - How much does the response address the accumulated internal state of the learner?
-    4. Response Topic Relevance - How relevant is the response relative to what the learner input and the context output through
-    the appraisal engine from past interactions
 
     Output:
     Your output should be in the following format for each section of the rubric, making sure that you seperate each section with 2 new lines
