@@ -17,6 +17,8 @@ class AppraisalEvaluator:
             ("system", appraisal_system_prompt),
             ("human", appraisal_human_prompt)
         ])
+
+        self.chain = self.prompt | self.llm_judge
     
     @traceable(name="appraisal_evaluation")
     def judge_appraisal(self, inputs: dict, outputs: dict):
@@ -25,9 +27,7 @@ class AppraisalEvaluator:
         arousal = outputs["arousal"]
         appraisal_engine_output = outputs["appraisal"]
 
-        chain = self.prompt | self.llm_judge
-
-        appraisal_eval = chain.invoke({
+        appraisal_eval = self.chain.invoke({
             "detected_emotion": detected_emotion,
             "valence": valence,
             "arousal": arousal,

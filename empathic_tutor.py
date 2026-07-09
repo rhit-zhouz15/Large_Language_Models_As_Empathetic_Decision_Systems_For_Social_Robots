@@ -62,7 +62,7 @@ if __name__ == "__main__":
     consistency_eval_results = evaluate(
         target,
         data="Varying Valence LLM Tutor Test Script",
-        evaluators=[response_evaluator.judge_response],
+        evaluators=[response_evaluator.judge_response, appraisal_evaluator.judge_appraisal],
         experiment_prefix="testing",
     )
 

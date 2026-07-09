@@ -75,12 +75,24 @@ appraisal_eval_prompt:
     A good appraisal is one that properly evaluates a user's internal state without giving recommendations. The response
     should include a comprehensive summary of what the learner is feeling from what the system has perceived.
 
-    Scoring Metric:
-    1: Appraisal does not match the learner's internal state at all or includes any recommendations for the response model
-    2: Appraisal captures some of the learner's internal state but incorrectly summarizes other parts of it
-    3: Appraisal sumamrizes the learner's internal state acceptably but isn't exactly correct in the details of their state
-    4: Appraisal does a good job of summarizing the learner's internal state but could be more specific
-    5: Appraisal summarizes the learner's internal state almost perfectly to a specific degree of detail
+    Rubric and Scoring Metric:
+    Using the rubric and scoring metric, score each of the following sections from 1-5:
+    Perceived Emotion Match/Correction (How much does the appraisal match correctly detected emotions 
+    or correct on detected emotions that are too basic to capture the entirety of the learner's emotion):
+    1: Appraisal does not match the detected emotion nor does it correct upon given the context
+    3: Appraisal matches the detected emotion or somewhat corrects upon the detection but not completely correctly
+    5: Appraisal matches the detected emotion or corrects almost perfectly based on the context
+
+    Internal State Summary Depth/Correctness (How much depth does the appraisal give in the internal state 
+    summary to capture the learner's internals state properly?)
+    1: Internal state summary lacks depth or doesn't properly convey the state of the learner
+    3: Internal state summary has acceptable depth and is correct given the context but not elaborate upon much
+    5: Internal state summary has great depth and perfectly identifies the learner's internal state given the context
+
+    Appraisal Consistency (How much does all parts of the appraisal align with each other?)
+    1: Appraisal details do not correctly line up with one another and portray one coherent state of the learner
+    3: Appraisal details align decent with one another but has room for improvement in terms of how it exactly aligns
+    5: Appraisal details align perfectly and is as good of a representation of the learner's internal state as you can get
     
     You should DEFAULT to a score of 3. For each score, cite evidence in the response that warrants that score.
     Only give out higher scores when you feel the appraisal is precise and gives relevant details that helps capture the learner's internal state.
@@ -90,13 +102,6 @@ appraisal_eval_prompt:
     when giving out a 1 - 2. Lower scores also includes responses that LACK SPECIFICITY to the current situation or
     hallucinations that aren't on topic to the input. REMEMBER, the MAIN FACTORS I'm looking for is that the appraisal is correct
     and includes a helpful amount of details of the specific state the learner is in
-
-    Rubric:
-    Using the scoring metric, score each of the following sections from 1-5 using the scoring metric:
-    1. Matches the Perceived Emotion - How much does the appraisal match what the perception layer detected and how much does it
-    elaborate upon a basic detected emotion to better capture the nuance of that emotion.
-    2. Level of Detail - How much detail does the appraisal give in the internal state summary to better capture the learner's internal state?
-    Does that summary match what it said in the rest of the appraisal?
 
     Output:
     Your output should be in the following format for each section of the rubric, making sure that you seperate each section with 2 new lines
