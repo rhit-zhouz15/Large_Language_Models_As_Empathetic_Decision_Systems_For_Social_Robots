@@ -25,7 +25,7 @@ def target(inputs: dict):
                 arousal
         )
 
-def run_manually():
+def run_manually(consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator):
         while(True):
                 user_input = input()
                 print("\n==============================================================================================================\n")
@@ -40,17 +40,33 @@ def run_manually():
                 valence = perception_result[2][0]
                 arousal = perception_result[2][1]
 
-                response = response_pipeline(user_input, label, valence, arousal)["response"]
-
-                print(f"{response}\n")
+                pipeline = response_pipeline(user_input, label, valence, arousal)
+                output = pipeline["response"]
+                appraisal = pipeline["appraisal"]
+                
+                print(f"{appraisal}\n")
                 print("==============================================================================================================\n")
 
-def run_evaluation(response: str, consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator):
-       appr_eval = appraisal_evaluator.judge_appraisal(response)
-       resp_eval = response_evaluator.judge_response(response)
-       cons_eval = consistency_evaluator.judge_consistency(response)
+                print(f"{output}\n")
+                print("==============================================================================================================\n")
 
+                evaluations = run_evaluation(pipeline, consistency_evaluator, response_evaluator, appraisal_evaluator)
+                print(evaluations)                
+                print("==============================================================================================================\n")
                 
+
+def run_evaluation(outputs: str, consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator):
+       appr_eval = appraisal_evaluator.judge_appraisal({}, outputs)
+       resp_eval = response_evaluator.judge_response({}, outputs)
+       cons_eval = consistency_evaluator.judge_consistency({}, outputs)
+
+       result = f"""
+        Appraisal Evaluation: {appr_eval}\n
+        Response Evaluation: {resp_eval}\n
+        Consistency Evaluation: {cons_eval}\n
+       """
+
+       return result     
 
 if __name__ == "__main__":
     with open("config/evaluator_prompts.yaml", "r", encoding="utf-8") as f:
@@ -71,4 +87,4 @@ if __name__ == "__main__":
         experiment_prefix="testing",
     )
 
-        # run_manually()
+#     run_manually(consistency_evaluator, response_evaluator, appraisal_evaluator)
