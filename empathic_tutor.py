@@ -6,6 +6,9 @@ from response_evaluator import ResponseEvaluator
 from appraisal_evaluator import AppraisalEvaluator
 from langsmith import evaluate
 import yaml
+from rich.console import Console
+from rich.markdown import Markdown
+from rich.live import Live
 
 def target(inputs: dict):
         user_input = inputs["user_input"]
@@ -25,7 +28,7 @@ def target(inputs: dict):
                 arousal
         )
 
-def run_manually(consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator):
+def run_manually(consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator, console: Console):
         while(True):
                 user_input = input()
                 print("\n==============================================================================================================\n")
@@ -47,12 +50,12 @@ def run_manually(consistency_evaluator: ConsistencyEvaluator, response_evaluator
                 print(f"{appraisal}\n")
                 print("==============================================================================================================\n")
 
-                print(f"{output}\n")
-                print("==============================================================================================================\n")
+                console.print(Markdown(output))
+                print("\n==============================================================================================================\n")
 
-                evaluations = run_evaluation(pipeline, consistency_evaluator, response_evaluator, appraisal_evaluator)
-                print(evaluations)                
-                print("==============================================================================================================\n")
+                # evaluations = run_evaluation(pipeline, consistency_evaluator, response_evaluator, appraisal_evaluator)
+                # print(evaluations)                
+                # print("==============================================================================================================\n")
                 
 
 def run_evaluation(outputs: str, consistency_evaluator: ConsistencyEvaluator, response_evaluator: ResponseEvaluator, appraisal_evaluator: AppraisalEvaluator):
@@ -80,11 +83,13 @@ if __name__ == "__main__":
     response_evaluator = ResponseEvaluator(response_prompts["system"], response_prompts["human"])
     appraisal_evaluator = AppraisalEvaluator(appraisal_prompts["system"], appraisal_prompts["human"])
 
-    consistency_eval_results = evaluate(
-        target,
-        data="Varying Valence LLM Tutor Test Script",
-        evaluators=[response_evaluator.judge_response, appraisal_evaluator.judge_appraisal, consistency_evaluator.judge_consistency],
-        experiment_prefix="testing",
-    )
+    console = Console()
 
-#     run_manually(consistency_evaluator, response_evaluator, appraisal_evaluator)
+#     consistency_eval_results = evaluate(
+#         target,
+#         data="Varying Valence LLM Tutor Test Script",
+#         evaluators=[response_evaluator.judge_response, appraisal_evaluator.judge_appraisal, consistency_evaluator.judge_consistency],
+#         experiment_prefix="testing",
+#     )
+
+    run_manually(consistency_evaluator, response_evaluator, appraisal_evaluator, console)

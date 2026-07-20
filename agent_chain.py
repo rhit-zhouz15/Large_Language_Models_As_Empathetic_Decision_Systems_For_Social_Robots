@@ -20,7 +20,8 @@ affective_model = ChatOllama(
         model="gemma4:e4b",
         base_url="http://localhost:11434",
         reasoning=False,
-        keep_alive=-1
+        keep_alive=-1,
+        num_ctx=8192
     )
 
 context_prompt = ChatPromptTemplate.from_messages([
