@@ -45,10 +45,22 @@ response_model = ChatOllama(
         top_p=0.95,
         top_k=64,
         num_ctx=8192,
-    )
+)
+
+control_model = ChatOllama(
+        model="gemma4:12b",
+        base_url="http://localhost:11434",
+        reasoning=True,
+        keep_alive=-1,
+        temperature=1.0,
+        top_p=0.95,
+        top_k=64,
+        num_ctx=8192,
+)
 
 context_chain = context_prompt | affective_model
 response_chain = response_prompt | response_model
+control_chain = control_prompt | control_model
 
 appraisal_engine = AppraisalEngine()
 
@@ -89,6 +101,14 @@ def generate_response(user_input: str, context_from_memory: str, appraisal_outpu
 
         return response.content
 
+@traceable(name="control_response_generator")
+def generate_control_response(user_input: str):
+        control_response = control_chain.invoke({
+            "user_input": user_input
+        })
+
+        return control_response.content
+
 @traceable(name="full_pipeline")
 def response_pipeline(user_input: str, label: str, input_valence: float, input_arousal: float):
         # Pass the information from the perception layer to the appraisal engine
@@ -98,6 +118,8 @@ def response_pipeline(user_input: str, label: str, input_valence: float, input_a
         # Using the appraisal, get the response model's output
         response = generate_response(user_input, context_from_memory, appraisal)
         # print(f"{response}\n")
+
+        control_response = generate_control_response(user_input)
 
         # Update the chat history after each turn
         appraisal_engine.add_turn_chat_history(user_input, response)
