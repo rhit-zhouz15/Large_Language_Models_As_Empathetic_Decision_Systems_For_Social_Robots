@@ -15,14 +15,7 @@ with open("config/tutor_prompts.yaml", "r", encoding="utf-8") as f:
 
 appraisal_prompts = tutor_prompts["context_prompt"]
 response_prompts = tutor_prompts["response_prompt"]
-
-affective_model = ChatOllama(
-        model="gemma4:e4b",
-        base_url="http://localhost:11434",
-        reasoning=False,
-        keep_alive=-1,
-        num_ctx=8192
-    )
+control_prompt = tutor_prompts["control_prompt"]
 
 context_prompt = ChatPromptTemplate.from_messages([
     ("system", appraisal_prompts["system"]),
@@ -35,8 +28,16 @@ response_prompt = ChatPromptTemplate.from_messages([
     ("human", response_prompts["human"])
 ])
 
+affective_model = ChatOllama(
+        model="gemma4:12b",
+        base_url="http://localhost:11434",
+        reasoning=False,
+        keep_alive=-1,
+        num_ctx=8192
+    )
+
 response_model = ChatOllama(
-        model="gemma4:e4b",
+        model="gemma4:12b",
         base_url="http://localhost:11434",
         reasoning=True,
         keep_alive=-1,

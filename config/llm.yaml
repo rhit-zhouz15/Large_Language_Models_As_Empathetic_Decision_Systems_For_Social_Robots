@@ -16,7 +16,22 @@ models:
     temperature: 0.8
 
   deepseek_r1_14b:
-    mode: "deepseek-r1:14b"
+    model: "deepseek-r1:14b"
     temperature:: 0.0
 
+  response_model:
+    model="gemma4:e4b",
+    base_url="http://localhost:11434",
+    reasoning=True,
+    keep_alive=-1,
+    temperature=1.0,
+    top_p=0.95,
+    top_k=64,
+    num_ctx=8192,
 
+  appraisal_model:
+    model="gemma4:e4b",
+    base_url="http://localhost:11434",
+    reasoning=False,
+    keep_alive=-1,
+    num_ctx=8192

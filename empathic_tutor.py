@@ -64,7 +64,7 @@ def run_evaluation(outputs: str, consistency_evaluator: ConsistencyEvaluator, re
        cons_eval = consistency_evaluator.judge_consistency({}, outputs)
 
        result = f"""
-        Appraisal Evaluation: {appr_eval}\n
+        Appraisal Evaluation: {appr_eval}\nz
         Response Evaluation: {resp_eval}\n
         Consistency Evaluation: {cons_eval}\n
        """
