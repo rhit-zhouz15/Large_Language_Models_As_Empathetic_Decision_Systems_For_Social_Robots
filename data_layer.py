@@ -2,14 +2,14 @@ import json
 import pandas as pd
 
 # Writes internal state values into a json file
-def write_to_json(data: dict):
+def write_to_json(data: dict, file_name: str):
     json_data = json.dumps(data)
-    with open("internal_state.json", "w") as file:
+    with open(file_name, "w") as file:
         file.write(json_data)
 
 # Loads the internal state values stored in a json file as a dictionary
-def load_from_json():
-    with open("internal_state.json", "r") as file:
+def load_from_json(file_name: str):
+    with open(file_name, "r") as file:
         data = json.load(file)
     return data
 

@@ -24,8 +24,12 @@ context_prompt = ChatPromptTemplate.from_messages([
 
 response_prompt = ChatPromptTemplate.from_messages([
     ("system", response_prompts["system"]),
-    (MessagesPlaceholder(variable_name="chat_history")),
     ("human", response_prompts["human"])
+])
+
+control_prompt = ChatPromptTemplate.from_messages([
+    ("system", control_prompt["system"]),
+    ("human", control_prompt["human"])
 ])
 
 affective_model = ChatOllama(
@@ -96,7 +100,7 @@ def generate_response(user_input: str, context_from_memory: str, appraisal_outpu
             "user_input": user_input,
             "rag_context": context_from_memory,
             "appraisal_output": appraisal_output,
-            "chat_history": appraisal_engine.chatHistory
+            "chat_history": appraisal_engine.chat_history
         })
 
         return response.content
@@ -104,7 +108,8 @@ def generate_response(user_input: str, context_from_memory: str, appraisal_outpu
 @traceable(name="control_response_generator")
 def generate_control_response(user_input: str):
         control_response = control_chain.invoke({
-            "user_input": user_input
+            "user_input": user_input,
+            "chat_history": appraisal_engine.control_chat_history
         })
 
         return control_response.content
@@ -122,6 +127,8 @@ def response_pipeline(user_input: str, label: str, input_valence: float, input_a
         control_response = generate_control_response(user_input)
 
         # Update the chat history after each turn
-        appraisal_engine.add_turn_chat_history(user_input, response)
+        appraisal_engine.add_turn_chat_history(user_input, response, control_response)
 
-        return {"detected_emotion": label, "valence": input_valence, "arousal": input_arousal,"response": response, "appraisal": appraisal}
+        return {"detected_emotion": label, "valence": input_valence, "arousal": input_arousal,"response": response, 
+                "appraisal": appraisal, "control_response": control_response, "chat_history_A": appraisal_engine.chat_history, 
+                "chat_history_B": appraisal_engine.control_chat_history, "user_input": user_input}

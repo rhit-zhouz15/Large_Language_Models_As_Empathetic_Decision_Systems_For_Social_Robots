@@ -9,6 +9,7 @@ import yaml
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.live import Live
+from comparison_evaluator import ComparisonEvaluator
 
 def target(inputs: dict):
         user_input = inputs["user_input"]
@@ -78,18 +79,20 @@ if __name__ == "__main__":
     consistency_prompts = eval_prompts["consistency_eval_prompt"]
     response_prompts = eval_prompts["response_eval_prompt"]
     appraisal_prompts = eval_prompts["appraisal_eval_prompt"]
+    comparison_prompts = eval_prompts["compare_eval_prompt"]
 
     consistency_evaluator = ConsistencyEvaluator(consistency_prompts["system"], consistency_prompts["human"])
     response_evaluator = ResponseEvaluator(response_prompts["system"], response_prompts["human"])
     appraisal_evaluator = AppraisalEvaluator(appraisal_prompts["system"], appraisal_prompts["human"])
+    comparison_evaluator = ComparisonEvaluator(comparison_prompts["system"], comparison_prompts["human"])
 
     console = Console()
 
-#     consistency_eval_results = evaluate(
-#         target,
-#         data="Varying Valence LLM Tutor Test Script",
-#         evaluators=[response_evaluator.judge_response, appraisal_evaluator.judge_appraisal, consistency_evaluator.judge_consistency],
-#         experiment_prefix="testing",
-#     )
+    consistency_eval_results = evaluate(
+        target,
+        data="Varying Valence LLM Tutor Test Script",
+        evaluators=[comparison_evaluator.compare_responses],
+        experiment_prefix="testing",
+    )
 
-    run_manually(consistency_evaluator, response_evaluator, appraisal_evaluator, console)
+#     run_manually(consistency_evaluator, response_evaluator, appraisal_evaluator, console)

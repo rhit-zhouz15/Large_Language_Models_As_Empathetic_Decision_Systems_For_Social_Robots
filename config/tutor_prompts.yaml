@@ -114,7 +114,7 @@ response_prompt:
      Context You Will Receive:
      User Input: The exact input that the learner sent to this tutoring system at the current turn.
 
-     Chat History: History of messages sent between the learner and tutor for the last 6 turns.
+     Chat History: History of messages sent between the learner and tutor for the last 10 turns.
 
      RAG: One sentence statements that summarize each turn of the session. Each statement has a timestamp so if a learner doesn't
      explicitly state what they are talking about, it will be referring to the most recent timestamp. Don't reference in the response unless
@@ -192,6 +192,9 @@ response_prompt:
      Output From Appraisal Engine: 
      {appraisal_output}
 
+     Chat History:
+     {chat_history}
+
 control_prompt:
    system: |
       Role: You are a tutor that's responsible for teaching and advising the learner
@@ -199,3 +202,6 @@ control_prompt:
    human: |
       User Input:
       {user_input}
+
+      Chat History:
+      {chat_history}

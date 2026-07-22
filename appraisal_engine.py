@@ -25,8 +25,10 @@ class AppraisalEngine:
             "Momentum": [self.momentum],
             "Intensity": [self.intensity],
         }
-        self.chatHistory = []
-        write_to_json(self.internalState)    
+        self.chat_history = []
+        self.control_chat_history = []
+        self.file_name = "internal_state.json"
+        write_to_json(self.internalState, self.file_name)    
 
     def adjust_internal_state(self, label: str, input_valence: float, input_arousal: float):
         repeated_emotion = len(self.labelHistory) > 0 and label == self.labelHistory[len(self.labelHistory) - 1]
@@ -73,15 +75,20 @@ class AppraisalEngine:
         self.internalState["Momentum"].append(self.momentum)
         self.internalState["Intensity"].append(self.intensity)
 
-        write_to_json(self.internalState)
+        write_to_json(self.internalState, self.file_name)
     
         return self.valence, self.arousal, self.momentum, self.intensity, threshold_crossed
     
-    def add_turn_chat_history(self, human_message, ai_message):
-        self.chatHistory.append(f"Learner: {human_message}")
-        self.chatHistory.append(f"Tutor: {ai_message}")
-        if len(self.chatHistory) >= 10:
-            self.chatHistory = self.chatHistory[-10:]
+    def add_turn_chat_history(self, human_message, ai_message, control_message):
+        self.chat_history.append(f"Learner: {human_message}")
+        self.chat_history.append(f"Tutor: {ai_message}")
+        self.control_chat_history.append(f"Learner: {human_message}")
+        self.control_chat_history.append(f"Tutor: {control_message}")
+
+        if len(self.chat_history) >= 10:
+            self.chat_history = self.chat_history[-10:]
+        if len(self.control_chat_history) >= 10:
+            self.control_chat_history = self.control_chat_history[-10:]
     
     def isolate_page_content(self, response: str):
         if "Memory:" not in response:
