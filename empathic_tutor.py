@@ -10,6 +10,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 from rich.live import Live
 from comparison_evaluator import ComparisonEvaluator
+from student_input_generator import StudentInputGenerator
 from langsmith import Client
 from logger import get_next_filename, log_single_turn
 import json
@@ -111,18 +112,48 @@ def evaluate_interatively(examples, comparison_evaluator: ComparisonEvaluator):
             compare_evaluator_output = comparison_evaluator.compare_responses({}, pipeline)
             comment_data = json.loads(compare_evaluator_output["comment"])
             preferred_system = comment_data["preferred_system"]
+            rationale = comment_data["rationale"]
 
-            log_single_turn(file_name, ind+1, user_input, control_output, PAM_output, preferred_system)
+            log_single_turn(file_name, ind+1, user_input, control_output, PAM_output, preferred_system, rationale)
+
+def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: ComparisonEvaluator):
+    user_input = LLMAS.generate_input_for_tutor({}, {})
+    file_name = get_next_filename()
+
+    for i in range(10):
+        print(f"Interaction {i+1}: {user_input}\n")
+        perception_result = emotion_detection(user_input=user_input)
+            
+        label = perception_result[0]
+        valence = perception_result[2][0]
+        arousal = perception_result[2][1]
+    
+        pipeline = response_pipeline(user_input, label, valence, arousal)
+        PAM_output = pipeline["PAM_response"]
+        control_output = pipeline["control_response"]
+
+        compare_evaluator_output = comparison_evaluator.compare_responses({}, pipeline)
+        comment_data = json.loads(compare_evaluator_output["comment"])
+        preferred_system = comment_data["preferred_system"]
+        rationale = comment_data["rationale"]
+
+        log_single_turn(file_name, i+1, user_input, control_output, PAM_output, preferred_system, rationale)
+        user_input = LLMAS.generate_input_for_tutor({}, pipeline)
+
+        
 
 
 if __name__ == "__main__":
     with open("config/evaluator_prompts.yaml", "r", encoding="utf-8") as f:
         eval_prompts = yaml.safe_load(f)
+    with open("config/student_prompts.yaml", "r", encoding="utf-8") as f:
+        LLM_student_prompts = yaml.safe_load(f)
 
     consistency_prompts = eval_prompts["consistency_eval_prompt"]
     response_prompts = eval_prompts["response_eval_prompt"]
     appraisal_prompts = eval_prompts["appraisal_eval_prompt"]
     comparison_prompts = eval_prompts["compare_eval_prompt"]
+    student_prompts = LLM_student_prompts["student_input_prompt"]
 
     consistency_evaluator = ConsistencyEvaluator(
         consistency_prompts["system"], consistency_prompts["human"]
@@ -143,7 +174,10 @@ if __name__ == "__main__":
     dataset = client.read_dataset(dataset_name="Varying Valence LLM Tutor Test Script")
     examples = list(client.list_examples(dataset_id=dataset.id))
 
-    evaluate_interatively(examples, comparison_evaluator)
+    # evaluate_interatively(examples, comparison_evaluator)
+    
+    student = StudentInputGenerator(student_prompts["system"], student_prompts["human"])
+    evaluate_LLMAS(student, comparison_evaluator)
 
 #     consistency_eval_results = evaluate(
 #         target,

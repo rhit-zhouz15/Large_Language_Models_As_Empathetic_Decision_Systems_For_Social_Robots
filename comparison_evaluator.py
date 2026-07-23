@@ -25,7 +25,7 @@ class ComparisonEvaluator:
 
         self.chain = self.prompt | self.llm_judge
     
-    @traceable(name="comparison_evaluation")
+    @traceable(name="comparison_evaluation", project_name="PAM_Comparison_Evals")
     def compare_responses(self, inputs: dict, outputs: dict):
         response_model_output = outputs["PAM_response"]
         control_model_output = outputs["control_response"]
