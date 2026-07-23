@@ -27,7 +27,7 @@ class ComparisonEvaluator:
     
     @traceable(name="comparison_evaluation")
     def compare_responses(self, inputs: dict, outputs: dict):
-        response_model_output = outputs["response"]
+        response_model_output = outputs["PAM_response"]
         control_model_output = outputs["control_response"]
         chat_history_A = outputs["chat_history_A"]
         chat_history_B = outputs["chat_history_B"]

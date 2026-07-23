@@ -3,7 +3,7 @@ import pandas as pd
 
 # Writes internal state values into a json file
 def write_to_json(data: dict, file_name: str):
-    json_data = json.dumps(data)
+    json_data = json.dumps(data, indent=4)
     with open(file_name, "w") as file:
         file.write(json_data)
 

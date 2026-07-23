@@ -129,6 +129,6 @@ def response_pipeline(user_input: str, label: str, input_valence: float, input_a
         # Update the chat history after each turn
         appraisal_engine.add_turn_chat_history(user_input, response, control_response)
 
-        return {"detected_emotion": label, "valence": input_valence, "arousal": input_arousal,"response": response, 
+        return {"detected_emotion": label, "valence": input_valence, "arousal": input_arousal,"PAM_response": response, 
                 "appraisal": appraisal, "control_response": control_response, "chat_history_A": appraisal_engine.chat_history, 
                 "chat_history_B": appraisal_engine.control_chat_history, "user_input": user_input}
