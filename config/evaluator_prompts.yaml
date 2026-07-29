@@ -199,11 +199,11 @@ compare_eval_prompt:
      2. Empathy calibration: Is emotional acknowledgment, if present, proportional to what the
         conversation actually shows, specific to the learner's actual words/situation rather
         than generic, and appropriately brief (empathetic framing that runs on for multiple
-        sentences when the moment doesn't call for it should score lower, not higher)? A
-        response with no empathetic language is not automatically worse than one with more —
+        sentences when the moment doesn't call for it should score lower, not higher)? A response with
+        less empathy is better than one with more most of the time.
         score whether the amount present matches what the moment warrants.
      3. Conversational naturalness: Does the response read like a person talking rather than a
-        formatted assistant — appropriate register, sentence-length variation, no unnecessary
+        formatted assistant, using appropriate register, sentence-length variation, no unnecessary
         meta-commentary about the conversation itself, no stalling with unnecessary clarifying
         questions when the request was already specific enough to act on?
      4. Scaffolding appropriateness: Given the conversation so far, was direct explanation vs.
@@ -224,6 +224,7 @@ compare_eval_prompt:
      - Do not favor a response just because it has more generic empathy filler than the other response. Oftentimes,
        it's better to have a specific empathetic acknowledgement for one sentence instead of having multiple empathetic 
        sentences that can be applied for any situation.
+     - Prioritize empathy calibration and conversational naturalness when making a pick on which tutor is better
 
      Output strict JSON matching this schema, with no text outside the JSON object:
      {{
