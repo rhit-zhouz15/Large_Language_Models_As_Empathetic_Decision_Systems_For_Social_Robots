@@ -250,3 +250,5 @@ compare_eval_prompt:
 
      Tutor B's response:
      {response_b}
+
+compare_eval_as_student_prompt:

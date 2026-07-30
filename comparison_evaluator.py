@@ -61,7 +61,20 @@ class ComparisonEvaluator:
         # Search for any instance of a JSON object and only parse the JSON part
         match = re.search(r"\{.*\}", compare_eval.content, re.DOTALL)
         if not match:
-            raise ValueError("No JSON found in model output.")
+            print(compare_eval.content)
+            print("No JSON found in model output.")
+            return {
+                "key": "compare_evaluation",
+                "score": -1,
+                "comment": json.dumps({
+                "preferred_system": "None",
+                "confidence": 0,
+                "rationale": "None. No JSON found in model output",
+                "tutor_a_dimension_scores": 0,
+                "tutor_b_dimension_scores": 0,
+                "label_map": label_map,
+            }),
+            }
 
         parsed = json.loads(match.group())
 

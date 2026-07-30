@@ -117,28 +117,29 @@ def evaluate_interatively(examples, comparison_evaluator: ComparisonEvaluator):
             log_single_turn(file_name, ind+1, user_input, control_output, PAM_output, preferred_system, rationale)
 
 def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: ComparisonEvaluator):
-    user_input = LLMAS.generate_input_for_tutor({}, {})
-    file_name = get_next_filename()
+    for index in range(50):
+        user_input = LLMAS.generate_input_for_tutor({}, {})
+        file_name = get_next_filename()
 
-    for i in range(10):
-        print(f"Interaction {i+1}: {user_input}\n")
-        perception_result = emotion_detection(user_input=user_input)
-            
-        label = perception_result[0]
-        valence = perception_result[2][0]
-        arousal = perception_result[2][1]
-    
-        pipeline = response_pipeline(user_input, label, valence, arousal)
-        PAM_output = pipeline["PAM_response"]
-        control_output = pipeline["control_response"]
+        for i in range(10):
+            print(f"Interaction {i+1}: {user_input}\n")
+            perception_result = emotion_detection(user_input=user_input)
+                
+            label = perception_result[0]
+            valence = perception_result[2][0]
+            arousal = perception_result[2][1]
+        
+            pipeline = response_pipeline(user_input, label, valence, arousal)
+            PAM_output = pipeline["PAM_response"]
+            control_output = pipeline["control_response"]
 
-        compare_evaluator_output = comparison_evaluator.compare_responses({}, pipeline)
-        comment_data = json.loads(compare_evaluator_output["comment"])
-        preferred_system = comment_data["preferred_system"]
-        rationale = comment_data["rationale"]
+            compare_evaluator_output = comparison_evaluator.compare_responses({}, pipeline)
+            comment_data = json.loads(compare_evaluator_output["comment"])
+            preferred_system = comment_data["preferred_system"]
+            rationale = comment_data["rationale"]
 
-        log_single_turn(file_name, i+1, user_input, control_output, PAM_output, preferred_system, rationale)
-        user_input = LLMAS.generate_input_for_tutor({}, pipeline)
+            log_single_turn(file_name, i+1, user_input, control_output, PAM_output, preferred_system, rationale)
+            user_input = LLMAS.generate_input_for_tutor({}, pipeline)
 
         
 
