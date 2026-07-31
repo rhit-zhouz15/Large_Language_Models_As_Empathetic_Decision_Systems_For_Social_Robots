@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 def get_next_filename():
-    dir = Path("data_logs_with_dimension_scores")
+    dir = Path("data_logs_distressed")
     dir.mkdir(exist_ok=True)
 
     existing_logs = dir.glob("conversation_*.json")
@@ -20,7 +20,7 @@ def get_next_filename():
 
     next_number = max(numbers, default=0) + 1
 
-    return f"data_logs_with_dimension_scores/conversation_{next_number}.json"
+    return f"data_logs_distressed/conversation_{next_number}.json"
 
 def log_single_turn(file_name: str, turn: int, user_input: str, control_output: str, PAM_output: str, LLM_pick: str, PAM_category_scores: str,
                     control_category_scores: str, LLM_rationale: str):

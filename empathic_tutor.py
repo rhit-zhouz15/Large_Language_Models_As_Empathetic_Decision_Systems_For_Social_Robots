@@ -117,7 +117,7 @@ def evaluate_interatively(examples, comparison_evaluator: ComparisonEvaluator):
             log_single_turn(file_name, ind+1, user_input, control_output, PAM_output, preferred_system, rationale)
 
 def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: ComparisonEvaluator):
-    for index in range(25):
+    for index in range(20):
         user_input = LLMAS.generate_input_for_tutor({}, {})
         file_name = get_next_filename()
 
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     response_prompts = eval_prompts["response_eval_prompt"]
     appraisal_prompts = eval_prompts["appraisal_eval_prompt"]
     comparison_prompts = eval_prompts["compare_eval_prompt"]
-    student_prompts = LLM_student_prompts["student_input_prompt"]
+    student_prompts = LLM_student_prompts["distressed_student_prompt"]
 
     consistency_evaluator = ConsistencyEvaluator(
         consistency_prompts["system"], consistency_prompts["human"]
