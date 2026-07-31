@@ -3,7 +3,7 @@ import json
 import matplotlib.pyplot as plt
 
 def analyze_by_interaction():
-  path = "data_logs"
+  path = "data_logs_with_dimension_scores"
 
   interactions = []
   PAM_wins = []
@@ -67,10 +67,10 @@ def analyze_by_interaction():
   print(f"Percent of Control Wins: {control_percentage}%")
   print(f"Percent of Ties: {tie_percentage}%")
   print(f"Percent of Nones {none_percentage}%")
-  print("-------------------------------------------------------------------------------------")
+  print("----------------------------------------------------------------------------------------------------")
 
 def analyze_by_conversation():
-  path = "data_logs"
+  path = "data_logs_with_dimension_scores"
 
   conversations = []
   PAM_wins = []

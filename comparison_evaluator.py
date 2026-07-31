@@ -70,8 +70,8 @@ class ComparisonEvaluator:
                 "preferred_system": "None",
                 "confidence": 0,
                 "rationale": "None. No JSON found in model output",
-                "tutor_a_dimension_scores": 0,
-                "tutor_b_dimension_scores": 0,
+                "PAM_dimension_scores": 0,
+                "control_dimension_scores": 0,
                 "label_map": label_map,
             }),
             }
@@ -88,6 +88,15 @@ class ComparisonEvaluator:
             preferred_system = label_map.get(preferred_label, "tie")
             score = 1.0 if preferred_system == "pam" else 0.0
 
+        tutor_a_id = label_map.get("tutor_a")
+        if tutor_a_id == "pam":
+            PAM_category_scores = parsed.get("tutor_a")
+            control_category_scores = parsed.get("tutor_b")
+        else:
+            PAM_category_scores = parsed.get("tutor_b")
+            control_category_scores = parsed.get("tutor_a")
+        
+
         return {
             "key": "compare_evaluation",
             "score": score,  # 1 = PAM preferred, 0 = control model preferred, 0.5 = tie
@@ -95,8 +104,8 @@ class ComparisonEvaluator:
                 "preferred_system": preferred_system,
                 "confidence": parsed.get("confidence"),
                 "rationale": parsed.get("rationale"),
-                "tutor_a_dimension_scores": parsed.get("tutor_a"),
-                "tutor_b_dimension_scores": parsed.get("tutor_b"),
+                "PAM_dimension_scores": PAM_category_scores,
+                "control_dimension_scores": control_category_scores,
                 "label_map": label_map,
             }),
         }

@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 def get_next_filename():
-    dir = Path("data_logs")
+    dir = Path("data_logs_with_dimension_scores")
     dir.mkdir(exist_ok=True)
 
     existing_logs = dir.glob("conversation_*.json")
@@ -20,11 +20,13 @@ def get_next_filename():
 
     next_number = max(numbers, default=0) + 1
 
-    return f"data_logs/conversation_{next_number}.json"
+    return f"data_logs_with_dimension_scores/conversation_{next_number}.json"
 
-def log_single_turn(file_name: str, turn: int, user_input: str, control_output: str, PAM_output: str, LLM_pick: str, LLM_rationale: str):
+def log_single_turn(file_name: str, turn: int, user_input: str, control_output: str, PAM_output: str, LLM_pick: str, PAM_category_scores: str,
+                    control_category_scores: str, LLM_rationale: str):
     turn_data = {"Turn": turn, "User Input": user_input, "Control Tutor": control_output, 
-                 "PAM Tutor": PAM_output, "LLM Judge Pick": LLM_pick, "Judge Rationale": LLM_rationale}
+                 "PAM Tutor": PAM_output, "LLM Judge Pick": LLM_pick, "PAM Scores": PAM_category_scores, "Control Scores": control_category_scores,
+                 "Judge Rationale": LLM_rationale}
     
     if os.path.exists(file_name):
         data = load_from_json(file_name)

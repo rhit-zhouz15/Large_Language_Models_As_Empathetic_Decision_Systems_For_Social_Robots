@@ -117,7 +117,7 @@ def evaluate_interatively(examples, comparison_evaluator: ComparisonEvaluator):
             log_single_turn(file_name, ind+1, user_input, control_output, PAM_output, preferred_system, rationale)
 
 def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: ComparisonEvaluator):
-    for index in range(50):
+    for index in range(25):
         user_input = LLMAS.generate_input_for_tutor({}, {})
         file_name = get_next_filename()
 
@@ -135,10 +135,12 @@ def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: Compariso
 
             compare_evaluator_output = comparison_evaluator.compare_responses({}, pipeline)
             comment_data = json.loads(compare_evaluator_output["comment"])
+            PAM_category_scores = comment_data["PAM_dimension_scores"]
+            control_category_scores = comment_data["control_dimension_scores"]
             preferred_system = comment_data["preferred_system"]
             rationale = comment_data["rationale"]
 
-            log_single_turn(file_name, i+1, user_input, control_output, PAM_output, preferred_system, rationale)
+            log_single_turn(file_name, i+1, user_input, control_output, PAM_output, preferred_system, PAM_category_scores, control_category_scores, rationale)
             user_input = LLMAS.generate_input_for_tutor({}, pipeline)
 
         
