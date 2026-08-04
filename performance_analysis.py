@@ -193,7 +193,7 @@ def analyze_by_dimension(log_path: str):
                     row[dim] = pam_scores[dim] - ctrl_scores[dim]
                 rows.append(row)
 
-    print(f"Skipped {skipped} malformed interactions out of {skipped + len(rows)} total")
+    print(f"Skipped {skipped} wrongly formatted interactions out of {skipped + len(rows)} total")
 
     n = len(rows)
     print(f"Total interactions with dimension scores: {n}\n")

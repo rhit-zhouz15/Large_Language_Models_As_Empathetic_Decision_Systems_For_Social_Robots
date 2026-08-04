@@ -156,7 +156,7 @@ if __name__ == "__main__":
     response_prompts = eval_prompts["response_eval_prompt"]
     appraisal_prompts = eval_prompts["appraisal_eval_prompt"]
     comparison_prompts = eval_prompts["compare_eval_prompt"]
-    student_prompts = LLM_student_prompts["distressed_student_prompt"]
+    student_prompts = LLM_student_prompts["student_input_prompt"]
 
     consistency_evaluator = ConsistencyEvaluator(
         consistency_prompts["system"], consistency_prompts["human"]
