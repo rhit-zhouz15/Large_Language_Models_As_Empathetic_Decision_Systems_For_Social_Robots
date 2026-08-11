@@ -7,7 +7,7 @@ class StudentInputGenerator:
   def __init__(self, student_system_prompt, student_human_prompt):
     self.client = Client()
     self.llm_student = ChatOllama(
-      model="gemma4:e4b",
+      model="mistral-small3.2:latest",
       base_url="http://localhost:11434",
       temperature=1.0,
       num_ctx=16384

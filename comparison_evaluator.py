@@ -24,6 +24,20 @@ class ComparisonEvaluator:
         ])
 
         self.chain = self.prompt | self.llm_judge
+
+    def failed_result(self, reason: str, label_map):
+        return {
+            "key": "compare_evaluation",
+            "score": -1,
+            "comment": json.dumps({
+                "preferred_system": "None",
+                "confidence": 0,
+                "rationale": reason,
+                "PAM_dimension_scores": 0,
+                "control_dimension_scores": 0,
+                "label_map": label_map,
+            }),
+        }
     
     @traceable(name="comparison_evaluation", project_name="PAM_Comparison_Evals")
     def compare_responses(self, inputs: dict, outputs: dict):
@@ -63,20 +77,15 @@ class ComparisonEvaluator:
         if not match:
             print(compare_eval.content)
             print("No JSON found in model output.")
-            return {
-                "key": "compare_evaluation",
-                "score": -1,
-                "comment": json.dumps({
-                "preferred_system": "None",
-                "confidence": 0,
-                "rationale": "None. No JSON found in model output",
-                "PAM_dimension_scores": 0,
-                "control_dimension_scores": 0,
-                "label_map": label_map,
-            }),
-            }
 
-        parsed = json.loads(match.group())
+            return self.failed_result("None. No JSON found in model output", label_map)
+
+        try:
+            parsed = json.loads(match.group())
+        except json.JSONDecodeError as e:
+            print(compare_eval.content)
+            print(f"JSON decode error: {e}")
+            return self.failed_result(f"None. JSON found but failed to parse: {e}", label_map)
 
         # Map the evaluators response back to their true label (Control or PAM Model)
         # to display the right preferred model and not the ambiguous one that the evaluator decides between

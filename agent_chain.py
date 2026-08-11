@@ -33,32 +33,25 @@ control_prompt = ChatPromptTemplate.from_messages([
 ])
 
 affective_model = ChatOllama(
-        model="gemma4:12b",
+        model="phi4:latest",
         base_url="http://localhost:11434",
-        reasoning=False,
         keep_alive=-1,
         num_ctx=8192
     )
 
 response_model = ChatOllama(
-        model="gemma4:12b",
+        model="phi4:latest",
         base_url="http://localhost:11434",
-        reasoning=True,
         keep_alive=-1,
         temperature=1.0,
-        top_p=0.95,
-        top_k=64,
         num_ctx=8192,
 )
 
 control_model = ChatOllama(
-        model="gemma4:12b",
+        model="phi4:latest",
         base_url="http://localhost:11434",
-        reasoning=True,
         keep_alive=-1,
         temperature=1.0,
-        top_p=0.95,
-        top_k=64,
         num_ctx=8192,
 )
 

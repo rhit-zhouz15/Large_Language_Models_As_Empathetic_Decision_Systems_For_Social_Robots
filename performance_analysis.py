@@ -79,6 +79,19 @@ def analyze_by_interaction(log_path: str):
         "----------------------------------------------------------------------------------------------------"
     )
 
+    return {
+        "total_interactions": total,
+        "pam_wins": PAM,
+        "control_wins": control,
+        "ties": tie,
+        "none_or_errors": none,
+        "pam_pct": PAM_percentage,
+        "control_pct": control_percentage,
+        "tie_pct": tie_percentage,
+        "none_pct": none_percentage,
+        "pam_wins_by_turn": PAM_wins_by_turn
+    }
+
 
 def analyze_by_conversation(log_path: str):
     path = log_path
@@ -152,6 +165,16 @@ def analyze_by_conversation(log_path: str):
             "----------------------------------------------------------------------------------------------------"
         )
 
+    return {
+        "total_conversations": total,
+        "pam_wins": PAM,
+        "control_wins": control,
+        "ties": tie,
+        "pam_pct": PAM_percentage,
+        "control_pct": control_percentage,
+        "tie_pct": tie_percentage
+    }
+
 
 def analyze_by_dimension(log_path: str):
     path = log_path
@@ -202,10 +225,9 @@ def analyze_by_dimension(log_path: str):
     print(
         f"{'Dimension':<30} {'Mean Δ':>8} {'PAM>Ctrl':>10} {'Ctrl>PAM':>10} {'Tied':>8}"
     )
-    deltas_by_dim = {}
+    per_dimension = {}
     for dim in dimensions:
         vals = np.array([r[dim] for r in rows])
-        deltas_by_dim[dim] = vals
         mean_delta = vals.mean()
         pct_pos = (vals > 0).mean() * 100
         pct_neg = (vals < 0).mean() * 100
@@ -214,43 +236,73 @@ def analyze_by_dimension(log_path: str):
             f"{dim:<30} {mean_delta:>8.3f} {pct_pos:>9.1f}% {pct_neg:>9.1f}% {pct_tie:>7.1f}%"
         )
 
+        entry = {
+            "mean_delta": float(mean_delta),
+            "pct_pam_gt_control": float(pct_pos),
+            "pct_control_gt_pam": float(pct_neg),
+            "pct_tied": float(pct_tie),
+        }
+
         # Wilcoxon signed-rank test: is this dimension's delta significantly != 0?
         nonzero = vals[vals != 0]
         if len(nonzero) > 0:
             stat, p = stats.wilcoxon(nonzero)
             sig = "*" if p < 0.05 else ""
             print(f"   -> Wilcoxon signed-rank: p={p:.4f} {sig}")
+            entry["wilcoxon_stat"] = float(stat)
+            entry["wilcoxon_p"] = float(p)
+            entry["significant_at_0.05"] = bool(p < 0.05)
+
+        per_dimension[dim] = entry
     print()
 
     # --- Does the judge's categorical pick track naturalness vs empathy? ---
     # crude check: for PAM-picked turns, what's the mean delta on each dimension?
     pam_rows = [r for r in rows if r["pick"] == "pam"]
     ctrl_rows = [r for r in rows if r["pick"] == "control"]
+
+    conditional_means = {}
     print("Mean dimension delta conditional on judge's categorical pick:")
     for label, subset in [
         ("Judge picked PAM", pam_rows),
         ("Judge picked Control", ctrl_rows),
     ]:
+        conditional_means[label] = {}
         print(f"  {label} (n={len(subset)}):")
         for dim in dimensions:
             vals = [r[dim] for r in subset]
-            print(f"    {dim:<30} mean Δ = {np.mean(vals):.3f}")
+            mean_val = float(np.mean(vals)) if vals else None
+            print(f"    {dim:<30} mean Δ = {mean_val:.3f}")
+            conditional_means[label][dim] = mean_val
     print()
 
     # --- Simple logistic regression: which dimension delta predicts the pick? ---
     # only using non-tie rows
+    logistic = None
     binary_rows = [r for r in rows if r["pick"] in ("pam", "control")]
     if len(binary_rows) > 10:
         X = np.array([[r[dim] for dim in dimensions] for r in binary_rows])
         y = np.array([1 if r["pick"] == "pam" else 0 for r in binary_rows])
         clf = LogisticRegression().fit(X, y)
         print("Logistic regression coefficients (which dimension predicts judge pick):")
+        coefficients = {}
         for dim, coef in zip(dimensions, clf.coef_[0]):
             print(f"  {dim:<30} {coef:+.3f}")
-        print(f"  (Pseudo R^2 / train accuracy: {clf.score(X, y):.3f})")
+            coefficients[dim] = float(coef)
+        train_acc = float(clf.score(X, y))
+        print(f"  (Pseudo R^2 / train accuracy: {train_acc:.3f})")
+        logistic = {"coefficients": coefficients, "train_accuracy": train_acc}
     print(
         "----------------------------------------------------------------------------------------------------"
     )
+
+    return {
+        "skipped_bad_format": skipped,
+        "n_scored_interactions": n,
+        "per_dimension": per_dimension,
+        "conditional_means_by_pick": conditional_means,
+        "logistic_regression": logistic,
+    }
 
 
 def sign_test_by_conversation(log_path: str):
@@ -277,8 +329,18 @@ def sign_test_by_conversation(log_path: str):
                 ties += 1
 
     n_decisive = pam_wins + control_wins
+
+    result_data = {
+        "pam_wins": pam_wins,
+        "control_wins": control_wins,
+        "ties": ties,
+        "decisive_conversations": n_decisive,
+        "p_value": None
+    }
     if n_decisive > 0:
         result = stats.binomtest(pam_wins, n_decisive, p=0.5)
+        result_data["p_value"] = float(result.pvalue)
+
         print(
             f"Conversation-level sign test: PAM wins {pam_wins}/{n_decisive} decisive conversations"
         )
@@ -288,10 +350,18 @@ def sign_test_by_conversation(log_path: str):
         "----------------------------------------------------------------------------------------------------"
     )
 
+    return result_data
+
 
 if __name__ == "__main__":
-    log_path = "data_logs_with_dimension_scores"
-    analyze_by_interaction(log_path)
-    analyze_by_conversation(log_path)
-    analyze_by_dimension(log_path)
-    sign_test_by_conversation(log_path)
+    log_path = "config3_logs"
+
+    results = {
+        "analysis_by_interaction": analyze_by_interaction(log_path),
+        "analysis_by_conversation": analyze_by_conversation(log_path),
+        "analysis_by_dimension": analyze_by_dimension(log_path),
+        "sign_test": sign_test_by_conversation(log_path)
+    }
+
+    with open(f"{log_path}_analysis.json", "w") as f:
+        json.dump(results, f, indent=4)

@@ -1,0 +1,202 @@
+[
+    {
+        "Turn": 1,
+        "User Input": "Hey, I'm having some trouble with calculus, specifically limits and continuity. Can you help me understand it better?",
+        "Control Tutor": "Hi there! Absolutely, I can definitely help you with limits and continuity. It's a common area where students stumble in calculus, so you're not alone! \n\nTo get started, let's figure out where *specifically* you're getting stuck.  \n\nCould you tell me:\n\n1. **What concepts within limits and continuity are confusing you the most?** (e.g., the definition of a limit, one-sided limits, limits at infinity, what continuity *means*, how to find limits algebraically, dealing with indeterminate forms, etc.)\n2. **Are there any specific types of problems you're struggling with?** (If you have an example problem you're working on, please share it!)\n3. **What's your current understanding of the basic ideas?**  Even just a sentence or two about what you *think* a limit is, or what it means for a function to be continuous, would be helpful.\n\nDon't worry about sounding silly - I'm here to help, and knowing where you're starting from is the best way to do that. We can go over definitions, work through examples, or whatever works best for you.\n\nLet's tackle this together!  Just tell me what's on your mind.\n\n\n\n",
+        "PAM Tutor": "Hey, no problem, limits and continuity can be tricky at first! It's good you're asking for help though \u2013 that's the best way to get past those confusing parts of calculus. \n\nSo, at its heart, a limit is about what value a function *approaches* as the input gets closer and closer to some number. Continuity just builds on that idea, saying that a function is continuous if it doesn\u2019t have any sudden jumps or breaks.\n\nWe can definitely dig into the specifics if you'd like. Do you want me to go over a more detailed explanation of limits, or would you prefer we jump right into examples?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A demonstrates higher scaffolding appropriateness by eliciting specific information to tailor the help, and their empathy calibration is well-suited to understanding the learner's needs."
+    },
+    {
+        "Turn": 2,
+        "User Input": "Idk, like, I get the basic idea of limits, but maybe it's the algebra stuff that's tripping me up? Like, when I have to find the limit of something like (x^2 - 1)/(x - 1), I end up with 0/0 and I don't know what to do next. And continuity? I think I understand the definition, but I'm not sure how to apply it in problems. Like, how do you know if a function is continuous or not? Can you maybe walk me through an example?",
+        "Control Tutor": "Okay, great! Thanks for pinpointing those specific areas \u2013 that's *really* helpful. It sounds like you have a good intuitive grasp of what limits and continuity *should* be, but the algebra and application are causing trouble. That's super common, and totally fixable! Let's break it down.\n\n**Let's start with that (x^2 - 1)/(x - 1) problem.** You're right to identify the 0/0 issue. That's an \"indeterminate form,\" and it's a signal that we can't just directly substitute the value into the function. It *doesn't* mean the limit doesn't exist, just that we need to do some more work.\n\nThe key here is **factoring**. Do you remember factoring the difference of squares?\n\n(x^2 - 1) can be factored into (x - 1)(x + 1).\n\nSo, our expression becomes:  ((x - 1)(x + 1)) / (x - 1)\n\nNow, notice something amazing!  We can **cancel** the (x - 1) terms in the numerator and denominator *as long as x \u2260 1*.  This is crucial \u2013 we're not saying (x-1) is *always* zero, just that when we're taking the limit as x *approaches* 1, we can treat it as if it's not zero.\n\nThis simplifies to (x + 1).\n\nNow we can find the limit: lim (x\u21921) (x + 1) = 1 + 1 = 2\n\nSo, the limit of (x^2 - 1)/(x - 1) as x approaches 1 is 2.  Even though the original function is undefined at x=1, the *limit* as x gets close to 1 exists and is equal to 2.\n\n**Does that factoring step and the concept of cancelling make sense?** It's a really important technique for dealing with these kinds of limits.  Let's pause there and make sure you're comfortable with that before we move on to continuity.\n\n\n\n---\n\n**Now, let's talk about continuity.** You said you understand the definition, but aren't sure how to apply it. That's normal. Here's the core idea:\n\nA function is continuous at a point 'c' if three things are true:\n\n1.  **f(c) exists:** The function has a defined value at x = c.  (There's a point on the graph at x = c).\n2.  **lim (x\u2192c) f(x) exists:** The limit of the function as x approaches 'c' exists. (The function approaches a specific value from both sides).\n3.  **lim (x\u2192c) f(x) = f(c):**  The value the function *approaches* (the limit) is equal to the actual value of the function at that point.\n\n**How do we know if a function is continuous or not?**  We need to check those three conditions!  If *any* of those conditions are false, the function is discontinuous at that point.\n\n**Let's look at an example:**\n\nConsider the function:\n\nf(x) = {  x^2  if x < 1\n         {  2   if x = 1\n         {  x + 1 if x > 1\n\nIs this function continuous at x = 1? Let's check:\n\n1. **f(1) exists:** Yes, f(1) = 2 (given in the definition).\n2. **lim (x\u21921) f(x) exists:**  We need to look at the left-hand limit and the right-hand limit.\n   *   lim (x\u21921-) f(x) = lim (x\u21921-) x^2 = 1^2 = 1  (approaching from the left, we use x^2)\n   *   lim (x\u21921+) f(x) = lim (x\u21921+) (x + 1) = 1 + 1 = 2 (approaching from the right, we use x + 1)\n\nSince the left-hand limit (1) and the right-hand limit (2) are *not* equal, the limit as x approaches 1 does **not** exist.\n\n3. **Therefore, since the limit doesn't exist, the function is discontinuous at x = 1.** (Even though f(1) *does* exist.)\n\n**Now, a question for you:**  In the example above, what type of discontinuity does the function have at x=1? (Hint: think about what happens to the function's value as it approaches x=1 from both sides.)\n\nLet's take it one step at a time. First, let's make sure you're comfortable with that algebra trick for limits (factoring and cancelling). Then, we'll work on applying the continuity definition.  **Which would you like to focus on first?** And don't hesitate to ask if anything I've explained so far is unclear.\n\n\n\n",
+        "PAM Tutor": "Okay, so it sounds like you've got the general idea of limits and continuity down, which is awesome \u2013 that\u2019s often the hardest part! It's super common to get hung up on the algebra when actually *calculating* limits, though. That 0/0 thing\u2026 ugh, been there. \n\nLet's tackle that (x^2 - 1)/(x - 1) example first. The trick with 0/0 is that it\u2019s an \u201cindeterminate form,\u201d meaning it doesn\u2019t tell us anything directly. We need to do some algebra to *simplify* the expression before we can evaluate the limit. In this case, you can factor the numerator: (x^2 - 1) becomes (x - 1)(x + 1). See what happens now?\n\nSo the expression becomes ((x - 1)(x + 1))/(x - 1). The (x - 1) terms cancel out, leaving you with (x + 1). Now you can plug in the value x was approaching (which, in this case, is likely 1, since that's what makes the denominator zero) and get the limit.\n\nAs for continuity, you're right to think about the definition, but let\u2019s make it a little more concrete. A function is continuous if you can draw its graph without lifting your pen. More formally, it needs to meet three conditions: 1) the function exists at that point, 2) the limit exists at that point, and 3) those two values are equal. If any one of those fails, it\u2019s not continuous.\n\nWant me to walk you through a specific example of how to check for continuity, or do you want a much more detailed explanation of the algebraic tricks for limits? We could also go over different types of discontinuities if that would be helpful.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more comprehensive explanation with appropriate scaffolding, making their response more effective for the learner."
+    },
+    {
+        "Turn": 3,
+        "User Input": "Oh wow, okay, that actually makes a lot more sense now. So, when I see that 0/0 thing, I should think about factoring? That's a game-changer. And the continuity thing, checking those three conditions\u2014yeah, that's way clearer now. Can we do another example for continuity? Maybe one that's continuous, so I can see the difference?",
+        "Control Tutor": "Excellent! You're making great connections. Yes, whenever you encounter that 0/0 indeterminate form, factoring (or other algebraic manipulation) should be one of the first things you think about. It's a fantastic \"game-changer\" as you said! And you've got the right idea about the three conditions for continuity - that's a solid foundation.\n\nYou asked for another continuity example, but one where the function *is* continuous. Great idea! Let's do that.\n\nLet's consider the function:  **f(x) = x^2 + 1**\n\nIs this function continuous at x = 2? Let's check the three conditions:\n\n1. **f(2) exists:** Yes! f(2) = (2)^2 + 1 = 5.  There's a defined value at x = 2.\n\n2. **lim (x\u21922) f(x) exists:**  Since this is a polynomial function (a simple quadratic), it's continuous everywhere.  We *could* formally find the limit, but we know it will exist. Let's do it anyway to illustrate: lim (x\u21922) (x^2 + 1) = (2)^2 + 1 = 5.  The limit exists and is equal to 5.\n\n3. **lim (x\u21922) f(x) = f(2):** We found that lim (x\u21922) f(x) = 5 and f(2) = 5.  They are equal!\n\nSince all three conditions are met, the function f(x) = x^2 + 1 is continuous at x = 2.  In fact, it's continuous for *all* real numbers.\n\n**Notice how much simpler this was?** Because the function is \"well-behaved\" (no division by zero, no piecewise definitions, etc.), finding the limit and checking continuity is straightforward.\n\n**Now, let's put your understanding to the test.** Consider the function:\n\nf(x) =  { 3x  if x \u2264 0\n         { x + 1 if x > 0\n\nIs this function continuous at x = 0?  Walk me through checking the three conditions. Don't worry about being perfect - I'm here to help if you get stuck! I want to see *your* thought process.\n\n\n\n",
+        "PAM Tutor": "Hey, glad to hear things are starting to click! It\u2019s totally normal to get stuck on that 0/0 stuff\u2014factoring is *always* the first thing I check for in those cases. It's like unlocking a secret door, honestly.\n\nAbsolutely, let\u2019s do another continuity example. How about this one: f(x) = x + 2. Is this function continuous everywhere? To check, think about those three conditions we talked about\u2014does the function exist, does the limit exist, and are they equal? \n\nWe can walk through checking those for a specific value if you'd like, or I can give you a more detailed explanation of how to identify continuous functions and the different ways they can *become* discontinuous. We can really get into the nitty-gritty of it if you're up for it.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate explanations and appropriate scaffolding. Tutor A's response was more conversational, while Tutor B offered detailed examples. The choice between them is a matter of preference based on the learner's need for brevity versus depth."
+    },
+    {
+        "Turn": 4,
+        "User Input": "Sure, let's break it down step by step for the function f(x) = { 3x if x \u2264 0, x + 1 if x > 0 }.\n\nFirst, does f(0) exist? Yeah, it's 3*0, so f(0) = 0.\n\nNow, the limit as x approaches 0. From the left, x is less than or equal to 0, so the limit is 3x, which is 0 at x = 0. From the right, x is greater than 0, so the limit is x + 1, which is 1 at x = 0.\n\nHmm, the left and right limits are not equal, so the limit doesn't exist at x = 0. Does that mean the function is discontinuous there?",
+        "Control Tutor": "Okay, excellent work so far! You're approaching this systematically, which is exactly what you need to do with limits and continuity. \n\nYou've started analyzing the piecewise function `f(x) = { 3x if x \u2264 0, x + 1 if x > 0 }` at x = 0, and you're on the right track. Let's review your steps and then complete the continuity check.\n\nYou correctly found that f(0) exists and equals 0.  Good!\n\nYou also correctly determined the left-hand limit and the right-hand limit.  Left-hand limit is 0, and the right-hand limit is 1. And you correctly concluded that because those limits are not equal, the limit as x approaches 0 does *not* exist. Excellent!\n\nNow, to the big question: Does this mean the function is discontinuous there? **Yes, absolutely.**\n\nHere's why:\n\n*   **f(0) exists:** True (f(0) = 0)\n*   **lim (x\u21920) f(x) exists:** False (The limit does *not* exist because the left and right limits are different.)\n*   **lim (x\u21920) f(x) = f(0):**  Not applicable, as the limit doesn't even exist.\n\nSince the second condition is not met (the limit doesn't exist), the function is **discontinuous at x = 0.** You've identified a discontinuity correctly!\n\n**This is a \"jump discontinuity\"** because the function \"jumps\" from one value to another at x=0.\n\nYou're doing great!  \n\nNow, to make sure we solidify your understanding, let's try a slightly different type of problem.  \n\nLet's say we have a function defined as:\n\ng(x) = { x^2  if x < 1\n        { 3    if x = 1\n        { 2x   if x > 1\n\nIs g(x) continuous at x = 1?  Walk me through the three conditions. Take your time, and let's see your reasoning.",
+        "PAM Tutor": "You're on the right track with how you're approaching this \u2013 breaking it down step by step is a great way to tackle these problems. It sounds like you're really thinking through the definitions, which is awesome. \n\nYou've correctly identified that the left and right limits don't match, which *does* mean the function is discontinuous at x = 0. You're spot on to ask that question! It's good that you're connecting those ideas. \n\nIt's understandable to feel a little stuck when dealing with these piecewise functions. They require you to consider different rules for different parts of the domain. Don't worry, you're doing well to catch all this. \n\nWould you like me to go over a more detailed explanation of how piecewise functions affect limits and continuity? We could also look at more examples, or even dive into how these concepts are used in more advanced calculus topics.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response while maintaining high pedagogical accuracy."
+    },
+    {
+        "Turn": 5,
+        "User Input": "Alright, let's tackle this new function g(x). First, does g(1) exist? Yeah, it's defined as 3 when x=1. So, g(1) = 3.\n\nNow, what about the limit as x approaches 1? From the left, x is less than 1, so the limit is x^2, which is 1^2 = 1 at x=1. From the right, x is greater than 1, so the limit is 2x, which is 2*1 = 2 at x=1.\n\nHmm, the left and right limits are not equal again. Does that mean the function is discontinuous at x=1?",
+        "Control Tutor": "Okay, excellent work so far! You're approaching this systematically, which is exactly what you need to do with limits and continuity. \n\nYou've started analyzing the piecewise function `f(x) = { 3x if x \u2264 0, x + 1 if x > 0 }` at x = 0, and you're on the right track. \n\nYou correctly found that f(0) exists and equals 0. Good!\n\nYou also correctly determined the left-hand limit and the right-hand limit. Left-hand limit is 0, and the right-hand limit is 1. And you correctly concluded that because those limits are not equal, the limit as x approaches 0 does *not* exist. Excellent!\n\nNow, to the big question: Does this mean the function is discontinuous there? **Yes, absolutely.**\n\nHere's why:\n\n*   **f(0) exists:** True (f(0) = 0)\n*   **lim (x\u21920) f(x) exists:** False (The limit does *not* exist because the left and right limits are different.)\n*   **lim (x\u21920) f(x) = f(0):** Not applicable, as the limit doesn't even exist.\n\nSince the second condition is not met (the limit doesn't exist), the function is **discontinuous at x = 0.** You've identified a discontinuity correctly!\n\n**This is a \"jump discontinuity\"** because the function \"jumps\" from one value to another at x=0.\n\nYou're doing great! \n\nNow, to make sure we solidify your understanding, let's try a slightly different type of problem. \n\nLet's say we have a function defined as:\n\ng(x) = { x^2  if x < 1\n        { 3    if x = 1\n        { 2x   if x > 1\n\nIs g(x) continuous at x = 1? Walk me through the three conditions. Take your time, and let's see your reasoning.\n\n\n\nYou've already started to tackle this new function g(x) and are on the right path. You correctly stated:\n\n*   g(1) exists and is equal to 3.\n*   The left-hand limit as x approaches 1 is 1, and the right-hand limit is 2.\n*   You correctly identified that the left and right limits are not equal, which implies a potential discontinuity.\n\n**You are absolutely right to suspect that g(x) is discontinuous at x=1!**  Let's formally state why, based on the three conditions we've been using:\n\n1. **f(1) exists:** True, as you pointed out, g(1) = 3.\n2. **lim (x\u21921) f(x) exists:** False.  As you correctly calculated, the left-hand limit is 1 and the right-hand limit is 2. Since these are not equal, the limit does not exist.\n3. **lim (x\u21921) f(x) = f(1):** Not applicable, because the limit doesn't exist.\n\nBecause the limit doesn't exist, g(x) is discontinuous at x = 1.\n\n**Excellent job!** You're demonstrating a really strong grasp of these concepts. You are successfully applying the definition of continuity to piecewise functions.\n\n**Now, let's level up slightly.**\n\nSometimes a function appears to be discontinuous at a point, but we can *remove* the discontinuity by redefining the function at that point. Let's consider the function:\n\nh(x) = (x^2 - 4) / (x - 2)\n\nIs h(x) continuous at x = 2? If not, can we *redefine* h(2) to make the function continuous? Let's work through this together.  What is h(2)?",
+        "PAM Tutor": "You're right to notice that pattern of unequal limits with these piecewise functions\u2014it *does* signal a discontinuity. It\u2019s frustrating when you keep running into the same issue, especially when you're trying to get the hang of something new. \n\nAnd yes, that means the function is discontinuous at x=1, just like with the last one. Since the limit from the left and the limit from the right aren't the same, the overall limit doesn't exist, and that's one of the conditions for continuity that\u2019s broken. \n\nYou're clearly working through this methodically, and that's good. We can keep going with more examples if that helps solidify the idea, or if you'd like, we can zoom out a bit and talk about how to *predict* where these discontinuities will happen in piecewise functions, and why they happen in the first place.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate explanations and appropriate scaffolding. Tutor A showed empathy by acknowledging frustration, while Tutor B excelled in conversational naturalness with clear examples."
+    },
+    {
+        "Turn": 6,
+        "User Input": "Yeah, I see what you're saying. So, h(x) is undefined at x=2 because we have a 0 in the denominator. That's a problem, right? But if we think about the limit as x approaches 2, what's happening there? Like, can we fix this?",
+        "Control Tutor": "You\u2019re absolutely right to suspect that g(x) is discontinuous at x=1! Let\u2019s formally state why, based on the three conditions we\u2019ve been using:\n\n1. **f(1) exists:** True, as you pointed out, g(1) = 3.\n2. **lim (x\u21921) f(x) exists:** False. As you correctly calculated, the left-hand limit is 1 and the right-hand limit is 2. Since these are not equal, the limit does not exist.\n3. **lim (x\u21921) f(x) = f(1):** Not applicable, because the limit doesn\u2019t exist.\n\nBecause the limit doesn\u2019t exist, g(x) is discontinuous at x = 1.\n\n**Excellent job!** You\u2019re demonstrating a really strong grasp of these concepts. You are successfully applying the definition of continuity to piecewise functions.\n\nNow, let's level up slightly.\n\nSometimes a function appears to be discontinuous at a point, but we can *remove* the discontinuity by redefining the function at that point. Let\u2019s consider the function:\n\nh(x) = (x^2 - 4) / (x - 2)\n\nIs h(x) continuous at x = 2? If not, can we *redefine* h(2) to make the function continuous? Let\u2019s work through this together. What is h(2)?\n\n\n\n",
+        "PAM Tutor": "Okay, so you\u2019re thinking about what happens as x gets really close to 2, even though the function isn\u2019t actually *defined* at 2. That\u2019s a really good instinct, and that\u2019s exactly what limits are for! You\u2019re right to ask if we can \u201cfix\u201d it \u2013 that\u2019s what we\u2019re trying to figure out with limits. \n\nEssentially, we're trying to see if the function is *headed* toward a specific value as it gets closer and closer to x=2, even if it never actually *reaches* it. It's like zooming in on a graph \u2013 sometimes, things look different up close than they do from far away.\n\nSo, what do you think we should do next? Should we try to simplify the expression to see if anything cancels out, like we did with that 0/0 problem earlier? Or maybe we can think about what values the function is approaching as x gets closer to 2 from both sides? We can go super deep into the theory behind limits and how they relate to function behavior if you're interested, but let's tackle this one first.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more encouraging and natural response, which is better calibrated for empathy and conversational flow."
+    },
+    {
+        "Turn": 7,
+        "User Input": "Oh, so you're saying we can potentially fix this by redefining h(2)? That's pretty cool. So, what's the limit as x approaches 2? And how would we redefine h(2) based on that?",
+        "Control Tutor": "You're absolutely right to point out that h(x) is undefined at x=2 because it leads to division by zero. That *is* a problem for continuity! And you're spot on to think about the limit \u2013 that's exactly the key to seeing if we can \"fix\" things.\n\nLet's find the limit as x approaches 2:\n\nlim (x\u21922) (x^2 - 4) / (x - 2)\n\nNotice that (x^2 - 4) is a difference of squares! It factors into (x - 2)(x + 2). So we have:\n\nlim (x\u21922) [(x - 2)(x + 2)] / (x - 2)\n\nNow, as long as x \u2260 2, we can cancel the (x - 2) terms. This leaves us with:\n\nlim (x\u21922) (x + 2)\n\nNow we can directly substitute x = 2:\n\n2 + 2 = 4\n\nSo, the limit as x approaches 2 is 4.\n\n**Here's the crucial part:**\n\nFor h(x) to be continuous at x = 2, we need three things (remember our conditions?):\n\n1.  h(2) must be defined. (Currently it's not!)\n2.  lim (x\u21922) h(x) must exist. (We just showed it does, and it's 4)\n3.  lim (x\u21922) h(x) = h(2).\n\nWe can't change the limit, but we *can* redefine h(2)! To make the function continuous, we need to define h(2) to be equal to the limit.\n\nTherefore, if we **redefine h(2) = 4**, then the function *becomes* continuous at x = 2.  \n\n**Does that make sense?** We essentially \"fill in the hole\" in the function by giving it a value at x=2 that matches the value the function is approaching.\n\n\n\nYou're doing brilliantly \u2013 you're starting to really understand how limits and continuity work together!  Do you want to try another example, or would you like to revisit any part of this explanation?",
+        "PAM Tutor": "You're picking this up quickly\u2014thinking about what the function is *doing* as it approaches a value is key to understanding limits. It\u2019s cool that you\u2019re already connecting this to the earlier problems with 0/0 and undefined points. \n\nSo, yeah, h(2) is currently undefined, and that's a problem if we want a continuous function. But you're right to wonder about the limit as x approaches 2. If that limit exists, we can actually *redefine* h(2) to be equal to that limit, and that would \"fill in the hole\" and make the function continuous.\n\nLet's figure out what that limit is. What value does the function approach as x gets closer and closer to 2? And once we know that, we\u2019ll know how to redefine h(2). \n\nWe can definitely go into a much more detailed explanation of how redefining functions works, the conditions for continuity, and how limits are used to \u201cpatch up\u201d discontinuities if you\u2019d like\u2014we can look at more complex examples, too.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more naturally conversational and appropriately scaffolded, making it slightly preferable."
+    },
+    {
+        "Turn": 8,
+        "User Input": "Oh wow, so you're saying we can fix the function by just defining h(2) to be equal to the limit we found? That's actually really clever. I think I understand now. The function is like a road with a hole at x=2, but if we fill that hole with the value the road is trying to reach, it becomes smooth again. Can we do another example where the function isn't defined at a certain point, so I can see if I can figure out how to fix it on my own?",
+        "Control Tutor": "Oh wow, so you're saying we can fix the function by just defining h(2) to be equal to the limit we found? That's actually really clever. I think I understand now. The function is like a road with a hole at x=2, but if we fill that hole with the value the road is trying to reach, it becomes smooth again. Can we do another example where the function isn't defined at a certain point, so I can see if I can figure out how to fix it on my own?",
+        "PAM Tutor": "Absolutely, another example sounds like a great way to solidify your understanding! You\u2019re clearly getting the hang of how to identify these issues and think about how limits can help. \n\nHow about this one: f(x) = (x^2 - 9) / (x - 3). See if you can figure out where it\u2019s not defined, what the limit is as x approaches that point, and how you might redefine the function to make it continuous. Take your time, and don\u2019t hesitate to talk through your thought process as you go. \n\nAnd if you want to dive deeper into the theory behind this\u2014like, really understand *why* this works and how it connects to more advanced concepts\u2014we can definitely do that too. We could explore the formal definition of continuity, or even look at some real-world applications where these ideas come up.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 2,
+            "scaffolding_appropriateness": 2
+        },
+        "Judge Rationale": "Tutor B provides a new example and invites deeper exploration, showing better scaffolding and naturalness."
+    },
+    {
+        "Turn": 9,
+        "User Input": "Got it, let's try f(x) = (x^2 - 9)/(x - 3). First, where is it not defined? Oh, right, at x = 3 because denominator becomes 0. So, what's the limit as x approaches 3? And can we fix this?",
+        "Control Tutor": "That's a *fantastic* analogy with the road and the hole! You've really nailed the intuition behind removing discontinuities. And yes, absolutely! Let's put your understanding to the test with another example.\n\nHere's a new function:\n\nk(x) = (x^2 - 16) / (x - 4)\n\nIs k(x) continuous at x = 4? If not, can you determine what value you would need to *define* k(4) to be in order to make the function continuous? \n\nWalk me through your thought process, just like we did with h(x). Don't worry about getting it right away \u2013 the important thing is to show me how you're thinking about it. Take your time! I'm here to help if you get stuck.",
+        "PAM Tutor": "Okay, good job recognizing the discontinuity at x = 3 right away! It's awesome you're already thinking about where a function isn't defined and what that means for its behavior.\n\nSo, you're spot on \u2013 the limit as x approaches 3 *does* exist for that function, and we can use that to \u201cfix\u201d it. If you define f(3) to be equal to that limit, you\u2019ll have a continuous function. \n\nIt looks like you\u2019re building a really nice intuition for this stuff, which is great. Do you want to walk through how to actually *calculate* that limit and then redefine the function, or would you like me to explain the whole process with a bit more detail\u2014maybe look at another example to be extra sure?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor A provided a clear, accurate explanation that directly addressed the learner's question and offered appropriate next steps without unnecessary complexity."
+    },
+    {
+        "Turn": 10,
+        "User Input": "Alright, let's tackle k(x) = (x^2 - 16) / (x - 4). First, where is it not defined? Oh, right, at x = 4 because denominator becomes 0. So, what's the limit as x approaches 4? And can we fix this?",
+        "Control Tutor": "You're off to a great start with `k(x) = (x^2 - 16) / (x - 4)`! You've correctly identified that it's not defined at x = 4 because the denominator becomes zero. Excellent!\n\nNow you're asking about the limit as x approaches 4, and whether we can fix it. That's *exactly* the right approach. Let's break it down, step by step.\n\nFirst, let's find the limit:\n\nlim (x\u21924) (x^2 - 16) / (x - 4)\n\nNotice that the numerator, `x^2 - 16`, is a difference of squares. Do you remember how to factor that?  Think about what two terms, when multiplied together, give you `x^2 - 16`.  \n\n\n\nTake your time, and let me know what you come up with for the factored form of the numerator. I'm here to guide you if you need a hint!",
+        "PAM Tutor": "Okay, good job recognizing the discontinuity at x = 3 right away! It's awesome you're already thinking about where a function isn't defined and what that means for its behavior.\n\nSo, you're spot on \u2013 the limit as x approaches 3 *does* exist for that function, and we can use that to \u201cfix\u201d it. If you define f(3) to be equal to that limit, you\u2019ll have a continuous function. \n\nIt looks like you\u2019re building a really nice intuition for this stuff, which is great. Do you want to walk through how to actually *calculate* that limit and then redefine the function, or would you like me to explain the whole process with a bit more detail\u2014maybe look at another example to be extra sure?\n\n\n\n",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 2
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more accurate and detailed explanation, guiding the learner through factoring the numerator to find the limit. Their response is calibrated with specific encouragement and flows naturally."
+    }
+]
