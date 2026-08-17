@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.19881128272973003,
+        "Input Arousal": 0.4008312399033456,
+        "Internal State Valence": -0.11928676963783802,
+        "Internal State Arousal": 0.16033249596133825,
+        "Internal State Momentum": 0.0006417348887771124,
+        "Internal State Intensity": 0.044742776961549234,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there, I could really use some help understanding this chemistry problem set. It's got me completely stumped!\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a high degree of confusion and frustration because they feel stuck on the material.\n2. Emotion Intensity: The emotion has a moderate intensity that stems from their immediate struggle with the task at hand.\n3. Emotional Inertia: The emotional inertia is stable but indicates a shift into an active state of frustration.\n4. Threshold Crossed: Yes, the learner's internal state crossed a threshold this turn.\n5. Internal State: The learner is currently experiencing heightened arousal and distress due to being stumped by chemistry problems while their baseline intensity remains low.\n\nMemory:\nThe user feels confused and frustrated with moderate arousal and low intensity as they struggle with a chemistry problem set.",
+        "User Input": "Hey there, I could really use some help understanding this chemistry problem set. It's got me completely stumped!",
+        "Control Tutor": "Hi there! I'd be glad to help you work through your chemistry problem set. It's completely normal to feel stuck\u2014chemistry relies on a lot of interconnected concepts, and sometimes one unfamiliar topic can make the whole set feel overwhelming.\n\nTo get us started, could you share:\n1. **The first problem or section** you're working on (you can paste it directly)\n2. **Which specific concept or step** is tripping you up (e.g., balancing equations, stoichiometry, gas laws, acid-base reactions, etc.)\n\nOnce I have that, I'll walk you through it step-by-step, explain the underlying principles, and share problem-solving strategies so you can apply them to the rest of the set. I'm here to help you build confidence and understanding, not just hand over answers.\n\nWhenever you're ready, go ahead and drop in the first problem or topic! \ud83d\udca1\ud83d\udcd8",
+        "PAM Tutor": "Chemistry can be incredibly dense, and it's completely normal to feel stuck when the concepts start piling up. If you send over the specific problem or the first topic on the set that's giving you trouble, we can walk through it step-by-step and get things moving again.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more conversationally natural and maintains appropriate empathy calibration, making it preferable despite Tutor B's structured approach."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.1223225207533687,
+        "Input Arousal": -0.006878335424698887,
+        "Internal State Valence": -0.11928676963783802,
+        "Internal State Arousal": 0.16033249596133825,
+        "Internal State Momentum": 0.0006417348887771124,
+        "Internal State Intensity": 0.044742776961549234,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nOkay, yeah let me find that specific one. It's about stoichiometry, right? The one with the chemical reactions and the balancing stuff\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling a sense of grumpiness mixed with slight frustration while trying to identify a specific problem regarding stoichiometry.\n2. Emotion Intensity: The current emotion is being experienced at a low level of intensity.\n3. Emotional Inertia: Their emotional state is stable, showing very little change in direction from the previous turns.\n4. Threshold Crossed: No threshold was crossed during this turn.\n5. Internal State: The learner feels slightly irritable while focusing on stoichiometry, maintaining a consistent and low-intensity state of frustration regarding chemistry topics.\n\nMemory:\nThe learner expresses a sense of grumpiness with low intensity and low arousal while searching for specific questions regarding chemical reaction balancing and stoichiometry.",
+        "User Input": "Okay, yeah let me find that specific one. It's about stoichiometry, right? The one with the chemical reactions and the balancing stuff",
+        "Control Tutor": "Got it! You're spot on: **balancing equations is the foundation of stoichiometry**. Stoichiometry literally means \"measuring elements,\" and it's all about using the ratios from a balanced chemical equation to figure out how much of each reactant you need or how much product you'll get.\n\nWhenever you're ready, just paste the specific problem or reaction you're working on. In the meantime, here\u2019s the standard framework we\u2019ll use together so you can see how it all connects:\n\n1. **Balance the equation** \u2192 gives you the mole ratios (the \"recipe\" for the reaction)\n2. **Convert what you're given to moles** \u2192 usually via molar mass, volume @ STP, or concentration \u00d7 volume\n3. **Apply the mole ratio** \u2192 bridges the known substance to the unknown substance\n4. **Convert back** \u2192 to grams, liters, molecules, etc., depending on what the question asks\n\nTake your time finding it. Just drop the problem in when you're ready, and we'll walk through it step-by-step, focusing on the *why* behind each move so you can tackle similar problems independently next time. \ud83d\udca1\ud83d\udd2c",
+        "PAM Tutor": "No rush at all, take your time finding it. Stoichiometry can be pretty dense to work through at first, so we'll jump into those balancing equations as soon as you have that specific problem ready.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 2
+        },
+        "Judge Rationale": "Tutor B's response is more concise and natural, avoiding unnecessary structure while still being empathetic and accurate."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.33939921148121366,
+        "Input Arousal": 0.35768463516142207,
+        "Internal State Valence": 0.13206746510602538,
+        "Internal State Arousal": 0.23927335164137176,
+        "Internal State Momentum": 0.20793834651354698,
+        "Internal State Intensity": 0.07615389297374604,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay cool, yeah that makes a lot of sense now that you explain it like that. That actually helps a bunch\n\nAppraisal Details:\n1. Dominant Emotion: Relief and satisfaction\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Positive trend\n4. Threshold Crossed: Yes\n5. Internal State: The learner has moved from a state of frustration and confusion to clarity regarding their chemistry problems.\n\nMemory:\nThe learner expressed relief and satisfaction with positive valence, low arousal, and low intensity while successfully grasping the concepts of chemical reaction balancing and stoichiometry.",
+        "User Input": "Okay cool, yeah that makes a lot of sense now that you explain it like that. That actually helps a bunch",
+        "Control Tutor": "That's awesome to hear! I'm really glad the framework clicked for you. Once you see stoichiometry as just a series of logical conversions rather than a wall of numbers, it usually starts feeling much more manageable.\n\nWhenever you're ready, just paste that specific problem or reaction into the chat. We'll walk through it together using those four steps, and I'll point out any common traps along the way so you can recognize them on your own next time.\n\nAlso, if anything from what we've covered still feels a little fuzzy before we dive in, just say the word\u2014we can clear it up first. You're making great progress, and I'm here to help you cross that finish line. \ud83d\udca1\ud83d\udcdd",
+        "PAM Tutor": "Glad to hear that made things click for you; stoichiometry can be pretty overwhelming until those relationships start making sense. Since we've got that cleared up, do you have another problem from your set you'd like to walk through?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and calibrated, avoiding unnecessary emotional filler while maintaining empathy. Their approach feels more natural and directly appropriate for the conversation's progression."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3259871707763523,
+        "Input Arousal": 0.10372323624324054,
+        "Internal State Valence": -0.11635182340219616,
+        "Internal State Arousal": 0.18505330548211926,
+        "Internal State Momentum": 0.09828812545165416,
+        "Internal State Intensity": 0.07990142014024024,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah, there's this other problem I'm not sure about. It's about gas laws, I think? The one with PV=nRT and all that\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing grumpiness and uncertainty regarding the specific application of gas laws.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Positive momentum.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels a sense of low-intensity grumpiness and frustration while transitioning from their successful study of stoichiometry to new challenges with the PV=nRT gas law equation.\n\nMemory:\nThe learner is experiencing a grumpy state with negative valence and low arousal and intensity while grappling with the PV=nRT gas law formula.",
+        "User Input": "Yeah, there's this other problem I'm not sure about. It's about gas laws, I think? The one with PV=nRT and all that",
+        "Control Tutor": "Awesome\u2014gas laws are one of those topics that feel overwhelming until you see how each variable actually fits into the bigger picture! You're exactly right: **PV = nRT** is the *Ideal Gas Law*, and it's essentially the master equation that relates the physical state of a gas to its amount.\n\nLet's quickly demystify what each piece means and how we usually set these problems up:\n- **P** = Pressure (common units: atm, kPa, or mmHg)\n- **V** = Volume (almost always in liters)\n- **n** = moles of gas\n- **R** = Ideal gas constant (we pick the value that matches your pressure units! e.g., `0.0821 L\u00b7atm/(mol\u00b7K)` or `8.314 L\u00b7kPa/(mol\u00b7K)`)\n- **T** = Temperature (**must be in Kelvin** \u2192 this is the #1 pitfall students hit. Just add 273.15 to \u00b0C!)\n\nThe beauty of this equation is that if you know any three of those values, you can solve for the fourth. And don't worry\u2014you'll likely run into these right alongside stoichiometry! Many problems give you a reaction that produces/consumes a gas, ask you to find moles from the balanced equation, and then plug `n` into PV=nRT to find volume or pressure.\n\nTo make sure we're targeting exactly what needs unpacking:\n1. Do you have a specific problem you'd like to tackle together?\n2. Or would you prefer a quick walkthrough of how to approach gas law problems step-by-step first?\n3. What part feels the most unclear right now (units, picking `R`, Kelvin conversion, setting up the algebra, etc.)?\n\nDrop in the problem or let me know where you'd like to start, and we'll break it down together. You've already got the stoichiometry framework down, so gas laws will feel like a natural next step! \ud83d\udd2c\ud83c\udf21\ufe0f\ud83d\udcd0",
+        "PAM Tutor": "Switching gears to gas laws can feel like a bit of a jump, but it\u2019s actually a pretty straightforward way to see how different factors affect a gas. \n\nThe Ideal Gas Law ($PV=nRT$) is essentially a way to show how four variables are linked together: Pressure ($P$), Volume ($V$), the amount of substance in moles ($n$), and Temperature ($T$). The $R$ part is just a constant value that keeps everything in balance so the math works out correctly for different units.\n\nYou can think of it as a relationship between these forces: \n1. **Pressure and Volume** have an inverse relationship; if you decrease the volume (squeeze the gas), the pressure goes up because those particles have less room to move. \n2. **Temperature and Pressure** have a direct relationship; if you heat a gas up, the particles move faster and hit the walls of their container harder, increasing the pressure.\n3. **The amount of gas ($n$)**, which is what you were just working with in stoichiometry, also affects pressure\u2014the more \"stuff\" you put into a container, the higher the pressure becomes.\n\nWhen you're solving problems, usually one or two of these variables are held constant while others change, and you use the equation to find the missing piece. \n\nWould you like me to do a deep dive next time on how to manipulate the formula when only specific variables change?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more detailed and accurate explanation of the Ideal Gas Law, including specific units and common pitfalls. Their response is empathetic by addressing potential confusion and offers structured follow-up questions to ensure understanding."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "think",
+        "Input Valence": -0.08010263266041873,
+        "Input Arousal": -0.09267610663082447,
+        "Internal State Valence": -0.11635182340219616,
+        "Internal State Arousal": 0.18505330548211926,
+        "Internal State Momentum": 0.09828812545165416,
+        "Internal State Intensity": 0.07990142014024024,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nYeah, I think I have one right here that's been bugging me. It's about finding the volume of a gas given some initial conditions and stuff. It feels like I'm missing something with units\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Uncertainty regarding unit conversion within gas laws.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Slight positive momentum.\n4. Threshold Crossed: No.\n5. Internal State: The learner is experiencing a low-intensity state of concern, showing a slight positive trend in their emotional trajectory as they move from general frustration toward identifying specific technical hurdles with units in gas calculations.\n\nMemory:\nThe user feels uncertainty with low intensity and slightly negative valence while specifically struggling with unit conversion calculations for finding the volume of a gas using the PV=nRT formula.",
+        "User Input": "Yeah, I think I have one right here that's been bugging me. It's about finding the volume of a gas given some initial conditions and stuff. It feels like I'm missing something with units",
+        "Control Tutor": "That\u2019s a really common sticking point\u2014units are exactly where gas law problems often trip people up, so you\u2019re zeroing in on the right thing! The secret to avoiding unit confusion is **making sure every input aligns with your chosen value of R** before you plug anything in.\n\nHere\u2019s a quick unit-matching guide to keep handy:\n- `R = 0.0821 L\u00b7atm/(mol\u00b7K)` \u2192 P in **atm**, V in **L**, T in **K**, n in **mol**\n- `R = 8.314 L\u00b7kPa/(mol\u00b7K)` \u2192 P in **kPa**, V in **L**, T in **K**, n in **mol**\n- `R = 62.36 L\u00b7mmHg/(mol\u00b7K)` or `torr` \u2192 P in **mmHg/torr**, V in **L**, T in **K**\n\n\ud83d\udd11 **Quick unit conversion rules:**\n- \u00b0C \u2192 K: add 273.15\n- mmHg or torr \u2192 atm: divide by 760\n- kPa \u2192 atm: divide by 101.325 (or use R in kPa to skip this step)\n- mL \u2192 L: divide by 1000\n- mass \u2192 mol: divide by molar mass\n\n\ud83d\udca1 **One quick clarification:** You mentioned \"initial conditions.\" If the problem gives you a *starting* state and asks what happens when P, V, or T changes (e.g., \"A gas occupies X L at Y \u00b0C and Z kPa. What\u2019s the new volume if T is raised to W K?\"), we\u2019ll likely use the **Combined Gas Law** (`P\u2081V\u2081/T\u2081 = P\u2082V\u2082`) instead of `PV=nRT`. If it's just asking for the volume of a known amount of gas at a single set of conditions, `PV=nRT` is our go-to.\n\nTo get us pointed in exactly the right direction, could you share:\n1. The exact numbers and units given (P, V, T, n or mass/molecules)\n2. What the problem is asking for\n3. Whether it describes a *change* in conditions or just one snapshot in time\n\nOnce I see your specific setup, I\u2019ll walk you through exactly which conversions to make, how to pick R, and how to verify your final units so they line up with what the question expects. You're already asking the right questions\u2014let's lock this down together! \ud83d\udcd0\ud83d\udd2c",
+        "PAM Tutor": "Units can definitely be a headache when you first start working with gas laws since everything has to line up perfectly for the math to work.\n\nThe reason it feels like something is \"missing\" usually comes down to the constant $R$. This value is designed to \"cancel out\" the units of pressure and temperature so that they leave you with a correct volume. For this to happen, your input values have to be in specific units: pressure typically needs to be in atmospheres (atm) and temperature must always be in Kelvin ($K$). If your problem provides something like mmHg or Celsius, those are the pieces you'd need to convert before solving for $V$ using the rearranged formula $V = \\frac{nRT}{P}$. If even one of those isn't converted, the final volume won't come out correctly.\n\nDo you want to see a more detailed breakdown of how to convert different units like mmHg or Celsius in our next step?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more comprehensive and empathetic response with clear structure, addressing unit conversions and scenarios effectively."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3750985801918431,
+        "Input Arousal": -0.05387273853411898,
+        "Internal State Valence": -0.29487024215642355,
+        "Internal State Arousal": 0.08948288787562396,
+        "Internal State Momentum": -0.06252585433190688,
+        "Internal State Intensity": 0.0858356032799367,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah, the problem is:\n\"A sample of nitrogen gas occupies 350 mL at a pressure of 745 mmHg and a temperature of 298 K. What is the volume of the gas when the pressure is changed to 1.4 atm and the temperature is raised to 310 K?\"\nIt gives me n, I think? Like amount in moles or something like that.\nBut idk if this is Combined Gas Law thing you mentioned. Feels more complicated\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Frustrated and confused.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The learner's mood is trending downward as frustration builds regarding the complexity of the problem.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels overwhelmed by the perceived complexity of choosing the correct gas law and identifying variables, leading to a state of discouraged frustration.\n\nMemory:\nThe user feels grumpy with negative valence and low arousal and intensity while specifically struggling with unit conversions and identifying whether to use the Combined Gas Law or other versions of the PV=nRT formula.",
+        "User Input": "Yeah, the problem is:\n\"A sample of nitrogen gas occupies 350 mL at a pressure of 745 mmHg and a temperature of 298 K. What is the volume of the gas when the pressure is changed to 1.4 atm and the temperature is raised to 310 K?\"\nIt gives me n, I think? Like amount in moles or something like that.\nBut idk if this is Combined Gas Law thing you mentioned. Feels more complicated",
+        "Control Tutor": "You're actually spot-on with your instinct: this **is** a Combined Gas Law problem! \ud83c\udfaf The reason you might be thinking about `n` (moles) is because gas problems often use $PV=nRT$, but in this case, we don't need it. Here's why: the problem specifies it's the **same sample** of nitrogen gas just changing conditions. That means the amount of gas (`n`) stays constant and naturally cancels out when comparing the initial and final states. We can safely use the Combined Gas Law:\n\n$$\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}$$\n\n\ud83d\udd11 **The real challenge here is exactly what you suspected: unit consistency.** Let's line up what we know:\n- $P_1 = 745 \\text{ mmHg}$\n- $V_1 = 350 \\text{ mL}$\n- $T_1 = 298 \\text{ K}$ \u2705 (already in Kelvin)\n- $P_2 = 1.4 \\text{ atm}$\n- $T_2 = 310 \\text{ K}$ \u2705 (already in Kelvin)\n- $V_2 = ?$\n\nNotice that $P_1$ and $P_2$ are in **different units** (mmHg vs atm). They must match before we plug them in. \n\n\ud83d\udca1 **Quick refresher:** `1 atm = 760 mmHg`\n\nBefore you calculate, pick one of these paths and tell me which you'd prefer:\n1. Convert everything to **atm** \u2192 $745 \\text{ mmHg} \\div 760 = ?$ atm\n2. Convert everything to **mmHg** \u2192 $1.4 \\text{ atm} \\times 760 = ?$ mmHg\n\nAlso, since we're solving for $V_2$ using a ratio, your final answer will come out in the **same unit** as $V_1$. Would you prefer to leave $V_1$ in **mL** (so your answer is in mL), or convert it to **L** first? (Both are perfectly valid! Just pick one and stick with it.)\n\nOnce you've chosen your units, try these two steps:\n1. Convert the pressure to match your choice\n2. Rearrange the Combined Gas Law to isolate $V_2$: \n   $$V_2 = V_1 \\times \\frac{P_1}{P_2} \\times \\frac{T_2}{T_1}$$\n3. Plug in your numbers and compute\n\nDrop your setup (or just the converted pressure value + which volume unit you picked) when you're ready, and I'll walk you through verifying it! You've already identified the exact hurdle here\u2014you're 90% of the way there. \ud83d\udca1\ud83d\udd2c",
+        "PAM Tutor": "I can see how it feels overwhelming when these formulas start looking similar\u2014it's easy to get turned around trying to figure out which one \"fits\" best.\n\nYou're actually right that the amount of gas ($n$) is part of the Ideal Gas Law ($PV=nRT$), but you've correctly identified a situation where it simplifies into the Combined Gas Law. Because you have a single sample of nitrogen, the number of moles ($n$) doesn't change even though the pressure and temperature do. When $n$ stays constant, the variables in the Ideal Gas Law effectively cancel out, leaving you with $\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}$. \n\nSo, while it's related to what we discussed before, using the Combined Gas Law is the most direct way to solve this because both the pressure and temperature are changing. To make it less \"complicated,\" you can think of it as a comparison: $\\frac{\\text{Initial Pressure} \\times \\text{Initial Volume}}{\\text{Initial Temperature}} = \\frac{\\text{Final Pressure} \\times \\text{Final Volume}}{\\text{Final Temperature}}$.\n\nWould you like me to do a deep dive into the step-by-step calculation for this problem, including how to handle the conversion from mmHg to atm?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provided a more structured and clear approach, breaking down the problem into manageable steps and emphasizing unit consistency, which is crucial for solving gas law problems."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.10707416401710361,
+        "Input Arousal": -0.02064250451512636,
+        "Internal State Valence": -0.29487024215642355,
+        "Internal State Arousal": 0.08948288787562396,
+        "Internal State Momentum": -0.06252585433190688,
+        "Internal State Intensity": 0.0858356032799367,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nOkay, so I think I'll convert everything to atm first since that seems simpler. And I'll keep the volume in mL for now. So, 745 mmHg divided by 760 should give me the pressure in atm, right? Let me try that\n\nAppraisal Details:\n1. Dominant Emotion: Tentative determination\n2. Emotion Intensity: Low\n3. Emotional Inertia: Slightly declining\n4. Threshold Crossed: No\n5. Internal State: The learner is currently showing a focused but low-intensity state as they attempt to work through the unit conversion challenges that have persisted throughout their session.\n\nMemory:\nThe learner is experiencing a neutral emotion with low intensity and very low arousal while attempting to perform pressure conversions for gas law calculations.",
+        "User Input": "Okay, so I think I'll convert everything to atm first since that seems simpler. And I'll keep the volume in mL for now. So, 745 mmHg divided by 760 should give me the pressure in atm, right? Let me try that",
+        "Control Tutor": "You've got it! Converting everything to **atm** is a smart move, and keeping the volume in **mL** works perfectly fine here since the Combined Gas Law uses ratios. As long as your pressure units match, your final volume will simply come out in whatever unit you started with (mL). \u2705\n\nYes, exactly:  \n`745 mmHg \u00f7 760 mmHg/atm \u2248 0.9803 atm`  \n*(Pro tip: keep a few extra decimal places for intermediate steps to avoid rounding errors, and round only at the very end!)*\n\nNow you're ready to plug into your rearranged formula:\n$$V_2 = V_1 \\times \\frac{P_1}{P_2} \\times \\frac{T_2}{T_1}$$\n\nJust line up your knowns:\n- $P_1 \\approx 0.9803$ atm\n- $P_2 = 1.4$ atm\n- $V_1 = 350$ mL\n- $T_1 = 298$ K\n- $T_2 = 310$ K\n\nGo ahead and crunch the numbers! When you're done, share your calculated $V_2$ (and how you rounded it), and I'll help you verify the math, check significant figures, and make sure the answer makes physical sense. You've already cleared the hardest hurdle\u2014now just do the arithmetic. \ud83d\udd22\u2728",
+        "PAM Tutor": "You've got it; dividing by 760 is the correct way to get that value into atm.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more detailed and accurate response, including a pro tip and clear variables list, which was more encouraging and natural."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.45935928310500457,
+        "Input Arousal": -0.16772720487788326,
+        "Internal State Valence": -0.4525377151568568,
+        "Internal State Arousal": -0.013401149225778924,
+        "Internal State Momentum": -0.2798150085494854,
+        "Internal State Intensity": 0.10040364885016122,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nAlright, so let's plug these numbers in. So for V2 that'd be 350 times like... okay let me think... First, I'll do P1 over P2 which is 0.9803 divided by 1.4 and then times T2 over T1 so 310 over 298. Does that sound right? Like multiply all that together to get V2? And then if it comes out in mL, I can keep it as is since that's what we started with.\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a sense of frustration and irritation due to the repetitive difficulties encountered with gas law calculations.\n2. Emotion Intensity: The intensity of this emotion is currently low.\n3. Emotional Inertia: Their mood is trending negatively, showing increasing levels of irritability over the course of the session.\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels grumpy and uncertain while performing multi-step calculations, with their internal state reflecting an accumulation of negative sentiment from previous interactions.\n\nMemory:\nThe learner experiences a low-intensity grumpy emotion with negative valence and low arousal while specifically struggling with unit conversions in gas law equations.",
+        "User Input": "Alright, so let's plug these numbers in. So for V2 that'd be 350 times like... okay let me think...\n\nFirst, I'll do P1 over P2 which is 0.9803 divided by 1.4 and then times T2 over T1 so 310 over 298.\n\nDoes that sound right? Like multiply all that together to get V2?\n\nAnd then if it comes out in mL, I can keep it as is since that's what we started with.",
+        "Control Tutor": "Yes, your setup is **exactly right** \ud83c\udfaf. Multiplying $V_1$ by $\\frac{P_1}{P_2}$ and then by $\\frac{T_2}{T_1}$ will give you $V_2$. \n\nAnd you're absolutely correct about the units! Since pressure ($\\text{atm}/\\text{atm}$) and temperature ($\\text{K}/\\text{K}$) are just dimensionless ratios, they cancel out completely. That means your final volume will naturally come out in **mL**, exactly matching where you started. Perfect logic. \u2705\n\n**Go ahead and crunch the numbers!** \n\n\ud83d\udca1 *Quick sanity check before you compute:* \n- Pressure increases (~0.98 atm \u2192 1.4 atm), so that alone would make the volume shrink.\n- Temperature also increases slightly (298 K \u2192 310 K), which would make it expand a bit.\n- Since the pressure change is larger, your final answer should be **lower than 350 mL**. \n\n\u26a0\ufe0f *One fast heads-up on grading:* Your $P_2$ value (`1.4 atm`) has only **two significant figures**. That usually means your final answer will need to be rounded to two sig figs (e.g., `250` rather than `254.8`). Just make sure you keep all the decimal places in your calculator until the very last step!\n\nTake your time with the arithmetic, and share your final number when you're ready. I'll help you verify it, check the sig figs, and make sure everything lines up perfectly. You've already cleared the trickiest part\u2014now just do the math! \ud83d\udd22\u2728",
+        "PAM Tutor": "I know these multi-step calculations can be a real pain once they start feeling repetitive. You've got the logic exactly right; multiplying those ratios by 350 is the correct way to find $V_2$. And you're spot on about the units\u2014since the pressure and temperature are being compared as ratios, your final volume will stay in mL just like it started.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and natural, effectively acknowledging the learner's effort without unnecessary details."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.21223364179022608,
+        "Input Arousal": 0.05759814181365073,
+        "Internal State Valence": -0.3988628141682497,
+        "Internal State Arousal": 0.014998567189992939,
+        "Internal State Momentum": -0.3531888369028457,
+        "Internal State Intensity": 0.14820642263062528,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, so 0.9803 over 1.4 gives me about 0.7002\n\nAnd then 310 over 298 is approximately 1.0403\n\nNow if I multiply those two together first I get like 0.7282 and times that by 350 gives me 254.86 or something?\n\nAppraisal Details:\n1. Dominant Emotion: Frustrated grumpiness stemming from the complexity of multi-step calculations.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The emotional state is trending negatively, showing an increase in frustration over time.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels irritated and frustrated as their struggle with unit conversions for gas laws continues to accumulate.\n\nMemory:\nThe learner is experiencing low-intensity grumpiness with negative valence and low arousal while specifically struggling with the multi-step math required for gas law unit conversion calculations.",
+        "User Input": "Okay, so 0.9803 over 1.4 gives me about 0.7002\n\nAnd then 310 over 298 is approximately 1.0403\n\nNow if I multiply those two together first I get like 0.7282 and times that by 350 gives me 254.86 or something?",
+        "Control Tutor": "You've got it exactly right! Your setup follows the Combined Gas Law perfectly, and your arithmetic is extremely close. Let's just tighten up two small pieces before we officially wrap this up:\n\n\ud83d\udd22 **Quick Math Verification**  \nUsing a bit more precision for the intermediate steps (to avoid rounding drift):\n- `0.9803 \u00f7 1.4 \u2248 0.7002`\n- `310 \u00f7 298 \u2248 1.0403`\n- `350 \u00d7 0.7002 \u00d7 1.0403 \u2248 **254.9 mL**`\n\nYou're incredibly close to the exact value (~254.9 mL). The tiny difference (254.86 vs 254.9) is just from rounding early, which is totally normal!\n\n\ud83d\udccf **Significant Figures (The Final Step)**  \nThis is where a lot of students lose points on tests, so I'm glad you asked! Look back at your given values:\n- `745 mmHg` \u2192 3 sig figs\n- `298 K`, `310 K` \u2192 3 sig figs\n- `1.4 atm` \u2192 **2 sig figs** \u2190 \u26a0\ufe0f *This is our limiting value*\n- `350 mL` \u2192 ambiguous, but usually treated as 2 or 3 depending on context\n\nSince `1.4 atm` only has **two significant figures**, your final answer must be rounded to two sig figs:\n`254.9 mL \u2192 **250 mL**`  \n*(In strict scientific notation, you'd write `2.5 \u00d7 10\u00b2 mL` to show that the trailing zero isn't just a placeholder, but `250 mL` is widely accepted in chemistry courses.)*\n\n\ud83d\udd0d **Physical Sanity Check**  \n- Pressure increased (~0.98 \u2192 1.4 atm) \u2192 gas gets squeezed \u2192 volume drops\n- Temperature increased slightly (298 \u2192 310 K) \u2192 gas expands a bit \u2192 volume rises\n- Since the pressure change is much stronger than the temperature change, a net drop from `350 mL` to `~250 mL` makes perfect physical sense! \u2705\n\nYou've successfully navigated unit conversion, ratio setup, and arithmetic. **Final answer: `250 mL`** (with two significant figures).\n\nWould you like to:\n1. Try one more Combined Gas Law problem together to lock this in?\n2. Connect this back to how it relates to `PV = nRT` or gas stoichiometry?\n3. Or are you feeling confident and ready to move on?\n\nKeep up the excellent work\u2014you're handling these step-by-step exactly like a pro! \ud83d\udca1\ud83d\udd2c",
+        "PAM Tutor": "I know how draining these multi-step calculations can get when you have to keep all those numbers straight. You actually nailed the logic\u2014multiplying those ratios and then applying them to the initial volume gives a result of about 254.9 mL, so your calculation is correct.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more detailed and accurate explanation, including significant figures, which is crucial for scientific calculations. Their response is empathetic and natural, offering encouragement and further learning opportunities."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3631283637601882,
+        "Input Arousal": -0.0048767504864372395,
+        "Internal State Valence": -0.45719470675706275,
+        "Internal State Arousal": 0.007048440119420867,
+        "Internal State Momentum": -0.49941553250420845,
+        "Internal State Intensity": 0.234188297273291,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nWait, so should I always round to the lowest significant figures given? Like even if I have more precise numbers in between steps\n\nAppraisal Details:\n1. Dominant Emotion: Frustrated grumpiness regarding rounding rules during multi-step calculations.\n2. Emotion Intensity: Low intensity that has remained consistent across several turns of interaction.\n3. Emotional Inertia: The mood is trending toward increased frustration as the learner encounters repetitive obstacles in unit conversions.\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels frustrated by the specific rules for rounding figures, which builds upon a persistent sense of grumpiness while grappling with gas law calculations.\n\nMemory:\nThe learner is experiencing low-intensity grumpiness with negative valence and low arousal while specifically struggling with the application of significant figure rules during multi-step gas law unit conversions.",
+        "User Input": "Wait, so should I always round to the lowest significant figures given? Like even if I have more precise numbers in between steps",
+        "Control Tutor": "That\u2019s a really smart question\u2014it cuts right to the heart of accurate scientific calculation! Here\u2019s the direct answer:\n\n\u2705 **Yes, your *final* answer should always be rounded to match the least precise measured value given in the problem.**  \n\u2705 **But you never round during the intermediate steps.** You keep full calculator precision (or extra decimal places) until the very last second, then round once at the end.\n\nLet\u2019s break down why and how it works:\n\n\ud83d\udd39 **The \"Weakest Link\" Rule**  \nSignificant figures track measurement precision. Your final result can\u2019t be more precise than your least precise input. In your problem, `1.4 atm` (2 sig figs) was the limiting value, so your final answer gets 2 sig figs (`250 mL`). Other numbers like `745 mmHg` or `350 mL` are more precise, but they can\u2019t \"rescue\" the overall precision.\n\n\ud83d\udd39 **Why You Never Round Early**  \nRounding intermediate values introduces *rounding error*. Those tiny cuts compound as you multiply/divide through multiple steps, and by the end, your answer can drift noticeably off track. That\u2019s why I kept `0.9803` instead of `0.98`, and why you should always use your calculator\u2019s memory or hold onto 3\u20134 extra digits until the final step.\n\n\ud83d\udd39 **Exact Numbers & Defined Constants Don\u2019t Count**  \nConversion factors you know exactly (like `1 atm = 760 mmHg`, `273.15 \u00b0C\u2192K`, or Avogadro\u2019s number in stoichiometry) are treated as having **infinite significant figures**. They won\u2019t limit your precision, so don\u2019t let them trick you into over-rounding!\n\n\ud83d\udcd0 **The Golden Workflow:**\n1. Convert units if needed (keep full precision)\n2. Plug everything into your formula *without rounding*\n3. Calculate with extra digits\n4. Look at your **original given values** \u2192 find the one with the fewest sig figs\n5. Round your final answer to that number of sig figs\n\n\ud83d\udca1 *Quick reality check:* In straightforward problems like yours, early rounding might not change the rounded result. But in multi-step stoichiometry, gas laws, or equilibrium calculations, rounding mid-way can shift answers by 1\u20132 sig figs or more. Developing the \"round only at the end\" habit saves you lost points on exams.\n\nDoes that clear up when and how to apply sig figs? If you want, I can walk through a problem where early rounding actually changes the final answer, just to cement the habit! Or we can move straight to your next topic\u2014your call. \ud83c\udf1f",
+        "PAM Tutor": "It\u2019s definitely frustrating when these technical rules start to feel like just another hurdle in the way of solving the actual chemistry. \n\nTo answer your question: no, you shouldn't round your intermediate steps to the lowest number of significant figures until the very end. If you round a number like 0.7002 down to 0.7 halfway through a problem, that \"loss\" of precision can compound with every multiplication or division you perform next. It\u2019s usually best to keep at least two or three extra digits (or even use the full number from your calculator) during the middle steps of your work. You only round your final answer to match the least precise measurement provided in the original problem once all the calculations are finished. This keeps the \"rounding error\" from snowballing and throwing off your final result.\n\nDo you want me to walk through a few examples showing how rounding early can actually change your final results?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more conversational and flows naturally, which makes it easier to follow. While both are accurate, Tutor A's explanation is slightly more concise and maintains a better balance between technical details and readability."
+    }
+]

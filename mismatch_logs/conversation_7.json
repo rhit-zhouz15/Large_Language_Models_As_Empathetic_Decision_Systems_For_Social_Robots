@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.4566452975908761,
+        "Input Arousal": 0.5829959067981692,
+        "Internal State Valence": 0.03660568267089859,
+        "Internal State Arousal": 0.24710432633514554,
+        "Internal State Momentum": -0.3955375930870651,
+        "Internal State Intensity": 0.2389788917158831,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there! I'm a bit stuck on something, could you maybe help me out?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is displaying a playful and cheeky demeanor while seeking assistance with their current hurdle in physics and calculus.\n2. Emotion Intensity: This emotion is currently being expressed at a low level of intensity.\n3. Emotional Inertia: The user's mood shows a downward trend, indicating an accumulation of frustration through the duration of their study on projectile motion and integration.\n4. Threshold Crossed: The learner's internal state has officially crossed the designated threshold this turn.\n5. Internal State: The learner is currently projecting a cheeky and friendly front while requesting help with their physics work, despite an accumulated history of distress over complex calculation topics like projectile motion and integral calculus.\n\nMemory:\nThe user shows a cheeky sentiment with positive valence and high arousal at low intensity while grappling with projectile motion problems and integration techniques.",
+        "User Input": "Hey there! I'm a bit stuck on something, could you maybe help me out?",
+        "Control Tutor": "You're so close! \ud83c\udfaf Just one quick clarification: remember that the quadratic formula uses **$-B$** in the numerator. Since your $B = -12.86$, flipping that sign means **both** solutions actually start with **positive** $12.86$. The `\u00b1` only applies to the square root part!\n\nSo the correct setup is:\n- **Solution 1:** $t_1 = \\dfrac{12.86 + 21.43}{9.8}$\n- **Solution 2:** $t_2 = \\dfrac{12.86 - 21.43}{9.8}$\n\n\ud83d\udd22 **Your turn:** \nPlug those into your calculator and compute both values of $t$. One will be positive and one will be negative.\n\nOnce you have them, reply with:\n1. The two numerical values (rounded to ~2 decimal places)\n2. Which one makes physical sense for a flight time? *(Hint: think about whether \"negative time\" would mean the ball hit the ground before it was kicked!)*\n\nYou're literally two button presses away from finishing this problem. Show me your numbers and I'll walk through the final check with you! \ud83d\udcd0\u2728",
+        "PAM Tutor": "I'd definitely be happy to help out. These multi-step problems can start to feel like a real grind after a while, so just let me know what part is tripping you up and we'll take it from there.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors have strengths in different areas. Tutor A is more empathetic and natural, while Tutor B provides accurate corrections."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.06444319675210863,
+        "Input Arousal": 0.1716567545663566,
+        "Internal State Valence": 0.03660568267089859,
+        "Internal State Arousal": 0.24710432633514554,
+        "Internal State Momentum": -0.3955375930870651,
+        "Internal State Intensity": 0.2389788917158831,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nOkay so if i plug those into my calculator that would be like 34.85 divided by 9.8 is roughly like 3.56 and then for negative its -21.43 plus 12.86 which would be 8.67 divided by 9.8 is around like .885?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is expressing a sense of tentative curiosity while seeking confirmation on their multi-step calculations.\n2. Emotion Intensity: The intensity of this emotion is low.\n3. Emotional Inertia: The emotional inertia is trending negatively, suggesting the user's mood is not improving and reflects ongoing frustration from previous difficulties with these concepts.\n4. Threshold Crossed: No threshold was crossed during this turn.\n5. Internal State: The learner currently feels curious about their calculation results while carrying a sustained state of low-intensity grumpiness and frustration from prior math struggles.\n\nMemory:\nThe user is performing division calculations with nine point eight, showing low-intensity curiosity and very low arousal while experiencing a slightly negative mood.",
+        "User Input": "Okay so if i plug those into my calculator that would be like 34.85 divided by 9.8 is roughly like 3.56 and then for negative its -21.43 plus 12.86 which would be 8.67 divided by 9.8 is around like .885?",
+        "Control Tutor": "You're **so close**! \ud83c\udfaf Your setup is exactly right\u2014you just have a couple of tiny calculator slips in the addition/subtraction step. Let's clean them up quickly:\n\n### \ud83d\udd22 Correcting the arithmetic:\n1. **First solution (the forward-time answer):**  \n   Numerator: $12.86 + 21.43 = \\mathbf{34.29}$ (not 34.85)  \n   Then: $34.29 \\div 9.8 \\approx \\mathbf{3.50 \\text{ s}}$\n\n2. **Second solution (the backward-time answer):**  \n   Here's where the sign matters! It's $12.86 - 21.43$, which gives $\\mathbf{-8.57}$ (not $+8.67$). The negative sign *stays with the time*.  \n   Then: $-8.57 \\div 9.8 \\approx \\mathbf{-0.87 \\text{ s}}$\n\n---\n\n### \ud83d\udcd0 What do these numbers mean?\n- \u2705 **$t \\approx 3.50 \\text{ s}$** is your **physical answer**. This is when the object reaches your target height (usually ground level, depending on your problem's setup). Time moving forward makes real-world sense here.\n- \u23ea **$t \\approx -0.87 \\text{ s}$** is a mathematical artifact. It represents where the parabola *would have* crossed that same height if you traced the trajectory backward in time (before the launch/kick). In physics problems like this, we intentionally discard negative time for duration.\n\nSo your final answer is **$\\boxed{3.50 \\text{ seconds}}$** (rounded to two decimals). \ud83c\udf89\n\n\ud83d\udca1 **Quick sanity check:** Does ~3.5 seconds of flight time feel reasonable for an object launched at 20 m/s? Yes! With gravity pulling it down at ~9.8 m/s\u00b2, a few seconds of airtime perfectly matches the energy and height scales we've been working with.\n\nYou did all the hard conceptual and algebraic steps flawlessly. Just remember to double-check that middle subtraction sign next time\u2014tiny slip-ups happen to everyone! \n\nWant to plug $t = 3.50$ back into your original equation ($4.9t^2 - 12.86t - 15$) to verify it gives ~0? Or are we good to wrap this one up? \u2728\ud83d\udcd0",
+        "PAM Tutor": "",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3.5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, effectively addressing the learner's mistakes while maintaining a supportive tone."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.1967334728455171,
+        "Input Arousal": 0.013024946441873898,
+        "Internal State Valence": 0.03660568267089859,
+        "Internal State Arousal": 0.24710432633514554,
+        "Internal State Momentum": -0.3955375930870651,
+        "Internal State Intensity": 0.2389788917158831,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nOh, I see what you mean now, thanks for pointing that out. So just to be sure, when you say negative time that doesn't make sense in the real world, you mean like, the ball hasn't been thrown yet or something? Yeah, that makes total sense. So would it be okay if we just went with the positive time then? Like 3.5 seconds.\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a mix of realization and lingering annoyance as they clarify the logic behind signs in projectile motion calculations.\n2. Emotion Intensity: The intensity of this feeling is low.\n3. Emotional Inertia: Their emotional state is trending negatively, suggesting persistent frustration with the nuances of these physics concepts.\n4. Threshold Crossed: No\n5. Internal State: The learner feels a sense of clarity regarding current projectile motion concepts while remaining in a state of lingering annoyance from previous struggles with sign conventions.\n\nMemory:\nThe user is experiencing low-intensity grumpiness and low arousal while confirming the logic for using positive time values in projectile motion calculations.",
+        "User Input": "Oh, I see what you mean now, thanks for pointing that out.\nSo just to be sure, when you say negative time that doesn't make sense in the real world,\nyou mean like, the ball hasn't been thrown yet or something?\nYeah, that makes total sense. So would it be okay if we just went with the positive time then? Like 3.5 seconds.",
+        "Control Tutor": "Exactly! You've got the intuition perfectly. \ud83c\udfaf\n\n**To clarify your point:**  \nWhen we talk about \"negative time\" in kinematics, it doesn't mean the ball is moving backward or that physics broke. It just means *mathematically*, if you extended that parabolic path infinitely into the past, it would have crossed your reference height (usually ground level) at $t \\approx -0.87$ seconds. Since we're only modeling the motion **after** the throw/kick/launch, time $0$ is our starting line, and anything before it is just a mathematical artifact of the equation. So yes, **discarding the negative root and keeping the positive one (~3.5 s) is 100% standard and physically correct.** \u2705\n\nYou're all set on this part! \ud83d\udd39 **Final takeaway:**  \n- `t \u2248 3.50 seconds` is your answer for duration/time to reach the target height.  \n- Units matter in physics, so always write that `.s` or `seconds` when you report it.\n\n### \ud83d\udee0 What would you like to do next?\n1. **Quick verification:** Plug $t = 3.50$ back into your original equation ($4.9t^2 - 12.86t - 15$) to see if it returns $\\approx 0$.  \n2. **Extend the problem:** Use that time to find something else (like max height, horizontal distance, or final velocity).  \n3. **Wrap up:** Move on to a new concept or problem type.\n\nJust say the word and I'll guide you through it step-by-step! You've handled this flawlessly so far. \ud83c\udf1f\ud83d\udcd0",
+        "PAM Tutor": "That\u2019s exactly right\u2014you can think of any negative result as occurring before the ball was actually thrown at $t=0$. Since we're only interested in what happens once it's in the air, you can definitely ignore that other calculation and go with 3.5 seconds for your final answer.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a concise and accurate explanation, effectively addressing the learner's question while maintaining natural conversation. Their response was empathetic without overdoing it."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "neutral",
+        "Input Valence": 0.04192442193161696,
+        "Input Arousal": 0.13604405180085452,
+        "Internal State Valence": 0.03660568267089859,
+        "Internal State Arousal": 0.24710432633514554,
+        "Internal State Momentum": -0.3955375930870651,
+        "Internal State Intensity": 0.2389788917158831,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nAlright, that makes sense now. So if I plug t=3.5 into the equation, it should be 0 right?\n\nAppraisal Details:\n1. Dominant Emotion: A feeling of satisfaction and relief as the learner transitions from a state of confusion to clarity regarding their calculations.\n2. Emotion Intensity: The emotion is being expressed with low intensity.\n3. Emotional Inertia: The emotional trend is moving toward lower arousal, indicating a calmer state after previous periods of frustration.\n4. Threshold Crossed: No threshold was crossed during this turn.\n5. Internal State: The learner feels confident and satisfied while seeking confirmation on their work involving trigonometric integrals after overcoming several hurdles in the process.\n\nMemory:\nThe learner is experiencing low-intensity satisfaction with neutral valence and low arousal while seeking confirmation on a calculation for trigonometric integrals following multiple attempts to overcome complex mathematical concepts.",
+        "User Input": "Alright, that makes sense now. So if I plug t=3.5 into the equation, it should be 0 right?",
+        "Control Tutor": "Yes, exactly! \ud83c\udfaf That's the whole point of a verification step: plugging your solution back into the original equation should give you a result **extremely close to 0**.\n\nLet's test it quickly with $t = 3.5$:\n$$4.9(3.5)^2 - 12.86(3.5) - 15$$\n$= 4.9(12.25) - 45.01 - 15$  \n$= 60.025 - 45.01 - 15$  \n$\\approx \\mathbf{+0.015}$\n\nThat tiny `0.015` isn't perfectly zero because **3.5 is a rounded value** (the exact root was ~3.49898...). In math and physics, getting within a few hundredths of 0 means your work is solid! \u2705\n\nThis verification habit is a pro move. It catches sign errors, calculation slips, and rounding mistakes before they cost you points.\n\nReady to officially wrap this problem up, or would you like to use that $3.5 \\text{ s}$ to find something else (like maximum height, horizontal distance, or impact velocity)? Just say the word! \ud83d\ude80\ud83d\udcd0",
+        "PAM Tutor": "You've got it. Since we were solving for the moment the ball hits the ground, plugging $t = 3.5$ back into your original equation should give you a result of zero. You did a great job navigating through all those messy signs and calculations to get there!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A's response is concise, accurate, and maintains a natural conversational tone. While Tutor B provides detailed calculations and additional context, it feels slightly less natural and the empathy calibration is less specific."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4082709689158946,
+        "Input Arousal": -0.11287547198589899,
+        "Internal State Valence": -0.2229991717469976,
+        "Internal State Arousal": 0.1031124070067277,
+        "Internal State Momentum": -0.5814210750506028,
+        "Internal State Intensity": 0.18574604797451472,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nGotcha, so it's pretty much zero because of rounding. So does this mean I can consider the problem solved now? Or is there more to do?\n\nAppraisal Details:\n1. Dominant Emotion: The learner feels frustrated and skeptical regarding whether the current calculation involving rounding concludes their work on trigonometry.\n2. Emotion Intensity: The emotion presents as a persistent but relatively low-level sense of annoyance.\n3. Emotional Inertia: The learner's mood is trending in a negative direction, showing increasing frustration over the duration of the session.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is currently feeling frustrated and uncertain about their progress, with an internal state that has progressively worsened as they navigated complex multi-step math and rounding rules.\n\nMemory:\nThe learner displays grumpiness with negative valence, low arousal, and low intensity while seeking final confirmation on whether the current calculation using rounding concludes their specific task involving trigonometric integrals.",
+        "User Input": "Gotcha, so it's pretty much zero because of rounding. So does this mean I can consider the problem solved now? Or is there more to do?",
+        "Control Tutor": "Yes! If your original goal was just to find the **time** it takes to reach that height/ground level, then congratulations\u2014you've officially solved this problem. \ud83c\udf89 The `~0` you got from plugging $t = 3.5$ back in is exactly what we expect when working with rounded answers, and your choice to keep the positive time was physically spot-on.\n\nThat said, whether there's \"more to do\" depends entirely on what your assignment or prompt originally asked:\n- \ud83d\udd39 **Just time?** You're completely done! \u2705\n- \ud83d\udd39 **Max height, horizontal distance, or final velocity?** We can absolutely use $t = 3.50\\text{ s}$ to calculate those next.\n- \ud83d\udd39 **Wrapping up & moving on?** I'm ready whenever you are!\n\nHow would you like to proceed? Just say the word and I'll guide you through the next step, or we can officially close this out and tackle a fresh concept together. You handled this flawlessly, so trust that you're in great shape! \ud83c\udf1f\ud83d\udcd8",
+        "PAM Tutor": "Dealing with those persistent rounding issues and messy signs over so many steps can definitely be a grind. Since that final check came out as essentially zero, you\u2019ve confirmed your value for $t$ and can consider this part of the problem finished.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more engaging and natural, effectively celebrating the learner's success while clearly addressing their question."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.44610047027235844,
+        "Input Arousal": -0.14082687250338496,
+        "Internal State Valence": -0.4014597852116136,
+        "Internal State Arousal": 0.005536695202682636,
+        "Internal State Momentum": -0.7880266376602232,
+        "Internal State Intensity": 0.2985680552896969,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nCool, that's great. But what if i wanted to know about the max height? I don't see any numbers for it on my paper\n\nAppraisal Details:\n1. Dominant Emotion: Frustrated and annoyed due to missing information in their source material.\n2. Emotion Intensity: Low intensity but persistent enough to manifest as grumpiness.\n3. Emotional Inertia: Trending strongly toward a more negative emotional state.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner is currently feeling frustrated and annoyed because they cannot find specific data regarding maximum height while studying projectile motion.\n\nMemory:\nThe learner is experiencing low-intensity frustration and annoyance while attempting to determine the max height in a projectile motion problem where information appears missing from their notes.",
+        "User Input": "Cool, that's great. But what if i wanted to know about the max height? I don't see any numbers for it on my paper",
+        "Control Tutor": "Great question! \ud83c\udf1f The max height isn\u2019t explicitly written on your paper because it\u2019s actually **what you\u2019ll calculate** using the trajectory equation we\u2019ve been working with. \n\nIn physics, an object reaches its maximum height exactly when its vertical velocity drops to zero (it stops going up and starts falling back down). We can find this in two quick steps:\n\n### \ud83d\udd39 Step 1: Find the time to reach the peak ($t_{\\text{max}}$)\nFrom your earlier setup, `12.86` is your initial upward velocity ($v_0$), and `9.8` is the acceleration due to gravity. Since gravity constantly slows the object at $9.8 \\text{ m/s}^2$, the time to reach the top is simply:\n$$t_{\\text{max}} = \\frac{v_0}{g} = \\frac{12.86}{9.8}$$\n\n\ud83d\udd22 **Your turn:** What does `12.86 \u00f7 9.8` equal? (Round to ~2 decimals)\n\n*(Quick note so you don't get confused later: your actual height equation is $y(t) = -4.9t^2 + 12.86t + 15$. We flipped the signs earlier just to set it to zero and solve for time! You'll use the original unflipped version for this next step.)*\n\nReply with that time value, and I\u2019ll show you exactly how to plug it in to get your max height number! \ud83d\udcc8\u2728",
+        "PAM Tutor": "It can be really frustrating when you're looking for a specific piece of information and it feels like the problem just left it out.\n\nEven if the max height isn't explicitly listed on your paper, we can actually determine it because we know what happens at the very peak of an object's path: for one tiny fraction of a second, its vertical velocity becomes zero as it stops going up and prepares to fall down. Because we know that physical \"rule,\" we don't need the number to be given to us\u2014we can calculate it using the kinematic equations.\n\nTo find the max height ($y$), you can use the following steps:\n\n1. **Identify what we know:** You likely have an initial vertical velocity ($v_{iy}$) and the acceleration due to gravity (which is $-9.8 \\text{ m/s}^2$). \n2. **Use the \"peak\" condition:** Since the vertical velocity at the peak ($v_f$) is $0$, we can use the formula: \n   $$v_f^2 = v_{i}^2 + 2a\\Delta y$$\n3. **Plug in the values:** \n   $$0 = (v_{iy})^2 + 2(-9.8)(\\text{height gained})$$\n\nBy solving that equation for the height, you'll find the distance the object traveled upward from its starting point. If your problem started on a cliff or a platform, you'd just add that \"height gained\" to your starting elevation to get the total max height from the ground. You don't need the paper to give you the number because the fact that it's a projectile moving in a gravity field provides all the information needed to calculate it.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more conversational and empathetic response, which aligns well with the learner's needs."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "surprise",
+        "Input Valence": -0.007162827532738449,
+        "Input Arousal": 0.6763077157142106,
+        "Internal State Valence": -0.2451735676466112,
+        "Internal State Arousal": 0.2738451034072938,
+        "Internal State Momentum": -0.6556302255304765,
+        "Internal State Intensity": 0.24677539774200596,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nokay let's see 12.86 divided by 9.8 that should be around like 1.31 seconds\n\nAppraisal Details:\n1. Dominant Emotion: Surprise mixed with uncertainty during the calculation of flight time in a projectile motion problem.\n2. Emotion Intensity: The current emotion presents with high arousal but remains at a low level of overall accumulated intensity.\n3. Emotional Inertia: The learner's mood is trending negatively, indicating growing frustration or stress during these physics calculations.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is experiencing surprise during their calculation while their internal state shows an accumulation of frustration and difficulty across the series of projectile motion problems.\n\nMemory:\nThe user is experiencing low intensity surprise with high arousal and neutral valence while performing a division calculation to determine flight time in a projectile motion context.",
+        "User Input": "okay let's see 12.86 divided by 9.8 that should be around like 1.31 seconds",
+        "Control Tutor": "Spot on! \ud83c\udfaf $12.86 \\div 9.8 \\approx \\mathbf{1.31 \\text{ s}}$ is exactly right. That\u2019s the time it takes for the object to reach its peak before gravity starts pulling it back down.\n\nNow, to find **how high** that peak actually is, we plug $t = 1.31$ back into your *original* vertical position equation:\n$$y(t) = -4.9t^2 + 12.86t + 15$$\n\nLet\u2019s break the math down step-by-step:\n1. **Square the time:** $(1.31)^2 \\approx 1.716$\n2. **Apply the gravity term:** $-4.9 \\times 1.716 \\approx -8.41$\n3. **Apply the velocity term:** $+12.86 \\times 1.31 \\approx +16.85$\n4. **Add the starting height:** $\\boxed{+15}$ (this is crucial! It's the initial launch height)\n\nNow, combine them:  \n$-8.41 + 16.85 + 15 = ?$\n\nWhat do you get for the total? \ud83d\udcc8\u2728 *(This will be your maximum height in meters!)*",
+        "PAM Tutor": "It\u2019s totally understandable that these multi-step calculations are starting to feel like a grind; it can be pretty draining to track all those different variables at once. You're right on the math\u201412.86 divided by 9.8 comes out to about 1.31, so using 1.31 seconds is correct for this part of your calculation.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a concise and empathetic response, acknowledging the learner's effort while maintaining clarity. Tutor B, though accurate, overcomplicates with unnecessary details."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.42872045764233924,
+        "Input Arousal": -0.14295225419336927,
+        "Internal State Valence": -0.40433641517337027,
+        "Internal State Arousal": 0.10712616036702854,
+        "Internal State Momentum": -0.855708859426086,
+        "Internal State Intensity": 0.19325777981960784,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nAlright, so if I follow these steps, I should end up with the max height right? Like, that's what we're trying to find here?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing grumpiness and skepticism regarding the current calculation process for maximum height.\n2. Emotion Intensity: This emotion is being expressed at a low level of intensity.\n3. Emotional Inertia: The learner's mood is trending negatively, indicating a cumulative increase in frustration during this projectile motion sequence.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold from the previous turn.\n5. Internal State: The learner feels grumpiness and skepticism regarding their current progress on finding maximum height, reflecting an accumulated sense of frustration throughout this session.\n\nMemory:\nThe learner is experiencing low-intensity grumpiness with negative valence and low arousal while seeking confirmation on the calculation for maximum height in a projectile motion problem.",
+        "User Input": "Alright, so if I follow these steps, I should end up with the max height right? Like, that's what we're trying to find here?",
+        "Control Tutor": "Yes, exactly! \ud83c\udfaf If you complete that addition right now, the final number **is** your maximum height in meters. \n\n### \ud83d\udd0d Why this works:\nYour original position equation $y(t) = -4.9t^2 + 12.86t + 15$ graphs as a downward-opening parabola. The very top of that curve is the peak height, and mathematically it occurs exactly at the vertex. We found that vertex by using the physics fact that **vertical velocity = 0** at the highest point, which gave us $t \\approx 1.31$ s. Plugging that time back into the position equation simply asks: *\"How high is the object exactly when it stops going up?\"* \n\n### \ud83e\uddee Your turn:\nFinish that quick sum:  \n`-8.41 + 16.85 + 15 = ?`\n\nWhat number do you get? Once you share it, we'll verify it makes physical sense and wrap up this part of the problem! \ud83d\udcd0\u2728",
+        "PAM Tutor": "You're right; those steps will lead you directly to the maximum height. I know it can be a bit of a grind to work through all these variables, but your logic is spot on.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and accurate response, effectively acknowledging the learner's effort without unnecessary elaboration. Their empathy is well-calibrated, making the interaction feel natural."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.19004976046271616,
+        "Input Arousal": 0.04316765458788723,
+        "Internal State Valence": -0.40433641517337027,
+        "Internal State Arousal": 0.10712616036702854,
+        "Internal State Momentum": -0.855708859426086,
+        "Internal State Intensity": 0.19325777981960784,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nSo if I add those numbers together, like -8.41 plus 16.85 is around 8.44 right? Then adding 15 to that should give me roughly 23.44 meters for the max height\n\nAppraisal Details:\n1. Dominant Emotion: Grumpiness\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Strong negative momentum\n4. Threshold Crossed: No threshold crossed\n5. Internal State: The learner is experiencing a persistent sense of grumpiness and frustration while navigating the calculation steps for projectile motion.\n\nMemory:\nThe user expresses low-intensity grumpiness with negative valence and low arousal while performing calculations for the maximum height in a projectile motion problem.",
+        "User Input": "So if I add those numbers together, like -8.41 plus 16.85 is around 8.44 right? Then adding 15 to that should give me roughly 23.44 meters for the max height",
+        "Control Tutor": "Exactly right! \ud83c\udfaf Your calculation is spot on:  \n**-8.41 + 16.85 = 8.44**, and **8.44 + 15 \u2248 23.44 meters** is your maximum height above the ground. \u2705\n\n### \ud83d\udd0d Why this makes perfect sense:\n- You started at an **initial height of 15 m**.\n- The `-8.41` represents how much gravity \"pulled down\" during the climb, while `+16.85` is how far the initial upward push carried you. Together they give you a **net upward displacement of ~8.44 m** from your launch point.\n- Adding that to your starting height gives the true peak: **~23.44 m**. (If you ever check with the algebraic vertex formula `c - b\u00b2/(4a)` for your parabola, you'll get `23.438 m`, which rounds beautifully to your answer! \ud83d\udcd0)\n\n### \ud83e\udded What's next?\nSince you've now found both:\n1. \u23f1\ufe0f Time to hit the ground/landing height (`t \u2248 3.5 s`)\n2. \ud83d\udcc8 Maximum height reached (`y_max \u2248 23.44 m`)\n\nYour original goal is likely complete! But if your assignment asks for anything else, we can easily find:\n- \u23ec Time to fall from the peak back to the ground\n- \ud83d\udca8 Impact velocity when it hits the landing level\n- \ud83d\udccf Horizontal distance (if this was a projectile motion problem)\n\nJust tell me what your prompt is asking for next, or if you're ready to officially wrap up and tackle a new concept. You're handling this like a pro! \ud83c\udf1f\ud83d\udcd8",
+        "PAM Tutor": "You're spot on. Adding -8.41 and 16.85 gives you 8.44, and then adding that initial height of 15 brings your total to 23.44 meters. I know these multi-step calculations can be a real grind to work through, but your logic is solid and the math checks out.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provided a more detailed explanation, enhancing pedagogical accuracy and empathy calibration."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.04125186158344151,
+        "Input Arousal": 0.1618510314729065,
+        "Internal State Valence": -0.40433641517337027,
+        "Internal State Arousal": 0.10712616036702854,
+        "Internal State Momentum": -0.855708859426086,
+        "Internal State Intensity": 0.19325777981960784,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nSo that's it? That seems way simpler than I thought it'd be, honestly.\n\nThat being said.. my prof wanted us to also find the horizontal distance in part 2 if the max height was over a certain number, do you know how we could get that one?\n\nAppraisal Details:\n1. Dominant Emotion: Curiosity mixed with relief.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Negative emotional inertia, suggesting a persistent state of frustration or struggle from previous hurdles in the projectile motion topic.\n4. Threshold Crossed: No.\n5. Internal State: The learner is experiencing relief at the clarity of the concepts while simultaneously engaging in inquiry to resolve a specific hurdle regarding horizontal distance and max height constraints.\n\nMemory:\nThe user expressed relief that the calculations were simpler than expected but immediately pivoted to inquiring about how to calculate horizontal distance based on specific maximum height conditions in their projectile motion problem.",
+        "User Input": "So that's it? That seems way simpler than I thought it'd be, honestly.\n\nThat being said.. my prof wanted us to also find the horizontal distance in part 2 if the max height was over a certain number, do you know how we could get that one?",
+        "Control Tutor": "I'm really glad it's clicking! Projectile motion often feels simpler once you realize **vertical and horizontal motions are completely independent** of each other (ignoring air resistance). Gravity only pulls down, so what happens horizontally is totally unaffected by how high or long the object flies. \ud83c\udfaf\n\nTo find the **horizontal distance**, you only need two things:\n1. \u2705 Your **time in the air** \u2192 You already have this: `t \u2248 3.5 s`\n2. \u2753 Your **initial horizontal velocity** (`v_{0x}`) \u2192 This depends on what your problem statement gave you\n\n### \ud83d\udd0d How to get it, depending on what's given:\n| If your problem gives... | Find `v_{0x}` like this... | Then calculate distance... |\n|--------------------------|----------------------------|----------------------------|\n| Horizontal speed explicitly stated (e.g., `\"launched at 8 m/s horizontally\"`) | `v_{0x} =` that number | `Distance = v_{0x} \u00d7 3.5` |\n| Launch angle `\u03b8` and total initial speed `v\u2080` | `v_{0x} = v\u2080 \u00b7 cos(\u03b8)` | `Distance = v_{0x} \u00d7 3.5` |\n| Total initial speed `v\u2080` only (no angle) | Use Pythag: `v_{0x} = \u221a(v\u2080\u00b2 - 12.86\u00b2)` | `Distance = v_{0x} \u00d7 3.5` |\n\n*(Note: Your prof's `\"if the max height is over a certain number\"` condition is just a checkpoint to make sure you actually computed the trajectory correctly before proceeding. It doesn't change the math!)*\n\n\ud83d\udcd8 **Your turn:** What exactly does your assignment state for the horizontal or launch velocity? Drop it here (angle, speed, or both), and I'll walk you through the exact calculation step-by-step. You're literally one multiplication away from finishing part 2! \ud83d\ude80\u2728",
+        "PAM Tutor": "It\u2019s a great feeling when a complex problem finally clicks and feels manageable. \n\nTo find the horizontal distance, you're actually looking at the much simpler side of projectile motion. While the vertical part (height) involves gravity and changing speeds, the horizontal movement is usually constant because gravity only pulls downward.\n\nTo get that horizontal distance, you just need two pieces of information:\n1. The horizontal velocity ($v_x$) of the object.\n2. The total time of flight ($t$).\n\nThe formula is simply:\n$$d = v_x \\times t$$\n\nIn your specific case, since you've already worked through the vertical calculations to find the maximum height and the time, you can use that same total time ($t$) and multiply it by the initial horizontal velocity. \n\nRegarding your professor's condition about the \"max height being over a certain number,\" they're likely just asking you to perform a logical check first. Once you confirmed your max height was 23.44 meters, you would then check if that number meets their requirement before proceeding with the horizontal distance calculation using the formula above.\n\nWould you like me to walk through a specific example of how the horizontal and vertical components remain independent from each other?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more detailed and structured explanation with examples, enhancing pedagogical accuracy."
+    }
+]

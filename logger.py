@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 def get_next_filename():
-    dir = Path("config4_logs")
+    dir = Path("mismatch_logs")
     dir.mkdir(exist_ok=True)
 
     existing_logs = dir.glob("conversation_*.json")
@@ -20,7 +20,7 @@ def get_next_filename():
 
     next_number = max(numbers, default=0) + 1
 
-    return f"config4_logs/conversation_{next_number}.json"
+    return f"mismatch_logs/conversation_{next_number}.json"
 
 def log_single_turn(file_name: str, turn: int, detected_emotion: str, input_valence: str, input_arousal: str, state_valence: str, 
                     state_arousal: str, state_momentum: str, state_intensity: str, appraisal: str, threshold_crossed: str, user_input: str, 

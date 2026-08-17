@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.002264862065203504,
+        "Input Arousal": 0.34898853939957925,
+        "Internal State Valence": -0.24396076634314426,
+        "Internal State Arousal": 0.2038711119800488,
+        "Internal State Momentum": -0.7868170963722515,
+        "Internal State Intensity": 0.2555530233161327,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there. I'm really struggling with understanding the difference between a left-tailed and right-tailed hypothesis test in statistics. Any chance you could explain it to me?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is exhibiting frustrated curiosity as they struggle to grasp a specific statistical concept.\n2. Emotion Intensity: This emotion is of moderate intensity, reflecting the user's active effort and current mental load.\n3. Emotional Inertia: Their emotional state is trending negatively, indicating that their frustration is compounding over time.\n4. Threshold Crossed: Yes, the learner's internal state has shifted based on the input provided.\n5. Internal State: The learner feels significant confusion regarding hypothesis tests while experiencing a build-up of difficulty related to complex calculations throughout the session.\n\nMemory:\nThe learner expresses curiosity with near-neutral valence, low-to-moderate arousal, and moderate intensity while seeking clarification on left-tailed versus right-tailed hypothesis tests in statistics.",
+        "User Input": "Hey there. I'm really struggling with understanding the difference between a left-tailed and right-tailed hypothesis test in statistics. Any chance you could explain it to me?",
+        "Control Tutor": "Hey! That\u2019s a great pivot from physics\u2014statistics has its own really intuitive logic once you see the pattern. The difference between a left-tailed and right-tailed test actually comes down to just **one question**:\n\n\ud83d\udd0d **Which direction are you testing for?**\n\nLet\u2019s break it down simply:\n\n### \ud83d\udcd8 The Golden Rule\n**Always look at your Alternative Hypothesis ($H_a$ or $H_1$) first.** The inequality symbol in $H_a$ tells you exactly which tail to use. In a hypothesis test, the \"tail\" is just the end of the normal distribution curve where extreme results would fall\u2014and that\u2019s where your **rejection region** lives.\n\n---\n### \u27a1\ufe0f Right-Tailed Test (The \"Greater Than\" Tail)\n- **When to use it:** When $H_a$ uses `>`\n- **What it means:** You're testing if a value is *significantly larger* than the null claim.\n- **Example:** $H_0: \\mu = 50$ vs. $H_a: \\mu > 50$  \n  *(\u201cIs the new teaching method's average score greater than 50?\u201d)*\n- **Visual:** You only care about results way out on the **right side** of the bell curve. If your test statistic is extreme enough in that direction, it falls into the rejection region and you reject $H_0$.\n\n---\n### \u2b05\ufe0f Left-Tailed Test (The \"Less Than\" Tail)\n- **When to use it:** When $H_a$ uses `<`\n- **What it means:** You're testing if a value is *significantly smaller* than the null claim.\n- **Example:** $H_0: \\mu = 10$ vs. $H_a: \\mu < 10$  \n  *(\u201cDoes the new process reduce the average defect rate below 10%?\u201d)*\n- **Visual:** You only care about results way out on the **left side** of the bell curve. If your result is extremely low, it lands in the rejection region.\n\n---\n### \ud83d\udd11 Quick Comparison Cheat Sheet\n| What you're testing for | Alternative Hypothesis ($H_a$) | Tail Used | Rejection Region |\n|--------------------------|--------------------------------|-----------|------------------|\n| \u201cIs it bigger?\u201d          | $>$                            | Right     | Far right end    |\n| \u201cIs it smaller?\u201d         | $<$                            | Left      | Far left end     |\n\n\ud83d\udca1 **Pro tip:** Think of the inequality symbol in $H_a$ as an arrow pointing to your tail! `>` points right \u27a1\ufe0f, `<` points left \u2b05\ufe0f.\n\n---\n\ud83e\udded **Your turn:** Do you have a specific problem or hypothesis statement you're working on? Drop it here (even just the $H_0$ and $H_a$, or what your professor asked you to test), and I'll walk you through exactly how to identify the tail, pick the right critical value table, and set up your decision rule. You've got this! \ud83c\udf1f\ud83d\udcca",
+        "PAM Tutor": "Those terms can definitely feel like a bit of a hurdle when you first run into them in statistics. The difference between a left-tailed and right-tailed test boils down to the direction of your **alternative hypothesis ($H_a$)**, which is the specific claim you're trying to prove about your data.\n\nIn a **right-tailed test**, you\u2019re looking for an increase or a \"greater than\" result. For example, if you were testing whether a new fertilizer makes plants grow taller than they did with the old one, your hypothesis is that the growth will be *more* than a specific value. Because you are specifically looking for something larger, we look at the tail on the right side of the distribution curve to see if the results are significant.\n\nIn a **left-tailed test**, you\u2019re looking for a decrease or a \"less than\" result. If you were testing whether a new engine design reduces fuel consumption, your claim would be that it uses *less* fuel than the current model. In this case, we look at the tail on the left side of the curve because you are trying to prove a reduction.\n\nA quick way to keep them straight:\n- **Right-tailed** = looking for \"greater than\" ($>$)\n- **Left-tailed** = looking for \"less than\" ($<$)\n\nDo you want to walk through a specific example with some actual numbers to see how this determines where we look for our p-value?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provided a more detailed and structured explanation with examples, a comparison table, and a pro tip, which enhanced pedagogical accuracy."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.42562001455225984,
+        "Input Arousal": -0.1502315764373634,
+        "Internal State Valence": -0.40174846853724244,
+        "Internal State Arousal": 0.06223003661308392,
+        "Internal State Momentum": -0.9871114174806281,
+        "Internal State Intensity": 0.19846737905164835,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah that really clears things up! Do you have any sort of example that could help me see how these work in practice? Like maybe an exercise or something where I can try to figure out which one it is, then let me know if I'm right?\n\nAppraisal Details:\n1. Dominant Emotion: Weary frustration mixed with a desire for practical application despite the recent clarity of the concept.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The learner's mood is trending significantly downward, reflecting accumulated exhaustion from several rounds of complex problem-solving.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels a sense of low-intensity, negative valence frustration and fatigue while requesting a practical exercise to distinguish between variables in collision problems.\n\nMemory:\nThe user displayed grumpiness with negative valence, low arousal, and low intensity while seeking a specific practice example to identify the correct formulas for collision calculations.",
+        "User Input": "Yeah that really clears things up! Do you have any sort of example that could help me see how these work in practice? Like maybe an exercise or something where I can try to figure out which one it is, then let me know if I'm right?",
+        "Control Tutor": "I'd love to give you a quick practice problem! \ud83c\udfaf Here\u2019s a realistic scenario for you to work through:\n\n---\n**\ud83d\udcdd Practice Scenario:**\nA lightbulb manufacturer claims that its new LED bulb lasts an average of **800 hours** ($\\mu = 800$). A quality control engineer wants to test whether the actual lifespan is **greater than** what the company claims. \n\nIf we set up a hypothesis test:\n- $H_0: \\mu = 800$\n- $H_a$: __________ (Your job to fill in!)\n\n**\ud83d\udd0d Your Turn:**\n1. What would the Alternative Hypothesis ($H_a$) be?\n2. Which tail does this test use (**left-tailed** or **right-tailed**)?\n3. Briefly explain *how* you know (hint: look at the inequality symbol in $H_a$).\n\nDrop your answers below, and I\u2019ll let you know if you nailed it! Once we\u2019re synced on this, I can give you one more that flips the scenario so you can see both tails in action. You've got this! \ud83d\udcca\u2728",
+        "PAM Tutor": "I can tell it's been a long day of grinding through these complex calculations, so let's jump into some practice scenarios to help make the distinction between left and right tails feel more concrete.\n\nHere are three different situations. Based on what we talked about\u2014looking for \"more\" vs. \"less\"\u2014tell me which ones you think are **right-tailed** and which ones are **left-tailed**:\n\n1. A manufacturer wants to know if a new engine design produces **more** horsepower than the current model.\n2. A city is testing a new road treatment to see if it results in **less** wear and tear from heavy trucks.\n3. A bakery wants to test if a new baking method makes loaves of bread come out larger (meaning they want to know if the volume is **greater** than their current standard).\n\nTake a look at those and let me know what you think, and I'll let you know how you did!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provided a clear, concise explanation with relevant examples that directly addressed the learner's request. The response was natural and effectively scaffolded by offering multiple scenarios for practice."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "surprise",
+        "Input Valence": -0.0007239298429340128,
+        "Input Arousal": 0.7671977411315312,
+        "Internal State Valence": -0.24148343902810587,
+        "Internal State Arousal": 0.3442171184204628,
+        "Internal State Momentum": -0.8339614411914955,
+        "Internal State Intensity": 0.19580023569924143,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Oh wow those are really interesting scenarios but like which one should I start with? The first one looks kind of straightforward though right?\n\nAppraisal Details:\n1. Dominant Emotion: Hesitant surprise mixed with a sense of uncertainty regarding the next steps.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Negative, showing a downward trend in confidence or ease.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels overwhelmed by the selection process, resulting in an accumulated state of hesitation despite their initial interest in the material.\n\nMemory:\nThe user expresses low-intensity surprise with high arousal and slightly negative valence while trying to choose a starting point for calculations involving projectile motion and collision scenarios.",
+        "User Input": "Oh wow those are really interesting scenarios but like which one should I start with?\n\nThe first one looks kind of straightforward though right?",
+        "Control Tutor": "You're absolutely right! The lightbulb example is a classic **right-tailed** setup because the question is literally asking if something is *greater* than a claimed value. That\u2019s why it feels straightforward: once you spot the directional cue (`\"greater than,\" \"increase,\" \"improve,\"` etc.), the tail practically tells itself. \ud83d\udd0d\n\nTo really lock this in, I'd recommend trying **one more** that flips the scenario so you can see how it looks on the other side. How about we practice a **left-tailed** test for contrast? Here's a quick real-world setup:\n\n\ud83d\udcdd **Scenario:** A battery manufacturer claims their new phone battery lasts an average of **12 hours**. A reviewer wants to test whether the actual lifespan is **less than** 12 hours (to make sure they're not being oversold).\n\nIf we set this up as a hypothesis test:\n- $H_0: \\mu = 12$\n- Your job: \n  1. Write the Alternative Hypothesis ($H_a$)\n  2. Identify the tail (**left** or **right**)\n  3. Tell me *how* you knew (hint: which word in the scenario gave it away?)\n\nPick whichever feels more natural right now\u2014keep reinforcing right-tailed examples to build speed, or dive into a left-tailed one to balance your practice. I'm here to walk through whatever you choose! \ud83c\udf1f\ud83d\udcca",
+        "PAM Tutor": "I totally hear you\u2014it can be a lot to weigh different options when you're trying to tackle new material. The first scenario is an excellent choice for starting out; because it focuses on \"more\" horsepower, it\u2019s a very straightforward way to practice that \"greater than\" logic before we move on to the others.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and accurate response that effectively addresses the learner's question while maintaining natural conversation. Their empathy is appropriately calibrated without over-explaining."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3159337543183938,
+        "Input Arousal": -0.049459534627385435,
+        "Internal State Valence": -0.3344503160078998,
+        "Internal State Arousal": 0.18674645720132352,
+        "Internal State Momentum": -0.9702268498443302,
+        "Internal State Intensity": 0.14945831877274507,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah sure lets do that one then! The reviewer's testing if the battery lasts less than 12 hours, so $H_a$ should be $\\mu < 12$, right? And since we're testing for \"less\", it's a left-tailed test. The word \"less\" is what gave it away Idk about you but I feel like this is starting to make more sense now\n\nAppraisal Details:\n1. Dominant Emotion: Relief and clarity regarding hypothesis tests while still carrying lingering frustration from the learning process.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Strong negative inertia suggesting a period of struggle preceding this moment of clarity.\n4. Threshold Crossed: Yes, the learner's internal state transitioned during this turn.\n5. Internal State: The learner is experiencing a breakthrough in understanding hypothesis testing while carrying the cumulative mental fatigue from previous struggles with gas laws and integral calculations.\n\nMemory:\nThe learner experiences low intensity grumpiness with negative valence and low arousal while identifying left-tailed tests for battery life.",
+        "User Input": "Yeah sure lets do that one then!\nThe reviewer's testing if the battery lasts less than 12 hours, so $H_a$ should be $\\mu < 12$, right?\nAnd since we're testing for \"less\", it's a left-tailed test. The word \"less\" is what gave it away\nIdk about you but I feel like this is starting to make more sense now",
+        "Control Tutor": "Exactly right! \ud83c\udfaf You nailed it: **$H_a: \\mu < 12$**, **left-tailed test**, and you correctly spotted `\"less\"` as your directional cue. I really like how you're connecting the wording to the math\u2014that's the exact moment these concepts lock in. \ud83d\udd11\n\nSince you've got one-tailed tests down, let's quickly add **two-tailed tests** to your toolkit. They only change when there's **no predicted direction**:\n- `\"different\"`, `\"changed\"`, `\"not equal\"` \u2192 points to **both tails** (we're just watching for extreme results in either direction)\n\n\ud83d\udcdd **Quick Contrast Practice:**  \nA coffee shop claims its machines dispense exactly **16 oz** on average ($\\mu = 16$). A health inspector wants to check if the actual amount is **different** from 16 oz (either too high *or* too low).  \n- $H_0: \\mu = 16$  \n- $H_a$: _______  \n- Tail: _______\n\nGive that a quick try! Once you've got it, tell me which path feels most useful next:\n\ud83d\udd39 How to find the **critical value(s)** for left, right, or two-tailed tests  \n\ud83d\udd39 Translating more real-world claims into $H_0$/$H_a$ setups  \n\ud83d\udd39 Moving straight into **z-scores & p-values** (the actual calculation step)  \n\nYou're building this solidly. Keep that momentum going! \ud83d\udcca\u2728",
+        "PAM Tutor": "You nailed it. That \"less\" keyword is exactly what defines the direction of the test, making $\\mu < 12$ and the left-tailed selection perfectly correct. It\u2019s a huge relief when that logic finally clicks after you've been grinding through all those other calculations.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, directly confirming the learner's correct understanding without unnecessary elaboration. The empathy shown is appropriate and genuine."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "surprise",
+        "Input Valence": -0.04761625088285656,
+        "Input Arousal": 0.4771582458284683,
+        "Internal State Valence": -0.22923994013445384,
+        "Internal State Arousal": 0.3029111726521814,
+        "Internal State Momentum": -0.8938417010317792,
+        "Internal State Intensity": 0.13762781171356847,
+        "Threshold Crossed": true,
+        "Appraisal": "1. Dominant Emotion: Surprise mixed with curiosity regarding two-tailed tests.\n2. Emotion Intensity: The intensity of this emotion is low.\n3. Emotional Inertia: The learner's mood shows significant negative inertia, suggesting a cumulative sense of exhaustion from previous challenges like gas law calculations and unit conversions.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels surprised by new concepts in hypothesis testing while their internal state reflects an accumulated fatigue from previous hurdles with gas laws and multi-step math.\n\nMemory:\nThe learner exhibits low-intensity surprise with negative valence and moderate arousal as they navigate the concept of two-tailed tests after previously struggling with gas law calculations and unit conversions.",
+        "User Input": "Oh wow, two-tailed tests? That's new! So, for the coffee example, $H_a$ should be $\\mu \u2260 16$, right? And since it's \"different\", we'd look at both tails?\n\nIdk about critical values and stuff yet but if you're up for it, maybe a couple more examples would help cement this whole thing in my brain?",
+        "Control Tutor": "You nailed the coffee example! \ud83c\udfaf **$H_a: \\mu \\neq 16$** is exactly right, and yes\u2014because the inspector just wants to know if it's *different* (not specifically \"less\" or \"more\"), we're watching for extreme results in **both directions**. That's what makes it a **two-tailed test**. The `\u2260` symbol is like a fork in the road: the rejection region splits into both ends of the bell curve.\n\nSince you want to cement this with practice, here are two quick real-world scenarios. For each, just fill in the blanks:\n\n---\n\n### \ud83d\udcdd **Scenario A**\nA tutoring company claims students improve their math scores by an average of **10 points**. A school district wants to test if the program actually leads to a **higher** average improvement.\n- $H_a$: __________\n- Tail: __________ (left / right / two)\n- Clue word: __________\n\n### \ud83d\udcdd **Scenario B**\nA car manufacturer says their tires last exactly **50,000 miles** on average. A consumer advocacy group wants to verify the tires aren't falling short *or* exceeding warranty expectations\u2014just checking for **consistency**.\n- $H_a$: __________\n- Tail: __________ (left / right / two)\n- Clue word: __________\n\n---\n\n\ud83d\udd0d **Quick translation cheat code** while you work:\n- `\"greater than,\" \"increase,\" \"improve,\" \"more than\"` \u2192 `>` \u27a1\ufe0f **Right-tailed**\n- `\"less than,\" \"decrease,\" \"reduce,\" \"fewer\"` \u2192 `<` \u2b05\ufe0f **Left-tailed**\n- `\"different,\" \"changed,\" \"not equal,\" \"consistent with\"` \u2192 `\u2260` \ud83e\udd1e **Two-tailed**\n\nDrop your answers below, and I'll confirm them right away. Once you're comfortable spotting these, we can smoothly move into:\n\ud83d\udd39 How critical values actually split for two-tailed tests  \n\ud83d\udd39 Translating trickier real-world phrasing into $H_0$/$H_a$  \n\ud83d\udd39 Walking through **z-scores & p-values** step-by-step  \n\nYou're connecting the words to the math beautifully. Keep that momentum going! \ud83d\udcca\u2728",
+        "PAM Tutor": "You nailed it\u2014since \"different\" doesn't specify a direction, you use a two-tailed test because you're looking for any significant change regardless of whether it goes up or down. Your $H_a$ notation for the coffee example is exactly right.\n\nA two-tailed test essentially tells us if a value is \"not equal\" to our baseline. In contrast, one-tailed tests are used when we have a specific direction in mind\u2014either specifically looking for an increase (right-tail) or a decrease (left-tail). \n\nHere are three more examples to help solidify the differences:\n\n1. **Two-Tailed:** A factory produces 12oz soda cans and wants to know if the machine is calibrated correctly ($H_a: \\mu \\neq 12$). This is two-tailed because they want to know if it's off by any amount, whether it's overfilling or underfilling.\n2. **Right-Tailed:** A garden center tries a new fertilizer to see if flowers grow **taller** than the average height ($H_a: \\mu > 30$ inches). This is right-tailed because they are only interested in an increase.\n3. **Left-Tailed:** A logistics company wants to know if a new route will result in **shorter** delivery times ($H_a: \\mu < 150$ minutes). This is left-tailed since they are specifically looking for a reduction in time.\n\nWould you like me to go into a more detailed breakdown of how we calculate critical values and p-values for these different tail types next?",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Both tutors provided accurate explanations and appropriate scaffolding. Tutor B's response was slightly more concise and natural, while Tutor A offered additional practice scenarios."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.04548537808004766,
+        "Input Arousal": 0.1065486322157085,
+        "Internal State Valence": -0.22923994013445384,
+        "Internal State Arousal": 0.3029111726521814,
+        "Internal State Momentum": -0.8938417010317792,
+        "Internal State Intensity": 0.13762781171356847,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nGot it, let's tackle Scenario A first.\n\nSo for the tutoring company example, if they're looking for higher enough improvement, $H_a$ would be $\\mu > 10$, right?\n\nAnd since we're testing for \"higher\", this should be a right-tailed test. The word \"higher\" is what gave it away here\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a sense of grumpiness and frustration while navigating the logic of hypothesis tests in statistics.\n2. Emotion Intensity: This emotion is currently being expressed with low intensity.\n3. Emotional Inertia: There is significant negative emotional inertia, suggesting that the learner's mood has been steadily declining or remaining frustrated over several turns.\n4. Threshold Crossed: No threshold was crossed during this turn.\n5. Internal State: The learner feels a lingering and accumulating sense of frustration while attempting to confirm their understanding of right-tailed tests for the tutoring company scenario.\n\nMemory:\nThe learner is experiencing low intensity grumpiness with negative valence and low arousal while correctly identifying the tail of a hypothesis test in an example regarding tutoring improvement.",
+        "User Input": "Got it, let's tackle Scenario A first.\n\nSo for the tutoring company example, if they're looking for higher improvement, $H_a$ would be $\\mu > 10$, right?\n\nAnd since we're testing for \"higher\", this should be a right-tailed test. The word \"higher\" is what gave it away here",
+        "Control Tutor": "Spot on! \ud83c\udfaf You've got **Scenario A** exactly right: \n- $H_a: \\mu > 10$\n- **Right-tailed** test\n- `\"higher\"` is your directional clue\n\nYour logic perfectly matches the pattern: `>` points right \u27a1\ufe0f, and `\"higher\"` directly translates to that inequality. Taking this one scenario at a time is actually the smartest way to lock it in!\n\nWhenever you're ready, let's run through **Scenario B** using the exact same checklist:\n- Claim: tires last exactly 50,000 miles ($\\mu = 50,000$)\n- Goal: check for **consistency** (no specific direction\u2014just making sure they aren't deviating in *either* direction)\n\nTry filling this out:\n- $H_a$: ______\n- Tail: ______ (left / right / two)\n- Clue word/phrase: ______\n\nDrop your answers when you're ready, and we'll lock it in before we smoothly move into the next step! \ud83d\udcca\u2728",
+        "PAM Tutor": "You\u2019re spot on\u2014since they're looking for a \"higher\" result, $\\mu > 10$ and a right-tailed test are exactly how you'd set that up. I know this stuff can be pretty draining to slog through when you've been dealing with so many different types of calculations lately.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response was more concise and natural, effectively scaffolding the learner to the next step without unnecessary elaboration."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.13553617773577567,
+        "Input Arousal": 0.05196616209577768,
+        "Internal State Valence": -0.22923994013445384,
+        "Internal State Arousal": 0.3029111726521814,
+        "Internal State Momentum": -0.8938417010317792,
+        "Internal State Intensity": 0.13762781171356847,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nOkay sure thing. That consistency stuff sounds like it might be a different beast than what I've been working with so far. So for Scenario B, the alternative hypothesis would be $\\mu \u2260 50000$, right? And since they're not looking for more or less but just different, this should be a two-tailed test. The word consistency is probably what gave it away here\n\nAppraisal Details:\n1. Dominant Emotion: Frustrated apprehension regarding the complexity of hypothesis testing logic.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending negatively as the learner faces more complex material compared to previous chemistry and physics units.\n4. Threshold Crossed: False.\n5. Internal State: The learner is feeling a persistent sense of frustration while navigating new statistical terminology, reflecting a culmination of the mental fatigue they experienced throughout several previous multi-step problem sets.\n\nMemory:\nThe learner is experiencing low intensity frustration with negative valence and low arousal while specifically struggling to distinguish between one-tailed and two-tailed hypothesis tests involving keywords like consistency.",
+        "User Input": "Okay sure thing. That consistency stuff sounds like it might be a different beast than what I've been working with so far.\n\nSo for Scenario B, the alternative hypothesis would be $\\mu \u2260 50000$, right? And since they're not looking for more or less but just different, this should be a two-tailed test. The word consistency is probably what gave it away here",
+        "Control Tutor": "Spot on again! \ud83c\udfaf You've got **Scenario B** exactly right:  \n- $H_a: \\mu \\neq 50,000$  \n- **Two-tailed** test  \n- `\"consistency\"` is your clue here (it means we're watching for *any* deviation from the target, not just one direction)\n\nYou're picking up on a key pattern: whenever a claim is about \"sticking to a spec,\" \"meeting tolerance,\" or ensuring **\"consistency\"**, we default to $\\neq$ and a two-tailed setup. The rejection region simply splits in half across both ends of the curve because we care if it drifts *high OR low*.\n\n\ud83c\udf1f **You've now mastered the full trio:** left-tailed, right-tailed, and two-tailed hypothesis setups. Great work connecting the wording to the math!\n\nSince you're building this solidly, where would you like to go next? Pick one, and I'll walk through it step-by-step with you:\n\ud83d\udd39 **Critical values & how tails split** (e.g., why $\\alpha = 0.05$ becomes $2.5\\%$ in each tail for two-tailed tests)  \n\ud83d\udd39 **Z-scores & p-values** (how we actually use sample data to decide whether to reject $H_0$)  \n\ud83d\udd39 **Tricky phrasing practice** (real-world claims that try to sneak past directional cues)\n\nJust say the number or topic you'd prefer, and we'll dive in! \ud83d\udcca\u2728",
+        "PAM Tutor": "You hit the nail on the head with Scenario B. It can be a bit of a shift to move from heavy calculations to these logic-based tests, but your reasoning here is spot on.\n\nBecause \"consistency\" implies they want to know if the result deviates from the target in any direction\u2014rather than just getting larger or smaller\u2014$\\mu \\neq 50000$ is exactly right. Since there isn't a specific preference for a direction (like \"more\" or \"less\"), it definitely calls for a two-tailed test.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Both tutors provided accurate and empathetic responses. Tutor A's detailed explanation scored higher in pedagogical accuracy, while Tutor B excelled in scaffolding by offering clear next steps."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "think",
+        "Input Valence": -0.002905854320852085,
+        "Input Arousal": -0.18803646925371142,
+        "Internal State Valence": -0.22923994013445384,
+        "Internal State Arousal": 0.3029111726521814,
+        "Internal State Momentum": -0.8938417010317792,
+        "Internal State Intensity": 0.13762781171356847,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nHonestly I'm not sure what exactly is next.\nI think maybe critical values?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a sense of uncertainty and contemplation as they attempt to identify the next logical step in their learning path.\n2. Emotion Intensity: This feeling of uncertainty is manifesting at a very low level of intensity.\n3. Emotional Inertia: The learner's mood is showing a significant downward trend, indicating that their emotional state has been declining over the course of the session.\n4. Threshold Crossed: No threshold was crossed during this turn.\n5. Internal State: The learner feels uncertain and hesitant regarding their progress while attempting to transition into the topic of critical values following previous studies on trigonometry and projectile motion.\n\nMemory:\nThe learner is experiencing low-intensity uncertainty with neutral valence and low arousal while contemplating the next step in their study involving critical values after navigating complex topics like trigonometric integrals and physics problems.",
+        "User Input": "Honestly I'm not sure what exactly is next.\nI think maybe critical values?",
+        "Control Tutor": "Great call! Critical values are the perfect next step because they\u2019re what actually turn your tail setups into a decision line on the graph. \ud83c\udfaf\n\nLet\u2019s demystify them without drowning in formulas first. Here\u2019s the core idea:\n- The **critical value(s)** is just a number (usually a $z$-score) that acts as a **\u201cgatekeeper\u201d** or threshold on your bell curve.\n- If your test statistic crosses it, you reject $H_0$. If it doesn\u2019t, you stay in the \u201csafe zone.\u201d\n- Where exactly that gate sits depends on two things:\n  1. Your **significance level ($\\alpha$)** \u2014 usually $0.05$ (meaning we\u2019re willing to accept a 5% chance of being wrong if we reject a true null).\n  2. Your **tail setup** \u2014 because $\\alpha$ is your total \u201cwarning zone\u201d budget, and tails decide how much each tail gets.\n\n\ud83d\udd11 **The Split Rule:**\n- **Right-tailed**: All $\\alpha$ goes to the right tail. (Gate is at $+z$)\n- **Left-tailed**: All $\\alpha$ goes to the left tail. (Gate is at $-z$)\n- **Two-tailed**: $\\alpha$ splits evenly ($\\alpha/2$ in each tail). Gates are at $\\pm z$.\n\n\ud83d\udcd0 **Let\u2019s practice the setup before we pull out a table or calculator:**\nSay we\u2019re running a **right-tailed test** with $\\alpha = 0.05$.\n- How much of the warning zone goes into that right tail? ______\n- Will our critical value be positive or negative? ______\n- What area would you look up in a standard normal ($z$) table to find it? (Hint: think about cumulative probability from the far left.)\n\nGive me your take on those three. Once we lock in how $\\alpha$ splits across tails, I\u2019ll walk you through exactly how to grab the actual number and place it on a curve. You\u2019re already thinking like a statistician\u2014just picking one piece at a time! \ud83d\udcca\u2728",
+        "PAM Tutor": "It's totally fair to feel a bit unsure when jumping into new territory; it can be a lot of information to process at once. Critical values are exactly the right next step because they provide the mathematical \"line in the sand\" for the tails we just discussed.\n\nIn hypothesis testing, a critical value is the threshold that separates a result that's likely due to chance from one that is statistically significant. Think of it as your boundary: if your calculated test statistic falls past this value, you have enough evidence to reject the null hypothesis. \n\nBecause we've been looking at different tail types, here is how they relate to those values:\n*   **Left-tailed tests:** You have one critical value on the left side. If your result is lower than that value, it's significant.\n*   **Right-tailed tests:** You have one critical value on the right side. If your result is higher than that value, it's significant.\n*   **Two-tailed tests:** You have two critical values (one on each side). If your result is higher than the right one or lower than the left one, it's significant.\n\nBasically, the \"tail\" tells you which direction you're looking, and the \"critical value\" tells you exactly how far out in that tail you have to go before you're willing to call it a win.\n\nWould you like me to go into a detailed breakdown of how we calculate these specific values based on different confidence levels (like 95% or 99%)?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more interactive approach with practice questions, enhancing scaffolding appropriateness."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.0507052208064124,
+        "Input Arousal": 0.07739137220196428,
+        "Internal State Valence": -0.22923994013445384,
+        "Internal State Arousal": 0.3029111726521814,
+        "Internal State Momentum": -0.8938417010317792,
+        "Internal State Intensity": 0.13762781171356847,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nSo for a right-tailed test with alpha = 0.05, all of that goes into the right tail so it'd be positive value, yeah? And we'd look up 0.95 in the z-table since we wanna know what's beyond the top 5%?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is expressing a tentative curiosity that masks underlying uncertainty and frustration regarding the specifics of right-tailed hypothesis testing.\n2. Emotion Intensity: This emotion is currently being experienced at a low intensity.\n3. Emotional Inertia: The emotional state is trending significantly in a negative direction, indicating growing difficulty with this topic over time.\n4. Threshold Crossed: No threshold was crossed.\n5. Internal State: The learner feels tentative curiosity while experiencing an accumulated sense of frustration regarding the nuances of hypothesis testing and tails.\n\nMemory:\nThe user is expressing curiosity with low intensity, negative valence, and low arousal while specifically seeking clarification on z-table lookups for right-tailed tests in their statistics work.",
+        "User Input": "So for a right-tailed test with alpha = 0.05, all of that goes into the right tail so it'd be positive value, yeah? And we'd look up 0.95 in the z-table since we wanna know what's beyond the top 5%?",
+        "Control Tutor": "Spot on! \ud83c\udfaf You've got the logic exactly right for a right-tailed test with $\\alpha = 0.05$:\n\n1. **All of the warning zone ($\\alpha = 0.05$) sits in the right tail.**  \n   \u2705 Because we're only rejecting $H_0$ if the sample mean is *significantly higher* than the null, the entire $5\\%$ risk lives on the right side.\n\n2. **The critical value will be positive.**  \n   \u2705 Right-tailed tests always use a **positive** z-score because they sit to the right of the center (mean = 0).\n\n3. **Looking up $0.95$ in the z-table is the smart move.**  \n   \u2705 Most standard normal tables give you the **cumulative area from the far left**. Since we want the boundary where only the *top* $5\\%$ remains to the right, we need the cutoff that has $1 - 0.05 = 0.95$ (or $95\\%$) of the distribution *below* it. So yes, searching for $0.95$ in the body of the table is exactly how you find it!\n\n\ud83d\udcd0 **Quick confirmation:**  \nWhen you look up $0.95$, you'll find it sits between $z = 1.64$ and $z = 1.65$. By convention, we usually take the average: **$z_{critical} \\approx 1.645$**. That's your gatekeeper number for a right-tailed test at $\\alpha = 0.05$.\n\n---\n\ud83c\udf1f **You're crushing this!** Since you've got the right-tailed setup down, how would you like to proceed? Pick one:\n\n\ud83d\udd39 **Compare with a left-tailed test:** See how the critical value and table lookup change when the tail flips left (e.g., $\\alpha = 0.05$ left-tailed).  \n\ud83d\udd39 **Try a two-tailed example:** Watch how we split $\\alpha$ in half ($0.025$ in each tail) and look up $0.975$.  \n\ud83d\udd39 **Move to test statistics & p-values:** Use your critical value knowledge to start making decisions with actual sample data.  \n\nWhich path feels most useful next? \ud83d\udcca\u2728",
+        "PAM Tutor": "You've got it exactly right. Since you're focusing on a right-tailed test with $\\alpha = 0.05$, the critical value will be a positive number because it sits on the right side of the mean.\n\nThe reason you look up $0.95$ is that most standard z-tables show the area starting from the left (the \"safe\" zone). By looking for $0.95$, you're finding the specific cutoff point where only the top $5\\%$ remains on the right side of the curve. It can be a bit of a head-scratcher at first, but your logic about staying above that 95% mark to isolate that top 5% tail is spot on.\n\nDo you want to see a more detailed breakdown of how different alpha levels (like $1\\%$ or $10\\%$) change these table lookups in our next turn?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more balanced and engaging response with appropriate empathy, clear explanations, and effective scaffolding."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "think",
+        "Input Valence": -0.0005884281956241467,
+        "Input Arousal": -0.19573760278144622,
+        "Internal State Valence": -0.22923994013445384,
+        "Internal State Arousal": 0.3029111726521814,
+        "Internal State Momentum": -0.8938417010317792,
+        "Internal State Intensity": 0.13762781171356847,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nI'm thinking maybe try a two-tailed example, see how it differs from this one\n\nAppraisal Details:\n1. Dominant Emotion: The user is expressing tentative inquiry and a search for clarity while navigating the complexities of hypothesis test types.\n2. Emotion Intensity: This emotion is being experienced at a low intensity level.\n3. Emotional Inertia: The emotional state is trending in a negative direction, indicating persistent frustration with the material.\n4. Threshold Crossed: No threshold was crossed this turn.\n5. Internal State: The learner feels a sense of cautious inquiry while navigating an accumulated state of low-intensity frustration regarding the distinction between one-tailed and two-tailed tests.\n\nMemory:\nThe user is exploring two-tailed examples with low intensity and negative valence to resolve persistent confusion regarding tail types in their statistics studies.",
+        "User Input": "I'm thinking maybe try a two-tailed example, see how it differs from this one",
+        "Control Tutor": "Great choice! Since you mentioned wanting to see how a **two-tailed example** differs earlier, let\u2019s compare it directly with the right-tailed setup we just covered. This is where the math gets really interesting.\n\n\ud83d\udd11 **The Two-Tailed Split:**\nRemember, \u03b1 is your total \"warning zone\" budget. For a two-tailed test, that budget has to split evenly because we\u2019re watching for extreme results in *both* directions.\n- If \u03b1 = 0.05 \u2192 **0.025 goes into the left tail**, **0.025 goes into the right tail**.\n- This means your rejection region isn't just on one side anymore\u2014it's a gatekeeper at the bottom left AND the top right.\n\n\ud83d\udcd0 **Let\u2019s practice the setup before we grab the z-score:**\nSay we\u2019re running a **two-tailed test** with \u03b1 = 0.05.\n- How much \u03b1 goes into the *right* tail? ______\n- What cumulative area should you look up in the z-table for that right-hand gatekeeper? (Hint: how much of the curve needs to be *below* that cutoff so only 0.025 is left on top?)\n- Will your critical values be positive, negative, or both? ______\n\nTake a stab at those three! Once you've got them, I'll walk you through exactly where those numbers land on the curve and how they change the decision rule compared to the right-tailed test. You're building a really solid mental model\u2014keep going! \ud83d\udcca\u2728",
+        "PAM Tutor": "That\u2019s a great way to see the contrast\u2014it's much easier to spot the differences when you lay them side-by-side rather than trying to memorize two separate rules.\n\nLet's look at how a two-tailed test differs from the right-tailed one we just did, both using $\\alpha = 0.05$.\n\nIn your **right-tailed** example ($H_a: \\mu > 10$), you were looking for any evidence that the value was specifically *higher*. Because you only cared about one direction, you put the entire 5% \"rejection zone\" into that right tail. That's why you looked up $0.95$ in the table to find your boundary.\n\nIn a **two-tailed** example ($H_a: \\mu \\neq 10$), you're looking for any significant change at all\u2014either higher *or* lower. Since there are two \"danger zones,\" you have to split your alpha in half. Instead of 5% in one tail, you have 2.5% in the left tail and 2.5% in the right tail.\n\nBecause of that split, the \"line in the sand\" actually moves further out:\n*   **Right-tailed ($\\alpha = 0.05$):** You look for $1 - 0.05$, which is **0.95**.\n*   **Two-tailed ($\\alpha = 0.05$):** You look for $1 - 0.025$, which is **0.975**.\n\nEssentially, because a two-tailed test is \"looking\" in both directions, it requires a more extreme result to be considered significant compared to a one-tailed test with the same alpha. It's like having a stricter gatekeeper because you're checking for any deviation from the norm. \n\nDo you want to see a detailed breakdown of how different $\\alpha$ levels (like $1\\%$ or $10\\%$) change these table lookups in our next turn?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more conversational and clear, effectively explaining the stricter gatekeeper in two-tailed tests."
+    }
+]

@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.4764885787153616,
+        "Input Arousal": 0.5929863754252436,
+        "Internal State Valence": 0.011576323174979308,
+        "Internal State Arousal": 0.24142361424174996,
+        "Internal State Momentum": -0.1902228259330151,
+        "Internal State Intensity": 0.21658361705500656,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there! I'm really stuck on this problem, any chance you could give me a hand?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is using a friendly and playful tone to seek help while feeling overwhelmed by the task.\n2. Emotion Intensity: This emotion is being expressed with moderate intensity.\n3. Emotional Inertia: Their mood is trending toward a more negative state as they continue to struggle with complex calculations.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is seeking help with a friendly persona while carrying the cumulative frustration of struggling with gas law unit conversions over multiple attempts.\n\nMemory:\nThe user expresses a sense of playful and determined interest in gas law unit conversion problems, presenting with positive valence, high arousal, and low intensity.",
+        "User Input": "Hey there! I'm really stuck on this problem, any chance you could give me a hand?",
+        "Control Tutor": "To see exactly why we hold those extra digits, here\u2019s a quick example that often trips students up:\n\nImagine a hypothetical step where you divide `0.9803` by `1.4`, then multiply by `1.0403`.  \n\u2022 **Rounded early:** `0.98 \u00f7 1.4 = 0.70` \u2192 `0.70 \u00d7 1.04 = 0.728`  \n\u2022 **Full precision:** `0.9803 \u00f7 1.4 = 0.700214...` \u2192 `0.700214 \u00d7 1.0403 = 0.72853...`  \n\nOn their own, those differences look tiny. But in longer calculations (like multi-step gas laws or equilibrium problems), that small drift can push a result across a rounding boundary. Holding precision until the final step locks in accuracy and keeps your sig figs honest. \ud83d\udd12\n\nYou've nailed the concept! Whenever you're ready, just reply with:\n1\ufe0f\u20e3 A quick practice problem to lock this in  \n2\ufe0f\u20e3 How this connects to `PV = nRT` or gas stoichiometry  \n3\ufe0f\u20e3 That you're feeling confident and ready for the next topic  \n\nI'm here whenever you are. Take your time! \ud83d\udca1\ud83d\udcda",
+        "PAM Tutor": "I can see how these multi-step calculations are starting to feel like a real grind; there's a lot of mental heavy lifting when you have to juggle unit conversions and rounding rules all at once. \n\nTo get you unstuck, let\u2019s look at the logic one last time to clear up any \"fog.\" You actually did most of the hard work correctly:\n1.  **The Formula:** Since only the pressure and temperature were changing for a single sample of gas, the Combined Gas Law ($\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}$) was the right tool to use. \n2.  **The Conversion:** Converting $745\\text{ mmHg}$ to $\\approx0.9803\\text{ atm}$ is the standard way to get everything into a consistent unit before you start the main calculation.\n3.  **The Calculation & Rounding:** By using those ratios and multiplying by your initial volume ($350\\text{ mL}$), you reached approximately $254.86$. Applying the rules for significant figures at the very end gives you a final answer of **254.9 mL**.\n\nYou're essentially at the finish line, but I know that \"last mile\" can be the most confusing part when everything is piling up. Do you want me to go into a much more in-depth explanation for how we handle those unit conversions or the specific rules for significant figures?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor B provided a more detailed and accurate explanation, acknowledged the learner's frustration, and used appropriate scaffolding."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.2606418735114857,
+        "Input Arousal": -0.002949041360989228,
+        "Internal State Valence": -0.14943933020190384,
+        "Internal State Arousal": 0.1436745520006543,
+        "Internal State Momentum": -0.2950693836098072,
+        "Internal State Intensity": 0.15601602588221025,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nIdk I think I get it, but I want to make sure. Can we go over another example or something? Just to be safe.\n\nAppraisal Details:\n1. Dominant Emotion: Cautious frustration\n2. Emotion Intensity: Low\n3. Emotional Inertia: Negative\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels tentatively confident but remains cautious due to an accumulation of frustration from repeated struggles with gas law calculations.\n\nMemory:\nThe learner experiences low-intensity grumpiness with negative valence and low arousal while seeking further examples to confirm their understanding of multi-step gas law unit conversions.",
+        "User Input": "Idk I think I get it, but I want to make sure. Can we go over another example or something? Just to be safe.",
+        "Control Tutor": "Hey! I\u2019d be glad to help you work through it. \ud83d\ude0a  \n\nTo get us started, could you please **paste the exact problem statement** or list out:\n- The given values (with units)\n- What you're solving for\n- Any specific part that's tripping you up (e.g., which formula to use, unit conversions, setting up ratios, sig figs, etc.)\n\nOnce I see the full details, we'll break it down step-by-step together\u2014just like before. No rush, and don't worry if it feels tricky; that's exactly what we're here for! \ud83d\udca1\ud83d\udcda",
+        "PAM Tutor": "I totally get that\u2014having one more \"sure thing\" under your belt is a great way to build confidence with these multi-step problems before moving on.\n\nLet's try this one: A gas sample at 300 K has an initial pressure of 800 mmHg and a volume of 500 mL. If the temperature is increased to 400 K and the pressure rises to 1.2 atm, what is the new volume?\n\nTo work through it, you can follow the same flow we used for the last problem:\n1. **Convert Units:** Convert 800 mmHg into atm by dividing by 760 (keep your extra decimal places for now so they don't get lost).\n2. **The Ratio Setup:** Use your initial and final values to set up the ratios ($\\frac{P_1}{P_2}$ and $\\frac{T_2}{T_1}$).\n3. **Calculation & Sig Figs:** Multiply those ratios by your initial volume of 500 mL, then apply the significant figure rules to your final answer only at the very end.\n\nGive that one a shot and let me know what you get for $V_2$. Would you like a much more detailed breakdown of how these specific calculations work for this example?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provided an immediate example, showing empathy and naturalness by jumping into support without delay."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.10802387993317099,
+        "Input Arousal": 0.09484650043305012,
+        "Internal State Valence": -0.14943933020190384,
+        "Internal State Arousal": 0.1436745520006543,
+        "Internal State Momentum": -0.2950693836098072,
+        "Internal State Intensity": 0.15601602588221025,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nAlright, so the problem is: A gas sample at 300 K has an initial pressure of 800 mmHg and a volume of 500 mL. If the temperature is increased to 400 K and the pressure rises to 1.2 atm, what's the new volume? So, I need to find V2 basically.\n\nI think I got it from here!\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a sense of frustration and irritation specifically tied to the multi-step calculation requirements for gas law unit conversions.\n2. Emotion Intensity: This emotion is currently being felt at a low intensity level.\n3. Emotional Inertia: The learner's emotional state is trending negatively, suggesting an increase in their feelings of dissatisfaction or grumpiness.\n4. Threshold Crossed: No threshold was crossed during this turn.\n5. Internal State: The learner is currently feeling a low-intensity sense of grumpiness and frustration as they grapple with the math required for gas law calculations.\n\nMemory:\nThe learner is experiencing low-intensity grumpiness with negative valence while struggling with multi-step unit conversion calculations for gas laws.",
+        "User Input": "Alright, so the problem is: A gas sample at 300 K has an initial pressure of 800 mmHg and a volume of 500 mL. If the temperature is increased to 400 K and the pressure rises to 1.2 atm, what's the new volume? So, I need to find V2 basically.\n\nI think I got it from here!",
+        "Control Tutor": "Awesome! Going over another example is a great way to lock in the concept. \ud83c\udf1f Here\u2019s a fresh one that builds directly on what we just covered:\n\n**\ud83d\udcdd New Problem:**\nA gas sample has an initial volume of `2.40 L` at a pressure of `620 mmHg` and a temperature of `285 K`. If the pressure is increased to `1.3 atm` and the temperature is raised to `315 K`, what is the new volume?\n\nLet\u2019s tackle this step-by-step together. Your first job is just to **identify your knowns** and **check if any units need converting** before we set up the Combined Gas Law ($\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}$).\n\n\ud83d\udd0d **Your turn:**\n1. List out $P_1$, $V_1$, $T_1$ and $P_2$, $T_2$.\n2. Do any of these need unit conversion to match? (Hint: Pay attention to pressure and temperature units!)\n3. Show me your **converted values** (or tell me if everything already matches).\n\nOnce you share those, we\u2019ll set up the ratios, calculate $V_2$, and lock in the significant figures together. Take your time\u2014I\u2019m here when you\u2019re ready! \ud83d\udca1\ud83d\udcd0",
+        "PAM Tutor": "I know how much of a grind these multi-step calculations can be when you have to keep every unit and conversion straight. You've got the right logic down for $V_2$, so go ahead and share your final result whenever you're ready!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provided a more empathetic and naturally flowing response, encouraging the learner to proceed confidently while maintaining accuracy."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.07331229201517998,
+        "Input Arousal": 0.17286015633726493,
+        "Internal State Valence": -0.14943933020190384,
+        "Internal State Arousal": 0.1436745520006543,
+        "Internal State Momentum": -0.2950693836098072,
+        "Internal State Intensity": 0.15601602588221025,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nSo for P1 it's 800 mmHg and P2 is already in atm at 1.2 atm? Also T1 is 300 K, T2 is 400K, and V1 is 500 mL.\n\nAppraisal Details:\n1. Dominant Emotion: Curious but uncertain\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Negative trajectory\n4. Threshold Crossed: Not crossed\n5. Internal State: The learner expresses a low-intensity sense of curiosity while navigating the ongoing frustration and complexity of multi-step unit conversions for gas laws.\n\nMemory:\nThe learner feels curious with slightly negative valence, low arousal, and low intensity regarding multi-step unit conversion calculations for gas laws.",
+        "User Input": "So for P1 it's 800 mmHg and P2 is already in atm at 1.2 atm? Also T1 is 300 K, T2 is 400K, and V1 is 500 mL.",
+        "Control Tutor": "You've got your variables perfectly identified! \ud83c\udfaf Here's a quick confirmation of what we're working with:\n\n- **P\u2081** = 800 mmHg  \n- **V\u2081** = 500 mL  \n- **T\u2081** = 300 K \u2705 (already in Kelvin, so we're good!)  \n- **P\u2082** = 1.2 atm  \n- **T\u2082** = 400 K \u2705  \n- **V\u2082** = ?  \n\n\ud83d\udd0d **One quick check before we plug into the formula:**  \nYour temperature units are already consistent (Kelvin), and your volume can stay in mL since V\u2082 will just come out in mL too. But notice that your **pressures don't match**: `P\u2081` is in **mmHg** while `P\u2082` is in **atm**. The Combined Gas Law requires matching pressure units so they cancel properly in the ratio.\n\n\ud83d\udd27 **Next Step: Match Your Pressures**  \nWe know that `1 atm = 760 mmHg` (an exact conversion with infinite significant figures). Which would you prefer?\n- Convert `P\u2081` to atm: `800 mmHg \u00f7 760 mmHg/atm = ?`\n- Convert `P\u2082` to mmHg: `1.2 atm \u00d7 760 mmHg/atm = ?`\n\nGo ahead and calculate the one you prefer, then share it with me! Once we have matching pressures, we'll set up the Combined Gas Law, solve for V\u2082, and lock in the significant figures together. You're tracking perfectly\u2014take your time! \ud83d\udca1\ud83d\udcd0",
+        "PAM Tutor": "You've got it exactly right. Taking a second to confirm those values before you dive into the math is a great way to make sure nothing gets mixed up mid-calculation. \n\nThose are the correct figures to use: $P_1$ is 800 mmHg, $P_2$ is 1.2 atm, $T_1$ is 300 K, $T_2$ is 400 K, and $V_1$ is 500 mL.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor A provides a clear and accurate confirmation of the learner's values without unnecessary complexity, scoring higher in conversational naturalness and pedagogical accuracy."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "curious",
+        "Input Valence": 0.17795670703053473,
+        "Input Arousal": 0.3070391634828411,
+        "Internal State Valence": 0.01711042609717854,
+        "Internal State Arousal": 0.209020396593529,
+        "Internal State Momentum": -0.1624788681010251,
+        "Internal State Intensity": 0.2355626429655281,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, so I think I need to convert P1 from mmHg to atm since P2 is already in atm. Let's try that:\n\n800 mmHg \u00f7 760 mmHg/atm = ?\n\nIs that correct?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling curious and seeking validation while attempting a specific conversion step for their gas law calculation.\n2. Emotion Intensity: This emotion is being felt with low intensity.\n3. Emotional Inertia: The emotional momentum is trending in a downward direction.\n4. Threshold Crossed: Yes, the internal state has changed from the previous turn.\n5. Internal State: The learner is currently experiencing curiosity and some uncertainty while actively engaging with multi-step unit conversions for gas law problems.\n\nMemory:\nThe learner feels curious with slightly positive valence, low arousal, and low intensity while attempting to perform a mmHg to atm conversion for a gas law calculation.",
+        "User Input": "Okay, so I think I need to convert P1 from mmHg to atm since P2 is already in atm. Let's try that:\n\n800 mmHg \u00f7 760 mmHg/atm = ?\n\nIs that correct?",
+        "Control Tutor": "\u2705 **Yes, that\u2019s exactly right!** Converting `P\u2081` to atm is a smart choice since `P\u2082` is already in atm\u2014it keeps your math clean and avoids extra conversion steps later.\n\nLet\u2019s run the number through:  \n`800 \u00f7 760 = 1.05263... atm`\n\n\ud83d\udd39 **Important reminder:** Keep that full decimal (or at least 4\u20135 digits) in your calculator or notes. We\u2019ll only round at the very end based on your original given values, and `1 atm = 760 mmHg` is an exact conversion with **infinite significant figures**, so it won\u2019t limit your precision.\n\nNow that your pressures match (`P\u2081 \u2248 1.0526 atm` and `P\u2082 = 1.2 atm`), you\u2019re ready to solve for `V\u2082` using the **Combined Gas Law**:\n\n$$\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}$$\n\n\ud83d\udd0d **Your turn:**\n1. Rearrange the equation to solve for `V\u2082` (hint: isolate it by multiplying/dividing the other terms).\n2. Plug in your knowns **using the unrounded `P\u2081` value**.\n3. Calculate and show me your setup & answer!\n\n\ud83d\udca1 *Quick sanity check:* Temperature is already in Kelvin, so no conversion needed there. Since `V\u2081` was in mL, your final `V\u2082` will automatically come out in mL too.\n\nTake your time\u2014I\u2019m here when you\u2019re ready to check the next step! \ud83d\udcd0\u2728",
+        "PAM Tutor": "You\u2019re spot on. Since $P_2$ is already in atm, converting $P_1$ to that same unit ensures everything stays consistent before you do the final math.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and empathetic responses. Tutor A's additional details on precision slightly enhance pedagogical accuracy, while Tutor B's response is concise yet effective."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.434761437762063,
+        "Input Arousal": -0.11264303434873003,
+        "Internal State Valence": -0.25059060699893065,
+        "Internal State Arousal": 0.08035502421662538,
+        "Internal State Momentum": -0.35891205007559634,
+        "Internal State Intensity": 0.1862492725604015,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay cool got it! Now how do I actually solve for V2 once I have all the numbers plugged in? Should I multiply or divide first, and in what order?\n\nShould I use the formula that says V2 = (P1 x V1 x T2) / (T1 x P2)? Is that correct?\nI feel like it makes sense but i dunno\nI don't want to mess up my calculations!\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing anxiety and insecurity regarding the accuracy of their calculation steps.\n2. Emotion Intensity: Low.\n3. Emotional Inertia: Negative.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels anxious about potential errors while attempting to navigate the multi-step math required for gas law calculations.\n\nMemory:\nThe learner is experiencing a low-intensity grumpy emotion with negative valence and low arousal while specifically struggling to determine the correct order of operations for the Combined Gas Law formula calculation.",
+        "User Input": "Okay cool got it! Now how do I actually solve for V2 once I have all the numbers plugged in? Should I multiply or divide first, and in what order?\n\nShould I use the formula that says V2 = (P1 x V1 x T2) / (T1 x P2)? Is that correct?\nI feel like it makes sense but i dunno\nI don't want to mess up my calculations!",
+        "Control Tutor": "You're exactly right! \ud83c\udfaf Your rearranged formula is **spot-on**:\n$$V_2 = \\frac{P_1 \\times V_1 \\times T_2}{T_1 \\times P_2}$$\n\n**Why this works:** We started with $\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}$. To isolate $V_2$, we multiply both sides by $T_2$ (moves it to the top left) and divide both sides by $P_2$ (moves it to the bottom right). That's exactly where your formula comes from! \u2705\n\n### \ud83d\udd22 On \"Multiply or Divide First?\"\nSince you're only dealing with multiplication and division, **mathematically the order doesn't matter**, but using grouping is the safest way to avoid calculator errors. I recommend this workflow:\n1. **Calculate the entire numerator first:** `P\u2081 \u00d7 V\u2081 \u00d7 T\u2082`\n2. **Calculate the entire denominator next:** `T\u2081 \u00d7 P\u2082`\n3. **Divide numerator \u00f7 denominator**\n\n\ud83d\udca1 *Calculator tip:* Use parentheses to lock your grouping, like this:  \n`(1.05263... * 500 * 400) / (300 * 1.2)`  \nThis prevents the calculator from accidentally dividing too early and throwing off your result.\n\n### \ud83d\udcdd Plug in Your Numbers\nUsing your converted $P_1$ (**keep all decimal places**):\n- **Numerator:** `1.05263... \u00d7 500 mL \u00d7 400 K`\n- **Denominator:** `300 K \u00d7 1.2 atm`\n- **Then divide:** `(Numerator) \u00f7 (Denominator)`\n\nWhen you press equals, your units will cancel perfectly, leaving you with volume in **mL**.\n\n\ud83d\udc49 **Your turn:** \n1. Show me the exact number your calculator gives you.\n2. Tell me what units you expect for the final answer.\n\nOnce you share that, we'll round to the correct significant figures together and wrap up the problem! You're tracking beautifully\u2014take your time. \ud83d\udcd0\u2728",
+        "PAM Tutor": "It makes total sense to want some extra reassurance before you do the final math; these multi-step problems can definitely be a lot to juggle at once. The good news is that your formula\u2014$V_2 = \\frac{P_1 \\times V_1 \\times T_2}{T_1 \\times P_2}$\u2014is exactly right and perfectly captures the relationship between those variables.\n\nTo make sure you don't get mixed up by the order of operations, a great way to handle this is to group your terms. You can treat everything on top as one \"block\" and everything on the bottom as another: \n1. Multiply $P_1$, $V_1$, and $T_2$ together first to get one large number.\n2. Then, divide that total by the product of $T_1$ and $P_2$.\n\nBy calculating the numerator first, you only have to perform one division at the very end, which makes it much harder to make a mistake halfway through. Alternatively, if you've already calculated your ratios (like $\\frac{P_1}{P_2}$ and $\\frac{T_2}{T_1}$), you can just multiply those values by your initial volume of 500 mL\u2014both methods will lead you to the same correct answer!\n\nDo you want a more in-depth explanation on how to handle these multi-factor calculations for future problems?",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and detailed explanations. Tutor A's response was more empathetic and natural, while Tutor B offered a structured breakdown with technical details."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.22093491745181382,
+        "Input Arousal": 0.032221237733028825,
+        "Internal State Valence": -0.28291531467044667,
+        "Internal State Arousal": 0.06110150962318676,
+        "Internal State Momentum": -0.4408417695097161,
+        "Internal State Intensity": 0.20105841721647857,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, so I'm gonna try plugging in the numbers now. Let's see...\n\nNumerator: 1.05263 \u00d7 500 \u00d7 400 = ?\n\nDenominator: 300 \u00d7 1.2 = ?\n\nThen I'll divide numerator by denominator. Hopefully this works!\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling frustrated and weary while attempting to navigate the complexities of multi-step gas law calculations.\n2. Emotion Intensity: This emotion is currently being experienced at a low level of intensity.\n3. Emotional Inertia: The emotional state is trending in a negative direction, showing little improvement as they attempt this calculation.\n4. Threshold Crossed: Yes, the internal state has shifted since the previous turn.\n5. Internal State: The learner feels frustrated and uncertain while grappling with multi-step gas law unit conversion calculations which have caused persistent grumpiness throughout the session.\n\nMemory:\nThe user is experiencing low-intensity grumpiness with negative valence and low arousal while struggling with multi-step math for gas law unit conversions and the resulting formula applications.",
+        "User Input": "Okay, so I'm gonna try plugging in the numbers now. Let's see...\n\nNumerator: 1.05263 \u00d7 500 \u00d7 400 = ?\n\nDenominator: 300 \u00d7 1.2 = ?\n\nThen I'll divide numerator by denominator. Hopefully this works!",
+        "Control Tutor": "You\u2019ve set this up perfectly! \ud83c\udfaf Your grouping and order are exactly what we need. Let\u2019s walk through the calculator steps together so you get a clean result:\n\n\ud83d\udd22 **Step 1: Calculate the numerator**  \n`1.05263... \u00d7 500 \u00d7 400` = ?  \n*(\ud83d\udca1 Reminder: Keep all the decimal places from your `P\u2081` conversion until the very end!)*\n\n\ud83d\udd22 **Step 2: Calculate the denominator**  \n`300 \u00d7 1.2` = ?\n\n\ud83d\udd22 **Step 3: Divide**  \nTake your Step 1 result \u00f7 your Step 2 result.\n\nGo ahead and punch those into your calculator, then reply with:\n1. The number you get for the **numerator**\n2. The number you get for the **denominator**\n3. Your **final raw answer** (before any rounding)\n\nOnce I have that, we\u2019ll quickly verify that the units cancel down to **mL** and round to the correct significant figures together. You're tracking beautifully\u2014take your time! \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "That's a solid way to break it down. You've got the right numbers in the right places for both parts of your fraction, so you're all set to finish the calculation.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provided more detailed step-by-step guidance, which was appropriate given the learner's need for structured calculation support."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "think",
+        "Input Valence": -0.08003826043568553,
+        "Input Arousal": 0.10129116941243411,
+        "Internal State Valence": -0.28291531467044667,
+        "Internal State Arousal": 0.06110150962318676,
+        "Internal State Momentum": -0.4408417695097161,
+        "Internal State Intensity": 0.20105841721647857,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nAlright, so here it goes:\n\nNumerator: 1.05263 \u00d7 500 = 526.315 then \u00d7400 = 210,526\n\nDenominator: 300 x 1.2 = 360\n\nNow dividing the numerator by denominator:\n\n210,526 \u00f7 360 \u2248 ?\n\nIs that correct so far? I'm a bit nervous about messing up the calculations\n\nAppraisal Details:\n1. Dominant Emotion: Nervousness and apprehension regarding calculation accuracy\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Negative momentum, reflecting an ongoing struggle with complex calculations\n4. Threshold Crossed: No threshold crossed\n5. Internal State: The learner feels nervous about their current progress, continuing a prolonged period of uncertainty while navigating multi-step gas law unit conversions.\n\nMemory:\nThe user feels nervous and uncertain with negative valence, low arousal, and low intensity while attempting to perform multi-step math for gas law unit conversion calculations.",
+        "User Input": "Alright, so here it goes:\n\nNumerator: 1.05263 \u00d7 500 = 526.315 then \u00d7400 = 210,526\n\nDenominator: 300 x 1.2 = 360\n\nNow dividing the numerator by denominator:\n\n210,526 \u00f7 360 \u2248 ?\n\nIs that correct so far? I'm a bit nervous about messing up the calculations",
+        "Control Tutor": "You're absolutely on track! \ud83c\udf1f Your setup and arithmetic are spot-on, and it's completely normal to feel nervous about juggling multiple multiplications and divisions. You've handled the grouping perfectly. Let's finish this step together:\n\n### \ud83d\udd22 Finishing the Division\nTaking your numbers:  \n`210,526 \u00f7 360 \u2248 **584.79**`\n\nSo your unrounded result is **~584.8 mL**.\n\n\u26a0\ufe0f **Quick Pro-Tip for Gas Laws:**  \nYou used `1.05263` instead of the full calculator value for `P\u2081`. That tiny rounding early in the chain shifts the final answer slightly (exact unrounded calculation gives `\u2248 584.83`). In chemistry/physics, **keep at least 5-6 decimal places in intermediate steps** or just type `(800 \u00f7 760 \u00d7 500 \u00d7 400) \u00f7 (300 \u00d7 1.2)` all at once to avoid that drift!\n\n---\n\n### \ud83d\udcd0 Next Step: Significant Figures\nBefore we lock in the final answer, let's match your precision to your original data. Look back at your given values:\n- `800 mmHg` \u2192 ambiguous (usually treated as 1\u20133 sig figs depending on context)\n- `500 mL` \u2192 ambiguous (1\u20133 sig figs)\n- `300 K` \u2192 ambiguous (1\u20133 sig figs)\n- `1.2 atm` \u2192 **2 significant figures** \u2705\n- `400 K` \u2192 ambiguous (1\u20133 sig figs)\n\nIn gas law problems like this, the value with the **fewest confirmed significant figures** dictates your final answer's precision. Since `1.2` clearly has **2 sig figs**, your final volume should be rounded to **2 significant figures**.\n\n\ud83d\udc49 **Your turn:**  \nTake your raw result (`~584.8`) and round it to 2 significant figures. What do you get? (And don't forget the units!) Once you share that, we'll wrap up this problem and double-check why the volume makes physical sense. You're doing great! \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "You've got it\u2014your math is spot on so far. You correctly calculated both the numerator and denominator based on the variables we pulled from the problem, so you can feel confident moving toward that final division. I know these multi-step problems can be a bit nerve-wracking to track when there are so many pieces involved, but your method of breaking it down into chunks like this is a great way to keep everything organized.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and empathetic responses, with Tutor A excelling in pedagogical depth and Tutor B in conversational naturalness."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.42375751384533944,
+        "Input Arousal": -0.11615813411772255,
+        "Internal State Valence": -0.4240036971094716,
+        "Internal State Arousal": -0.009802347873176971,
+        "Internal State Momentum": -0.6335764018713964,
+        "Internal State Intensity": 0.16457400146234977,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOk so how about if I just type in everything all at once like `(800 \u00f7 760 \u00d7 500 \u00d7 400) \u00f7 (300 \u00d7 1.2)`? That would save me some trouble, right?\n\nAlso, so when rounding to 2 sig figs should it be 580 or 590?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and impatience due to the complexities of multi-step calculation routines.\n2. Emotion Intensity: Low intensity but consistent frustration.\n3. Emotional Inertia: Trending negatively as the learner becomes weary of repetitive math hurdles.\n4. Threshold Crossed: True\n5. Internal State: The learner feels frustrated and is seeking a shortcut while grappling with the accumulating challenges of gas law calculations and significant figure rules.\n\nMemory:\nThe learner exhibits low-intensity grumpiness with negative valence and low arousal while specifically struggling with multi-step math, unit conversions for gas laws, and the application of significant figure rules during rounding.",
+        "User Input": "Ok so how about if I just type in everything all at once like `(800 \u00f7 760 \u00d7 500 \u00d7 400) \u00f7 (300 \u00d7 1.2)`? That would save me some trouble, right?\n\nAlso, so when rounding to 2 sig figs should it be 580 or 590?",
+        "Control Tutor": "Yes to both! Let's clear those up quickly so you can lock in your final answer with confidence:\n\n### \ud83d\udd22 1. Typing it all at once\n**Absolutely, do that!** `(800 \u00f7 760 \u00d7 500 \u00d7 400) \u00f7 (300 \u00d7 1.2)` is actually the *recommended* way to calculate this. \n\nWhy? It bypasses **intermediate rounding drift**. When you round `800/760` to `1.0526` early, your calculator loses precision and nudges the final answer slightly (from `~584.83` to `~584.79`). Plugging it all in one line preserves your calculator's full internal precision, saves keystrokes, and reduces typo risk. Just make sure those parentheses are exactly as you wrote them, and you'll get `\u2248 584.795...`\n\n### \ud83d\udccf 2. Rounding to 2 sig figs: `580` or `590`?\nIt's **`580 mL`**. Here's the step-by-step rule so it never feels like guessing:\n- Your raw value: `~584.8`\n- For **2 significant figures**, we keep the first two digits: `5` (hundreds place) and `8` (tens place).\n- We look at the **next digit** (the ones place) to decide whether to round up: that digit is `4`.\n- Since `4 < 5`, we **round down** (keep the `8` as-is) and replace the dropped places with a placeholder zero: `580`.\n\n\u26a0\ufe0f *Note on the trailing zero:* In `580`, the zero is **not significant**; it's just a placeholder to show the number landed in the hundreds. To make the 2 sig figs completely unambiguous, chemists often write this as **`5.8 \u00d7 10\u00b2 mL`**.\n\n\u2705 **Your final answer:** `580 mL` (or `5.8 \u00d7 10\u00b2 mL`)\n\n\ud83d\udd0d **Quick sanity check:** Does this make physical sense? \n- Pressure increased slightly (`1.05 \u2192 1.2 atm`), which would shrink volume.\n- Temperature increased more significantly (`300 \u2192 400 K`), which expands volume.\n- Since the temperature effect dominates, we expect `V\u2082 > V\u2081`. `580 > 500` \u2705 perfectly matches our intuition!\n\nYou've navigated the setup, calculator work, and sig fig rules flawlessly. Ready to try a similar problem on your own, or should we pivot to another concept? \ud83d\udca1\ud83d\udcd0",
+        "PAM Tutor": "I can totally see how these multi-step calculations are starting to feel like a real grind\u2014it's a lot of heavy lifting to keep everything straight.\n\nTyping it all at once like that is actually a great shortcut. By putting the numerator and denominator in their own sets of parentheses, you're telling the calculator to handle those groupings first, which keeps the order of operations correct and saves you from having to do each step one by one. \n\nAs for your rounding question, it should be 580. Since your calculation results in approximately 584.79, the first two significant figures are 5 and 8. Because the third digit is a 4 (which is less than 5), you'd keep that 8 as it is and drop the rest of the decimals.\n\nDo you want me to walk through some other examples of how sig figs work with different numbers, or are you ready to move on to the next part?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a concise and accurate explanation, effectively addressing both the calculator shortcut and rounding rules without unnecessary complexity."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.40253243908518915,
+        "Input Arousal": -0.11511981905205179,
+        "Internal State Valence": -0.4959216817167964,
+        "Internal State Arousal": -0.0519293363447269,
+        "Internal State Momentum": -0.8176133413158825,
+        "Internal State Intensity": 0.2662125768414174,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay cool, thanks for clearing that up! That makes total sense now.\n\nI think I'm good with significant figures for now. Maybe we can switch gears and talk about something else?\n\nLike what are some other common gas laws besides the combined gas law?\n\nAppraisal Details:\n1. Dominant Emotion: Grumpiness\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Negative momentum\n4. Threshold Crossed: True\n5. Internal State: The learner feels a sense of relief regarding the clarity on significant figures but remains within an overall state of low-intensity grumpiness resulting from previous struggles with gas law calculations.\n\nMemory:\nThe learner expresses relief at mastering significant figures while transitioning to other gas laws, despite a persisting state of low-intensity grumpiness stemming from past difficulties with multi-step conversion problems.",
+        "User Input": "Okay cool, thanks for clearing that up! That makes total sense now.\n\nI think I'm good with significant figures for now. Maybe we can switch gears and talk about something else?\n\nLike what are some other common gas laws besides the combined gas law?",
+        "Control Tutor": "That's fantastic news! \ud83c\udf89 You just conquered the Combined Gas Law with pressure conversions, calculator chaining, and significant figures\u2014that is a huge win in chemistry. Mastering that workflow gives you a strong foundation for almost any stoichiometry problem involving gases.\n\nSwitching gears sounds like a perfect plan. Since you've got the \"Combined\" law down (which links **Pressure**, **Volume**, and **Temperature**), let's look at the family tree of gas laws! \ud83c\udf33\u2697\ufe0f\n\nThere are a few other common ones you'll likely encounter. Some are actually just special cases of what we just did, while others introduce new variables like the amount of gas.\n\nHere is the breakdown of the \"Big Players\":\n\n### 1. The Individual Gas Laws (Special Cases)\nThese describe what happens when **only two** variables change while the third stays constant. You can think of these as subsets of the Combined Gas Law:\n\n*   **\ud83d\udd04 Boyle's Law:** Pressure vs. Volume (Temperature is constant).\n    *   **Relationship:** Inverse. If you squeeze a gas into a smaller space, pressure goes up.\n    *   **Formula:** $P_1 V_1 = P_2 V_2$\n\n*   **\ud83c\udf21\ufe0f Charles's Law:** Volume vs. Temperature (Pressure is constant).\n    *   **Relationship:** Direct. If you heat a gas, it expands.\n    *   **Formula:** $\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$\n\n*   **\u26a1 Gay-Lussac's Law:** Pressure vs. Temperature (Volume is constant).\n    *   **Relationship:** Direct. If you heat a gas in a rigid container, pressure rises.\n    *   **Formula:** $\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$\n\n---\n\n### 2. The \"Amount\" Laws (New Variables)\nSo far, we've assumed the amount of gas (moles) stays the same. In chemistry class, you'll often produce or consume gas in a reaction! These laws account for that.\n\n*   **\ud83c\udf88 Avogadro's Law:** Volume vs. Moles ($n$).\n    *   **Concept:** Equal volumes of gases at the same temperature and pressure contain the same number of particles. More gas = more space needed.\n    *   **Formula:** $\\frac{V_1}{n_1} = \\frac{V_2}{n_2}$\n\n*   **\ud83d\udc51 The Ideal Gas Law ($PV=nRT$):**\n    *   **Concept:** This is the \"Big Boss\" equation. It combines Pressure, Volume, Moles, and Temperature into one state equation using a constant ($R$, the Ideal Gas Constant).\n    *   **When to use:** When you have one sample of gas and need to find *any* variable without comparing it to a previous state.\n\n---\n\n### \ud83d\udca1 Tutor Advice for Next Steps:\nIf you are looking ahead at your syllabus, the **Ideal Gas Law** is usually the next major hurdle because it's so versatile. However, understanding that Avogadro's law links volume directly to moles is incredibly helpful for gas stoichiometry problems (e.g., \"How many liters of $O_2$ do I need to react with this much $H_2$?\").\n\n**Which direction interests you more?**\n1.  **The Ideal Gas Law:** The ultimate tool for calculating state variables ($PV=nRT$).\n2.  **Avogadro's Law & Stoichiometry:** Using gas laws to predict reaction yields (mole-to-volume conversions).\n3.  **Dalton's Law of Partial Pressures:** What happens when you mix different gases together?\n\nPick a path, or let me know if you have a specific question about any of them! \ud83d\udcd0\u2728",
+        "PAM Tutor": "Glad you\u2019re feeling better about sig figs; it definitely makes the math feel a lot less daunting once that part is squared away. \n\nSince we're switching gears, it's helpful to know that most of the common gas laws are actually just \"partial\" versions of what you just practiced with the Combined Gas Law. While the Combined Gas Law looks at how pressure ($P$), volume ($V$), and temperature ($T$) all interact together, these other laws focus on just two variables at a time:\n\n*   **Boyle's Law:** This looks at the relationship between pressure and volume. It states that pressure and volume are inversely proportional (if you decrease the volume of a container, the pressure of the gas inside goes up).\n*   **Charles's Law:** This focuses on the relationship between volume and temperature. It shows they are directly proportional\u2014as you heat a gas up, it takes up more space. \n*   **Gay-Lussac's Law:** This looks at the relationship between pressure and temperature (usually in a container with a fixed volume). Like Charles's Law, these two are directly proportional; as temperature increases, pressure also increases.\n*   **Avogadro's Law:** This focuses on the relationship between volume and the amount of gas present (measured in moles). It shows that as you add more gas to a container, the volume increases proportionally.\n\nEssentially, the Combined Gas Law is like a \"mega-law\" that combines Boyle's, Charles's, and Gay-Lussac's into one big equation to account for everything changing at once. \n\nDo you want me to go into a much more in-depth explanation or some specific examples for any of these individual laws?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more detailed and structured explanation, includes relevant examples, and offers guidance on next steps, making the response more comprehensive and engaging."
+    }
+]

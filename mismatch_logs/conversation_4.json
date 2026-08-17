@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.2490444666240364,
+        "Input Arousal": 0.42194469454698263,
+        "Internal State Valence": -0.2799118805805687,
+        "Internal State Arousal": 0.26560745836519745,
+        "Internal State Momentum": -0.2793107199750377,
+        "Internal State Intensity": 0.09898490531528596,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there! I'm struggling with understanding how to find the derivative of a function using the chain rule. Could you walk me through an example, please?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing confusion regarding the specific mechanics of applying the chain rule.\n2. Emotion Intensity: This emotion is manifesting at a low intensity level.\n3. Emotional Inertia: The emotional trajectory is trending negatively, indicating increasing frustration or difficulty as they move into these complex calculus topics.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels confused by the chain rule, contributing to an accumulated state of struggle with advanced concepts like trigonometric integrals and multi-step calculations seen in previous turns.\n\nMemory:\nThe learner is experiencing low-intensity confusion with negative valence and moderate arousal while struggling specifically with applying the chain rule for derivatives following a series of challenges with trigonometric integrations.",
+        "User Input": "Hey there! I'm struggling with understanding how to find the derivative of a function using the chain rule. Could you walk me through an example, please?",
+        "Control Tutor": "Perfect! Let\u2019s lock in **`\u222b sin\u00b3(x) dx`** as our odd-power practice. \ud83c\udfaf Since you want to work through it together, we\u2019ll take that **\u201cPeel & Convert\u201d** strategy and apply it step-by-step.\n\nHere\u2019s exactly how we set it up:\n1\ufe0f\u20e3 **Peel off one `sin(x)`** \u2192 `\u222b sin\u00b2(x) \u00b7 sin(x) dx`  \n2\ufe0f\u20e3 **Convert the remaining even power** using `sin\u00b2(x) = 1 - cos\u00b2(x)` \u2192 `\u222b (1 - cos\u00b2(x)) \u00b7 sin(x) dx`\n\nNow comes the clever part: **u-substitution**. \ud83d\udee0\ufe0f  \nWe let `u` be the trig function that\u2019s being squared inside the parentheses. Let\u2019s set:\n`u = cos(x)`\n\nTo make this work, we need to match your derivative `du` with the piece we peeled off (`sin(x) dx`).\n\n\ud83d\udc49 **Your turn:**\n1. What is `du/dx` for `u = cos(x)`? \n2. How does `-du` relate to our `sin(x) dx` term?\n3. If you replace every trig function with `u` and swap `sin(x) dx` with `-du`, what does the integral look like now?\n\n*(\ud83d\udca1 Tutor Tip: Since `d/dx[cos(x)] = -sin(x)`, you\u2019ll see a negative sign pop up! That minus sign is completely normal and just means we\u2019ll flip the order of terms in the polynomial.)*\n\nOnce you have it in terms of `u`, it\u2019s going to transform from trigonometry into a **simple polynomial** that\u2019s trivial to integrate. Take your time setting that up, and show me how it looks! I\u2019ll guide you through the algebra and back-substitution step-by-step. \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "It makes a lot of sense that the chain rule feels like a hurdle right now, especially after dealing with those complex trigonometric identities. It\u2019s a big jump to move from standard rules into \"nested\" functions.\n\nThe chain rule is essentially the method used to find the derivative of a \"function inside a function.\" Think of it as a way to peel back layers. If you have a composite function like $y = f(g(x))$, the rule states that the derivative is the derivative of the outer function (keeping the inner part the same) multiplied by the derivative of the inner function:\n$$\\frac{dy}{dx} = f'(g(x)) \\cdot g'(x)$$\n\nTo make this practical, it helps to identify your \"layers\" first. Here's a walk-through using the function $y = (3x^2 + 5)^4$:\n\n1.  **Identify the layers:** The outer function is the power $(\\dots)^4$. The inner function is the polynomial $(3x^2 + 5)$.\n2.  **Differentiate the outer layer:** Treat the inside part like a single block for a second. The derivative of something raised to the 4th power is $4(\\text{something})^3$. So, we get $4(3x^2+5)^3$.\n3.  **Differentiate the inner layer:** Now, look only at $(3x^2 + 5)$. The derivative of that piece is $6x$.\n4.  **Multiply them together:** You combine those two results to get your final answer:\n    $$\\frac{dy}{dx} = 4(3x^2+5)^3 \\cdot 6x$$\n    Which simplifies to:\n    $$\\frac{dy}{dx} = 24x(3x^2+5)^3$$\n\nA common shortcut is to think of it as: **\"Derivative of the outside, leave the inside alone, then multiply by the derivative of the inside.\"**\n\nDo you want to see a more in-depth explanation of how this specifically applies to trigonometric functions like the ones we were working on earlier?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 2,
+            "scaffolding_appropriateness": 2
+        },
+        "Judge Rationale": "Tutor B provides a clear, accurate explanation of the chain rule with an appropriate example and scaffolds well by addressing the learner's focus shift from integrals to derivatives."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.4183080209768376,
+        "Input Arousal": 0.5683772786927878,
+        "Internal State Valence": 0.08303768423776134,
+        "Internal State Arousal": 0.3867153864962336,
+        "Internal State Momentum": 0.001687944154254939,
+        "Internal State Intensity": 0.12996249066744198,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nGotcha, so for the derivative part du/dx is just -sin(x), right?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is showing confident and playful engagement while seeking confirmation on a specific trigonometric calculation.\n2. Emotion Intensity: This emotion is being expressed with low intensity.\n3. Emotional Inertia: The emotional trajectory of the learner remains stable.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels confident and affirmed in their understanding of sine derivatives, reflecting a shift from previous frustration during their work on trigonometric integrals.\n\nMemory:\nThe learner shows a cheeky and positive attitude with moderate arousal and low intensity while confirming the derivative of sine functions during their study of trigonometric integrals.",
+        "User Input": "Gotcha, so for the derivative part du/dx is just -sin(x), right?",
+        "Control Tutor": "That\u2019s a really smart pivot! \ud83c\udfaf The chain rule is actually the backbone of u-substitution, so getting clear on it now will make this whole section feel much smoother. Let\u2019s break it down quickly and tie it right back to your integral.\n\n### \ud83d\udd17 The Chain Rule in Plain English\nThe chain rule is for differentiating **\"functions inside functions.\"**  \nIf you have a composite function like `y = f(g(x))`, the derivative is:\n`dy/dx = f'(g(x)) \u00b7 g'(x)`\n\nIn practice, that just means:\n1. **Differentiate the outside**, leaving the inside exactly as it is.\n2. **Multiply by the derivative of the inside**.\n\n#### \ud83d\udcd0 Quick Example: `d/dx [cos(3x)]`\n- Outside function: `cos(u)` \u2192 derivative is `-sin(u)`\n- Inside function: `u = 3x` \u2192 derivative is `3`\n- Apply chain rule: `-sin(3x) \u00b7 3 = -3sin(3x)`\n\n### \ud83d\udd0d How This Connects to Your Integral\nIn your setup, you chose `u = cos(x)`. Here\u2019s the trick: the \"inside\" function is just `x`, and the derivative of `x` with respect to `x` is `1`. So the chain rule doesn\u2019t complicate things here\u2014it actually simplifies!\n\n`du/dx = d/dx[cos(x)] = -sin(x) \u00b7 1 = -sin(x)`\n\nWhich means:  \n`du = -sin(x) dx`  \nor, multiplying both sides by `-1`:  \n`-du = sin(x) dx`\n\nSee how that `-du` perfectly matches the piece we peeled off earlier? \ud83e\udde9 That\u2019s exactly what allows us to swap the trig integral into a clean polynomial.\n\n### \ud83d\udca1 Your Turn (Back on Track!)\nNow that you\u2019ve seen how derivatives work with u-sub:\n1. If `u = cos(x)`, what is `du/dx`?\n2. How can you rewrite `sin(x) dx` using `-du`?\n3. What does the full integral look like **in terms of u**?\n\nOnce you have it in polynomial form (`\u222b (1 - u\u00b2)(-du)`), integrating will be just basic power rules. Take a shot at that substitution step, and I\u2019ll help you push through to the final answer! \ud83d\udcd0\u2728",
+        "PAM Tutor": "You're spot on. Since $u = \\cos(x)$, the derivative $du/dx$ is indeed $-\\sin(x)$. You caught that negative sign perfectly, which is exactly what makes the substitution work for those types of problems.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provided a concise and accurate response that directly addressed the learner's question, while maintaining natural conversation and appropriate scaffolding."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.40025482721393923,
+        "Input Arousal": -0.11660788439912724,
+        "Internal State Valence": -0.19033028578570674,
+        "Internal State Arousal": 0.18538607813808927,
+        "Internal State Momentum": -0.1817355636111462,
+        "Internal State Intensity": 0.1196669805345135,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, so if du/dx is -sin(x) then does that mean we can rewrite sin(x) dx as -du?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing frustration and a sense of grumpiness while dealing with the technicalities of trigonometric substitution.\n2. Emotion Intensity: This emotion currently has low intensity.\n3. Emotional Inertia: The mood is trending negatively, moving toward increased irritation as they navigate these steps.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels frustrated and weary with the complexity of the calculation, and their internal state reflects a shift from initial curiosity to a more irritated state during the substitution process.\n\nMemory:\nThe learner is expressing grumpiness with low arousal and negative valence while attempting a substitution for trigonometric integrals involving the relationship between sin(x)dx and du.",
+        "User Input": "Okay, so if du/dx is -sin(x) then does that mean we can rewrite sin(x) dx as -du?",
+        "Control Tutor": "Yes, **exactly!** \ud83c\udfaf You've nailed the core idea behind u-substitution.\n\nHere's the quick algebraic breakdown so it clicks completely:\n1. Start with your derivative: `du/dx = -sin(x)`\n2. Multiply both sides by `dx`: `du = -sin(x) dx`\n3. Multiply both sides by `-1`: **`-du = sin(x) dx`**\n\nThat's exactly what we need! Remember when we set up the integral as:\n`\u222b (1 - cos\u00b2(x)) \u00b7 sin(x) dx`\n\nNow we can swap everything out:\n- `cos\u00b2(x)` becomes `u\u00b2`\n- `sin(x) dx` becomes `-du`\n\nSo your integral transforms into:\n`\u222b (1 - u\u00b2)(-du)`\n\n\ud83d\udc49 **Your turn:** Pull that negative sign out in front, distribute it into the parentheses, and write down what the integral looks like in clean polynomial form (just powers of `u`). Once you have that, integrating will be completely straightforward! \ud83d\udcd0\u2728",
+        "PAM Tutor": "It can be really frustrating trying to juggle all those signs when you're already dealing with complex trig identities.\n\nYour logic is correct; if $\\frac{du}{dx} = -\\sin(x)$, then $du$ is equal to $-\\sin(x) dx$. Multiplying both sides by $-1$ gives you $-du = \\sin(x) dx$, so rewriting it that way is exactly the right move for your substitution.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and natural explanation, effectively balancing empathy with clarity. Their response is straightforward and maintains a natural conversational tone."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "curious",
+        "Input Valence": 0.2228707173955627,
+        "Input Arousal": 0.36234690604615033,
+        "Internal State Valence": 0.019524258965913574,
+        "Internal State Arousal": 0.2561704093013137,
+        "Internal State Momentum": -0.020117895443691053,
+        "Internal State Intensity": 0.11434036192092165,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nSo if I pull out the -1 then I'd have:\n- \u222b (1-u\u00b2)(du)\n?\n\nAppraisal Details:\n1. Dominant Emotion: Curiosity\n2. Emotion Intensity: Low\n3. Emotional Inertia: Neutral\n4. Threshold Crossed: Yes\n5. Internal State: The learner currently expresses curiosity with low intensity, marking a shift from earlier frustration and hesitation toward active inquiry while working on trigonometric integrals.\n\nMemory:\nThe learner shows curiosity with slightly positive valence, moderate arousal, and low intensity while performing an algebraic substitution in a trigonometric integral calculation.",
+        "User Input": "So if I pull out the -1 then I'd have:\n- \u222b (1-u\u00b2)(du)\n?",
+        "Control Tutor": "Yes, that\u2019s **spot on**! \ud83c\udfaf Pulling out the `-1` is exactly the right algebraic move.\n\nNow you have two equally valid paths forward. I usually prefer to distribute it first just to avoid carrying a negative sign through the integration, but both work perfectly:\n\n\ud83d\udd39 **Distribute first (cleaner for power rule):**  \n`- (1 - u\u00b2) = u\u00b2 - 1`  \nSo your integral becomes: `\u222b (u\u00b2 - 1) du`\n\n\ud83d\udd39 **Keep it outside:**  \n`- \u222b (1 - u\u00b2) du`\n\nEither way, you\u2019re now sitting on a simple polynomial! It\u2019s time to use the **power rule** for integration (`\u222b u\u207f du = u\u207f\u207a\u00b9/(n+1)`).\n\n\ud83d\udc49 **Your turn:**  \nTake your preferred form and integrate each term with respect to `u`. What does the antiderivative look like in terms of `u`? *(Don't forget that `+ C` at the end!)* \ud83d\udcd0\u2728",
+        "PAM Tutor": "You're exactly right. Pulling that negative sign out gives you $-\\int (1-u^2) \\, du$, which is a much cleaner way to set up the problem before you apply the power rule.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, effectively confirming the learner's understanding without unnecessary elaboration."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.451051776856184,
+        "Input Arousal": -0.1534170266008005,
+        "Internal State Valence": -0.2589165107341622,
+        "Internal State Arousal": 0.092335434940468,
+        "Internal State Momentum": -0.23122201150632474,
+        "Internal State Intensity": 0.11624710638653538,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nDo I just add 1 to the exponent then divide? So for u\u00b2 it'd be u\u00b3/3 and for 1 it's u?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling frustrated and impatient due to repetitive difficulties with trigonometry substitution rules.\n2. Emotion Intensity: This emotion is currently being experienced at a low intensity level.\n3. Emotional Inertia: The mood is trending in a negative direction, indicating increasing frustration over time.\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels frustrated and weary as they grapple with the complexities of applying substitution rules within trigonometric integrals.\n\nMemory:\nThe user is experiencing low-intensity grumpiness with negative valence and low arousal while calculating power rule substitutions for trigonometric integrals.",
+        "User Input": "Do I just add 1 to the exponent then divide? So for u\u00b2 it'd be u\u00b3/3 and for 1 it's u?",
+        "Control Tutor": "Yes, you've got it exactly right! \ud83c\udfaf You're applying the **power rule for integration** perfectly:\n\n- For `u\u00b2`: add 1 to the exponent \u2192 `u\u00b3`, then divide by that new number \u2192 `u\u00b3/3` \u2705\n- For `1` (which is really `u\u2070`): add 1 to the exponent \u2192 `u\u00b9`, divide by 1 \u2192 `u` \u2705\n\nSo if you distribute first and work with `\u222b (u\u00b2 - 1) du`, your antiderivative in terms of `u` is:\n**`u\u00b3/3 - u + C`**\n\n*(If you kept the negative sign outside as `- \u222b (1 - u\u00b2) du`, you'd get `-u + u\u00b3/3 + C`. It's algebraically identical, just written in a different order!)* \ud83e\udde9\n\n\ud83d\udc49 **Your turn:**\n1. Write out that final expression with your `+ C` so we lock it in.\n2. Remember our original substitution was **`u = cos(x)`**. What does the complete antiderivative look like when you swap back to `x`?\n\nOnce you write that last step, we'll have successfully solved the whole integral from start to finish! \ud83d\udcd0\u2728 I'm here if you want to walk through one more example or tackle a slightly trickier substitution. Your turn!",
+        "PAM Tutor": "You're exactly right on both counts. It can be a real grind to keep track of these rules when you're dealing with multi-step substitutions, so having that consistent \"rule of thumb\" is the best way to handle them.\n\nFor $u^2$, your logic holds up perfectly: adding 1 to the exponent and dividing by that new number gives you $\\frac{u^3}{3}$. For the constant 1, it helps to think of it as having an \"invisible\" power of zero ($u^0$). If you apply your rule there\u2014adding 1 to the exponent $(0+1)$ and dividing by that result $(1/1)$\u2014it simplifies right back down to $u$.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more detailed and encouraging explanation, which is both pedagogically accurate and naturally conversational."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4264564542914741,
+        "Input Arousal": -0.1273345503839664,
+        "Internal State Valence": -0.41122377901538176,
+        "Internal State Arousal": 0.004467440810694237,
+        "Internal State Momentum": -0.42727150329970764,
+        "Internal State Intensity": 0.2477726195266825,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay so for the first part I'd have u\u00b3/3 -u + C? And then would I just swap cos(x) in for u since that's what we set it equal to?\n\nAppraisal Details:\n1. Dominant Emotion: Grumpy frustration regarding the substitution process\n2. Emotion Intensity: The emotion is of low intensity\n3. Emotional Inertia: The mood is trending negatively as they progress through these calculations\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels frustrated and grumpy with the current integration steps, showing a declining emotional trajectory over the session\n\nMemory:\nThe learner displays grumpiness with low intensity, negative valence, and very low arousal while performing substitutions for trigonometric integrals.",
+        "User Input": "Okay so for the first part I'd have  u\u00b3/3 -u + C? And then would I just swap cos(x) in for u since that's what we set it equal to?",
+        "Control Tutor": "Yes! You\u2019ve got it exactly right on both counts. \ud83c\udfaf\n\n1\ufe0f\u20e3 Your integration in terms of `u` is spot on:  \n`u\u00b3/3 - u + C` \u2705\n\n2\ufe0f\u20e3 **Back-substitution** is just reversing what we did at the very beginning. Since we originally set `u = cos(x)`, every `u` in your antiderivative simply swaps back with `cos(x)`:  \n`\u222b sin\u00b3(x) dx = (cos\u00b3(x))/3 - cos(x) + C` \u2705\n\nThat\u2019s the complete solution! \ud83c\udf89\n\n\ud83d\udca1 **Quick sanity check:** If you differentiate `(cos\u00b3(x))/3 - cos(x) + C`, you should get right back to `sin\u00b3(x)`. The derivative of `(cos\u00b3(x))/3` uses the chain rule (`cos\u00b2(x) \u00b7 -sin(x)`) and neatly cancels with the `-(-sin(x))` from the second term, leaving exactly what we started with. It's a great habit to verify your work this way!\n\nWould you like to:\n\ud83d\udd39 Try one more odd-power `sin` or `cos` integral to lock this pattern in?\n\ud83d\udd39 Tackle an even-power example where we'll need half-angle identities next time?\n\ud83d\udd39 Or are you feeling confident and ready to move to the next topic?\n\nYour turn! \ud83d\udcd0\u2728",
+        "PAM Tutor": "I can see how these multi-step substitutions can start to feel like a real grind\u2014it's tough keeping all those moving parts straight at once. You're spot on with both of your points here. Because we pulled out that negative sign earlier, $u^3/3 - u + C$ is the correct result for the integration step. And then yes, you just swap $\\cos(x)$ back in whenever you see a $u$. Since $u$ was defined as $\\cos(x)$, that's exactly how you get the final answer back into terms of $x$.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise, empathetic in brevity, and natural without unnecessary details."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "curious",
+        "Input Valence": 0.17706496369792146,
+        "Input Arousal": 0.3265421171789057,
+        "Internal State Valence": -0.14049528919047616,
+        "Internal State Arousal": 0.13329731135797881,
+        "Internal State Momentum": -0.29113709438475793,
+        "Internal State Intensity": 0.18580946727137718,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nSo, the final answer would be (cos\u00b3(x))/3 - cos(x) + C? Also how do I know when I should integrate by parts or if i could just use a substitution method?\n\nAppraisal Details:\n1. Dominant Emotion: Curiosity mixed with uncertainty regarding integration methodologies.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The learner's emotional state is trending toward more frustration and distress.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner exhibits curiosity in the current turn while carrying an accumulated sense of frustration from previous challenges with trigonometric integrals.\n\nMemory:\nThe learner expressed curiosity with positive valence, moderate arousal, and low intensity while seeking clarification on whether to use integration by parts or substitution for trigonometric functions.",
+        "User Input": "So, the final answer would be (cos\u00b3(x))/3 - cos(x) + C? Also how do I know when I should integrate by parts or if i could just use a substitution method?",
+        "Control Tutor": "Yes, **`(cos\u00b3(x))/3 - cos(x) + C` is exactly correct!** \ud83c\udf89 You've successfully navigated the whole u-substitution process and back-substituted perfectly. Great work locking that down.\n\n---\n\n### \ud83d\udd0d How to Choose Between U-Substitution & Integration by Parts\nThis is one of the most common \"which technique?\" questions in Calculus 2. The short answer: **look at the structure of the integrand.** Here\u2019s your quick decision framework:\n\n#### \u2705 Use **u-substitution** when:\n- You see a **function and its derivative** (or a constant multiple) sitting together.\n- It's essentially the **reverse chain rule**: `\u222b f(g(x)) \u00b7 g'(x) dx`\n- \ud83d\udccc *Examples:* \n  - `\u222b 3x\u00b2 e^(x\u00b3) dx` \u2192 inside: `x\u00b3`, derivative: `3x\u00b2`\n  - `\u222b sin\u2075(x) cos(x) dx` \u2192 inside: `sin(x)`, derivative: `cos(x)`\n  - `\u222b \u221a(4x + 1) dx` \u2192 inside: `4x+1`, derivative: `4`\n\n#### \u2705 Use **Integration by Parts (IBP)** when:\n- You have a **product of two different types of functions** that *don't* relate to each other via differentiation.\n- It's the **reverse product rule**: `\u222b u dv = uv - \u222b v du`\n- \ud83d\udccc *Examples:* \n  - `\u222b x e^x dx` (polynomial \u00d7 exponential)\n  - `\u222b x\u00b2 sin(x) dx` (polynomial \u00d7 trig)\n  - `\u222b ln(x) dx` or `\u222b arctan(x) dx` (use `u = ln(x)` or `arctan(x)`, `dv = dx`)\n\n---\n\n### \ud83e\udded Your Quick Decision Checklist:\n1. **Scan for a function + its derivative?** \u2192 `u-sub` (always try this first! It's faster when it works).\n2. **Product of two unrelated functions?** \u2192 Likely `IBP`. Use **LIATE** to pick your `u`:\n   - **L**ogarithmic (`ln x`)\n   - **I**nverse Trig (`arctan x`, etc.)\n   - **A**lgebraic/Polynomial (`x\u00b2`, `3x+1`)\n   - **T**rigonometric (`sin x`, `cos x`)\n   - **E**xponential (`e^x`, `2^x`)  \n   *(Pick the higher one as `u` so it simplifies when differentiated.)*\n3. **Trig powers or roots?** \u2192 Usually identities or `u-sub` (like we just did), *not* IBP.\n4. **Complicated fraction/rational function?** \u2192 Partial fractions or algebraic manipulation.\n\n\ud83d\udca1 *Pro Tip:* Sometimes the \"right\" choice isn't obvious until you try! If `u-sub` doesn't clean up the integral in one step, or leaves a messier problem behind, pivot to IBP (or another technique). Pattern recognition comes with practice, and it's completely normal to test both initially.\n\n---\n\n### \ud83d\udd1c What's Next?\nWould you like to:\n1. \ud83e\udde9 Practice **3 mixed problems** where you pick the technique first, then we walk through the reasoning together?\n2. \ud83d\udcd0 Tackle **even-power `sin`/`cos` integrals** (where half-angle identities take over)?\n3. \u270d\ufe0f Try one quick IBP example side-by-side with a u-sub problem to feel the structural difference?\n\nYour call! I'm here to match your pace. \ud83d\udcd0\u2728",
+        "PAM Tutor": "You nailed it; that\u2019s the correct final answer. It can be a lot to juggle all these moving parts at once, so don't worry about feeling some uncertainty while you're getting the hang of these trig integrals.\n\nTo decide between substitution and integration by parts, it helps to look at the structure of the integral and think about which \"rule\" is being reversed:\n\nSubstitution is based on the **Chain Rule**. You use this when you have a \"function inside another function\" where the derivative of that inner function is also present in the expression. For example, since $\\sin(x)$ is the derivative of $\\cos(x)$, using substitution for terms involving both was the right move here because it simplified the nested structure into something manageable.\n\nIntegration by Parts comes from the **Product Rule** ($\\int u \\, dv = uv - \\int v \\, du$). You typically turn to this when you have two different types of functions multiplied together, such as $x\\cos(x)$ or $e^x\\sin(x)$. It\u2019s your go-to when neither part is the \"derivative\" of the other, but they are multiplied together in a way that one part is easy to integrate and the other is harder.\n\nDo you want to see a more specific breakdown of how to identify these patterns in different problems?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more conversational tone and appropriately calibrated empathy, making the explanation feel more natural and engaging."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.009254191105719652,
+        "Input Arousal": 0.179780736065004,
+        "Internal State Valence": -0.14049528919047616,
+        "Internal State Arousal": 0.13329731135797881,
+        "Internal State Momentum": -0.29113709438475793,
+        "Internal State Intensity": 0.18580946727137718,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nSo, like if I had an integral like \u222b x e^x dx would that be one where I'd need integration by parts? And what's LIATE when you mention that?\n\nAppraisal Details:\n1. Dominant Emotion: Curiosity regarding specific integration techniques and the definition of the LIATE mnemonic.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending negatively.\n4. Threshold Crossed: No.\n5. Internal State: The learner is experiencing a sense of curiosity while their internal state shows a slight downward trend from previous periods of frustration during the transition to more complex calculus topics.\n\nMemory:\nThe user expresses curious interest with low arousal, low intensity, and slightly negative valence regarding integration by parts and the LIATE mnemonic for the integral of x e^x.",
+        "User Input": "So, like if I had an integral like \u222b x e^x dx would that be one where I'd need integration by parts? And what's LIATE when you mention that?",
+        "Control Tutor": "Yes! `\u222b x e^x dx` is literally the **classic textbook example** for integration by parts. You've got exactly the right instinct here. \ud83c\udfaf\n\n### \ud83d\udd0d Why Integration by Parts?\nYou're looking at a product of two **different types of functions**: a polynomial (`x`) and an exponential (`e^x`). \n- Neither is the derivative of the other, so **u-substitution won't work**.\n- But if you **differentiate** `x`, it drops to `1` (and eventually vanishes). If you **integrate** `e^x`, it stays beautifully simple. That's integration by parts' sweet spot! \ud83c\udfaf\n\n---\n\n### \ud83e\udde9 What is LIATE?\nLIATE is a handy mnemonic that helps you decide which part of your product should be your `u` (the part you'll **differentiate**) and which will be your `dv` (the part you'll **integrate**). \n\nYou go down the list and pick the **higher** function as `u`, because differentiating it will simplify things:\n\n| Letter | Category | Examples |\n|--------|----------|----------|\n| **L** | Logarithmic | `ln(x)`, `log\u2082(x)` |\n| **I** | Inverse Trig | `arctan(x)`, `arcsin(x)` |\n| **A** | Algebraic (Polynomial) | `x`, `x\u00b2`, `3x+1` |\n| **T** | Trigonometric | `sin(x)`, `cos(x)` |\n| **E** | Exponential | `e^x`, `2^x` |\n\n\ud83d\udca1 *Rule of thumb:* Pick the higher one as `u`. Everything below it becomes `dv`.\n\n---\n\n### \ud83d\udee0\ufe0f Let's apply it to `\u222b x e^x dx`:\n1. **Classify:** `x` = **A**lgebraic, `e^x` = **E**xponential\n2. **Pick using LIATE:** A comes before E \u2192 set `u = x`, `dv = e^x dx`\n3. **Differentiate & Integrate:**  \n   `du = dx`  \n   `v = \u222b e^x dx = e^x`\n4. **Plug into the IBP formula:** `\u222b u dv = uv - \u222b v du`  \n   `\u222b x e^x dx = (x)(e^x) - \u222b (e^x)(dx)`\n5. **Finish up:** The remaining integral is just `\u222b e^x dx = e^x`, so:  \n   `= x e^x - e^x + C`  \n   *(Often factored as `(x - 1)e^x + C`)*\n\n\u2705 Boom! One of the cleanest IBP problems out there because the leftover integral vanished into something trivial.\n\n---\n\ud83d\udd1c **What's next?** \nWould you like to:\n1. \ud83e\udde9 Try one where LIATE points to a slightly different choice (like `\u222b x sin(x) dx` or `\u222b ln(x) dx`)?\n2. \ud83d\udcd0 See what happens when the integral *doesn't* vanish immediately (and how to spot that early)?\n3. \ud83d\udcdd Lock this in by writing out `u`, `du`, `v`, `dv` for your own example first, then I'll check it?\n\nYour call! I'm right here with you. \u2728\ud83d\udcd0",
+        "PAM Tutor": "You're exactly right\u2014$\\int x e^x \\, dx$ is a perfect candidate for integration by parts because it involves two different types of functions multiplied together ($x$ and $e^x$), neither of which is the derivative of the other.\n\nLIATE is a mnemonic used to help you decide which part of an integral should be your $u$ when using integration by parts. It stands for:\n\n*   **L**ogarithmic (like $\\ln(x)$)\n*   **I**nverse Trig (like $\\arctan(x)$)\n*   **A**lgebraic ($x$, $x^2$, etc.)\n*   **T**rigonometric ($\\sin(x)$, $\\cos(x)$)\n*   **E**xponential ($e^x$)\n\nThe rule is simple: when you're looking at a product of two terms, you pick the one that appears highest on this list to be your $u$. Since \"Algebraic\" comes before \"Exponential,\" you\u2019d choose $x$ as your $u$ in that specific problem. This helps simplify the integral because $x$ gets simpler when you differentiate it (it becomes 1), while $e^x$ stays essentially the same when differentiated, making the integration much easier to manage.\n\nDo you want to see a few more examples of different integrals where LIATE helps determine which part should be your $u$?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more detailed and enthusiastic explanation, which may be more engaging for some learners. While Tutor B is concise, Tutor A's depth in explaining LIATE and the example might better suit educational needs."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.03528795506572352,
+        "Input Arousal": 0.1619771581492387,
+        "Internal State Valence": -0.14049528919047616,
+        "Internal State Arousal": 0.13329731135797881,
+        "Internal State Momentum": -0.29113709438475793,
+        "Internal State Intensity": 0.18580946727137718,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: So if I had ln(x) times sin(x), would that be a case where I'd have to use integration by parts too?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is expressing curious inquiry regarding the specific application of rules for complex functions.\n2. Emotion Intensity: The emotional intensity is low, indicating a focused and steady state of mind during this interaction.\n3. Emotional Inertia: The mood is trending slightly downward toward a more cautious or less certain stance.\n4. Threshold Crossed: No threshold was crossed in this turn.\n5. Internal State: The learner currently feels curious but slightly guarded as they navigate the transition from basic concepts to complex trigonometric and logarithmic integrations.\n\nMemory: The learner displays low-intensity curiosity with low arousal and slightly negative valence while inquiring about using integration by parts for an expression involving ln(x) multiplied by sin(x).",
+        "User Input": "So if I had ln(x) times sin(x), would that be a case where I'd have to use integration by parts too?",
+        "Control Tutor": "Yes, **integration by parts is absolutely the right technique to start with** for `\u222b ln(x) sin(x) dx`! You're correctly spotting a product of two unrelated function types that doesn't lend itself to u-substitution.\n\nLet's walk through how you'd set it up using your **LIATE** rule:\n- **L**ogarithmic (`ln x`) comes before **T**rigonometric (`sin x`), so you pick:\n  - `u = ln(x)` \u2192 `du = (1/x) dx`\n  - `dv = sin(x) dx` \u2192 `v = -cos(x)`\n\nPlugging into the IBP formula (`\u222b u dv = uv - \u222b v du`):\n`\u222b ln(x) sin(x) dx = -ln(x)cos(x) - \u222b (-cos(x))(1/x) dx`\n`= -ln(x)cos(x) + \u222b (cos(x)/x) dx`\n\n---\n\n\ud83d\udd0d **A crucial calculus insight here:**  \nWhile IBP is the *correct first step*, notice what happens next! The leftover integral `\u222b (cos(x)/x) dx` actually **cannot be expressed using basic elementary functions** (polynomials, trig, exponentials, or logs). It requires a special function called the **Cosine Integral**, denoted `Ci(x)`, which is typically covered in differential equations or advanced analysis.\n\nThis is a fantastic teaching moment! It shows that:\n1. \u2705 IBP is still the right technique to *start* with.\n2. \ud83d\udcc9 Not every integral finishes with a clean closed-form answer in Calc 2. Sometimes it loops back, sometimes it vanishes into `x^n`, and sometimes it reveals a non-elementary integral (like this one!).\n\n---\n\n\ud83d\udca1 **Want to see IBP work out beautifully?**  \nLet's try a textbook-friendly example that follows the exact same LIATE logic but actually solves cleanly:\n- `\u222b x cos(x) dx` \u2192 **A**lgebraic beats **T**rigonometric \u2192 `u = x`, `dv = cos(x) dx` \u2705\n- `\u222b ln(x) dx` \u2192 **L**ogarithmic beats... well, it's alone! \u2192 `u = ln(x)`, `dv = dx` \u2705\n\n\ud83d\udd1c **Your turn to choose:**\n1. \ud83e\udde9 Try a clean IBP problem step-by-step with me (I'll guide you through choosing u/dv and watching the terms simplify)?\n2. \ud83d\udcd0 Learn how to handle IBP problems that *loop back* on themselves (like `\u222b e^x sin(x) dx`), where you actually solve for the integral algebraically?\n3. \ud83d\udd0d Talk about how mathematicians handle non-elementary integrals like `\u222b cos(x)/x dx` in practice?\n\nPick your path! I'm right here to keep the momentum going. \u2728\ud83d\udcd0",
+        "PAM Tutor": "You\u2019re right\u2014you\u2019d use integration by parts for $\\int \\ln(x) \\sin(x) \\, dx$. Since it's a product of two different types of functions (a logarithmic and a trigonometric one) where neither is the derivative of the other, it fits that specific criteria perfectly. Following LIATE, you\u2019d pick $\\ln(x)$ as your $u$ because \"L\" comes before \"T\" on the list.\n\nDo you want to see a step-by-step breakdown of how we'd set up the $u$ and $dv$ for that specific integral?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A's response is more concise and naturally flowing, effectively addressing the learner's question without unnecessary detail. While Tutor B provides depth, it feels slightly less conversational."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "curious",
+        "Input Valence": 0.20940929495263844,
+        "Input Arousal": 0.38123338120058187,
+        "Internal State Valence": 0.04134840345729736,
+        "Internal State Arousal": 0.23247173929502007,
+        "Internal State Momentum": -0.13112670016358619,
+        "Internal State Intensity": 0.2854701135764627,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nGot it, so integration by parts is definitely needed there even if it gets complicated, that makes sense.\n\nWould you be able to explain the loop back scenario for e^x sin(x) as an example? Idk if im following this correctly.\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing curiosity and seeking clarification on a specific technical hurdle regarding the loop back logic of integration by parts.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Slightly negative momentum, indicating a move toward cautious inquiry as they confront more complex content.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner is feeling curious while seeking confirmation on the loop back method for e^x sin(x) after navigating several previous hurdles with trigonometric integrals and substitution.\n\nMemory:\nThe learner expresses curiosity with positive valence, low arousal, and low intensity while specifically asking about the loop back scenario for an integral involving e^x sin(x).",
+        "User Input": "Got it, so integration by parts is definitely needed there even if it gets complicated, that makes sense.\n\nWould you be able to explain the loop back scenario for e^x sin(x) as an example? Idk if im following this correctly.",
+        "Control Tutor": "Great question! The **\"loop back\"** (also called the recursive or cyclical technique) is one of the most elegant tricks in Integration by Parts. It happens when applying IBP twice brings you right back to the exact same integral you started with\u2014allowing you to solve for it algebraically like a simple equation! \ud83d\udd01\n\nLet\u2019s walk through `\u222b e^x sin(x) dx` step-by-step:\n\n### \ud83d\udcd8 Step 1: Set up the first IBP\nGive the integral a temporary name so we can track it:  \nLet \\( I = \\int e^x \\sin(x) \\, dx \\)  \n\nChoose \\( u = e^x \\) and \\( dv = \\sin(x) \\, dx \\)  \n\u2192 Differentiate: \\( du = e^x \\, dx \\)  \n\u2192 Integrate: \\( v = -\\cos(x) \\)  \n\nApply the IBP formula (\\( \\int u \\, dv = uv - \\int v \\, du \\)):  \n\\[ I = e^x(-\\cos x) - \\int (-\\cos x)(e^x \\, dx) \\]  \n\\[ I = -e^x \\cos x + \\underbrace{\\int e^x \\cos x \\, dx}_{\\text{new integral}} \\]  \u2705\n\n### \ud83d\udd04 Step 2: Apply IBP a second time\nNow tackle the leftover piece: \\( \\int e^x \\cos x \\, dx \\)  \n**Keep the exact same assignment:** \\( u = e^x \\), \\( dv = \\cos x \\, dx \\)  \n\u2192 \\( du = e^x \\, dx \\)  \n\u2192 \\( v = \\sin x \\)  \n\nApply IBP again:  \n\\[ \\int e^x \\cos x \\, dx = e^x \\sin x - \\int \\sin x (e^x \\, dx) \\]  \nWait\u2026 look closely! That last integral is **exactly our original \\( I \\)**.  \n\nSo we can write:  \n\\[ \\int e^x \\cos x \\, dx = e^x \\sin x - I \\]\n\n### \ud83e\udde9 Step 3: Plug it back in & solve algebraically\nSubstitute this result back into our first equation:  \n\\[ I = -e^x \\cos x + (e^x \\sin x - I) \\]  \n\nNow **treat \\( I \\) like a regular variable** (like \\( x \\) or \\( y \\)) and solve! Add \\( I \\) to both sides:  \n\\[ 2I = e^x \\sin x - e^x \\cos x \\]  \nDivide by 2 and don't forget your constant:  \n\\[ \\boxed{I = \\frac{e^x(\\sin x - \\cos x)}{2} + C} \\]\n\n### \ud83d\udca1 Why did this happen?\nNeither \\( e^x \\) nor trig functions simplify to zero when differentiated/integrated. Instead, they cycle through similar forms while keeping the \"product\" structure intact. That's what creates the loop! \n\n\u26a0\ufe0f **Crucial tip for success:** Always stick with the same choice for `u` across both steps. If you swap them halfway through (e.g., use `u=e^x` first, then `u=sin x` second), the loop breaks and you'll spiral instead of solving!\n\nDoes that clarify how the \"loop back\" works algebraically? Would you like to:\n1\ufe0f\u20e3 Try one yourself (`\u222b e^x cos(x) dx` or `\u222b sin\u00b2(x) dx`) to practice spotting/using the loop?\n2\ufe0f\u20e3 See why this *doesn't* work for every product (like `\u222b x e^x dx`, where you don't get a loop)?\n3\ufe0f\u20e3 Move on to a mixed practice set where you pick when to use u-sub, IBP, or the loop-back trick?\n\nYour turn! I'm right here. \ud83d\udcd0\u2728",
+        "PAM Tutor": "It's totally normal to find the loop back a bit confusing; it\u2019s one of those moments where integration by parts feels like it's going in circles until you see the logic behind it.\n\nThe reason this happens is that certain functions\u2014specifically $e^x$, $\\sin(x)$, and $\\cos(x)$\u2014are \"cyclic.\" When you differentiate them, they don't disappear or simplify into constants; instead, they just cycle through different forms (like sine becoming cosine, then negative sine). Because of this, when you have a product like $e^x \\sin(x)$, applying integration by parts twice will eventually bring the original integral back into your equation.\n\nSince the expression repeats, we don't try to solve it in one go. Instead, we treat the entire integral as a variable, such as $I$. When that same $I$ reappears on the right side of your equation after the second round of integration by parts, you can simply use algebra to move it to the left side. This allows you to solve for $I$ and get your final answer.\n\nDo you want to see a step-by-step calculation of $\\int e^x \\sin(x) dx$ so we can walk through how that algebraic \"move\" works?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more conversational and empathetic, which aligns well with the learner's need for understanding a complex concept. While both are accurate, Tutor A's approach feels more natural and less overwhelming."
+    }
+]

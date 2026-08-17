@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.3444300466333515,
+        "Input Arousal": 0.38108139558462417,
+        "Internal State Valence": -0.09089498105006691,
+        "Internal State Arousal": 0.12127495642701355,
+        "Internal State Momentum": -0.603625043545617,
+        "Internal State Intensity": 0.2110943726648568,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Hey there! I'm having a bit of trouble understanding how to solve this integral for my calculus homework. It's the first time I've seen something like this, so any help would be awesome.\n\nAppraisal Details:\n1. Dominant Emotion: The learner is displaying a cheeky and friendly demeanor while grappling with the uncertainty of new calculus material.\n2. Emotion Intensity: The intensity of the current emotion is low.\n3. Emotional Inertia: The emotional inertia indicates a negative trend in the learners' overall mood.\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels an initial sense of friendly curiosity mixed with underlying frustration as they transition from gas law calculations to integral calculus.\n\nMemory:\nThe user displays a cheeky sentiment with low intensity, moderate arousal, and slightly positive valence while seeking help with an integral calculation following previous difficulties with gas laws.",
+        "User Input": "Hey there! I'm having a bit of trouble understanding how to solve this integral for my calculus homework. It's the first time I've seen something like this, so any help would be awesome.",
+        "Control Tutor": "That\u2019s a great idea! Switching topics is totally fine\u2014we\u2019ve wrapped up the gas laws nicely, and it sounds like you\u2019re ready to tackle something new.\n\nTo help you with your calculus integral, could you share the exact expression or problem statement? For example, does it involve polynomials, trigonometric functions, rational expressions, exponentials, or maybe a combination of these?\n\nOnce you post it, I\u2019ll walk you through:\n\ud83d\udd0d **How to identify which integration technique fits best** (u-substitution, integration by parts, partial fractions, trig substitution, etc.)  \n\ud83d\udcdd **Step-by-step breakdown** so you see *why* each move works, not just the mechanics  \n\ud83d\udca1 **Quick checks** to verify your answer and avoid common calculus pitfalls  \n\nJust paste the integral as it appears in your homework, and we\u2019ll tackle it together! \ud83d\udcd0\u2728",
+        "PAM Tutor": "It\u2019s a pretty big jump from the gas laws you were just working on, so it makes total sense that this feels like a lot to take in at first!\n\nAt its core, integration is the process of finding a \"total\" amount\u2014usually by calculating the area under a curve or the accumulation of a quantity over time. While differentiation tells you how fast something is changing at any given moment (like velocity), integration works backward to tell you the total change based on that rate (like displacement). When you're looking at an integral, you\u2019re essentially searching for an \"antiderivative,\" which is a function whose derivative would result in the expression inside your integral. \n\nDepending on what the equation looks like, there are different \"tools\" or rules to get you there, such as the Power Rule (for basic polynomials) or $u$-substitution (which is used when you have a function inside another function). Each rule helps simplify the math so you don't have to figure it out from scratch every time.\n\nDo you want me to walk through those specific integration rules in detail for next time, or would you like to show me the exact equation you're working on so we can solve that one together?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, effectively guiding the learner to provide necessary details without unnecessary elaboration."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.17819542177021505,
+        "Input Arousal": 0.30205028797499833,
+        "Internal State Valence": -0.16145424169216918,
+        "Internal State Arousal": 0.19358508904620747,
+        "Internal State Momentum": -0.6144931546587034,
+        "Internal State Intensity": 0.16172626642652843,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah, sure! It's actually \u222b(3x\u00b2 + 2x - 1) dx. It seems pretty simple, but I'm not entirely sure how to approach it\n\nAppraisal Details:\n1. Dominant Emotion: Uncertainty and confusion regarding the starting steps of an integration problem.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The user's mood is trending negatively as they move from general curiosity into specific hesitation.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels confused and uncertain about how to begin the calculation, reflecting a decline in positive feelings compared to previous steps involving gas law problems.\n\nMemory:\nThe user exhibits low-intensity, slightly negative valence with modest arousal while feeling confused about performing an integral calculation for polynomial expressions after previously struggling with gas law calculations.",
+        "User Input": "Yeah, sure! It's actually \u222b(3x\u00b2 + 2x - 1) dx. It seems pretty simple, but I'm not entirely sure how to approach it",
+        "Control Tutor": "Great choice! This is a foundational integral that will help solidify your intuition for calculus. Since it's a polynomial, we don't need advanced techniques yet\u2014just one core rule and the property of linearity. Let's walk through it together:\n\n### \ud83d\udd11 The Core Rule You'll Need\nThe **Power Rule for Integration** reverses differentiation:\n`\u222b x\u207f dx = (x^(n+1))/(n+1) + C`  *(for n \u2260 -1)*\n\nNotice how the exponent goes up by 1, then gets divided by that new exponent. Easy enough!\n\n### \ud83d\udcd0 Step-by-Step Breakdown\n**1\ufe0f\u20e3 Use Linearity (Split It Up)**  \nIntegration distributes over addition/subtraction, so we can treat each term separately:\n`\u222b(3x\u00b2 + 2x - 1) dx = \u222b3x\u00b2 dx + \u222b2x dx - \u222b1 dx`\n\n**2\ufe0f\u20e3 Pull Out Constants & Apply the Power Rule**  \n- `\u222b3x\u00b2 dx` \u2192 Keep the 3 outside. Integrate `x\u00b2` \u2192 `x\u00b3/3`. Multiply back: `3 \u00d7 (x\u00b3/3) = x\u00b3`\n- `\u222b2x\u00b9 dx` \u2192 Keep the 2 outside. Integrate `x\u00b9` \u2192 `x\u00b2/2`. Multiply back: `2 \u00d7 (x\u00b2/2) = x\u00b2`\n- `\u222b1 dx` \u2192 Constant becomes `1x`, integrate \u2192 `1x\u00b2/2`? Wait! A constant is `x\u2070`, so `\u222b1 dx = x + C`\n\n**3\ufe0f\u20e3 Combine & Add the Constant of Integration**  \nSince this is an *indefinite* integral (no limits given), we add a single arbitrary constant `+C` at the end to account for all possible vertical shifts:\n\ud83d\udc49 **Final Answer:** `x\u00b3 + x\u00b2 - x + C`\n\n### \ud83d\udd0d Quick Verification Trick (The Derivative Check)\nIn calculus, differentiation and integration are opposites. To verify your answer, differentiate it back:\n`d/dx (x\u00b3 + x\u00b2 - x + C) = 3x\u00b2 + 2x - 1 + 0` \u2705  \nIt matches the original integrand perfectly!\n\n---\n\ud83d\udca1 **Your Turn:**  \nDoes this breakdown clarify how to approach polynomial integrals, or would you like to practice applying the power rule to one more term together before moving on? \n\nAlso, just so I can tailor our next step: are your homework problems mostly simple polynomials right now, or will we soon be diving into `u-substitution`, rational functions, or trig integrals? Let me know where you'd like to head! \ud83d\udcd0\u2728",
+        "PAM Tutor": "It\u2019s completely normal to feel a bit unsure when first jumping into calculus; it\u2019s a whole new way of thinking about functions compared to what you've done before. \n\nSince your expression is a polynomial, the best way to approach this is by treating each term individually and applying the **Power Rule** for integration. The Power Rule states that for any term $ax^n$, the integral is:\n$$\\frac{a \\cdot x^{n+1}}{n+1}$$\n\nEssentially, you're just adding one to the exponent and then dividing by that new number. Here\u2019s how that looks for each part of your equation:\n\n1.  **For $3x^2$:** The exponent is 2. Adding one gives us 3, so we divide the coefficient (3) by that new exponent ($3 \\div 3$). This leaves you with **$x^3$**.\n2.  **For $2x$:** Think of this as $2x^1$. The exponent is 1, so adding one gives us 2. We divide the coefficient (2) by that new number ($2 \\div 2$), leaving you with **$x^2$**.\n3.  **For $-1$:** Since there's no variable attached, it's like having $-1x^0$. Adding one to the exponent gives us $x^1$, which results in **$-x$**.\n\nWhen you put those all together, the final result is: \n$$x^3 + x^2 - x + C$$\n(The $+C$ is called the \"constant of integration,\" and it's used because when you take a derivative, any constant number disappears, so we add one back at the end to represent that possibility.)\n\nDo you want to see a more specific explanation for other types of integral rules, like how to handle fractions or square roots, in our next session?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B scored higher in empathy calibration and conversational naturalness, which were prioritized. While Tutor A provided a thorough explanation with verification steps, Tutor B's concise and empathetic approach made the response more approachable."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "empathetic",
+        "Input Valence": 0.4783913611900061,
+        "Input Arousal": 0.40800848659127953,
+        "Internal State Valence": 0.19016227169870215,
+        "Internal State Arousal": 0.27935444806423626,
+        "Internal State Momentum": -0.341534912864445,
+        "Internal State Intensity": 0.15991097115510344,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh okay, that makes sense. Yeah it's mostly basic stuff for now but there'll probably be more complicated ones later. Thanks a lot for the help!\n\nAppraisal Details:\n1. Dominant Emotion: Relief and gratitude\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Moving away from previous frustration toward satisfaction\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels satisfied with the current explanation and is expressing appreciation while moving past prior frustrations regarding gas law unit conversions and significant figures.\n\nMemory:\nThe user expressed gratitude and relief for understanding the basics of gas law calculations, showing low intensity, positive valence, and moderate arousal after a period of frustration with multi-step problems.",
+        "User Input": "Oh okay, that makes sense. Yeah it's mostly basic stuff for now but there'll probably be more complicated ones later. Thanks a lot for the help!",
+        "Control Tutor": "You're very welcome! \ud83c\udf1f I'm really glad that clicked for you. Starting with polynomial integration is exactly how we build intuition\u2014mastering the power rule, linearity, and verifying your work via derivatives sets up a rock-solid foundation.\n\nWhen you eventually hit those trickier integrals (u-substitution, trig functions, partial fractions, etc.), remember this core strategy:  \n**1\ufe0f\u20e3 Identify the pattern** \u2192 **2\ufe0f\u20e3 Break it into manageable pieces** \u2192 **3\ufe0f\u20e3 Check your answer by differentiating back**. You've already internalized that workflow!\n\nWhenever you're ready to tackle the next level or get unstuck on a specific problem, just drop it here. I'll walk you through it step-by-step again. Keep up the excellent work\u2014you're building exactly the skills you need for what's ahead! \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "You're very welcome! You did a great job tackling that first jump into calculus\u2014it\u2019s a solid foundation to have as the problems start getting more complex.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is concise, natural, and effectively acknowledges the learner's progress without unnecessary details."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "think",
+        "Input Valence": -0.0004230870981700723,
+        "Input Arousal": -0.1713156201120001,
+        "Internal State Valence": 0.19016227169870215,
+        "Internal State Arousal": 0.27935444806423626,
+        "Internal State Momentum": -0.341534912864445,
+        "Internal State Intensity": 0.15991097115510344,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nI might be able to handle the simpler ones but do u think maybe we could start looking into more complex integrals? Like those using substitution or trig functions\n\nAppraisal Details:\n1. Domin_ment Emotion: The learner is exhibiting a state of curious inquiry and intellectual curiosity as they seek to advance beyond basic polynomials.\n2. Emotion Intensity: This emotion is characterized by low intensity, suggesting a steady and controlled desire for progression rather than an impulsive reaction.\n3. Emotional Inertia: The emotional inertia is trending slightly downward, reflecting a sense of cautious hesitation or increased caution as the complexity of the material increases.\n4. Threshold Crossed: No.\n5. Internal State: The learner feels a mix of curiosity and determined inquiry about advanced integration techniques while their internal state reflects a steady accumulation of experience from previous hurdles with gas laws and initial calculations.\n\nMemory:\nThe user is expressing curiosity and determination regarding the transition from basic polynomial integrations to more complex topics involving substitution and trigonometric functions.",
+        "User Input": "I might be able to handle the simpler ones but do u think maybe we could start looking into more complex integrals? Like those using substitution or trig functions",
+        "Control Tutor": "That\u2019s a fantastic instinct! Moving from basic polynomials to **u-substitution** and **trigonometric integrals** is exactly how calculus deepens your problem-solving toolkit. I\u2019m absolutely happy to pivot there with you. \ud83d\ude80\n\nHere\u2019s how we can approach it efficiently:\n\ud83d\udd39 **U-Substitution** is essentially the Chain Rule in reverse. We\u2019ll learn how to spot when one part of the integrand is (or nearly is) the derivative of another, then systematically \"swap\" variables to transform the integral into a power-rule problem you already know cold.\n\ud83d\udd39 **Trig Integrals** build on your knowledge of trig derivatives and integrals, and usually rely on Pythagorean identities ($\\sin^2 x + \\cos^2 x = 1$), double-angle formulas, or strategic substitution to untangle them.\n\nTo get us started, pick whichever feels right for you:\n1\ufe0f\u20e3 **You drop a specific integral** from your homework that\u2019s giving you trouble. I\u2019ll walk you through *how to identify the technique*, set it up, and solve it step-by-step.\n2\ufe0f\u20e3 **We run a quick guided example together.** For instance, try this classic u-substitution starter:  \n   `\u222b 2x \u00b7 e^(x\u00b2) dx`  \n   We\u2019ll break down exactly how to choose `u`, find `du`, rewrite the integral, and verify it by differentiating back.\n\nWhich path feels better right now? And if you go with #1, just paste it exactly as written! I'll make sure we focus on the *pattern recognition* behind the technique so you can tackle similar problems independently next time. \ud83d\udcd0\u2728",
+        "PAM Tutor": "It makes sense to move on to those; substitution and trig integrals are where the calculus starts to get much more interesting. \n\nSubstitution\u2014or $u$-substitution\u2014is essentially the reverse of the chain rule. It\u2019s used when you have a \"function inside a function.\" By identifying that inner piece and replacing it with a single variable ($u$), you can transform a complex-looking integral into a basic one. Once you've integrated the simpler version, you just substitute your original expression back in for $u$ at the end.\n\nTrig functions involve integrating sines and cosines, but they often require using trigonometric identities to simplify the expression first. For example, if you encounter a power like $\\sin^2(x)$, you'd use an identity to rewrite it into a form that follows standard rules. \n\nDo you want me to provide a detailed breakdown with several examples of $u$-substitution first, or would you prefer to jump straight into the trigonometric integrals?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more structured and engaging response, offering specific examples and paths for the learner to choose from, which better aligns with the learner's request for complex integrals."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "curious",
+        "Input Valence": 0.2490191850811243,
+        "Input Arousal": 0.36663930939976125,
+        "Internal State Valence": 0.26350887406789586,
+        "Internal State Arousal": 0.3142683925984463,
+        "Internal State Momentum": -0.168599376952043,
+        "Internal State Intensity": 0.14026756392493475,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nLet's try the trigonometric integrals first since I've seen a few of those in my homework\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Curiosity and determination rooted in familiarity with the current topic.\n2. Emotion Intensity: The intensity of the emotion is low.\n3. Emotional Inertia: The emotional inertia shows a slight downward trend.\n4. Threshold Crossed: Yes\n5. Internal State: The learner feels curious and more confident while moving toward trigonometric integrals after struggling with gas laws.\n\nMemory:\nThe learner expresses curiosity with slightly positive valence, moderate arousal, and low intensity while transitioning from unit conversions to the topic of trigonometric integrals.",
+        "User Input": "Let's try the trigonometric integrals first since I've seen a few of those in my homework",
+        "Control Tutor": "That\u2019s a smart choice! Trigonometric integrals look intimidating at first, but they\u2019re actually built on a few predictable patterns. Once you learn how to **classify what your integral needs** and swap in the right identity, they become very mechanical. \ud83d\udcd0\u2728\n\n### \ud83d\udd11 Your Trig Integral Toolkit\nMost homework problems fall into one of these camps:\n\n| Type | What it looks like | Go-to Strategy |\n|------|-------------------|----------------|\n| **Odd power of sin or cos** | `\u222b sin\u00b3x cos\u2074x dx` | Peel off one factor \u2192 convert the rest using `sin\u00b2x + cos\u00b2x = 1` \u2192 u-sub |\n| **Even powers only** | `\u222b sin\u00b2x dx` or `\u222b cos\u00b2x dx` | Power-reduction: `cos\u00b2x = (1+cos2x)/2`, `sin\u00b2x = (1-cos2x)/2` |\n| **Tangent & Secant products** | `\u222b tan\u00b3x sec\u2074x dx` | Peel off `sec\u00b2x` (derivative of tan) \u2192 convert rest using `1+tan\u00b2x = sec\u00b2x` |\n| **Powers of just tan or cot** | `\u222b tan\u00b2x dx` | Use `tan\u00b2x = sec\u00b2x - 1` to split it into integrable pieces |\n\n---\n\n### \ud83d\udcd8 Guided Example: Type 1 (Odd Power + Identity Swap)\nLet\u2019s walk through a classic homework problem that ties these together:\n`\u222b sin\u00b3(x) cos\u00b2(x) dx`\n\n**Step 1: Pattern Recognition** \u2192 Odd power of sine. Strategy: isolate one `sin(x)` to form our derivative later.  \n`\u222b sin\u00b2(x) \u00b7 cos\u00b2(x) \u00b7 sin(x) dx`\n\n**Step 2: Convert the even power** \u2192 Replace `sin\u00b2(x)` with `1 - cos\u00b2(x)`  \n`\u222b (1 - cos\u00b2(x)) \u00b7 cos\u00b2(x) \u00b7 sin(x) dx`  \n`\u222b (cos\u00b2(x) - cos\u2074(x)) \u00b7 sin(x) dx`\n\n**Step 3: u-Substitution** \u2192 Let `u = cos(x)`, so `du = -sin(x) dx` \u2192 `-du = sin(x) dx`  \n`= \u222b (u\u00b2 - u\u2074)(-du)`  \n`= -\u222b (u\u00b2 - u\u2074) du`\n\n**Step 4: Integrate & back-substitute**  \n`= -[u\u00b3/3 - u\u2075/5] + C`  \n`= cos\u2075(x)/5 - cos\u00b3(x)/3 + C` \u2705\n\n**Quick Check:** Differentiate it \u2192 you\u2019ll recover `(1-cos\u00b2x)cos\u00b2x sin(x)` \u2192 `sin\u00b3(x)cos\u00b2(x)`. Perfect match!\n\n---\n\n### \ud83d\udd0d Your Turn to Classify & Tackle\nDo a few of your homework problems fit the patterns in the table above?  \n\ud83d\udc49 **Drop one of your actual integrals here** (copy-paste it exactly), and I\u2019ll help you:\n1. Identify which category it belongs to\n2. Pick the right identity or substitution\n3. Walk through it step-by-step with you\n\nOr, if you prefer to practice first, we can quickly run through one more pattern together (like `\u222b sin\u00b2(x) dx` using double-angle formulas). What feels most helpful right now? \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "Trigonometric integrals are a great choice since they pop up constantly in everything from physics to wave analysis. At a high level, these involve finding the antiderivatives of functions like $\\sin(x)$, $\\cos(x)$, $\\sec(x)$, and $\\tan(x)$. While basic versions follow fairly straightforward patterns\u2014for example, integrating $\\sin(x)$ results in $-\\cos(x) + C$\u2014the more complex problems usually involve powers or products, such as $\\sin^2(x)$ or $\\tan(x)\\sec^2(x)$. To solve those, we typically use trigonometric identities to rewrite the expression into a form that's easier to handle before applying our integration rules.\n\nDo you want me to provide a deep dive with specific examples and identity substitutions for trigonometric integrals in our next session?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, effectively addressing the learner's request without unnecessary complexity."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.3215623373864219,
+        "Input Arousal": 0.3171560113551095,
+        "Internal State Valence": -0.03483207799111562,
+        "Internal State Arousal": 0.31542344010111156,
+        "Internal State Momentum": -0.23379310963558986,
+        "Internal State Intensity": 0.12932582063727383,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nAlright, I have this integral \u222bsin\u00b2(3x) cos\u00b2(5x) dx that's been giving me trouble. Do you think we could work through it together? It looks pretty complex and I'm not sure where to even start with it.\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing confusion and uncertainty due to the complexity of the trigonometric integral.\n2. Emotion Intensity: This feeling has a low intensity.\n3. Emotional Inertia: The emotional inertia is trending negatively as they encounter more difficult mathematical structures.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner feels overwhelmed by the lack of a clear starting point for this specific calculation, reflecting an accumulation of uncertainty during their transition from polynomial integrals to complex trigonometric functions.\n\nMemory:\nThe user is experiencing low-intensity confusion with negative valence and moderate arousal while struggling to find a starting point for a complex integral involving sine and cosine functions.",
+        "User Input": "Alright, I have this integral \u222bsin\u00b2(3x) cos\u00b2(5x) dx that's been giving me trouble. Do you think we could work through it together? It looks pretty complex and I'm not sure where to even start with it.",
+        "Control Tutor": "This is a classic \"trap\" problem! \ud83e\udea4 It looks like it might be solved with u-substitution because of the squares, but **the different arguments ($3x$ vs $5x$) block that approach.** You can't simply substitute one into the other.\n\nWhen you see **even powers** of sine and cosine with **different arguments**, the gold standard strategy is:\n1\ufe0f\u20e3 **Power-Reduction Formulas** to eliminate the squares.  \n2\ufe0f\u20e3 **Product-to-Sum Formulas** if multiplying those results creates a new product term.\n\nLet's break this down together. Grab your calculator and notebook; we're going through this step-by-step! \ud83d\udcd0\u2728\n\n---\n\n### \ud83d\udd11 Step 1: Identify the Core Formulas\nSince both powers are even, we use power-reduction identities:\n$$ \\sin^2(\\theta) = \\frac{1 - \\cos(2\\theta)}{2} \\quad \\text{and} \\quad \\cos^2(\\theta) = \\frac{1 + \\cos(2\\theta)}{2} $$\n\n\u26a0\ufe0f **Common Pitfall:** Watch the $2\\theta$! When you square trig functions, the argument inside the cosine doubles.\n\n---\n\n### \ud83d\udcd0 Step 2: Apply Power Reduction\nLet's rewrite each part of your integral $\\int \\sin^2(3x) \\cos^2(5x) \\, dx$.\n\n*   For $\\sin^2(3x)$: $\\theta = 3x \\implies 2\\theta = 6x$  \n    $$ \\sin^2(3x) = \\frac{1 - \\cos(6x)}{2} $$\n\n*   For $\\cos^2(5x)$: $\\theta = 5x \\implies 2\\theta = 10x$  \n    $$ \\cos^2(5x) = \\frac{1 + \\cos(10x)}{2} $$\n\nNow substitute these back into the integral:\n$$ I = \\int \\left[ \\frac{1 - \\cos(6x)}{2} \\right] \\cdot \\left[ \\frac{1 + \\cos(10x)}{2} \\right] dx $$\n\n---\n\n### \u270d\ufe0f Step 3: Algebraic Expansion\nMultiply the fractions first. The denominators become $2 \\times 2 = 4$, which we can pull out front:\n$$ I = \\frac{1}{4} \\int \\left( 1 - \\cos(6x) \\right) \\left( 1 + \\cos(10x) \\right) dx $$\n\nNow FOIL the numerator to get a sum of terms (no products left yet!):\n$$ I = \\frac{1}{4} \\int \\left[ 1 + \\cos(10x) - \\cos(6x) - \\cos(6x)\\cos(10x) \\right] dx $$\n\nLook closely at that last term: $\\mathbf{\\cos(6x)\\cos(10x)}$. We have a product of cosines again! We need another identity. \ud83d\udd28\n\n---\n\n### \ud83e\udde0 Step 4: Product-to-Sum Formula\nTo integrate this, we must convert the product into a sum using:\n$$ \\cos A \\cos B = \\frac{1}{2} \\Big[ \\cos(A - B) + \\cos(A + B) \\right] $$\n\nHere $A = 10x$ and $B = 6x$:\n*   $A - B = 4x$\n*   $A + B = 16x$\n\nSo:\n$$ \\cos(10x)\\cos(6x) = \\frac{1}{2} \\Big[ \\cos(4x) + \\cos(16x) \\Big] $$\n\nNow, substitute this **back** into our integral expression (remember the minus sign in front!):\n$$ I = \\frac{1}{4} \\int \\left[ 1 + \\cos(10x) - \\cos(6x) - \\frac{1}{2}\\cos(4x) - \\frac{1}{2}\\cos(16x) \\right] dx $$\n\n---\n\n### \ud83d\udd22 Step 5: Integrate Term-by-Term\nNow every term is easy! We just integrate constants and cosines separately. Remember $\\int \\cos(kx) dx = \\frac{1}{k}\\sin(kx)$.\n\n$$ I = \\frac{1}{4} \\left[ \\int 1 \\, dx + \\int \\cos(10x) \\, dx - \\int \\cos(6x) \\, dx - \\frac{1}{2} \\int \\cos(4x) \\, dx - \\frac{1}{2} \\int \\cos(16x) \\, dx \\right] $$\n\nPerforming the integration:\n$$ I = \\frac{1}{4} \\left[ x + \\frac{\\sin(10x)}{10} - \\frac{\\sin(6x)}{6} - \\frac{1}{2} \\cdot \\frac{\\sin(4x)}{4} - \\frac{1}{2} \\cdot \\frac{\\sin(16x)}{16} \\right] + C $$\n\nSimplify the fractions inside the bracket:\n$$ I = \\frac{1}{4} \\left[ x + \\frac{\\sin(10x)}{10} - \\frac{\\sin(6x)}{6} - \\frac{\\sin(4x)}{8} - \\frac{\\sin(16x)}{32} \\right] + C $$\n\n---\n\n### \u2705 Step 6: Distribute the $\\frac{1}{4}$ and Finalize\nDistribute the $\\frac{1}{4}$ to each term for the cleanest answer:\n\n$$ I = \\frac{x}{4} + \\frac{\\sin(10x)}{40} - \\frac{\\sin(6x)}{24} - \\frac{\\sin(4x)}{32} - \\frac{\\sin(16x)}{128} + C $$\n\n---\n\n### \ud83d\udca1 Tutor Tips for This Problem\n1.  **Why did we do Power Reduction first?** If you tried to expand $\\sin^2(3x)$ as something else or use u-sub, you'd get stuck because the $3x$ and $5x$ don't match. Power reduction creates cosines with linear arguments that are easy to handle.\n2.  **Watch the Coefficients:** The hardest part of this problem is the algebra. It's very common to lose a factor of $\\frac{1}{2}$ or forget the $4x$ in the denominator when integrating $\\cos(4x)$. Double-check your fractions!\n3.  **Differentiation Check (Mental):** If you differentiate your answer, the terms will recombine. You can verify one term like $\\frac{\\sin(10x)}{40} \\to \\frac{10\\cos(10x)}{40} = \\frac{\\cos(10x)}{4}$, which matches the expansion step. \u2705\n\n---\n\n### \ud83e\uddea Your Turn!\nDoes this workflow make sense? Specifically:\n*   Do you feel comfortable with **when to use power-reduction** vs. **product-to-sum**?\n*   Would you like to try one more similar problem on your own (I'll watch over you!), or shall we tackle a different type of trig integral?\n\nLet me know what you'd like to do next! \ud83d\udcd0\u2728",
+        "PAM Tutor": "That\u2019s a significant jump in complexity\u2014those squared trigonometric functions can look really intimidating because they don't follow the basic rules we just used for polynomials. It makes total sense that it feels like there isn't a clear starting point yet.\n\nTo crack an integral like $\\int \\sin^2(3x) \\cos^2(5x) dx$, the \"secret\" is to get rid of those exponents before you try to integrate. Since we don't have a direct rule for $\\sin^2$ or $\\cos^2$, we use **Power-Reduction Identities** to rewrite them into first-power terms that are much easier to handle:\n\n1.  $\\sin^2(\\theta) = \\frac{1 - \\cos(2\\theta)}{2}$\n2.  $\\cos^2(\\theta) = \\frac{1 + \\cos(2\\theta)}{2}$\n\nIf we apply those identities to your specific terms, the expression transforms like this:\n*   $\\sin^2(3x)$ becomes $\\frac{1 - \\cos(6x)}{2}$\n*   $\\cos^2(5x)$ becomes $\\frac{1 + \\cos(10x)}{2}$\n\nSubstituting those back into your original integral gives you:\n$$\\int \\left(\\frac{1 - \\cos(6x)}{2}\\right)\\left(\\frac{1 + \\cos(10x)}{2}\\right) dx$$\n\nWe can pull the constant denominator out to make it look cleaner:\n$$\\frac{1}{4} \\int (1 - \\cos(6x))(1 + \\cos(10x)) dx$$\n\nNow, if you multiply those two terms (expand the binomial), you get:\n$$\\frac{1}{4} \\int (1 + \\cos(10x) - \\cos(6x) - \\cos(6x)\\cos(10x)) dx$$\n\nBy using these identities first, you've turned one \"scary\" product into four separate pieces. The first three terms ($1$, $\\cos(10x)$, and $-\\cos(6x)$) are now very straightforward to integrate individually. The last term ($\\cos(6x)\\cos(10x)$) is still a bit involved, but it can be solved using \"product-to-sum\" identities. This method of \"linearizing\" the expression first is the standard way to handle any integral where trig functions are raised to powers.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more detailed and accurate explanation, including the use of product-to-sum formulas, which was crucial for solving the integral. While Tutor B's response was clear, Tutor A's additional steps in breaking down the problem further made their approach more thorough."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "empathetic",
+        "Input Valence": 0.12397446413524447,
+        "Input Arousal": 0.26336696255020803,
+        "Internal State Valence": 0.05348543168647732,
+        "Internal State Arousal": 0.2946008490807501,
+        "Internal State Momentum": -0.13152993147145045,
+        "Internal State Intensity": 0.10670422384227915,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nyeah that all makes sense, but idk if I'm ready for another tricky problem. Maybe just something more straightforward?\n\nAppraisal Details:\n1. Dominant Emotion: Hesitant apprehension and cautious uncertainty regarding the difficulty of upcoming tasks.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending toward caution and hesitation.\n4. Threshold Crossed: Yes\n5. Internal State: The learner demonstrates a clear understanding of concepts but feels insecure about their readiness for complex problems, leading to a request for more straightforward material.\n\nMemory:\nThe learner is experiencing low-arousal hesitation and caution regarding the complexity of tasks while transitioning from basic unit conversions toward trigonometric integrals.",
+        "User Input": "yeah that all makes sense, but idk if I'm ready for another tricky problem. Maybe just something more straightforward?",
+        "Control Tutor": "Totally fair! After unpacking that multi-step trig problem, it\u2019s completely normal to want to step back and rebuild confidence with something cleaner. Let\u2019s ease into it with a single-squared term\u2014just one identity, no product-to-sum gymnastics.\n\nTry this one:  \n`\u222b sin\u00b2(2x) dx`\n\n**Why it\u2019s more straightforward:** You only need **one** power-reduction formula. There\u2019s no second trig function multiplying it, so you won\u2019t get tangled in extra identities or fraction algebra.\n\n---\n\n### \ud83d\udcd8 Quick Scaffolding\n**Step 1: Apply the power-reduction identity**  \n`sin\u00b2(\u03b8) = [1 - cos(2\u03b8)] / 2`  \nHere, `\u03b8 = 2x`, so `2\u03b8 = 4x`:  \n`\u2192 sin\u00b2(2x) = [1 - cos(4x)] / 2`\n\n**Step 2: Rewrite the integral**  \n`\u222b [1 - cos(4x)] / 2 dx = (1/2) \u222b [1 - cos(4x)] dx`\n\nNow it\u2019s just two basic integrals! The constant `(1/2)` pulls out, and you integrate term-by-term.\n\n---\n\n### \u270d\ufe0f Your Turn\nTake a shot at finishing it. To help guide you:\n- What does `\u222b 1 dx` give you?\n- And what about `\u222b cos(4x) dx`? *(Remember to divide by the coefficient of `x` when integrating!)*\n- Don\u2019t forget the `+ C` at the end!\n\nYou can type out your final answer, ask which step feels tricky, or just say \"walk me through it\" and I\u2019ll lay out the full solution. Take your time\u2014this pattern shows up constantly in homework, and nailing it will make every future trig integral feel much more approachable. \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "That last one was definitely a heavy lift with all those identities involved, so it makes total sense to take a breather and work on something more direct.\n\nLet's pivot back to some \"foundational\" trigonometric integrals. These are the ones that don't require complex identities or power-reduction; they just follow straightforward patterns based on the basic trig functions. \n\nFor example, when you have a simple sine or cosine term with a constant inside, like $\\int \\sin(ax) dx$ or $\\int \\cos(ax) dx$, the rule is quite consistent:\n1. For $\\int \\sin(ax) dx$, the result is $-\\frac{1}{a}\\cos(ax) + C$.\n2. For $\\int \\cos(ax) dx$, the result is $\\frac{1}{a}\\sin(ax) + C$.\n\nEssentially, you're just finding the antiderivative of the trig function and then dividing by that coefficient (the $a$) in front of the $x$. It takes away the \"puzzle\" element of choosing which identity to use and lets you focus on the basic integration steps.\n\nDo you want to try a few of these straightforward ones first to get some momentum back?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more concise and natural response, effectively scaffolding with a specific example and maintaining empathy without over-explaining."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.2229156659450382,
+        "Input Arousal": 4.03311569242826e-06,
+        "Internal State Valence": -0.10165814055513653,
+        "Internal State Arousal": 0.17676212269472705,
+        "Internal State Momentum": -0.22069539122632725,
+        "Internal State Intensity": 0.08631410090351978,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay so for the first part \u222b 1 dx is just x right? But I'm a bit stuck on what to do with the second term\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a sense of uncertainty and mild frustration while navigating complex multi-step integration.\n2. Emotion Intensity: This emotion is currently being felt at a low level of intensity.\n3. Emotional Inertia: The emotional inertia is trending in a negative direction.\n4. Threshold Crossed: True\n5. Internal State: The learner feels stuck and uncertain as they attempt to resolve the complexity of multi-step integration, building on their previous difficulty with complex formulas.\n\nMemory:\nThe learner is experiencing low intensity feelings with a neutral-to-negative valence and very low arousal while grappling with the specific complexities of terms within an integral calculation.",
+        "User Input": "Okay so for the first part \u222b 1 dx is just x right? But I'm a bit stuck on what to do with the second term",
+        "Control Tutor": "Spot on! `\u222b 1 dx` is indeed exactly `x`. You've got the first half locked in. \ud83c\udfaf\n\nFor the second term, `\u222b cos(4x) dx`, think about it as the **reverse chain rule**. We know from derivatives that:\n`d/dx [sin(kx)] = k\u00b7cos(kx)`\n\nSo to reverse it, we start with sine, but we have to divide by that `k` to cancel it out. In your case, `k = 4`:\n`\u222b cos(4x) dx = (1/4) sin(4x)`\n\nNow let's stitch it back together! Remember the `(1/2)` factor that was pulled out front during power reduction? Your expression now looks like this:\n`(1/2) [ x - (1/4)sin(4x) ] + C`\n\n\ud83d\udc49 **Your turn:** Go ahead and distribute that `1/2` into the brackets and write out your final answer. Don't forget to drop in that `+ C` at the end! \n\nWhat does it look like? I'm right here to check it with you once you've got a draft. \ud83d\udca1\ud83d\udcd0\u2728",
+        "PAM Tutor": "You\u2019re exactly right; since 1 is a constant, its integral with respect to $x$ is just $x$. Breaking the problem into smaller pieces like that is a great way to keep things manageable.\n\nFor the second term, since we're working with trigonometric functions that have coefficients inside them (like $\\sin(ax)$ or $\\cos(ax)$), you can use the rule where you find the antiderivative and then divide by that internal constant. For example, if your second term is something like $\\cos(4x)$, it would become $\\frac{1}{4}\\sin(4x)$. If it\u2019s $\\sin(3x)$, it becomes $-\\frac{1}{3}\\cos(3x)$.\n\nEssentially, you're just finding the basic antiderivative and then \"undoing\" that multiplier by dividing by it. \n\nDo you want to see a few more examples of how different coefficients inside these functions work before we move on?",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Both tutors provided accurate and appropriate responses. Tutor B included a bit more encouragement, but the difference was minimal."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "surprise",
+        "Input Valence": -0.013233575201593337,
+        "Input Arousal": 0.3805294810328632,
+        "Internal State Valence": -0.06893502945403791,
+        "Internal State Arousal": 0.25826906602998156,
+        "Internal State Momentum": -0.14988292510039192,
+        "Internal State Intensity": 0.0898644127229512,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nGotcha, so then we have:\n\n1/2 [x - 1/4 sin(4x)] + C\n\nand then if I distribute the half into both terms that gives me x/2 - (sin4x)/8 + C ?\n\nDoes this look right?\n\nAppraisal Details:\n1. Dominant Emotion: Uncertainty and seeking confirmation as the learner attempts to navigate an algebraic expansion within a trigonometry problem.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The mood is trending negatively as the user faces more complex steps in integration.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold.\n5. Internal State: The learner feels tentative and unsure while confirming an algebraic step, reflecting a cumulative accumulation of frustration during this session on trigonometric integrals.\n\nMemory:\nThe learner exhibits low-intensity surprise with neutral valence and moderate arousal while trying to clarify the distribution of terms in their calculation for trigonometric integrals.",
+        "User Input": "Gotcha, so then we have:\n\n1/2 [x - 1/4 sin(4x)] + C\n\nand then if I distribute the half into both terms that gives me x/2 - (sin4x)/8 + C ?\n\nDoes this look right?",
+        "Control Tutor": "Yes, that's **exactly right**! \u2705 You distributed the `1/2` perfectly:\n\n- `1/2 \u00b7 x = x/2`\n- `1/2 \u00b7 (-1/4 sin(4x)) = -1/8 sin(4x)`\n\nSo your final simplified answer is:  \n**`x/2 - (sin(4x))/8 + C`** \ud83c\udfaf\n\nYou just successfully navigated power-reduction, constant multiplication, and integration of a trig function with an inner coefficient. That's a solid win! \ud83d\udca1\n\n\ud83d\udca1 **Quick Confidence Check:**  \nIf you differentiate your answer, you should recover the simplified form of `sin\u00b2(2x)`:\n- `d/dx [x/2] = 1/2`\n- `d/dx [-sin(4x)/8] = -[cos(4x) \u00b7 4]/8 = -cos(4x)/2`\nCombine them: `1/2 - cos(4x)/2 = (1 - cos(4x))/2`, which is exactly our power-reduction identity for `sin\u00b2(2x)`! This shows your answer is mathematically sound. \ud83d\udd0d\n\n---\n\n### \ud83e\udded What's next?\nYou've got the even-power pattern down cleanly. Whenever you're ready, pick whichever feels right:\n1\ufe0f\u20e3 **Lock it in:** Try one more power-reduction problem (`\u222b cos\u00b2(3x) dx` or `\u222b sin\u00b2(5x) dx`) on your own. I'll give quick feedback.  \n2\ufe0f\u20e3 **Level up:** Tackle an odd-power trig integral (like `\u222b sin\u00b3(x) dx`) where we peel off a factor and use u-substitution.  \n3\ufe0f\u20e3 **Switch gears:** Move to a different technique like integration by parts or another u-sub problem.\n\nJust say the word, and we'll keep building! \ud83d\udcd0\u2728",
+        "PAM Tutor": "You\u2019ve got it! You handled that distribution perfectly; multiplying both terms by $1/2$ gives you exactly $\\frac{x}{2} - \\frac{\\sin(4x)}{8} + C$. I know these extra algebra steps can feel like a lot of mental heavy lifting when you're already dealing with the complexities of trig functions, but your math here is spot on.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provided a concise and natural response, effectively confirming the learner's correct distribution while acknowledging the complexity of algebraic steps. While Tutor B offered detailed verification through differentiation, Tutor A's approach was more fluid and less structured."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.29352386111859236,
+        "Input Arousal": 0.016052986565046008,
+        "Internal State Valence": -0.21747533434357816,
+        "Internal State Arousal": 0.16138263424400734,
+        "Internal State Momentum": -0.26408187223481966,
+        "Internal State Intensity": 0.08331489831708479,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nAlright, how about doing an odd power one? Maybe something with sin\u00b3(x)?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Frustrated persistence\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Trending negatively\n4. Threshold Crossed: Yes\n5. Internal State: The learner is showing signs of grumpiness while grappling with trigonometric integrals, marking a shift from earlier curiosity toward a more discouraged emotional state across the session.\n\nMemory:\nThe learner is exhibiting low-intensity and low-arousal grumpiness with negative valence while attempting to solve an integral involving sin\u00b3(x).",
+        "User Input": "Alright, how about doing an odd power one? Maybe something with sin\u00b3(x)?",
+        "Control Tutor": "That sounds like a great plan! \ud83d\ude80 Switching to an **odd power** changes the game slightly. Instead of power-reduction (like we did with even powers), we use a technique called **\"Peel and Substitute.\"**\n\nIt's actually much faster once you see it because you'll end up integrating a simple polynomial rather than juggling multiple trig terms.\n\nLet's walk through **\u222b sin\u00b3(x) dx** together.\n\n---\n\n### \ud83d\udcd0 Strategy: Peel & Convert\nWhen the power is odd, we want to peel off **one factor** of sine so it can serve as our `du`, and convert the rest into cosines using the Pythagorean identity (`sin\u00b2 + cos\u00b2 = 1`).\n\n**Step 1: Peel off one sin(x)**\nWe rewrite `sin\u00b3(x)` as `sin\u00b2(x) \u00b7 sin(x)`:\n`\u222b sin\u00b2(x) \u00b7 sin(x) dx`\n\n**Step 2: Convert the remaining even power**\nWe know that `sin\u00b2(x) = 1 - cos\u00b2(x)`. Let's swap that in:\n`\u222b (1 - cos\u00b2(x)) \u00b7 sin(x) dx`\n\n---\n\n### \ud83e\udde0 Your Turn to Set Up u-Sub\nNow look at the expression: `(1 - cos\u00b2(x))` multiplied by `sin(x)`.\n\nThis is begging for a **u-substitution**.\n\n1.  If you let **u = cos(x)**, what would your derivative **du** be?\n2.  How does that relate to the `sin(x) dx` remaining in our integral?\n\nOnce you figure out those two, you'll have a simple polynomial to integrate! Take a stab at setting up the substitution. \ud83d\udca1\u2728",
+        "PAM Tutor": "I know it's frustrating when these problems start feeling like a real slog with multiple steps involved; it\u2019s completely normal to feel a bit worn out by the complexity of these substitutions.\n\nOdd powers, like $\\sin^3(x)$, actually follow a very consistent strategy that makes them much more manageable than even powers. Because the power is odd, we can \"peel off\" one part of the trig function to use for our $u$-substitution later, and then convert the remaining even-powered part into something else using an identity.\n\nHere is how you break down $\\int \\sin^3(x) \\, dx$:\n\n1. **Split the expression:** Rewrite it as $\\int \\sin^2(x) \\cdot \\sin(x) \\, dx$. By pulling one $\\sin(x)$ out, we're setting it aside for the substitution step.\n2. **Use an identity:** Since we have a $\\sin^2(x)$ left over, we can use the Pythagorean identity $\\sin^2(x) = 1 - \\cos^2(x)$. This changes our integral into:\n   $$\\int (1 - \\cos^2(x)) \\cdot \\sin(x) \\, dx$$\n3. **Perform substitution:** Now the path forward is clear. Let $u = \\cos(x)$. If you take the derivative, $du = -\\sin(x) \\, dx$, which means $-du = \\sin(x) \\, dx$. \n4. **Simplify and solve:** When you plug $u$ into the equation, it becomes:\n   $$\\int (1 - u^2)(-du)$$\n   This is now just a basic power rule problem: $-\\int (1 - u^2) \\, du$, which results in $-(u - \\frac{u^3}{3})$, or $\\frac{u^3}{3} - u$.\n5. **Back-substitute:** Replace $u$ with the original $\\cos(x)$ to get the final answer:\n   $$\\frac{\\cos^3(x)}{3} - \\cos(x) + C$$\n\nThe logic is exactly the same if you ever run into $\\cos^3(x)$. In that case, you'd peel off one $\\cos(x)$, turn the remaining $\\cos^2(x)$ into $(1 - \\sin^2(x))$, and use $u = \\sin(x)$. Using this \"split and substitute\" method for odd powers avoids the need for those more complicated power-reduction identities we looked at earlier.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor A's response is more engaging and interactive, encouraging the learner to participate in the problem-solving process. While both tutors are accurate, Tutor A's approach is more conversational and less overwhelming."
+    }
+]

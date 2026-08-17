@@ -354,7 +354,7 @@ def sign_test_by_conversation(log_path: str):
 
 
 if __name__ == "__main__":
-    log_path = "config4_logs"
+    log_path = "mismatch_logs"
 
     results = {
         "analysis_by_interaction": analyze_by_interaction(log_path),
