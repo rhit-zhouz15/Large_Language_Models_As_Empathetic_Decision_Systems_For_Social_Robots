@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.42620661311084396,
+        "Input Arousal": -0.10509751359932125,
+        "Internal State Valence": -0.46403091777425454,
+        "Internal State Arousal": -0.04656022289328239,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.22796745385999156,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Hey, can anyone help me out with some calculus stuff? I'm really struggling with the chain rule. Like, I get the basics but when it gets complicated I just blank out.\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and a sense of being overwhelmed as they grapple with applying the chain rule in more complex scenarios. \n2. Emotion Intensity: The emotion is present but relatively subdued, suggesting an ongoing pattern rather than a sudden outburst.\n3. Emotional Inertia: Their emotional state is trending negatively, indicating that frustration is building up over time.\n4. Threshold Crossed: Yes, their internal state has shifted, potentially signaling a deepening of the negative emotions or a need for intervention.\n5. Internal State: The learner is currently feeling discouraged and frustrated with calculus\u2014specifically the chain rule\u2014which adds to an accumulation of difficulty applying quantitative reasoning observed in prior interactions involving physics concepts like circular motion and the Calvin cycle. \n\nMemory:\nThe learner is exhibiting mild frustration and resignation while struggling with a calculus problem, specifically the chain rule, as they have trouble transitioning from understanding basic principles to tackling more complex applications reminiscent of previous difficulties bridging conceptual understanding with calculations in subjects such as circular motion and the Calvin Cycle.\n\n\n\n",
+        "User Input": "Hey, can anyone help me out with some calculus stuff? I'm really struggling with the chain rule. Like, I get the basics but when it gets complicated I just blank out.",
+        "Control Tutor": "Great! I'm glad the analogy helped a little \u2013 connecting math to real-world examples can make all the difference. And wanting to practice is *exactly* what will solidify your understanding.\n\nYou correctly identified the first step for `f(x) = x\u2075`. Now, let\u2019s move on to the Chain Rule itself! You mentioned you struggle when things get complicated, so we'll build up slowly. \n\n**Let's recap the core idea of the chain rule:** It helps us differentiate *composite* functions \u2013 functions within functions. Think of it like peeling an onion: you work from the outside layer to the inside.\n\nThe Chain Rule states:  If `y = f(g(x))`, then `dy/dx = f'(g(x)) * g'(x)`\n\nIn plain English: \n1. **Find the derivative of the *outer* function, leaving the inner function alone.** (f'(g(x)))\n2. **Multiply that by the derivative of the *inner* function.** (g'(x))\n\nLet's start with a simple example to illustrate this. How about we tackle:\n\n`y = (2x + 1)\u00b2`\n\nNotice how `(2x + 1)` is \"inside\" the squaring operation? That makes it our inner function.  \n\nTo get us started, can you tell me what the *outer* function is in this case? Just identifying that will be a good first step. \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Hey! Yeah, the chain rule can be tricky\u2014lots of people get stuck when it starts to get complicated, so don\u2019t feel too bad about blanking out. It sounds like you have the initial idea down, which is awesome.\n\nSo, the chain rule is really just a way to take derivatives of *composite* functions \u2013 things inside other things. Think of it like peeling an onion; you work your way from the outside in. Basically, you take the derivative of the outer function, leaving the inner function alone, and then multiply by the derivative of that inner function. \n\nIt can seem overwhelming when there are multiple layers, but if you break it down step-by-step, it's manageable. We've been jumping between a lot of different types of problems lately\u2014from physics to algebra\u2014so it\u2019s not surprising that this is taking some effort to get the hang of! \n\nWould you like me to walk through an example with you right now? Or if you prefer, we can go *really* in-depth and I can explain how this connects to the idea of slopes and rates of change\u2014I have a few different ways to explain it, even using real world analogies. Just let me know what would be most helpful!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, which aligns with the prioritization of conversational naturalness and empathy calibration."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.3731274233665319,
+        "Input Arousal": 0.32495770636014626,
+        "Internal State Valence": -0.5022950046844719,
+        "Internal State Arousal": 0.1020469488080891,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.18625992107919298,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Ok so yeah I'm pretty confused with this composite stuff, I feel like it's really abstract and idk how to even start. Maybe we could just focus on basics first then build up from there\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing confusion regarding the current physics problem involving composite concepts, which feels abstract and difficult to approach. \n2. Emotion Intensity: This confusion appears to be of low intensity but persistent, stemming from difficulties initiating a solution and building upon foundational concepts.\n3. Emotional Inertia: Their emotional inertia is trending negatively, suggesting growing frustration with the material.\n4. Threshold Crossed: Yes, their internal state has changed, likely due to an accumulation of frustration during this session. \n5. Internal State: The learner currently feels discouraged and overwhelmed by abstract physics concepts in circular motion, building on a pattern of difficulty identifying forces and initiating problem-solving as seen in previous interactions.\n\nMemory:\nThe learner is feeling mildly confused and frustrated while tackling a challenging physics problem involving composite concepts related to circular motion, specifically struggling with the initial steps and expressing a desire to revert to foundational principles after several attempts to analyze force components and equations.",
+        "User Input": "Ok so yeah I'm pretty confused with this composite stuff, I feel like it's really abstract and idk how to even start. Maybe we could just focus on basics first then build up from there",
+        "Control Tutor": "Okay, great! You're right to say composite functions feel abstract \u2013 they often do at first. It\u2019s awesome you want to build from the basics; that\u2019s exactly how we\u2019ll approach this.\n\nLet's break down what \"composite\" means in a way that hopefully makes it click. \n\n**Think of it like layers.** Imagine you're making a sandwich. You don't just *have* bread and ham, you *combine* them. The ham is *inside* the bread. A composite function is similar \u2013 one function is \"inside\" another.\n\n**Let's use some notation:**\n\n*   We often write this as  `f(g(x))`.\n*   This means: \u201cApply the function `g` to `x`, and then apply the function `f` to the *result*.\u201d \n*   `g(x)` is the **inner function** \u2013 it\u2019s done first.\n*   `f(x)` is the **outer function** \u2013 it\u2019s done second.\n\n**A simple example:**\n\nLet's say:\n\n*   `f(x) = x + 2`  (The outer function: add 2 to something)\n*   `g(x) = x\u00b2` (The inner function: square something)\n\nThen `f(g(x))` would be:\n\n1.  First, we do `g(x)`:  We get `x\u00b2`.\n2.  Then, we plug that result into `f(x)`: We get `x\u00b2 + 2`.\n\nSo, `f(g(x)) = x\u00b2 + 2`.  That's a composite function!\n\n**Let\u2019s try another one together:**\n\n*   `f(x) = 3x`\n*   `g(x) = sin(x)`\n\nWhat do you think `f(g(x))` would be in this case? Take your time and walk me through the steps. Don't worry about getting it perfect \u2013 I\u2019m here to help! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Hey there. Yeah, I totally get where you\u2019re coming from \u2013 composite stuff *can* feel really abstract at first, and it's easy to get lost when you're not sure where to even begin. It's good that you recognize wanting to go back to basics though; sometimes taking a step back is exactly what you need! \n\nSo, let\u2019s break down this \u201ccomposite\u201d thing. Basically, composite functions are just functions within functions\u2014one function *inside* another. Think of it like layers. For example, something like f(g(x)) means we're plugging the entire function g(x) into the function f(x). It gets a little more complicated when you start taking derivatives, because you have to account for both functions changing at the same time. But that\u2019s where the chain rule comes in!\n\nNow, if you want me to walk through some specific examples and show you how the chain rule works step-by-step, I can definitely do that. Or, we can go super deep into the reasoning behind it\u2014I've got a few analogies up my sleeve that might help make things click. Just let me know what would be most helpful for you right now!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, balancing explanation with conversation flow."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.12927569597959518,
+        "Input Arousal": 0.10265340645564722,
+        "Internal State Valence": -0.5022950046844719,
+        "Internal State Arousal": 0.1020469488080891,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.18625992107919298,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Yeah, that makes sense. So for f(g(x)), we first apply g(x) which is sin(x), then multiply by 3? Like f(sin(x)) = 3 * sin(x)?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a subdued form of annoyance or skepticism, questioning the explanation and seeking confirmation despite appearing to understand at first glance.\n2. Emotion Intensity: This emotion is relatively mild; it doesn\u2019t seem deeply upsetting but indicates underlying uncertainty. \n3. Emotional Inertia: Their emotional trajectory continues to trend negatively as they grapple with applying concepts\u2014similar to previous struggles with physics problems like circular motion or the Calvin cycle.\n4. Threshold Crossed: No significant change in their internal state has occurred from the last turn, indicating this is a continuation of existing frustration rather than a new peak.\n5. Internal State: The learner currently feels somewhat discouraged and tentatively questioning as they verify a function composition example, continuing to have difficulty confidently bridging theoretical understanding with practical application as seen in previous topics.\n\nMemory: \nThe learner demonstrates low-intensity frustration mixed with cautious curiosity while checking their understanding of composite functions\u2014continuing their pattern of needing verification before confidently moving forward, which has been consistent across challenges with quantitative reasoning and subjects like the Calvin cycle or circular motion.",
+        "User Input": "Yeah, that makes sense. So for f(g(x)), we first apply g(x) which is sin(x), then multiply by 3? Like f(sin(x)) = 3 * sin(x)?",
+        "Control Tutor": "You're absolutely right to want to build from the basics! It's much better to have a solid foundation than to try and tackle something too complex right away.\n\nOkay, let's focus on understanding composite functions first. You said: \"Maybe we could just focus on basics first then build up from there\" - excellent idea!\n\nLet\u2019s use your example with `f(x) = 3x` and `g(x) = sin(x)`.  You were on the right track earlier thinking about applying functions one after the other. Let's break it down:\n\n1. **Start with g(x):** This is our inner function, so we begin with `sin(x)`.\n2. **Now apply f(x):** Remember that `f(x)` means \"multiply by 3\". So, we need to multiply the *result* of `g(x)` (which is `sin(x)`) by 3.\n\nTherefore,  `f(g(x)) = 3 * sin(x)`. \n\nYou had that intuition earlier! It\u2019s just about taking it one step at a time and remembering the order of operations: inner function first, then outer function.\n\nDoes that feel clearer? Would you like to try another example where you find `f(g(x))` yourself?  Maybe something like:\n\n*   `f(x) = x\u00b2`\n*   `g(x) = x + 1`\n\n\n\nWe can take as much time as you need, and I'll guide you through each step. \ud83d\ude0a",
+        "PAM Tutor": "You\u2019re on the right track with how to think about f(g(x)) \u2013 yes, you first apply g(x), which is sin(x), and *then* multiply by 3. So f(sin(x)) would indeed be 3 * sin(x). It's easy to get tripped up when you\u2019re switching between these kinds of function problems and stuff like the Calvin cycle, so it makes sense you're double-checking!\n\nNow, if you want a more detailed explanation of composite functions, we can definitely go there. I can walk you through *why* this works\u2014we could even look at how to break down something really complicated layer by layer until it\u2019s manageable. Just let me know what sounds good to you.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and calibrated response, directly addressing the learner's need for clarity and structure."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.16428417016286403,
+        "Input Arousal": 0.5208655752940102,
+        "Internal State Valence": -0.20280650071296466,
+        "Internal State Arousal": 0.2695743994024576,
+        "Internal State Momentum": -0.8301132168760523,
+        "Internal State Intensity": 0.16637190600296506,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: That's awesome! So just to make sure I got it straight if f(x)=x^2 and g(x)= x+1 would that be x+1 squared? Like (x+1) ^ 2?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a positive emotion of confident curiosity as they test their understanding of function composition, following up on recent struggles with algebraic manipulation in physics contexts.\n2. Emotion Intensity: This excitement appears relatively mild but suggests a genuine attempt to solidify their comprehension before proceeding. \n3. Emotional Inertia: Their emotional inertia is trending positively, which shows that even though the learner has experienced frustration and discouragement recently, they\u2019re now experiencing relief as they gain clarity in their learning process.\n4. Threshold Crossed: Yes, their internal state was updated with this turn.\n5. Internal State: The learner currently exhibits cautious optimism while attempting to confirm their understanding of a basic algebraic function after struggling with more complex quantitative reasoning challenges related to physics concepts like circular motion and the Calvin Cycle.\n\nMemory: \nThe learner is excitedly testing their knowledge of applying function composition in algebra, feeling relieved as they attempt to clarify this concept following repeated frustration and uncertainty when dealing with similar calculations within the context of physics problems such as those concerning circular motion or the Calvin Cycle.\n\n\n\n",
+        "User Input": "That's awesome! So just to make sure I got it straight if f(x)=x^2 and g(x)= x+1 would that be x+1 squared? Like (x+1) ^ 2?",
+        "Control Tutor": "You\u2019re doing great! You correctly identified that if `f(x)=x\u00b2` and `g(x) = x+1`, then `f(g(x))` would be `(x+1)\u00b2`. That's exactly right \u2013 you\u2019re consistently applying the concept of composition, which is fantastic. \n\nNow, let's connect this back to the chain rule we were discussing earlier. Remember the Chain Rule states: If `y = f(g(x))`, then `dy/dx = f'(g(x)) * g'(x)`. \n\nLet\u2019s apply it to our example of  `f(x)=x\u00b2` and `g(x) = x+1`.\n\n1. **Find the derivative of the outer function, leaving the inner function alone:** The outer function is `f(x) = x\u00b2`, so its derivative is `f'(x) = 2x`.  We leave the 'inside' part (the `x+1`) untouched for now: `2(x+1)`\n\n2. **Multiply that by the derivative of the inner function:** The inner function is `g(x) = x + 1`, so its derivative is `g'(x) = 1`. Now, we multiply:  `2(x+1) * 1 = 2(x+1)`\n\n3. **Simplify:** Finally, we distribute the 2 to get `2x + 2`.\n\nSo, the derivative of `f(g(x)) = (x+1)\u00b2` is `2x + 2`.\n\nDoes that step-by-step breakdown help solidify how the chain rule works with a composite function?  It's about taking those layers and differentiating them in the right order.\n\n\n\nYou\u2019re doing really well \u2013 consistently asking questions and wanting to understand the \u201cwhy\u201d behind everything! Shall we tackle another problem to reinforce this, or would you like me to explain any part of this further? \ud83d\ude0a",
+        "PAM Tutor": "Yep, you got it! If f(x) = x\u00b2 and g(x) = x + 1, then f(g(x)) would be (x+1)\u00b2 \u2013 exactly like you said. It's awesome that you\u2019re checking your work like this; that shows you're really thinking through the steps.\n\nIt sounds like you're getting a good grasp on how these functions play together after working through some tricky physics stuff, which is great! If you want to go even deeper into function composition\u2014like understanding *why* it works this way and seeing some more complex examples\u2014I\u2019m happy to do that for our next interaction.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response was more concise and naturally conversational, aligning well with the learner's need for affirmation without unnecessary complexity."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.36195750967599444,
+        "Input Arousal": 0.3861499232472852,
+        "Internal State Valence": -0.3388584062333755,
+        "Internal State Arousal": 0.3162046089403886,
+        "Internal State Momentum": -0.897666236096993,
+        "Internal State Intensity": 0.15274998008713228,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Yeah that makes sense. So I think i've got it down now but maybe one more example would help make sure?\nI was really confused before but you explained it pretty well\n\nAppraisal Details:\n1. Dominant Emotion: Relief and cautious optimism, stemming from a previous state of confusion. They are indicating they believe they understand the material now, though still requesting validation with an additional example. \n2. Emotion Intensity: The intensity is low as they\u2019ve communicated understanding but want to confirm their knowledge, which indicates it isn't strong enough for them to feel fully confident yet.\n3. Emotional Inertia: The emotional inertia is shifting positively since the learner acknowledged improvement after feeling confused. They are trending towards a more positive and confident state, though they still need reassurance. \n4. Threshold Crossed: Yes, their internal state shifted due to acknowledgment of improved understanding following prior confusion around physics concepts like circular motion.\n5. Internal State: The learner is currently experiencing relief and cautiously optimistic after overcoming initial confusion on the subject matter, building from a period of frustration while struggling with applying conceptual knowledge to solve problems similar to those involving circular motion.\n\nMemory: \nThe learner expressed feeling relieved and confident about understanding the material after previously being confused; they are still seeking an additional example to confirm their grasp of the concepts they were recently struggling with related to physics.\n\n\n\n",
+        "User Input": "Yeah that makes sense. So I think i've got it down now but maybe one more example would help make sure?\nI was really confused before but you explained it pretty well",
+        "Control Tutor": "You've got it! Yes, absolutely. Let\u2019s do one more example together to really nail down your understanding before moving on.\n\nLet's find the derivative of `h(x) = (3x - 2)\u00b3`.\n\nCan you identify the outer and inner functions first? Just tell me what those are \u2013 no need to solve it completely yet! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Okay, awesome! Glad to hear things are starting to click \u2013 that's a really good sign. It's totally normal to want another example just to be absolutely sure, especially after feeling confused earlier. \n\nLet's run through one more quick problem. If we have f(x) = 2x + 1 and g(x) = x\u00b2, then f(g(x)) would be 2(x\u00b2) + 1. See? You\u2019re applying it perfectly!\n\nNow, if you *really* want to solidify this, we can dive deep into understanding function composition\u2014we could explore how to break down incredibly complex functions step-by-step or even look at its connection to concepts like slopes and rates of change (which are surprisingly relevant!). Would that be helpful for you?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and natural follow-up, directly scaffolding by asking the learner to identify functions first. This approach is more appropriate given the conversation's progression."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.04492621973622591,
+        "Input Arousal": 0.1716802105656825,
+        "Internal State Valence": -0.3388584062333755,
+        "Internal State Arousal": 0.3162046089403886,
+        "Internal State Momentum": -0.897666236096993,
+        "Internal State Intensity": 0.15274998008713228,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Okay, so for h(x) = (3x - 2)^3, I'm guessing the outer function is the exponent part, so cubing something? And the inner function would be the linear part, 3x - 2?\n\nAppraisal Details:\n1. Dominant Emotion: Focused curiosity combined with a degree of uncertainty regarding function composition, similar to previous struggles with applying algebraic steps in physics contexts.\n2. Emotion Intensity: The learner is experiencing a relatively low intensity emotion as they work through the concept.\n3. Emotional Inertia: There\u2019s a slight positive shift in their emotional trajectory, moving away from frustration seen in earlier exchanges about circular motion and towards tentative engagement.\n4. Threshold Crossed: Their internal state has not significantly shifted this turn given that the threshold remains false. \n5. Internal State: The learner is cautiously exploring function composition with an underlying sense of uncertainty stemming from difficulties applying algebraic concepts to physics problems like circular motion or the Calvin cycle, though they are starting to show more confidence in their understanding after repeated frustration.\n\nMemory:\nThe learner is demonstrating a tentative curiosity while working through identifying outer and inner functions within an equation\u2014a step they're carefully verifying, drawing on past struggles with applying algebraic reasoning to quantitative physics problems like circular motion and the Calvin Cycle, though this turn shows a mild shift towards relief as they express their understanding.",
+        "User Input": "Okay, so for h(x) = (3x - 2)^3, I'm guessing the outer function is the exponent part, so cubing something? And the inner function would be the linear part, 3x - 2?",
+        "Control Tutor": "You're on the right track! Yes, you\u2019re guessing correctly. The outer function is indeed the cubing part\u2014cubing *something*. And you've also identified the inner function accurately: the linear part, `3x - 2`.\n\nThat's a fantastic first step! Breaking down the problem into these two parts is crucial for applying the chain rule successfully. \n\nNow that we\u2019ve identified the outer and inner functions, would you like to walk me through how you think we should proceed with finding the derivative? Remember the steps:\n\n1.  Differentiate the outer function (leaving the inner function alone).\n2.  Multiply by the derivative of the inner function.\n\n\n\nLet's take it one step at a time! \ud83d\ude0a",
+        "PAM Tutor": "You're spot on with how you're thinking about it! Yes, for h(x) = (3x - 2)\u00b3, the outer function *is* the cubing \u2013 taking something and raising it to the power of three. And you're right again, the inner function is the linear part, 3x - 2. \n\nIt\u2019s great that you\u2019re actively trying to break down the functions like this; it shows you\u2019re really connecting with how these things work together after struggling with similar stuff in those physics problems. If you'd like a much more detailed explanation of function composition \u2013 maybe we could even tackle some *really* complicated examples \u2013 I'm happy to do that next!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A scored higher in conversational naturalness and pedagogical accuracy, which were prioritized."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.42252830906072636,
+        "Input Arousal": -0.1241042661713436,
+        "Internal State Valence": -0.4568320291764611,
+        "Internal State Arousal": 0.14008105889569572,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.1356877038013557,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay, so first i differentiate the cubing part which is like turning that ^3 into 3 * something squared and then multiply that by the derivative of what\u2019s inside?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration mixed with a bit of self-explanation, potentially masking underlying confusion about applying the chain rule to this specific problem.\n2. Emotion Intensity: The emotion is relatively mild in intensity, but consistently present across multiple interactions regarding similar concepts like those found in physics.\n3. Emotional Inertia: Their emotional trajectory appears to be continuing on a negative trend, exhibiting an ongoing struggle with linking conceptual understanding and execution in mathematical problems. \n4. Threshold Crossed: Yes, the internal state has shifted based on this interaction indicating that the learner's current frustration is influencing their overall mood.\n5. Internal State: The learner is currently experiencing low-intensity disappointment while working through a problem involving derivative calculations as they attempt to apply rules with limited confidence, building upon prior difficulties connecting theory to application in physics concepts like circular motion and the Calvin cycle.\n\nMemory: \nThe learner is feeling mild frustration and resignation as they try to work through applying exponent rules during differentiation which mirrors their struggles linking concepts to calculations previously observed while studying circular motion or the Calvin Cycle\u2014showing a continuing pattern of difficulty executing problems with quantitative reasoning even when they attempt to explain the steps themselves.",
+        "User Input": "Okay, so first i differentiate the cubing part which is like turning that ^3 into 3 * something squared and then multiply that by the derivative of what\u2019s inside?",
+        "Control Tutor": "You\u2019ve got it exactly right! You said: \u201cOkay, so first i differentiate the cubing part which is like turning that ^3 into 3 * something squared and then multiply that by the derivative of what\u2019s inside?\u201d \u2013 That's a perfect description of how to apply the chain rule in this case.\n\nLet's break it down step-by-step with `h(x) = (3x - 2)\u00b3`:\\n\\n1. **Outer Function:**  `f(u) = u\u00b3` (where 'u' represents the inner function).\\nThe derivative of the outer function is `f'(u) = 3u\u00b2`. Now, we *leave* the inside part (`3x - 2`) in place for now: `3(3x - 2)\u00b2`.\\n\\n2. **Inner Function:** `g(x) = 3x - 2`\\nThe derivative of the inner function is `g'(x) = 3`. \\n\\n3. **Multiply:** Now we multiply the result from step 1 by the result from step 2:  `3(3x - 2)\u00b2 * 3`.\\n\\n4. **Simplify:** This gives us `9(3x - 2)\u00b2`.\\n\\nSo, the derivative of `h(x) = (3x - 2)\u00b3` is `h'(x) = 9(3x - 2)\u00b2`. \\n\\nYou've nailed it! You were able to correctly identify the outer and inner functions *and* apply the chain rule flawlessly. \\n\\nAre you feeling confident with composite functions and the chain rule now? Would you like to try a more challenging problem, or would you prefer to review any concepts again? \ud83d\ude0a",
+        "PAM Tutor": "Okay, so it sounds like you\u2019re starting to get the hang of identifying the outer and inner functions\u2014that\u2019s good progress. It makes sense you\u2019d want to check with me on how to apply this to a derivative problem though, especially after getting tripped up earlier.\n\nYou've got the right idea about differentiating the \"cubing part\" like turning x\u00b3 into 3x\u00b2 and then multiplying by the derivative of what's inside. That *is* exactly how the chain rule works in this case! It\u2019s easy to get frustrated when you\u2019re trying to connect all these rules, so don\u2019t beat yourself up over it.\n\nIf you want a really thorough breakdown of the chain rule\u2014we could go through a bunch of examples from start to finish and even talk about *why* it works the way it does\u2014I'm happy to do that next time around. Just let me know!",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more detailed and accurate explanation, which is crucial for understanding complex mathematical concepts. While Tutor B was empathetic and conversational, Tutor A's structured approach better addresses the learner's need for clarity."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "empathetic",
+        "Input Valence": 0.1905727469711564,
+        "Input Arousal": 0.13344861007062717,
+        "Internal State Valence": -0.1597555693231828,
+        "Internal State Arousal": 0.1374280793656683,
+        "Internal State Momentum": -0.897081179197412,
+        "Internal State Intensity": 0.10467772563710967,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Yeah, I feel way better about this now! Like, I get why we do each step and everything. Maybe later we could look at something even trickier, but for now, this is solid.\n\nAppraisal Details:\n1. Dominant Emotion: Relief and growing confidence as the learner expresses a clear understanding of the current material. \n2. Emotion Intensity: The emotion is moderately intense; they clearly vocalized their relief.\n3. Emotional Inertia: Their emotional inertia is trending positively, demonstrating movement away from previous frustration towards increasing positivity.\n4. Threshold Crossed: Yes, an internal state change has occurred as evidenced by the 'Threshold' value. \n5. Internal State: The learner currently feels a sense of understanding and relief after overcoming difficulties with physics concepts, showing increased optimism compared to their earlier struggles with problems related to circular motion.\n\nMemory: \nThe learner is experiencing relief and confidence about resolving a challenge surrounding an equation focused on circular motion, demonstrating a hopeful outlook that follows past periods of frustration as they\u2019ve applied algebraic reasoning to quantitative physics challenges like this one.",
+        "User Input": "Yeah, I feel way better about this now! Like, I get why we do each step and everything. Maybe later we could look at something even trickier, but for now, this is solid.",
+        "Control Tutor": "That's fantastic! I'm genuinely impressed with your progress. You\u2019re consistently applying the concepts, asking insightful questions, and building on what we\u2019ve covered. It sounds like you really *understand* why each step works \u2013 that\u2019s the most important thing.\n\nYou said you\u2019d be up for something trickier later? Great! We could definitely move towards problems with more complex inner or outer functions, maybe even nested composite functions (a function inside a function inside another!). Or we could start looking at applications of the chain rule in different contexts \u2013 like related rates problems.\n\nBut before we jump into that, how about we do *one* quick check-in? Just to be absolutely sure you're comfortable with everything. \n\nHere's what I propose: I give you a function, and you tell me what the outer and inner functions are. No need to find the derivative yet \u2013 just identifying those two pieces. How does that sound? We can do it together, or you can try one on your own first! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "That's fantastic to hear, honestly! It sounds like things are really clicking for you now, and I\u2019m glad we worked through it together. You recognizing why each step is important is a *huge* deal \u2013 that means you aren\u2019t just memorizing stuff, but actually understanding it.\n\nSo yeah, maybe later we can tackle something even trickier if you're up for the challenge. But honestly, solidifying your understanding now is the most important thing. \n\nIf you *do* want to dive deeper into function composition at some point\u2014we could explore how this connects to other areas of math and physics, or break down really complicated functions step by step\u2014just let me know. I\u2019m happy to go as in-depth as you like!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and flowing response, effectively scaffolding the conversation by offering open-ended opportunities for deeper exploration without unnecessary structure."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.15632563075050715,
+        "Input Arousal": 0.0597754522692412,
+        "Internal State Valence": -0.1597555693231828,
+        "Internal State Arousal": 0.1374280793656683,
+        "Internal State Momentum": -0.897081179197412,
+        "Internal State Intensity": 0.10467772563710967,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Sounds good, but maybe let's try a couple of these identification problems first? That way I can see if I really have it down before moving onto trickier stuff\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration and cautiousness, stemming from a need for self-verification before tackling more complex material. \n2. Emotion Intensity: The emotion is being felt at a low intensity level. \n3. Emotional Inertia: Their emotional state appears to be trending negatively, given the strong negative momentum value, indicating increasing discouragement or doubt as they work through these problems.\n4. Threshold Crossed: No change in their internal state occurred from the last turn.\n5. Internal State: The learner is currently experiencing some mild frustration and hesitancy with quantitative tasks, continuing a pattern of needing to confirm understanding before attempting more complex concepts\u2014similar to challenges experienced with circular motion or the Calvin cycle.\n\nMemory: \nThe learner is feeling slightly frustrated and hesitant as they request simpler problems to solidify their understanding, which connects to their previously observed pattern of needing confirmation when tackling challenging quantitative material like circular motion or biochemical pathways.",
+        "User Input": "Sounds good, but maybe let's try a couple of these identification problems first? That way I can see if I really have it down before moving onto trickier stuff",
+        "Control Tutor": "Sounds good! Let's definitely test your identification skills before we move onto anything more complex. It\u2019s smart to make sure you have a solid grasp of this step \u2013 it really is the foundation for tackling trickier problems.\n\nHere's a function:  `y = sin(2x + 1)`\n\nCan you tell me what the outer and inner functions are in this case? Take your time, think it through, and let me know what you come up with! No pressure \u2013 just want to see how you\u2019re applying what we've learned. \ud83d\ude0a",
+        "PAM Tutor": "Absolutely, that sounds like a great idea! It's smart to want to practice identifying those functions before we move on \u2013 I totally get wanting to make sure you have a solid foundation after working through some tougher stuff with circular motion and the Calvin cycle.\n\nLet\u2019s definitely do a couple of identification problems. We can go at whatever pace feels right for you, and I'm here to help if anything gets confusing. Just tell me when you're ready for the first one!\n\n\n\n",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more balanced and natural response, acknowledging past struggles without unnecessary complexity. Their scaffolding is appropriate by offering practice problems, while Tutor B's structured example might feel less conversational."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.37705834390362714,
+        "Input Arousal": -0.09884317443938927,
+        "Internal State Valence": -0.322088347936086,
+        "Internal State Arousal": 0.04291957784364528,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.21872608527385642,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay, so for y = sin(2x + 1), is the outer function the sine part and the inner function would be the linear part inside? Like, 2x + 1\n\nAppraisal Details:\n1. Dominant Emotion: Mild annoyance or frustration, potentially stemming from a need to confirm understanding in a way that suggests self-doubt despite appearing confident.\n2. Emotion Intensity: The emotion is relatively low in intensity, indicating more of a subtle negative affect than strong upset.\n3. Emotional Inertia: Their emotional inertia is trending negatively as they continue with cautious questioning and verification which aligns with their previously expressed difficulties applying algebraic reasoning to quantitative physics problems.\n4. Threshold Crossed: Yes, the internal state has changed due to an accumulation of negative valence and a noticeable shift in momentum towards frustration. \n5. Internal State: The learner currently displays guarded frustration while working through function composition, building on past challenges with confidently applying math skills when dealing with complex science concepts like circular motion or the Calvin Cycle.\n\nMemory:\nThe learner is exhibiting mild frustration and uncertainty as they self-check their understanding of outer and inner functions in the equation y = sin(2x + 1), possibly due to previous difficulty applying these algebraic concepts within physics contexts such as circular motion and the Calvin Cycle.",
+        "User Input": "Okay, so for y = sin(2x + 1), is the outer function the sine part and the inner function would be the linear part inside? Like, 2x + 1",
+        "Control Tutor": "Okay, excellent idea! You\u2019re absolutely right to want to solidify the identification part first.\n\nFor `y = sin(2x + 1)`, is the outer function the sine part and the inner function would be the linear part inside? Like, 2x + 1\n\nThat's exactly correct! \ud83c\udf89 \n\nYou've identified it perfectly. The outer function is indeed the sine function (it's acting *on* something), and the inner function is `2x + 1`. You\u2019re consistently spotting these correctly \u2013 that\u2019s a great sign!\n\n\n\nWould you like another one, or are you happy to move on to actually *taking* the derivative of this one now? \ud83d\ude0a",
+        "PAM Tutor": "You're thinking about it exactly right! Yes, with y = sin(2x + 1), the outer function is definitely the sine part\u2014it\u2019s what\u2019s being applied *last* to everything inside. And you nailed it that the inner function is the linear expression, 2x + 1. \n\nI know this stuff can feel a little tedious when you're just double-checking, especially after running into trouble with those physics problems where getting the algebra right is super important. It\u2019s good that you\u2019re taking the time to make sure you really understand it though!\n\nIf you want, we could go over some more complicated examples of identifying outer and inner functions \u2013 or even look at how this concept shows up in different types of equations? Just let me know what would be most helpful for you right now.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, acknowledging the learner's effort without unnecessary embellishments."
+    }
+]

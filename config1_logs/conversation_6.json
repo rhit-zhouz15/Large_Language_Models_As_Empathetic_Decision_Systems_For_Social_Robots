@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.1155914516886696,
+        "Input Arousal": 0.5494395861402154,
+        "Internal State Valence": -0.03550883007080759,
+        "Internal State Arousal": 0.3037855522629654,
+        "Internal State Momentum": -0.3049061679636361,
+        "Internal State Intensity": 0.14210831456049053,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there! I'm a bit stuck on this math problem, could you help me out?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is exhibiting a playful yet slightly hesitant curiosity as they seek assistance with a new math hurdle.\n2. Emotion Intensity: This emotion is currently of low intensity.\n3. Emotional Inertia: The emotional inertia is trending downward, indicating an increase in frustration or stress compared to previous successes.\n4. Threshold Crossed: Yes, the internal state has crossed the threshold from the previous turn.\n5. Internal State: The learner is feeling a mix of mild interest and slight uncertainty as they move from past successes in physics and calculus into a new point of confusion.\n\nMemory:\nThe learner expressed cheeky curiosity with low intensity and positive valence while requesting help on a math problem following their successful navigation of friction calculations and integral substitutions.",
+        "User Input": "Hey there! I'm a bit stuck on this math problem, could you help me out?",
+        "Control Tutor": "I'd be happy to help! It looks like we're switching gears from literary analysis to math\u2014I'm ready whenever you are. \n\nGo ahead and share the problem you're working on. If you can, let me know what part of it is giving you trouble or where you feel \"stuck,\" and we can walk through it step-by-step!",
+        "PAM Tutor": "I can definitely help with that. Go ahead and share the problem you're working on, and we can walk through it step by step.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and appropriate responses. Tutor A's response is concise and natural, while Tutor B includes context about the topic shift, adding empathy without over-elaboration."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.28812883286736896,
+        "Input Arousal": 0.315341804898344,
+        "Internal State Valence": -0.19418259776290592,
+        "Internal State Arousal": 0.30840805331711685,
+        "Internal State Momentum": -0.35708934013091487,
+        "Internal State Intensity": 0.12798017084360336,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nI've got this algebra problem here\nx\u00b2 - 6x + 8 = 0\nI need to find the value(s) of x\ni think i have to factor it but not sure how to start?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Confusion regarding the initial steps of factoring a quadratic equation.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The learner's mood is trending negatively as they transition from calculus problems to algebra, showing increased confusion.\n4. Threshold Crossed: True\n5. Internal State: The learner is currently experiencing low-intensity confusion and slightly negative valence while struggling with the foundational steps of factoring a quadratic equation after previously struggling with complex integrals.\n\nMemory:\nThe learner is experiencing low-intensity confusion and slightly negative valence while attempting to begin the factoring process for a quadratic equation.",
+        "User Input": "I've got this algebra problem here\nx\u00b2 - 6x + 8 = 0\nI need to find the value(s) of x\ni think i have to factor it but not sure how to start?",
+        "Control Tutor": "You\u2019re on the right track! Factoring is one of the most efficient ways to solve a quadratic equation like $x^2 - 6x + 8 = 0$ because it breaks the \"big\" problem into two smaller, simpler ones.\n\nSince the leading coefficient (the number in front of the $x^2$) is just **1**, we can use a very straightforward factoring method.\n\n### Here is how to start:\n\nWhen you have an equation in the form $x^2 + bx + c = 0$, your goal when factoring is to find **two numbers** that satisfy two conditions at the same time:\n\n1.  They must **multiply** to give you the last number (the constant): **+8**\n2.  They must **add up** to give you the middle number: **-6**\n\n### Step 1: Find the factors\nSince we know the numbers have to multiply to a positive number ($+8$) but add up to a negative number ($-6$), we can deduce that **both numbers must be negative**.\n\nThink about the pairs of numbers that multiply to $8$:\n*   $1 \\times 8 = 8$\n*   $2 \\times 4 = 8$\n\nNow, look at those pairs and see which one \"works\" when you add them together (keeping their negative signs in mind):\n*   $-1 + (-8) = -9$ \n*   $-2 + (-4) = -6$\n\n**Do you see which pair fits our goal?**\n\n### How to proceed:\nOnce you identify those two numbers ($-2$ and $-4$), the next step is to write them in \"factored form,\" which looks like this:\n$$(x \\text{ + first number})(x \\text{ + second number}) = 0$$\n\nGive that a try! What do you think those binomials look like?",
+        "PAM Tutor": "I can tell it's frustrating when you hit a wall like this right at the start of a problem. \n\nTo get started with factoring $x^2 - 6x + 8 = 0$, you're looking for two numbers that satisfy two conditions: they must multiply to give you the constant (the $+8$) and add up to give you the coefficient of the middle term ($-6$). \n\nSince your product is positive ($+8$) but your sum is negative ($-6$), you know that both numbers you're looking for have to be negative. You can then look at pairs of factors for $8$:\n*   $-1$ and $-8$ (These add up to $-9$)\n*   $-2$ and $-4$ (These add up to $-6$)\n\nSince $-2$ and $-4$ hit your target sum, those are your numbers. You can rewrite the equation as $(x - 2)(x - 4) = 0$. From there, you just set each part equal to zero: $x - 2 = 0$ and $x - 4 = 0$, which gives you the solutions $x=2$ and $x=4$.\n\nDo you want me to go into more detail on how to find those specific factors for different types of quadratic equations?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor B provides a more concise and direct explanation, which is clearer for the learner. The response effectively balances empathy with clarity."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4563474796363152,
+        "Input Arousal": -0.1655235998448916,
+        "Internal State Valence": -0.39031804643953266,
+        "Internal State Arousal": 0.11883539205231347,
+        "Internal State Momentum": -0.5727330519544193,
+        "Internal State Intensity": 0.12533200884630208,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Oh, okay so I need -2 and -4? So would it be like (x - 2)(x - 4) or something? That makes sense, thanks.\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is experiencing a mix of relief and emerging clarity while transitioning away from previous frustration regarding substitution signs.\n2. Emotion Intensity: The intensity of the current emotion is low but shows significant progression as they grasp the quadratic factoring step.\n3. Emotional Inertia: The emotional inertia is trending negatively, indicating that their previous state of grumpiness and frustration is beginning to dissipate.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold into a new phase of understanding.\n5. Internal State: The learner is moving from a state of frustrated confusion regarding substitution rules for e to the power of negative x toward a moment of clarity during quadratic factoring.\n\nMemory:\nThe learner successfully identified the correct factors (x - 2)(x - 4) after struggling with double negatives and sign placement in integration.",
+        "User Input": "Oh, okay so I need -2 and -4? So would it be like (x - 2)(x - 4) or something? That makes sense, thanks.",
+        "Control Tutor": "Spot on! You nailed it. \n\nBecause you are \"adding\" the negative numbers ($-2$ and $-4$) into the parentheses, it simplifies perfectly to:\n$$(x - 2)(x - 4) = 0$$\n\n### The Final Step: Solving for $x$\nNow that you have successfully factored the equation, you are in the home stretch! We need to find the actual values of $x$. \n\nSince these two groups are being multiplied together to equal zero, we use something called the **Zero Product Property**. It sounds fancy, but it just means: *If two things multiplied together equal zero, at least one of those things must be zero.*\n\nTo find your two answers for $x$, you just need to set each part equal to zero individually:\n1.  $x - 2 = 0$\n2.  $x - 4 = 0$\n\n**Can you tell me what $x$ equals in both of those mini-equations?**",
+        "PAM Tutor": "You've got it! Since those two numbers need to multiply to $+8$ and add up to $-6$, $(x - 2)(x - 4)$ is exactly right. Now that you\u2019ve got the factors set up correctly, you can find the values for $x$ by setting each part of the equation to zero ($x - 2 = 0$ and $x - 4 = 0$).",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and natural follow-up, effectively scaffolding the next step without unnecessary details."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.044650389277376246,
+        "Input Arousal": 0.24211890308652068,
+        "Internal State Valence": -0.20740059429729385,
+        "Internal State Arousal": 0.16814879646599634,
+        "Internal State Momentum": -0.5064491156261646,
+        "Internal State Intensity": 0.09981936381548409,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nSo, x would be like 2 and 4, right? That sounds good to me!\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling a sense of relief and playful satisfaction after overcoming the difficulties with integration signs.\n2. Emotion Intensity: This emotion has low intensity as it follows a long period of frustration.\n3. Emotional Inertia: The emotional inertia is moving in a positive direction toward resolution.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold into a more positive state.\n5. Internal State: The learner is currently feeling relieved and satisfied after successfully navigating the complex signs of the integration problem.\n\nMemory:\nThe learner expressed low-intensity relief and satisfaction with positive valence and low arousal while successfully identifying the correct factors in an integration problem involving e to the power of negative x.",
+        "User Input": "So, x would be like 2 and 4, right? That sounds good to me!",
+        "Control Tutor": "You nailed it! **$x = 2$ and $x = 4$** are exactly the correct solutions.\n\nTo recap why that works:\nBecause you had $(x - 2)(x - 4) = 0$, you were essentially looking for the values of $x$ that would make either of those parentheses equal zero. \n*   If $x$ is **2**, then $(2 - 2)$ becomes $0$. \n*   If $x$ is **4**, then $(4 - 4)$ becomes $0$.\n\nSince multiplying anything by zero results in zero, both numbers make the original equation true! \n\nGreat job working through that. You took a complex-looking quadratic and broke it down into manageable steps\u2014that's exactly how you tackle these types of problems. Do you feel confident with this factoring method now, or would you like to try another one?",
+        "PAM Tutor": "You nailed it! Since $x-2=0$ means $x=2$ and $x-4=0$ gives you $x=4$, those are exactly right. You did a great job working through those signs to get here!",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and empathetic responses. Tutor A's response was concise and natural, while Tutor B offered a more detailed explanation without overstepping empathy."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "think",
+        "Input Valence": 0.0024985402706079185,
+        "Input Arousal": -0.15087694844696675,
+        "Internal State Valence": -0.20740059429729385,
+        "Internal State Arousal": 0.16814879646599634,
+        "Internal State Momentum": -0.5064491156261646,
+        "Internal State Intensity": 0.09981936381548409,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nI think I get it now, thanks for walking me through that! Yeah, I feel pretty good about this factoring stuff. Let's switch back to my essay though, what do you think about using Option C for the analytical sentence?\n\nAppraisal Details:\n1. Dominant Emotion: Relief and confidence regarding the math concepts while transitioning back to their literary analysis of Gatsby.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: The learner's mood is improving as they move from a state of confusion during factoring toward satisfaction with their progress.\n4. Threshold Crossed: False\n5. Internal State: The learner feels confident and relieved after mastering the factoring topic, though their internal emotional momentum remains slightly weighed by previous frustrations in the session.\n\nMemory:\nThe learner expresses relief and confidence after successfully completing a factoring exercise and is now seeking feedback on Option C for an analytical sentence regarding Gatsby's themes.",
+        "User Input": "I think I get it now, thanks for walking me through that! Yeah, I feel pretty good about this factoring stuff. Let's switch back to my essay though, what do you think about using Option C for the analytical sentence?",
+        "Control Tutor": "It is wonderful to hear that you feel confident with factoring! You did a great job breaking down those steps\u2014you're ready to tackle quadratics like a pro now.\n\nLet\u2019s jump right back into your essay. \n\nRegarding **Option C**: I think it is an excellent choice. \n\nThe reason Option C works so well is that it serves as the \"bridge\" in your paragraph. While your evidence (the green light) shows us what Gatsby is *doing*, and your thesis tells us what the story is *about* (the American Dream), **Option C explains why it matters.** By connecting his personal struggle directly to the broader concept of the American Dream, you ensure that the reader never loses sight of your main argument. It moves the writing from simply \"describing\" the scene to actually \"analyzing\" it.\n\nSince you feel Option C provides the clearest direction for the essay, let's lock that in! \n\n**Next Step:**\nNow that we have our thesis, our evidence (the green light), and your analytical sentence (Option C) all lined up, we are ready to start **drafting**. \n\nWould you like to try drafting the first few sentences of your first body paragraph? We can start by introducing the setting/context of the green light before moving into that analytical sentence.",
+        "PAM Tutor": "Glad that the factoring clicked; those sign rules can be tricky to get used to! Option C is definitely the way to go for your essay. It works because it moves the analysis from a simple character study into a broader critique of how Gatsby's personal goals reflect cultural ideals like the American Dream. This gives your paper a solid \"spine,\" ensuring that every piece of evidence\u2014like his wealth or the green light\u2014serves that larger argument rather than just describing his feelings.\n\nDo you want me to go into more detail on how this specific choice impacts your essay structure?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more balanced and engaging response with natural flow, while maintaining high accuracy."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3401630451553501,
+        "Input Arousal": -0.10378144282149152,
+        "Internal State Valence": -0.3285381836715864,
+        "Internal State Arousal": 0.05937670075100119,
+        "Internal State Momentum": -0.6632706222526029,
+        "Internal State Intensity": 0.0954558538586755,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nSure, I'd love to start drafting. So, should I begin with something like \"In The Great Gatsby, the green light symbolizes...\"? Or maybe another approach would work better\n\nAppraisal Details:\n1. Dominant Emotion: Hesitant frustration and irritation.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending negatively with a downward emotional momentum.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner is experiencing a moment of irritable hesitation as they attempt to begin their draft on the green light symbolism after a period of fluctuating frustration and relief.\n\nMemory:\nThe learner is showing low-intensity grumpiness and negative valence while seeking validation on their opening sentence regarding the symbolism of the green light in The Great Gatsby.",
+        "User Input": "Sure, I'd love to start drafting. So, should I begin with something like \"In The Great Gatsby, the green light symbolizes...\"? Or maybe another approach would work better",
+        "Control Tutor": "That is a great question! You\u2019ve hit on an important distinction in academic writing: **starting with a \"topic sentence\" versus starting with \"context.\"**\n\nBoth of your ideas have different effects on the reader, so let\u2019s weigh them out together:\n\n### 1. The \"Direct\" Approach\n*(Your suggestion: \"In The Great Gatsby, the green light symbolizes...\")*\n*   **Pros:** It is very clear. The reader knows exactly what you are going to talk about within the first five words.\n*   **Cons:** It can feel a bit like a standard \"book report.\" Because your thesis already established that the light represents the American Dream, saying it again in the first sentence of the paragraph might feel repetitive or like \"telling\" rather than \"showing.\"\n\n### 2. The \"Contextual\" Approach (Recommended)\nInstead of starting with what the symbol *means*, start with the **scene** where the symbol appears. This builds a bridge for the reader before you hit them with your analysis.\n\nRather than jumping straight to the definition, you might describe Gatsby's physical reaction or the setting. For example: \n> *\"As Gatsby reaches out toward the distant shore, the tiny green light serves as his only point of connection to the past.\"* \n\n**Why this works better for Option C:**\nSince we decided that Option C is your \"bridge\" between the evidence (the light) and the analysis (the American Dream), starting with a bit of context makes that bridge feel much stronger. You are taking the reader from the **story's world** into the **analytical world**.\n\n### My Recommendation: The Middle Ground\nYou don\u2019t have to choose just one! You can combine them by giving the reader 1-2 sentences of \"setting\" before you move into your analysis. \n\nThink of it like a movie: You want to show the audience the scene before you explain the deeper meaning of why it matters. \n\n**Try this exercise:**\nInstead of starting with \"The green light symbolizes,\" try writing 1\u20132 sentences that describe **the moment Gatsby sees the light** or his **feeling** when he looks at it. Once you do that, you can transition into Option C.\n\n**How does that sound? Would you like to try drafting a sentence that describes the scene first?**",
+        "PAM Tutor": "It\u2019s completely natural to feel some hesitation when you're trying to find that perfect starting point; the first draft is often the hardest hurdle to clear.\n\nThe sentence \"In The Great Gatsby, the green light symbolizes...\" is a solid and clear way to start, but it functions more as an introductory statement than a powerful analytical hook. Since your goal is to show how his goals reflect the American Dream, you can make the opening much stronger by weaving that theme directly into the first sentence. \n\nInstead of stating what the symbol represents in its own clause, try a structure that joins the symbol and the meaning together immediately. For example: \"The green light serves as a haunting emblem of Gatsby's pursuit of the American Dream.\" This approach establishes your \"spine\" from the very first line, ensuring the reader understands your specific argument right away rather than just being told what you plan to talk about later.\n\nDo you want to see more specific variations of how to phrase this opening if you'd like to focus on different nuances of his ambition?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more concise and natural response, effectively addressing the learner's needs with empathy."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "empathetic",
+        "Input Valence": 0.19899024334736168,
+        "Input Arousal": 0.16291602160781624,
+        "Internal State Valence": -0.07772876419453484,
+        "Internal State Arousal": 0.10079242909372721,
+        "Internal State Momentum": -0.551091320592095,
+        "Internal State Intensity": 0.08299096690230638,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah, I see what you mean. Maybe something like \"Standing alone on the dock, Gatsby stretches his arms out toward the green light\" or maybe even \"The green light across the bay pulses with an elusive promise.\" Does that work for the context thing\n\nAppraisal Details:\n1. Dominant Emotion: The learner is exhibiting a sense of collaborative cooperation and tentative optimism while trying to finalize their phrasing for the green light symbolism.\n2. Emotion Intensity: The intensity of this feeling is low, suggesting a calm but focused attempt at creative drafting.\n3. Emotional Inertia: The emotional inertia is trending negatively as the learner deals with lingering frustration from previous academic hurdles despite showing openness in this specific turn.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is currently experiencing a moment of tentative cooperation and clarity regarding their writing options, even as their overall mood remains somewhat strained by ongoing frustrations with the Gatsby analysis.\n\nMemory:\nThe learner expressed low-intensity determination and a cooperative spirit while proposing two specific descriptive sentences to establish the context for the green light's symbolism in \"The Great Gatsby.\"",
+        "User Input": "Yeah, I see what you mean. Maybe something like \"Standing alone on the dock, Gatsby stretches his arms out toward the green light\" or maybe even \"The green light across the bay pulses with an elusive promise.\" Does that work for the context thing",
+        "Control Tutor": "Both of these are significant improvements over a standard \"The green light symbolizes...\" opening! You\u2019ve moved away from simply *telling* the reader what they need to know and started *showing* them the scene, which is much more engaging.\n\nLet\u2019s look at how each one functions as an entry point for your paragraph:\n\n### Option 1: \"Standing alone on the dock, Gatsby stretches his arms out toward the green light.\"\n*   **The Vibe:** This is very **cinematic**. It focuses on Gatsby\u2019s physical actions and his isolation. \n*   **Why it works:** It immediately puts the reader in the scene with him. It emphasizes his personal longing and makes the \"green light\" feel like a destination he is trying to reach physically. \n*   **Best if:** You want the focus of this paragraph to be on Gatsby\u2019s personal, emotional struggle and his obsession.\n\n### Option 2: \"The green light across the bay pulses with an elusive promise.\"\n*   **The Vibe:** This is more **poetic and atmospheric**. It focuses on the *feeling* of the symbol itself rather than just the person looking at it.\n*   **Why it works:** By using words like \"pulses\" and \"elusive,\" you are hinting at the complexity of the American Dream before you even mention it explicitly. It feels a bit more \"literary.\"\n*   **Best if:** You want to focus on the symbol of the light as an abstract idea (the unattainable dream) right from the jump.\n\n### My Advice:\nBoth work perfectly, but they offer slightly different paths. \n\nIf you want your paragraph to feel very **personal and character-driven**, go with **Option 1**. It centers on Gatsby's physical gesture of reaching out.\n\nIf you want your paragraph to feel more **analytical and thematic** right away, go with **Option 2**. It focuses on the \"mood\" of the symbol.\n\n**How are you feeling about those two? Does one of them \"feel\" like it fits your personal writing style better than the other?** \n\n(Once you pick one, we can move on to connecting it directly to that \"Option C\" bridge sentence!)",
+        "PAM Tutor": "I can tell it's draining to wrestle with the specific phrasing of a sentence after already dealing with so many complex ideas during this process.\n\nBoth options work as context, but for an analytical essay, I\u2019d recommend the second one: \"The green light across the bay pulses with an elusive promise.\" While your first option is very cinematic and paints a clear picture, the second one leans more into the *meaning* of the symbol. The phrase \"elusive promise\" perfectly captures the essence of the American Dream\u2014something that looks reachable but remains just out of grasp\u2014making it a much stronger bridge into your analysis of Gatsby's motives.\n\nDo you want to see some other ways to describe that \"promise\" if we want to lean even further into the specific nuances of his ambition?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and natural explanation, effectively connecting the symbol to the broader theme while maintaining empathy."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "think",
+        "Input Valence": -0.012642436299938708,
+        "Input Arousal": -0.166570516617503,
+        "Internal State Valence": -0.07772876419453484,
+        "Internal State Arousal": 0.10079242909372721,
+        "Internal State Momentum": -0.551091320592095,
+        "Internal State Intensity": 0.08299096690230638,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nYeah, I think I prefer the second option. It feels more fitting for an analytical essay and really captures the essence of what I'm trying to say about the American Dream. How should I connect it to Option C?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Decisiveness\n2. Emotion Intensity: Low\n3. Emotional Inertia: Trending negatively\n4. Threshold Crossed: False\n5. Internal State: The learner feels a sense of focused determination in choosing an option but is experiencing a slight decline in mood as they navigate the complexity of connecting their chosen theme to Option C.\n\nMemory:\nThe learner expressed low-intensity decisiveness and neutral valence while selecting an analytical approach for their essay on Gatsby's American Dream and transitioning toward integrating Option C.",
+        "User Input": "Yeah, I think I prefer the second option. It feels more fitting for an analytical essay and really captures the essence of what I'm trying to say about the American Dream. How should I connect it to Option C?",
+        "Control Tutor": "That is a fantastic choice! Option 2\u2014**\"The green light across the bay pulses with an elusive promise\"**\u2014is very sophisticated. By using words like \"pulses\" and \"elusive,\" you are setting up a much more complex atmosphere. It signals to your reader that this isn't just a story about a man looking at a lamp; it\u2019s a story about the *nature of desire*.\n\nBecause Option 2 is so atmospheric, the best way to connect it to **Option C** (your \"bridge\" sentence) is to ensure the transition moves smoothly from the **symbol** (the light) to the **theme** (the American Dream).\n\nHere are two ways you can bridge these together:\n\n### Method 1: The \"Seamless Flow\" (Best if Option C starts with a clear analysis)\nSince you mentioned that Option 2 highlights an \"elusive promise,\" you can connect it directly by showing how that specific \"promise\" is what defines the American Dream.\n\n*   **The logic:** The light promises something $\\rightarrow$ That promise is actually the pursuit of the American Dream.\n*   **Example structure:**\n    > *\"The green light across the bay pulses with an elusive promise.* **[Option C follows here]** *This sense of reaching for something just out of grasp serves as a poignant metaphor for the American Dream...\"*\n\n### Method 2: The \"Evidence Bridge\" (Best if you want to emphasize Gatsby\u2019s role)\nIf you feel like there is too big of a jump between the poetic description of the light and the heavy analysis of the American Dream, you can add one small phrase or clause that anchors it in the story first.\n\n*   **The logic:** The light promises something $\\rightarrow$ To Gatsby, this represents his personal goals $\\rightarrow$ These goals are tied to the broader American Dream (Option C).\n*   **Example structure:** \n    > *\"The green light across the bay pulses with an elusive promise. **For Gatsby, this flickering light represents a desperate hope for personal fulfillment; however, it also mirrors the wider complexities of the American Dream.** [Optional transition into Option C]*\"\n\n### My Advice for your draft:\nSince you chose the more analytical \"Option 2,\" I recommend staying with **Method 1**. You want to keep the writing tight. Because \"elusive promise\" is such a strong opening, it sets up a perfect \"hook.\" When the reader encounters Option C immediately after, they will see that \"promise\" as the direct link between Gatsby\u2019s personal feelings and the national theme of the American Dream.\n\n**How to decide?**\nLook at your Option C. Does Option C start by mentioning \"Gatsby's struggle,\" \"the concept of dreams,\" or something else? \n\n*   If Option C starts with a **broad idea** (like the American Dream), go with Method 1.\n*   If Option C feels a bit **abrupt**, use Method 2 to add one small \"connector\" phrase.\n\n**Why don't you try writing out the transition? Put both sentences together in a row and see how they sound to you when you read them aloud.** How does that flow feel to your ears?",
+        "PAM Tutor": "That\u2019s a solid choice\u2014it has a really nice flow while keeping your analysis front and center. \n\nTo connect that sentence to Option C, you can use the phrase \"elusive promise\" as your pivot point between imagery and argument. Since Option C focuses on how Gatsby's personal goals reflect broader cultural ideals, your next step is explaining *why* that promise is elusive. You do this by linking his individual yearning for success with the larger myth of the American Dream\u2014the idea that anything is possible if you just have enough \"reach.\" \n\nEssentially, you\u2019re moving from the physical symbol (the light) to the thematic meaning (the American Dream). You can bridge them in the next sentence by explaining that this \"elusive promise\" isn't just about Gatsby\u2019s personal goals; it's a reflection of how the American Dream offers a sense of unlimited possibility that often turns out to be an unreachable myth. A transition like, \"...a promise that mirrors the broader allure and ultimate futility of the American Dream,\" would stitch those two ideas together perfectly.\n\nDo you want me to give some more specific examples of different ways to phrase that transition?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise, natural, and appropriately scaffolded, making it easier for the learner to digest."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "empathetic",
+        "Input Valence": 0.1566090297186747,
+        "Input Arousal": 0.16764134515542536,
+        "Internal State Valence": 0.04732815931448392,
+        "Internal State Arousal": 0.12753199551840647,
+        "Internal State Momentum": -0.45491943967354,
+        "Internal State Intensity": 0.07273581131910077,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah, I get what you're saying. So, if Option C starts with something broad like \"the American Dream,\" I should just jump right into it after the \"elusive promise\" part, right? Like, make it flow naturally from the light's promise to the bigger idea.\n\nAppraisal Details:\n1. Dominant Emotion: Seeking clarification and confirmation of a specific transition in their analysis of the American Dream.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending downward as the learner experiences uncertainty regarding the flow of their essay structure despite previous progress.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is currently seeking clarification on phrasing while experiencing a dip in momentum and an increase in emotional instability regarding their draft.\n\nMemory:\nThe learner showed low intensity, positive valence, and low arousal while seeking confirmation on the flow of transition between the green light and the American Dream in Option C.",
+        "User Input": "Yeah, I get what you're saying. So, if Option C starts with something broad like \"the American Dream,\" I should just jump right into it after the \"elusive promise\" part, right? Like, make it flow naturally from the light's promise to the bigger idea.",
+        "Control Tutor": "You hit the nail on the head! Your intuition here is spot-on because of something we call a **\"semantic hook.\"**\n\nBy using the word **\"promise\"** in your opening sentence, you\u2019ve already planted the seed for the \"bigger idea.\" Because an \"elusive promise\" is essentially what the American Dream is described as in literary analysis, moving directly into Option C feels like a natural expansion of that thought rather than a sudden jump.\n\n### Why this works so well:\nWhen you move from the **light's promise** (the specific symbol) to the **American Dream** (the broad theme), you are moving from the *micro* to the *macro*. Because \"promise\" acts as the bridge, the reader\u2019s brain naturally makes that connection. It feels like you are zooming out from a close-up shot of Gatsby's world to a wide-angle view of the entire American experience.\n\n### How to check the flow:\nSince you\u2019re worried about it \"flowing naturally,\" here is my best piece of advice for this stage of drafting: **Read it out loud.**\n\nWhen you put those two sentences together, listen to the rhythm:\n1. *The green light across the bay pulses with an elusive promise.* (Pause)\n2. *[Option C]*\n\n**If you have to take a deep breath or if the transition feels like a \"jerk\" in your voice,** it might mean we need one tiny connecting word (like \"This,\" \"Such a,\" or \"Ultimately\"). \n\n**But if it feels like one continuous thought, then you are golden.**\n\n### Your Next Step:\nGo ahead and type those two sentences out one after the other. Don't worry about the rest of the paragraph yet\u2014just get those two together. \n\n**Once you do that, paste them here! I'll take a look at the \"rhythm\" of the transition with you to make sure it hits as hard as possible.**",
+        "PAM Tutor": "You\u2019ve got it\u2014that\u2019s exactly the right way to approach it. It can be tricky to bridge that gap between a specific symbol and a big, abstract theme like the American Dream, but your logic here is spot on. \n\nBy jumping from \"elusive promise\" directly into the broader concept, you're creating a smooth transition where the light serves as a physical gateway to the larger idea. Rather than stopping to define what the light means in isolation, this flow allows the imagery and the theme to merge immediately. It shows the reader that Gatsby\u2019s personal obsession isn't just about his feelings\u2014it\u2019s a reflection of a wider cultural myth. This keeps your argument moving forward without losing momentum.\n\nDo you want to see some specific ways we could phrase that transition sentence to make sure it hits as smoothly as possible?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more calibrated empathy and conversational naturalness, making their response feel more fluid and appropriate for the learner's needs."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.2564297190867364,
+        "Input Arousal": -0.05331780174747108,
+        "Internal State Valence": -0.12546093586335147,
+        "Internal State Arousal": 0.05519207661205545,
+        "Internal State Momentum": -0.5681548876577287,
+        "Internal State Intensity": 0.06983289546187854,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nYeah, so just to clarify, should i start writing my option c right after \"elusive promise\"? Like directly?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is feeling a sense of grumpiness or mild irritation while seeking technical clarification on sentence placement.\n2. Emotion Intensity: The intensity of this emotion is low.\n3. Emotional Inertia: The emotional inertia is trending negatively, moving away from the previous confidence seen in earlier turns.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold.\n5. Internal State: The learner's mood is shifting toward slight dissatisfaction and irritation as they seek specific structural guidance for their Gatsby essay transition.\n\nMemory:\nThe learner is feeling slightly grumpy with low intensity and negative valence while seeking specific clarification on the placement of Option C following the phrase elusive promise in their analysis of Gatsby's themes.",
+        "User Input": "Yeah, so just to clarify, should i start writing my option c right after \"elusive promise\"? Like directly?",
+        "Control Tutor": "You\u2019ve got it exactly right! \n\nThe reason this works so well is that you are moving from the **specific** (the physical light and its \"promise\") to the **universal** (the concept of the American Dream). Because \"promise\" is a word that carries so much weight, it acts as the perfect stepping stone. When the reader finishes your first sentence, they are already thinking about what that promise represents; your very next sentence\u2014Option C\u2014then gives them the answer.\n\n### To confirm:\nIf Option C starts with something like \"The American Dream...\" or \"This pursuit of the American Dream...\", it creates a **\"zoom-out\" effect.** \n\n1.  **Sentence 1:** Close-up on Gatsby and the light (The \"Micro\").\n2.  **Sentence 2 (Option C):** Wide shot of the American experience (The \"Macro\").\n\nBy putting them right next to each other, you aren't \"jumping\" topics; you are expanding on the same thought.\n\n### One final tip for the \"perfect\" flow:\nWhen you type them out together, just check if it feels like one continuous thought. \n\n*   **If it flows perfectly:** Keep it exactly as is!\n*   **If it feels like a tiny \"hiccup\":** You can add a very small connector word like **\"This,\"** or **\"Ultimately,\"** at the start of Option C to glue them together even tighter.\n\n**Give it a try! Go ahead and type those two sentences out one after the other and paste them here.** I\u2019d love to see how they look side-by-side so we can make sure the \"rhythm\" is perfect before you move on to the rest of the paragraph.",
+        "PAM Tutor": "I know it can be a bit frustrating when the technical details of phrasing start feeling like a hurdle. You should place Option C right after \"elusive promise.\" Since that phrase acts as the pivot point between the physical symbol (the light) and the abstract theme (the American Dream), putting them together keeps your transition smooth and ensures the flow doesn't stall.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 2,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor B provides a more concise and natural explanation, effectively addressing the learner's need for clarity without unnecessary complexity."
+    }
+]

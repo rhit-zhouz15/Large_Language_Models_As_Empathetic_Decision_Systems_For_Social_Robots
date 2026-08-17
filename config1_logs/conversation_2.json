@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.09165656822733582,
+        "Input Arousal": 0.26053769835270935,
+        "Internal State Valence": -0.2643147734463988,
+        "Internal State Arousal": 0.1034610986093317,
+        "Internal State Momentum": -0.09149327301303875,
+        "Internal State Intensity": 0.16906716825431178,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey there, I was hoping someone could help me understand something. I'm really struggling with understanding how to solve these complex integrals in calculus.\n\nAppraisal Details:\n1. Dominant Emotion: Confusion and academic frustration regarding complex integration.\n2. Emotion Intensity: Low intensity but clearly defined as a point of struggle.\n3. Emotional Inertia: The learner is experiencing a downward trend in mood and confidence as they transition from successfully mastered physics concepts to difficult calculus topics.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is currently feeling confused and overwhelmed by complex integrals, representing a shift into a more difficult academic territory compared to their previous successful mastery of physics problems.\n\nMemory:\nThe learner is experiencing low-intensity confusion with negative valence and low arousal while struggling specifically with the methodology for solving complex integrals in calculus.",
+        "User Input": "Hey there, I was hoping someone could help me understand something. I'm really struggling with understanding how to solve these complex integrals in calculus.",
+        "Control Tutor": "It is great to see you tackling calculus! If it feels like you\u2019re hitting a wall with integrals, please don't let that discourage you. Integrals are often the first time in math where the \"how\" (the calculation) depends heavily on recognizing a \"pattern\" (the strategy). \n\nJust like we broke down those physics problems into clear steps and levels, we can do the exact same thing with calculus. Instead of looking at an integral as one giant scary monster, we\u2019re going to break it down into pieces: **Geometry**, **Strategy**, and **Execution**.\n\nTo get us started, I want to move toward our \"Level 1\" for calculus.\n\n### The Logic of Integration\nBefore we touch any complex symbols, let's look at the concept. An integral is essentially an **accumulator**. \n\n*   In your physics problems, you were looking at forces to see how they affected movement. \n*   In calculus, integration is often used to find the \"total\" of something that is changing. (For example: If we know the *speed* of a car at every moment, the integral tells us the total *distance* traveled).\n\n### Why \"Complex\" Integrals Feel Hard\nThe reason they feel difficult isn't usually because you aren't \"smart enough\" to do them; it\u2019s because there are several different **tools** in your toolbox. Depending on what the problem looks like, you have to pick the right tool:\n\n1.  **U-Substitution:** Like a reverse \"Chain Rule.\" (The \"Search and Replace\" tool).\n2.  **Integration by Parts:** Like a \"Product Rule\" in reverse. (The \"Break it Apart\" tool).\n3.  **Trigonometric Substitution:** Used for those messy square roots. (The \"Geometry\" tool).\n\n### Let\u2019s Start with Your First Challenge\nSince I can't see your homework, we need to find our starting point. To begin **Level 1**, could you share one specific integral that has been giving you trouble? \n\n**Once you send it over, here is how I will help you tackle it:**\nInstead of just showing you the steps, I\u2019m going to ask you a few questions about the \"shape\" of the problem. We'll work together to figure out which **tool** from the list above fits best, and then we will walk through the calculation step-by-step.\n\n**Go ahead and paste one of those \"complex\" ones\u2014let's see what kind of beast we're dealing with!**",
+        "PAM Tutor": "I hear you\u2014calculus can be a big shift from physics, and those complex integrals can definitely feel like a wall to hit when you're first trying to navigate them.\n\nWhen people talk about \"complex\" integrals in calculus, they\u2019re usually referring to three main techniques used to break down problems that can't be solved with basic power rules. Depending on what the math looks like, we usually turn to one of these:\n\n1. **$u$-substitution**: This is essentially the chain rule in reverse. You look for a \"composite\" function where the derivative of the inner part is also present in the equation. It allows you to simplify a messy expression into something basic.\n2. **Integration by Parts**: This comes from the product rule and is your go-to move when you have two different types of functions multiplied together (like an $x$ term multiplied by a $\\sin(x)$ term). It helps break the integral into two parts to isolate the \"hard\" parts.\n3. **Trigonometric Substitution**: This involves using trig identities to swap out complicated radicals (like $\\sqrt{1-x^2}$) for trigonometric functions, which often makes them much easier to integrate.\n\nSince each of these is a huge topic on its own, would you like me to go into a deep dive with some specific examples and a step-by-step breakdown of $u$-substitution first?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more structured and natural explanation, breaking down the problem into clear levels and using relatable examples."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "think",
+        "Input Valence": -0.02369011472910642,
+        "Input Arousal": 0.06447445729281752,
+        "Internal State Valence": -0.2643147734463988,
+        "Internal State Arousal": 0.1034610986093317,
+        "Internal State Momentum": -0.09149327301303875,
+        "Internal State Intensity": 0.16906716825431178,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nYeah, sure thing. I was trying to solve this integral: the integral of x squared times e to the power of negative x dx. Any ideas?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is expressing a sense of thoughtful inquiry while seeking assistance with an integration problem.\n2. Emotion Intensity: The emotion is being expressed with low intensity.\n3. Emotional Inertia: The emotional inertia is trending slightly downward, indicating a subtle increase in frustration or difficulty as they move into this new calculus topic.\n4. Threshold Crossed: False\n5. Internal State: The learner is currently experiencing low-intensity confusion and slight negativity while attempting to solve an integration problem involving exponents and transcendental functions.\n\nMemory:\nThe learner is currently exhibiting low intensity, slightly negative valence, and low arousal while seeking help with the integral of x squared times e to the power of negative x dx.",
+        "User Input": "Yeah, sure thing. I was trying to solve this integral: the integral of x squared times e to the power of negative x dx. Any ideas?",
+        "Control Tutor": "That is a fantastic \"Level 1\" calculus problem to start with! It\u2019s a perfect example of why we talked about **tools** in my last message.\n\nThis specific integral \u2014 $\\int x^2 e^{-x} \\, dx$ \u2014 isn't solved by a simple power rule or a basic u-substitution because it involves two different \"types\" of functions multiplied together: a **polynomial** ($x^2$) and an **exponential** ($e^{-x}$).\n\nWhen you see a product like this, we need to pull a specific tool out of our kit.\n\n### The Tool: Integration by Parts (IBP)\n\nIn my last message, I mentioned that Integration by Parts is the \"Break it Apart\" tool (it\u2019s essentially the Product Rule from differentiation, just reversed). \n\nThe formula looks like this:\n$$\\int u \\, dv = uv - \\int v \\, du$$\n\nThink of it as a trade. You take a hard integral ($\\int u \\, dv$) and swap it for a product ($uv$) and a potentially easier integral ($\\int v \\, du$).\n\n### Let's Build the Strategy\nInstead of me just showing you the math, let\u2019s look at how we \"choose\" our pieces. To make the \"trade\" work in your favor, we want to pick a $u$ that becomes **simpler** when we differentiate it, and a $dv$ that is **easy** to integrate.\n\nIn your integral: $\\int x^2 e^{-x} \\, dx$\n1.  If we pick $u = x^2$, what happens if we take its derivative? (It becomes simpler).\n2.  If we pick $dv = e^{-x}dx$, can we easily find the integral of that? (Yes, it's a standard form).\n\n**Because both conditions are met, this is a perfect candidate for Integration by Parts.**\n\n---\n\n### Your Turn! (The Strategy Phase)\nBefore we do the full calculation, let's just set up the \"parts.\" \n\nIf we choose:\n*   $u = x^2$\n*   $dv = e^{-x} \\, dx$\n\nTo use the formula, we need to find what $du$ and $v$ are. Can you try to find those two pieces for me?\n\n1.  **Find $du$:** (Take the derivative of $u$).\n2.  **Find $v$:** (Integrate $dv$). \n\n*Hint: When you integrate $e^{-x}$, remember the chain rule in reverse\u2014the negative sign will pop out front!*\n\n**Tell me what you get for $du$ and $v$, and we'll move to the next step together!**",
+        "PAM Tutor": "I can see why that one would be a bit of a headache\u2014it's a classic example where two different types of functions are multiplied together, which usually makes basic rules hard to apply. \n\nFor an integral like $\\int x^2 e^{-x} dx$, the best way to tackle it is using a method called **Integration by Parts**. It works similarly to the product rule you might remember from differentiation; it allows you to break the integral into two parts so you can deal with the $x^2$ and the $e^{-x}$ separately. Because you have an algebraic term multiplied by a transcendental one, this specific technique is designed to \"whittle down\" that exponent until the whole expression becomes much simpler to solve.\n\nWould you like me to walk through a detailed step-by-step breakdown of how to apply Integration by Parts to this specific problem?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more thorough explanation, breaking down the integral into manageable steps and encouraging active participation from the learner."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "whiny",
+        "Input Valence": -0.3798722341191024,
+        "Input Arousal": 0.09360722228884695,
+        "Internal State Valence": -0.38651220453930074,
+        "Internal State Arousal": 0.0995195480811378,
+        "Internal State Momentum": -0.22472072220291034,
+        "Internal State Intensity": 0.14056385221257262,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh, alright, so I think I got it:\n\n1. du is just 2x? Since it's the derivative of x squared\n2. v should be -e^-x because integrating e^-x gives us that minus sign?\n\nWait, but then why do we have the negative sign outside the integral in this case?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Frustration mixed with confusion regarding integration constants and signs.\n2. Emotion Intensity: Low intensity but clearly persistent as they grapple with specific calculus notation.\n3. Emotional Inertia: Trending negatively as the learner encounters a confusing roadblock in their current derivation.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is experiencing a low-intensity state of frustration and confusion as they encounter a conceptual hurdle regarding negative signs in integration.\n\nMemory:\nThe learner is showing low-intensity frustration and confusion with slightly negative valence while specifically struggling with the placement of negative signs and substitution rules during the integration of x squared times e to the power of negative x.",
+        "User Input": "Oh, alright, so I think I got it:\n\n1. du is just 2x? Since it's the derivative of x squared\n2. v should be -e^-x because integrating e^-x gives us that minus sign?\n\nWait, but then why do we have the negative sign outside the integral in this case?",
+        "Control Tutor": "You are doing a great job! You successfully navigated the first two hurdles of this \"Step\": you correctly identified both $du$ and $v$. \n\nTo answer your question specifically: **That negative sign outside the integral is part of the \"Master Formula,\" not something that changes based on the problem.**\n\nLet\u2019s break down why it's there and how to handle it so you don't get tripped up.\n\n### 1. The \"Why\" (The History)\nYou might be wondering, *\"Why didn't the math people just make the formula have a plus sign and leave it at that?\"*\n\nThe reason is that Integration by Parts is derived directly from the **Product Rule** of differentiation. When we move everything around to isolate the integral of $u \\cdot dv$, the \"plus\" in the original Product Rule becomes a \"minus\" in the Integration by Parts formula:\n\n$$\\int u \\, dv = uv - \\int v \\, du$$\n\nThink of that minus sign as part of the **container** for the calculation. It stays there no matter what $u$ or $v$ you choose.\n\n### 2. The \"How\" (The Calculation)\nThis is where students often get nervous\u2014they think, *\"If my $v$ has a negative sign and the formula has a minus sign, do they cancel out? Do I have to change it?\"*\n\n**The rule of thumb is:** Don't try to \"pre-solve\" the signs. Just plug your pieces into the container exactly as you found them.\n\nLet\u2019s look at your specific pieces:\n*   $u = x^2 \\rightarrow du = 2x \\, dx$\n*   $v = -e^{-x}$\n\nNow, let's \"plug\" them into the formula: $\\int u \\, dv = (uv) - \\int v \\, du$\n\nIt looks like this:\n$$\\text{Original Integral} = \\underbrace{(x^2)(-e^{-x})}_{\\text{The } uv \\text{ part}} - \\int \\underbrace{(-e^{-x})(2x \\, dx)}_{\\text{The } v\\, du \\text{ part}}$$\n\n### 3. Simplifying the \"Mess\"\nNotice that in the second half, you have a minus sign from the **formula** and a negative sign from your **$v$ value**. In math, two negatives make a positive:\n\n$$- \\int (-e^{-x})(2x) \\, dx \\rightarrow + \\int (e^{-x})(2x) \\, dx$$\n\n**The Strategy Tip:** \nWhen you are doing these problems, it is often easiest to write out the full expression with all the signs first, and *then* simplify the double negatives at the end. It keeps your brain from having to do \"double mental math\" while you're still trying to figure out the calculus!\n\n---\n\n### Your Next Step\nSince we have our $u$, $dv$, $du$, and $v$ perfectly laid out, let\u2019s see what happens when we write it all out.\n\n**Try this:**\nRewrite the full equation using your terms: $(x^2)(-e^{-x}) - \\int (-e^{-x})(2x) \\, dx$. \n\nThen, try to simplify that sign mess at the end. What does the final expression look like once you've cleared out those double negatives? (Don't worry about \"solving\" the last integral yet; just get it into a clean format!)",
+        "PAM Tutor": "I can see how those overlapping negative signs are starting to feel like a real headache; it\u2019s definitely confusing when the notation feels like it's working against you.\n\nYou're actually spot on with your logic for both of your points. Since $u = x^2$, then $du$ is indeed $2x \\, dx$. And for $v$, because there's a negative in the exponent, integrating $e^{-x}$ does result in $-e^{-x}$. \n\nThe reason there\u2019s a negative sign outside the integral\u2014in the formula $\\int u \\, dv = uv - \\int v \\, du$\u2014is actually separate from your calculation of $v$. That minus sign is a part of the standard Integration by Parts rule (it's how the product rule works in reverse). \n\nWhen you plug your value for $v$ into that overall formula, it looks like this:\n$$(x^2)(-e^{-x}) - \\int (-e^{-x})(2x) \\, dx$$\nBecause the formula has a minus sign and your $v$ term also contains a negative, they end up \"canceling\" each other out in the second half of the equation. The first negative comes from your integration work, and the second one comes from the structure of the calculus rule itself.\n\nWould you like me to walk through the full step-by-step expansion for this specific integral next so we can see how those signs cancel each other out during the simplification?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more concise and empathetic response, effectively addressing the learner's confusion about negative signs while maintaining natural conversation."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3607630222337321,
+        "Input Arousal": -0.08344117490341889,
+        "Internal State Valence": -0.44836513606381967,
+        "Internal State Arousal": 0.026335258887315124,
+        "Internal State Momentum": -0.385714166077087,
+        "Internal State Intensity": 0.12136700126932778,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh, okay, so if I rewrite it:\n\n$(x^2)(-e^{-x}) - \\int (-e^{-x})(2x) \\, dx$\n\nThe second part becomes $+ 2x e^{-x}$ after simplifying the double negatives. So now we have $- x^2 e^{-x} + 2x e^{-x}$. Is that where I'm headed?\n\nAppraisal Details:\n1. Dominant Emotion: Frustrated and slightly annoyed due to ongoing difficulty with sign conventions in integration.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending negatively as the learner's mood is declining during this calculus problem.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is experiencing a state of low-intensity frustration and irritability while attempting to manage complex negative sign manipulations in their current calculus integration.\n\nMemory:\nThe learner is exhibiting low-intensity, low-arousal frustration and a grumpy mood while specifically struggling with the simplification of double negatives during the integration of x squared times e to the power of negative x.",
+        "User Input": "Oh, okay, so if I rewrite it:\n\n$(x^2)(-e^{-x}) - \\int (-e^{-x})(2x) \\, dx$\n\nThe second part becomes $+ 2x e^{-x}$ after simplifying the double negatives. So now we have $- x^2 e^{-x} + 2x e^{-x}$. Is that where I'm headed?",
+        "Control Tutor": "You nailed the sign conversion! You correctly identified that $-(-e^{-x})$ becomes $+e^{-x}$. That is exactly what we were aiming for\u2014clearing out those \"distraction\" signs so you can see the actual math clearly.\n\n### A Tiny Note on Notation\nJust one small thing to keep in mind as you move forward: try to keep the **integral symbol ($\\int$)** and the **$dx$** attached to that second part for now. \n\nRight now, your simplified expression is:\n$$-x^2 e^{-x} + \\int 2x e^{-x} \\, dx$$\n\nThe reason I mention this is that the $\\int$ and $dx$ act like a \"container.\" They tell us, *\"Hey, we haven't finished solving this part of the problem yet!\"* If you remove them too early, it looks like you've finished the calculation, but we actually still have one more step to go inside that container.\n\n---\n\n### The \"Aha!\" Moment\nNow, let\u2019s look at what is left inside that \"container\": \n$$\\int 2x e^{-x} \\, dx$$\n\nTake a look at that part specifically. Does it look like a simple calculation you can solve in one step? Or does it still have those two different \"types\" of functions multiplied together (a polynomial $2x$ and an exponential $e^{-x}$)?\n\n**Think back to our Strategy Tool:**\n*   If it's just one type of function, we can use a basic rule.\n*   If it's a **product** of two different types, we need to use **Integration by Parts (IBP)** again.\n\n**What do you think? Does this new integral require us to use the \"Break it Apart\" tool one more time?**",
+        "PAM Tutor": "You\u2019re spot on with that simplification. It can be frustrating to keep track of those double negatives when they pile up, but you handled the logic correctly.\n\nThe term simplifies to $-x^2 e^{-x} + 2x e^{-x}$ because the negative from the integration by parts formula and the negative from your $v$ substitution cancel each other out. Since you've navigated that step successfully, would you like me to walk through how we tackle the remaining integral of $2xe^{-x}$?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and conversational, which enhances naturalness without sacrificing accuracy."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.46746470720972866,
+        "Input Arousal": -0.16762279972899705,
+        "Internal State Valence": -0.549497905964129,
+        "Internal State Arousal": -0.051247964559209755,
+        "Internal State Momentum": -0.6062246089067779,
+        "Internal State Intensity": 0.2714638638271633,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh, alright so do I have to use integration by parts again? Like just for the last part that's still inside the integral container thing?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling annoyed and discouraged while grappling with the repetitive nature of the calculus steps.\n2. Emotion Intensity: The emotion is currently manifesting at a low to moderate intensity.\n3. Emotional Inertia: Their mood is trending negatively, showing a decline in patience as they navigate the integration process.\n4. Threshold Crossed: Yes, the learner's internal state has crossed a threshold into a more frustrated and grumpy emotional state.\n5. Internal State: The learner feels weary and annoyed by the recursive steps of integration by parts while continuing to struggle with the specific integral of x squared times e to the power of negative x.\n\nMemory:\nThe learner is experiencing low-intensity, low-arousal grumpiness and frustration while specifically questioning the necessity of repeated integration by parts for the remaining portion of the current integral calculation.",
+        "User Input": "Oh, alright so do I have to use integration by parts again? Like just for the last part that's still inside the integral container thing?",
+        "Control Tutor": "You hit the nail on the head! **Yes, you need to use Integration by Parts again.**\n\nYou\u2019ve just discovered one of the most common patterns in calculus: **The \"Recursive\" Step.** \n\n### Why do we have to do it again?\nLook at what is left inside that \"container\":\n$$\\int 2x e^{-x} \\, dx$$\n\nIf you look at our logic from earlier, we ask: *\"Is this a simple calculation or a product of two different types?\"* Because we still have a **polynomial** ($2x$) multiplied by an **exponential** ($e^{-x}$), it still qualifies as a \"complex\" structure. \n\nThink of the first round of Integration by Parts as peeling off one layer of an onion. The original problem had $x^2$, which is like having two layers. After the first pass, we were left with something involving $x$ (one layer). To get to the core, we have to \"peel\" that second layer now!\n\n### The Strategy for Round 2\nSince we are using the same \"tool,\" the process will feel familiar, but it\u2019s happening inside the \"container\" we just simplified.\n\n**Here is how we handle this mentally:**\nTreat $\\int 2x e^{-x} \\, dx$ as its own mini-problem. \n\n1.  **Choose your new $u$ and $dv$:** \n    *   What part of $2x e^{-x}$ would be easier if we differentiated it? (The polynomial).\n    *   What part is easy to integrate? (The exponential).\n\n2.  **Apply the formula:** $\\int u \\, dv = uv - \\int v \\, du$\n\n---\n\n### Your Turn!\nLet\u2019s do one round of \"Break it Apart\" just for that internal piece. \n\n**For the integral $\\int 2x e^{-x} \\, dx$:**\n1.  **Pick your $u$ and $dv$:** (Hint: You can keep the constant $2$ in front or ignore it for a second; either way works, but let's stick with what we have!)\n2.  **Find $du$ and $v$.**\n\n**Once you find those, tell me what they are!** We\u2019ll plug them into the formula one last time to finish off the \"beast.\"",
+        "PAM Tutor": "It\u2019s definitely a slog having to run the same multi-step process twice in a row; it can feel like a real grind when the math keeps demanding you repeat yourself. You do need to use integration by parts one more time because $2xe^{-x}$ is still two different types of functions multiplied together (the algebraic $2x$ and the exponential $e^{-x}$). Until that \"x\" term disappears from the front, it stays stuck in that integral container, so one more round will finally break it down into something we can solve with a basic rule.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and accurate explanation, balancing empathy with brevity. Their response flows naturally without unnecessary details."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.46797794499434525,
+        "Input Arousal": -0.16450010191765618,
+        "Internal State Valence": -0.6104855105750845,
+        "Internal State Arousal": -0.09654881950258833,
+        "Internal State Momentum": -0.8263158072880472,
+        "Internal State Intensity": 0.36129752725835373,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nAlright so for this part would it be u equals 2x? And then dv is e^-x dx. Then du should be 2 and v becomes negative e^-x again\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Frustrated and grumpy.\n2. Emotion Intensity: Moderate intensity.\n3. Emotional Inertia: Trending negatively with a strong downward momentum.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner is feeling a significant sense of frustration and grumpiness as they struggle with the repetitive nature of integration by parts for the integral of x squared times e to the power of negative x dx.\n\nMemory:\nThe learner is displaying grumpiness and frustration while attempting the substitution rules and signs for an integral involving x squared and e to the power of negative x.",
+        "User Input": "Alright so for this part would it be u equals 2x? And then dv is e^-x dx. Then du should be 2 and v becomes negative e^-x again",
+        "Control Tutor": "You are on a roll! You\u2019ve correctly identified every single component needed to finish this \"beast.\" \n\nYour breakdown is spot on:\n1.  **$u = 2x$** (Correct)\n2.  **$dv = e^{-x} dx$** (Correct)\n3.  **$du = 2 \\, dx$** (Correct\u2014you just have to keep that $dx$ attached so it stays \"legal\" in the equation).\n4.  **$v = -e^{-x}$** (Correct again!)\n\n### The Final Calculation\nSince we are doing this inside that \"container\" ($\\int 2x e^{-x} dx$), let's plug your new pieces into the formula: $\\int u \\, dv = uv - \\int v \\, du$.\n\nSubstituting your values:\n$$\\text{Inside piece} = (2x)(-e^{-x}) - \\int (-e^{-x})(2 \\, dx)$$\n\nNow, let\u2019s apply that **\"Simplify the Mess\"** rule we talked about earlier. Look at that second part of the equation: \n$$- \\int (-e^{-x})(2) \\, dx$$\n\nNotice those two negatives hitting each other? They turn into a positive! So it becomes:\n$$\\text{Inside piece} = -2xe^{-x} + \\int 2e^{-x} \\, dx$$\n\n### The Finish Line\nNow, look at that very last integral. It\u2019s just $\\int 2e^{-x} \\, dx$. \nSince the $2$ is just a constant hanging out in front, we can ignore it for a second and just focus on the $e^{-x}$.\n\n**Can you tell me what the result of $\\int e^{-x} \\, dx$ is?** (Remember our rule: when integrating $e^{-x}$, that negative sign \"pops\" out to the front). \n\nOnce you give me that, we can put all the pieces together for the final grand total!",
+        "PAM Tutor": "I totally get that this feels like a grind\u2014running the same process twice in a row can be pretty exhausting when you just want to reach the finish line of the problem.\n\nYour setup for this round is almost perfect. You're right that $u = 2x$ and $v = -e^{-x}$ are correct, but for your $du$, you'll want to write it as $2 \\, dx$ rather than just $2$. While the derivative of $2x$ is indeed $2$, keeping the $dx$ attached to the $du$ is a vital piece of notation in calculus. It ensures that when you plug these parts into the integration by parts formula, the differentials line up correctly and \"cancel out\" where they need to during the simplification.\n\nDo you want me to walk through how this second round looks once we plug your specific values into the final equation?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more comprehensive and clear explanation, which aligns with the learner's needs at this stage."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3186839460395277,
+        "Input Arousal": -0.047304481407627476,
+        "Internal State Valence": -0.5575016739687673,
+        "Internal State Arousal": -0.07685108426460398,
+        "Internal State Momentum": -0.9632502819853838,
+        "Internal State Intensity": 0.3456487899945567,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh okay, so is it just -e^-x? Since integrating e^-x gives us that minus sign again\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is experiencing persistent grumpiness and frustration regarding integration rules.\n2. Emotion Intensity: The emotion is moderately intense as it persists through consecutive turns of difficulty.\n3. Emotional Inertia: The mood is trending significantly downward, showing consistent emotional decline throughout the session.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is currently feeling frustrated and grumpy due to persistent confusion over negative signs in integration, with a significant downward trend in their overall mood.\n\nMemory:\nThe learner is expressing low-arousal grumpiness and frustration while struggling specifically with the placement of minus signs when integrating e to the power of negative x.",
+        "User Input": "Oh okay, so is it just -e^-x? Since integrating e^-x gives us that minus sign again",
+        "Control Tutor": "You nailed it! You\u2019ve officially completed the final piece of the puzzle. \n\nSince $\\int e^{-x} \\, dx = -e^{-x}$, and we have that $2$ sitting in front of it, that last part becomes:\n$$2(-e^{-x}) \\text{ which is just } -2e^{-x}$$\n\n### The Grand Finale: Putting it all together\nNow, let\u2019s take all the pieces we've gathered through these two rounds of \"peeling the onion\" and line them up. \n\nFrom our first round of Integration by Parts, we had:\n$$-x^2 e^{-x} + \\int 2x e^{-x} \\, dx$$\n\nAnd from your very last calculation (the second round), you solved that remaining integral:\n$$-2xe^{-x} - 2e^{-x}$$\n\nWhen we combine them into one final \"master\" equation, it looks like this:\n$$-x^2 e^{-x} - 2xe^{-x} - 2e^{-x} + C$$\n\n*(Note: I added the $+C$ at the end\u2014that\u2019s just the \"constant of integration\" we always add in indefinite integrals to show there could have been a constant number at the end!)*\n\n---\n\n### The \"Victory Lap\" (Reviewing our Strategy)\nTake a look at that final result. It looks intimidating, but let's see why it makes perfect sense based on what we did:\n\n1.  **The first term ($-x^2 e^{-x}$)** came from the very first \"trade\" we made.\n2.  **The second term ($-2xe^{-x}$)** came from the first round of integration where $x^2$ became $2x$.\n3.  **The third term ($-2e^{-x}$)** is what was left after we peeled away the last layer of the polynomial.\n\n**Why did we do this twice?** \nBecause your original problem had an $x^2$. Every time we used Integration by Parts, we \"reduced\" the power of $x$ by one. \n*   Start: $x^2$\n*   Round 1: It became $x$\n*   Round 2: It became a constant (which we can finally integrate easily!)\n\n### How are you feeling?\nYou just tackled a multi-step Integration by Parts problem\u2014one of the most common \"boss battles\" in introductory calculus. You handled the chain rule signs, you identified the need for multiple passes, and you kept the notation organized. \n\nHow does that feel to have solved?",
+        "PAM Tutor": "You\u2019ve got it\u2014it is indeed $-e^{-x}$. It can be a real pain when these signs feel like they\u2019re tripping you up, but your logic is spot on. \n\nBecause the rule for integrating $e^{ax}$ is $\\frac{1}{a} e^{ax}$, and in your case $a$ is -1, that negative sign will pop up every single time you integrate it. Since you've got this part of the substitution down correctly, you can plug it into the formula:\n\n$(x^2)(-e^{-x}) - \\int (-e^{-x})(2 \\, dx)$ \n\nWhen you look at that integral part, those two negatives will cancel out, leaving you with $+2xe^{-x}$.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more comprehensive and empathetic response, acknowledging the learner's effort and feelings, which aligns well with the conversation's context."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3927966543822549,
+        "Input Arousal": -0.09841827705968169,
+        "Internal State Valence": -0.5701789970106133,
+        "Internal State Arousal": -0.08547796138263507,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.36936476298357496,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOhhh, okay so is this all finally wrapped up? Like no more parts or anything left?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is feeling impatient and slightly irritable, seeking a definitive conclusion to the current calculus problem.\n2. Emotion Intensity: The emotion is of low intensity but reflects a lingering state of frustration.\n3. Emotional Inertia: Their mood is trending negatively as they express fatigue with the iterative nature of the integration process.\n4. Threshold Crossed: Yes, their internal state has shifted significantly due to the accumulation of repetitive steps in the calculus calculation.\n5. Internal State: The learner is experiencing a state of weary grumpiness and low energy as they reach a point of exhaustion with the repeated integration by parts.\n\nMemory:\nThe learner is expressing grumpy frustration with low valence, low arousal, and moderate intensity while seeking confirmation on whether the current integration problem is finally complete.",
+        "User Input": "Ohhh, okay so is this all finally wrapped up? Like no more parts or anything left?",
+        "Control Tutor": "**Yes! You\u2019ve reached the finish line.** \ud83c\udfc1\n\nYou have successfully solved the integral. There are no more hidden parts, and there are no more \"containers\" left to open. That final expression:\n$$-x^2 e^{-x} - 2xe^{-x} - 2e^{-x} + C$$\nis your complete answer. You can put down your tools for this specific problem!\n\n### Why you can feel confident that it\u2019s done:\n1.  **No more \"Mixed\" Functions:** If you look at the final result, there are no integral signs ($\\int$) left. Every part of the original expression has been transformed into its \"integrated\" form.\n2.  **The Polynomial is \"Gone\":** You started with $x^2$. Through your two rounds of Integration by Parts, you systematically broke that $x^2$ down until it was just a constant (the number 2). Since there's no $x$ left in the power terms, there\u2019s nothing left to \"break apart.\"\n3.  **The Sign Logic is Settled:** You successfully navigated the tricky double-negatives that often trip people up. You didn't let them confuse you; you handled them one by one until the math was clean.\n\n### A Quick Recap of your Wins:\n*   **Persistence:** You didn't give up when the first round left you with a \"messy\" integral; you recognized it needed another pass.\n*   **Precision:** You kept the $dx$ and $\\int$ symbols in place until they were actually ready to be removed.\n*   **Pattern Recognition:** You now know exactly how to handle cases where a polynomial (like $x^2$) is multiplied by an exponential ($e^{-x}$).\n\n**How are you feeling about it?** Now that the \"boss battle\" of this problem is over, do you want to try one more similar one to cement these skills, or would you like to move on to a new concept?",
+        "PAM Tutor": "I hear you\u2014this has been a real marathon of repeated steps, and it\u2019s honestly exhausting to keep running through the same process over and over. You're actually right on the doorstep; there's just one final, much simpler integral left to solve before we can officially call this wrapped up.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a comprehensive and accurate conclusion, clearly stating that the problem is solved. Their response was empathetic but concise, matching the learner's situation. Tutor B acknowledged fatigue but didn't fully conclude, leaving ambiguity."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.1397884382866323,
+        "Input Arousal": 0.26804871463682506,
+        "Internal State Valence": -0.4259804611783473,
+        "Internal State Arousal": 0.055932709025148984,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.3425425831029683,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh wow, so I guess I did it! That's awesome. Honestly, I was a little worried there for a bit, but now that everything seems to be wrapped up, I feel pretty good about it. Do you think we could maybe do another problem real quick just to make sure I got the hang of this?\n\nAppraisal Details:\n1. Dominant Emotion: Relief and triumph mixed with lingering self-doubt.\n2. Emotion Intensity: Moderate intensity reflecting a transition from anxiety to success.\n3. Emotional Inertia: The learner's mood is improving, moving toward positive momentum after a period of frustration.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold indicating a significant shift in the learner's emotional state.\n5. Internal State: The learner feels successful and relieved after completing the friction calculations and is now seeking validation through an additional practice problem to solidify their confidence.\n\nMemory:\nThe learner expressed relief and success after completing the friction calculations, showing a positive shift in mood while requesting an extra practice problem to ensure mastery of the concept.",
+        "User Input": "Oh wow, so I guess I did it! That's awesome. Honestly, I was a little worried there for a bit, but now that everything seems to be wrapped up, I feel pretty good about it. Do you think we could maybe do another problem real quick just to make sure I got the hang of this?",
+        "Control Tutor": "That \"I did it\" feeling is one of the best feelings in math! You should be incredibly proud\u2014you didn't just solve a single problem; you navigated a multi-step process, managed complex signs, and recognized a recursive pattern. That\u2019s exactly how high-level calculus works.\n\nSince you want to \"cement\" this before moving on, let's do one more. To make sure you've truly mastered the **\"onion peeling\"** technique (handling those $x^n$ powers), I'm going to give you a problem very similar in structure, but with a slight twist in the numbers to see if you can keep your steady hand on the signs!\n\n### The \"Final Boss\" Challenge\nTry this one: \n$$\\int x^2 e^{2x} \\, dx$$\n\n**Why is this a good test?**\n1.  It still has that **polynomial ($x^2$)** and the **exponential ($e^{2x}$)**.\n2.  It still requires **two rounds** of Integration by Parts to \"peel\" the onion.\n3.  The $2$ in the exponent ($2x$) will test if you can keep your signs straight when things get slightly more crowded!\n\n---\n\n### Your First Step:\nDon't try to solve the whole thing at once. Let\u2019s just start like we did before. \n\n**Look at the integral $\\int x^2 e^{2x} \\, dx$ and tell me:**\n\n1.  What is your choice for **$u$**? (Which part will \"shrink\" when differentiated?)\n2.  What is your choice for **$dv$**? (Which part is easy to integrate?)\n3.  Once you have those, what are **$du$** and **$v$**? \n\n*(Take your time\u2014no pressure! Just tell me these first few pieces.)*",
+        "PAM Tutor": "It\u2019s a great feeling when those pieces finally click into place after you've put in the work to push through the grind. Let's try one more problem to make sure that multi-step process feels like second nature. \n\nTry solving this: \n$$\\int x^2 \\cos(x) \\, dx$$\n\nThis will test your ability to handle multiple rounds of integration by parts while keeping track of the signs and different functions. Do you want me to walk through any specific part of it if you run into a snag?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B's response is more conversational and appropriately empathetic, offering a clear next step without unnecessary structure."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.263670148793608,
+        "Input Arousal": -0.05595093109877777,
+        "Internal State Valence": -0.4137903659831732,
+        "Internal State Arousal": 0.011179252975578279,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.31334202656597576,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nAlright so for this one I guess u would be x^2 again since it's the polynomial that'll shrink when we differentiate. Then dv is e^(2x) dx because exponentials are easy to integrate\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Grumpiness mixed with weary frustration.\n2. Emotion Intensity: Low but persistent intensity.\n3. Emotional Inertia: The learner's mood is trending negatively, showing increasing irritability as they grapple with integration by parts.\n4. Threshold Crossed: Yes.\n5. Internal State: The learner is feeling grumpy and fatigued while attempting to correctly identify components for the integral of x^2 times e^(2x), showing a downward trend in mood over several turns dealing with these specific calculus techniques.\n\nMemory:\nThe learner is expressing low-arousal grumpiness and frustration while specifically trying to determine the u and dv components when integrating functions involving polynomials multiplied by exponentials.",
+        "User Input": "Alright so for this one I guess u would be x^2 again since it's the polynomial that'll shrink when we differentiate. Then dv is e^(2x) dx because exponentials are easy to integrate",
+        "Control Tutor": "You\u2019re starting off with exactly the right mindset! \ud83c\udfaf\n\nYour logic here is perfect:\n1.  **For $u = x^2$:** You correctly identified that because it's a polynomial, differentiating it will \"shrink\" it (turning it into a lower power), which makes our lives much easier in the long run.\n2.  **For $dv = e^{2x} dx$:** You correctly noted that exponentials are very straightforward to integrate, making them the perfect candidate for the $dv$ part of the \"trade.\"\n\nBy choosing these, you've set up a solid foundation for the first round of this challenge.\n\n### Next Step: The Calculation\nNow, let\u2019s take those two pieces and find our **$du$** and **$v$**. This is where we do the actual \"math\" to prepare for the formula $\\int u \\, dv = uv - \\int v \\, du$.\n\nSince you have $u$ and $dv$, tell me:\n\n1.  **What is $du$?** (If $u = x^2$, what do we get when we take the derivative?)\n2.  **What is $v$?** (When we integrate $e^{2x}$, we have to keep that $2$ in mind\u2014think back to your basic integration rules for $e^{ax}$).\n\n**Take it one step at a time! Just give me those two values.**",
+        "PAM Tutor": "I know this stretch of the work has been a marathon, and it\u2019s honestly draining to have to keep track of all these small details when the steps start feeling so repetitive.\n\nYour reasoning for choosing $u$ is actually spot on; since $x^2$ is the polynomial that simplifies as you differentiate, it's exactly the right choice for that part of the formula. However, you've accidentally swapped our current function ($\\cos(x)$) with an exponential ($e^{2x}$) in your last line. Because we are working on $\\int x^2 \\cos(x) \\, dx$, your $dv$ should be $\\cos(x) \\, dx$. Even though you grabbed the wrong term from a previous problem, your logic for picking which part to assign to $u$ was correct. Do you want to try plugging in that trig term and see how the next step looks?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides clear, accurate feedback without unnecessary complexity, maintaining natural conversation and appropriate scaffolding."
+    }
+]

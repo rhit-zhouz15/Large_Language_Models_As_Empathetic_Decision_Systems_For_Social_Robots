@@ -117,7 +117,7 @@ def evaluate_interatively(examples, comparison_evaluator: ComparisonEvaluator):
             log_single_turn(file_name, ind+1, user_input, control_output, PAM_output, preferred_system, rationale)
 
 def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: ComparisonEvaluator):
-    for index in range(20):
+    for index in range(10):
         user_input = LLMAS.generate_input_for_tutor({}, {})
         file_name = get_next_filename()
 
@@ -130,8 +130,18 @@ def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: Compariso
             arousal = perception_result[2][1]
         
             pipeline = response_pipeline(user_input, label, valence, arousal)
+
             PAM_output = pipeline["PAM_response"]
             control_output = pipeline["control_response"]
+            detected_emotion = pipeline["detected_emotion"]
+            input_valence = pipeline["valence"]
+            input_arousal = pipeline["arousal"]
+            state_valence = pipeline["state_valence"]
+            state_arousal = pipeline["state_arousal"]
+            state_momentum = pipeline["state_momentum"]
+            state_intensity = pipeline["state_intensity"]
+            appraisal = pipeline["appraisal"]
+            threshold = pipeline["treshold_crossed"]
 
             compare_evaluator_output = comparison_evaluator.compare_responses({}, pipeline)
             comment_data = json.loads(compare_evaluator_output["comment"])
@@ -140,7 +150,10 @@ def evaluate_LLMAS(LLMAS: StudentInputGenerator, comparison_evaluator: Compariso
             preferred_system = comment_data["preferred_system"]
             rationale = comment_data["rationale"]
 
-            log_single_turn(file_name, i+1, user_input, control_output, PAM_output, preferred_system, PAM_category_scores, control_category_scores, rationale)
+            log_single_turn(file_name, i+1, detected_emotion, input_valence, input_arousal, 
+                            state_valence, state_arousal, state_momentum, state_intensity, appraisal, threshold,
+                            user_input, control_output, PAM_output, preferred_system, 
+                            PAM_category_scores, control_category_scores, rationale)
             user_input = LLMAS.generate_input_for_tutor({}, pipeline)
 
         

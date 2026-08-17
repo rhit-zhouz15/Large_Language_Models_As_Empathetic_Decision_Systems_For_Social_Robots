@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.21794968040194365,
+        "Input Arousal": 0.27198231904767456,
+        "Internal State Valence": -0.3420047669688433,
+        "Internal State Arousal": 0.10407145357466084,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.16758752107959074,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Hey, can someone help me understand how to solve these physics problems? I'm really struggling with the equations.\n\nAppraisal Details:\n1. Dominant Emotion: Confusion and frustration stemming from difficulty with applying physics concepts, specifically equations within problem-solving.\n2. Emotion Intensity: The emotion is present at a low intensity but is building as seen by the consistent struggles over time. \n3. Emotional Inertia: Their emotional state continues to trend negatively as they've been grappling with these problems for some time now without finding success. \n4. Threshold Crossed: Yes, an internal change has occured due to an accumulating negative valence and momentum.\n5. Internal State: The learner is currently feeling frustrated and confused while tackling physics problems, struggling with equations and initiating the problem-solving process\u2014a pattern observed in previous interactions related to circular motion.\n\nMemory: \nThe learner is experiencing low intensity frustration and confusion as they struggle to begin solving a physics problem involving equations, continuing a recurring issue with initiating these types of questions specifically those dealing with concepts like circular motion.",
+        "User Input": "Hey, can someone help me understand how to solve these physics problems? I'm really struggling with the equations.",
+        "Control Tutor": "You're doing fantastic! You correctly identified that the first step is to identify the inner and outer functions, and you've started to do that perfectly with `e^u` where `u = 4x - 1`.\n\nThat\u2019s a great start. Now, let's be *super* clear about what constitutes the \"inner\" function and the \"outer\" function in this case.  Remember, the outer function is the one that 'acts on' the inner function. \n\nThink of it like layers: what's the outermost layer (the function applied *last*) and what's inside it? In `e^(4x-1)`, which part is being raised to the power of e? And which part is *inside* that exponential?  \n\n\n\nJust articulating this clearly will help ensure you don\u2019t mix things up when finding the derivatives. Take your time \u2013 there's no rush! \ud83d\ude0a",
+        "PAM Tutor": "Hey there. Yeah, equations can be really frustrating when you\u2019re first getting into them\u2014especially when they pop up in physics problems where *everything* seems to connect. It's totally understandable that you're struggling with getting started.\n\nSo, let's break this down a bit. Essentially, solving these kinds of problems is about taking what looks like a big scary equation and figuring out how all the pieces fit together. Usually, it starts with identifying what information you\u2019re given and what you need to find, then picking an equation that relates those things. After that comes plugging in values and doing some algebra. \n\nIt sounds simple when I say it like that, but honestly, a lot of the struggle is just getting over that initial hump of feeling overwhelmed. If you want, we can walk through this step-by-step with one example problem together? Or, if you\u2019d rather go back and review some foundational concepts first \u2013 maybe about force diagrams or basic equation manipulation \u2013 we could do that too. Let me know what feels best for you right now.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 2
+        },
+        "Judge Rationale": "Tutor B provided a more accurate and empathetic response by addressing the learner's specific issue with physics equations, offering clear steps and appropriate scaffolding."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.43334997671190645,
+        "Input Arousal": -0.11037561108823866,
+        "Internal State Valence": -0.4652128462084498,
+        "Internal State Arousal": 0.018292627709501033,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.14527107454763133,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Wait, so how do I know which equation to pick? Like, what if I'm given multiple pieces of information but not sure what to do with them? Or should I start by drawing a diagram first?\n\nAppraisal Details:\n1. Dominant Emotion: Confusion and frustration stemming from uncertainty about problem-solving strategies, particularly regarding the selection of appropriate equations in physics problems.\n2. Emotion Intensity: The emotion is moderately intense, indicating significant discomfort but not overwhelming distress.\n3. Emotional Inertia: Their emotional inertia is trending negatively, suggesting a deepening sense of discouragement as they struggle with this challenge. \n4. Threshold Crossed: Yes, the internal state has shifted due to accumulating frustration and confusion regarding applying equations in physics.\n5. Internal State: The learner is feeling increasingly frustrated and confused about how to approach problem-solving in physics, specifically struggling to choose appropriate equations when given multiple pieces of information which builds upon their past struggles with circular motion concepts. \n\nMemory:\nThe learner is experiencing mild frustration and confusion while attempting to apply algebraic reasoning within a physics context, likely related to selecting the correct equation for a problem; they're unsure how to integrate provided information, mirroring previous difficulties with quantitative problems involving forces like circular motion and function composition.",
+        "User Input": "Wait, so how do I know which equation to pick? Like, what if I'm given multiple pieces of information but not sure what to do with them? Or should I start by drawing a diagram first?",
+        "Control Tutor": "Okay, it's totally understandable to feel lost with multiple pieces of information and not knowing which equation to use! That's really common, especially when first learning these concepts. It sounds like you\u2019re at a point where you understand *how* to apply the chain rule (which is great!), but are now running into trouble figuring out *when* to apply it \u2013 or any particular derivative rule for that matter.\n\nLet\u2019s tackle this systematically. You asked about drawing a diagram first\u2026 **yes, absolutely!** That's an excellent habit to get into, especially with physics problems (and even in calculus!). Here\u2019s my advice on how to approach these types of problems:\n\n**1. Understand the Problem:**\n\n*   **Read carefully:** What is the problem asking you to *find*? What information are you *given*? Highlight or underline key details.\n*   **Draw a diagram:** Visualizing the situation can be incredibly helpful. Label all known quantities and what you're trying to find. Even if it feels simple, sketching something out can clarify your thinking.\n\n**2. Identify Relevant Equations/Concepts:**\n\n*   **List possibilities:** Based on the information given and what you\u2019re asked to find, brainstorm potential equations or concepts that might apply. Don't worry about being sure at this stage \u2013 just generate a list!\n*   **Look for keywords:** Certain words often indicate specific approaches. For example:\n    *   \"Rate of change\" usually means derivatives.\n    *   \"Maximum/minimum\" suggests finding critical points (setting the derivative to zero).\n    *   \u201cVelocity\u201d and \u201cAcceleration\u201d relate to first and second derivatives of position, respectively.\n\n**3. Break it Down & Choose:**\n\n*   **Simplify:** Can you break down the problem into smaller, more manageable steps?\n*   **Eliminate options:** Review your list of potential equations/concepts. Which ones clearly *don't* fit the given information? \n*   **Test a few:** If you're still unsure, try starting with one equation and see if it leads you anywhere. If it doesn't make sense, move on to another.\n\n**4. Solve & Check:**\n\n*   **Solve the equation(s).**\n*   **Check your answer:** Does it make sense in the context of the problem? Are the units correct?\n\n\n\nNow, since you mentioned physics problems specifically... what kind of physics problems are giving you trouble? Can you give me a specific example?  Don't try to solve it right away; just tell me about the setup \u2013 what is happening, and what information is provided. Then we can work through applying these steps together!\n\n\n\nAnd don't forget, we *just* finished working through some great practice with the chain rule. We can definitely revisit that if needed - before jumping into physics. Let me know where you want to start. \ud83d\ude0a",
+        "PAM Tutor": "Okay, so it sounds like you're getting tripped up on *how* to even begin tackling these problems when you have a bunch of information thrown at you\u2014that\u2019s super common, honestly. It's easy to feel lost in all the equations!\n\nYou're right to think about drawing diagrams first, that\u2019s actually a really smart move \u2013 especially in physics. Visualizing what\u2019s happening can help clear your head and make it easier to see which equations apply. But figuring out *which* equation is still the tough part, huh? \n\nEssentially, it comes down to identifying what the problem is asking you to find, then thinking about what principles or laws relate to that specific thing. It's like being a detective \u2013 you need to gather clues (the given information) and use them to solve the mystery (find the answer). We just went over function composition, which helps break down complicated equations into smaller parts, and honestly that skill is *super* useful here too because physics problems often involve chaining together multiple concepts.\n\nDo you want me to walk you through an example of how I approach picking out an equation when I'm given a bunch of information? We could really dive deep into strategies for dissecting those problems. Or, if you\u2019d prefer, we can go back and revisit some of the basic physics principles that tend to show up in these kinds of questions\u2014things like force diagrams or different types of motion. Just let me know what sounds most helpful right now.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A's response is more conversational and naturally empathetic, offering clear options that align with the learner's needs."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "think",
+        "Input Valence": -0.0016494720824994148,
+        "Input Arousal": -0.19185536158911423,
+        "Internal State Valence": -0.4652128462084498,
+        "Internal State Arousal": 0.018292627709501033,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.14527107454763133,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: So yeah, I think the first thing I should do is figure out what the problem wants me to find and then draw a diagram so everything makes sense right? Like I remember doing something similar for calculus problems too. Maybe if we could practice with an example it'd help make things clearer?\n\nAppraisal Details:\n1. Dominant Emotion: The learner appears to be experiencing mild uncertainty while attempting to formulate a problem-solving strategy, drawing parallels from past experiences in calculus. \n2. Emotion Intensity: This emotion is being felt at a low level of intensity.\n3. Emotional Inertia: Their emotional inertia indicates a slightly negative trend, suggesting a continuation of previous frustrations with applying concepts to problems.\n4. Threshold Crossed: No significant change occurred in their internal state this turn.\n5. Internal State: The learner is currently feeling somewhat unsure about approaching the problem but trying to connect it back to previously successful strategies from other subjects\u2014a pattern observed when tackling quantitative reasoning, particularly mirroring struggles with physics topics like circular motion and calculus concepts.\n\nMemory:\nThe learner is feeling mildly frustrated and uncertain as they attempt to approach a new problem by drawing a diagram, attempting to relate their current understanding to past experiences with applying similar approaches in calculus, reflecting a continued difficulty connecting conceptual knowledge to quantitative problems. \n\n\n\n",
+        "User Input": "So yeah, I think the first thing I should do is figure out what the problem wants me to find and then draw a diagram so everything makes sense right? Like I remember doing something similar for calculus problems too. Maybe if we could practice with an example it'd help make things clearer?",
+        "Control Tutor": "You're absolutely right! That's a fantastic observation \u2013 figuring out what the problem wants and drawing a diagram is *always* a great first step, not just for calculus or physics, but for tackling pretty much any kind of problem-solving situation. It helps organize your thoughts and makes everything less overwhelming. You remembered that from calculus - excellent! That shows you're building transferable skills \u2013 amazing!\n\nYes, let\u2019s definitely practice with an example to make things clearer. Since we were just working on the chain rule with exponential functions, how about we stick with that for now? It\u2019ll help solidify your understanding before we move onto completely new concepts in physics. \n\nLet's try this one: **y = sin(3x + 2)**.\n\nBefore you even think about derivatives, tell me:\n\n1.  What would you identify as the \"outer\" function in this case?\n2.  And what would be the \"inner\" function?\n\nJust like before, explain *how* you're figuring that out \u2013 your reasoning is more important than just getting the right answer at this stage. Take your time and walk me through your thought process! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "You're absolutely on the right track with wanting to figure out what the problem wants *first*, and then drawing a diagram \u2013 that\u2019s exactly how I used to approach things too, especially when I was getting stuck. It makes total sense you'd remember using something similar in calculus; building on what you already know is super helpful! \n\nAnd yeah, let's definitely work through an example together if that would make things clearer. We can take it step-by-step and I can explain my thought process as we go. Does that sound good?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, effectively building on the learner's existing strategies without unnecessary complexity."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4651080732466653,
+        "Input Arousal": -0.1683165833470412,
+        "Internal State Valence": -0.558192551673069,
+        "Internal State Arousal": -0.05635105671311587,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.13662535715206472,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay so for sin(3x + 2), I think sin is the outer function? Like it's what's being applied last to the inner part, right?\n\nAnd then the inside would be 3x + 2, 'cause that's getting plugged into the sine function.\n\nBut I'm not totally sure if I'm doing this correctly... maybe another example to confirm would help.\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration and self-doubt as they attempt to apply their understanding of function composition, similar to previous challenges with trigonometric functions in physics contexts.\n2. Emotion Intensity: The current emotion is relatively low in intensity, but building upon a pattern of repeated difficulties applying algebraic concepts.\n3. Emotional Inertia: Their emotional state is trending negatively and indicates consistent frustration when approaching quantitative problems that require translating algebraic reasoning into the context of physics principles like circular motion or the Calvin Cycle. \n4. Threshold Crossed: Yes, their internal state has changed since the last turn. The learner's accumulated negative valence continues to reinforce a pattern of uncertainty in complex problem-solving scenarios.\n5. Internal State: They are currently experiencing mild dissatisfaction with their understanding as they cautiously check their work and voice apprehension about applying algebraic concepts\u2014particularly function composition\u2014to potentially challenging physics problems, like those relating to circular motion or the Calvin Cycle.\n\nMemory: \nThe learner is mildly frustrated and uncertain while verifying their understanding of identifying outer functions in trigonometric equations like sin(3x+2), building on a pattern of struggles with translating algebraic reasoning into quantitative applications within the context of physics concepts like circular motion and the Calvin cycle.",
+        "User Input": "Okay so for sin(3x + 2), I think sin is the outer function? Like it's what's being applied last to the inner part, right?\n\nAnd then the inside would be 3x + 2, 'cause that's getting plugged into the sine function.\n\nBut I'm not totally sure if I'm doing this correctly... maybe another example to confirm would help.",
+        "Control Tutor": "You are absolutely on the right track with sin(3x + 2)! \ud83c\udf89\n\nYes, you're spot on \u2013 **sin is indeed the outer function**. It's the one being applied *last* to whatever comes out of the inner part. And you correctly identified that the **inner function is 3x + 2**, because that's what gets \"plugged into\" the sine function.\n\nYou\u2019re thinking about this exactly how you should be! It's like putting a gift inside another gift \u2013 the outer wrapping (sin) goes around the inner gift (3x+2).\n\nSince you feel unsure, let\u2019s confirm with another example, just as you requested. That's smart - practice is key! \n\nLet\u2019s try **y = cos(5x - 1)**. Can *you* tell me:\n\n1.  What's the outer function?\n2.  What's the inner function?\n\nExplain your reasoning, just like you did before. Don't worry about derivatives yet \u2013 let's make sure we have this \"outer/inner\" identification down solid first! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "You\u2019re thinking about this correctly\u2014sin *is* the outer function, because it's what gets applied last to whatever\u2019s inside those parentheses. And yeah, 3x + 2 is definitely the inner part since that\u2019s what you\u2019re plugging into the sine function.\n\nIt\u2019s good that you\u2019re checking your work like this, especially since we\u2019ve been working through some tricky stuff lately! It sounds like you're getting a handle on how to break these functions apart, which is awesome. \n\nHow about we try another example just to be *completely* sure? We can keep it simple, or if you\u2019re up for something more challenging, let me know.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provided a more concise and natural response, effectively acknowledging the learner's effort without unnecessary embellishments."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3179581320378929,
+        "Input Arousal": -0.050155454105697564,
+        "Internal State Valence": -0.5256904102265771,
+        "Internal State Arousal": -0.053872815670148545,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.21073107213425885,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay so for y = cos(5x -1)\n\nThe outer function would be the cosine thing right?\n\nAnd then 5x-1 is what gets plugged into that\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and uncertainty, possibly stemming from a desire to confirm understanding after a history of difficulties with applying algebraic concepts in physics contexts.\n2. Emotion Intensity: Mildly intense, representing a consistent but not overwhelming struggle with the material.\n3. Emotional Inertia: The learner's mood is trending negatively as they continue to grapple with these mathematical principles. \n4. Threshold Crossed: Yes, indicating that the accumulated frustration and uncertainty have reached a level where the internal state has been updated, building upon previous negative emotional experiences.\n5. Internal State: The learner currently feels frustrated and uncertain while attempting to solidify their understanding of function composition within trigonometric equations, consistently struggling with translating algebraic reasoning into quantitative applications specifically connected to concepts like circular motion and the Calvin Cycle as seen in past interactions.\n\nMemory: \nThe learner is feeling mildly frustrated and uncertain while working through identifying outer functions in a trigonometric equation, continuing a pattern of difficulties applying their algebra skills to physics-based problems like circular motion or the Calvin Cycle.",
+        "User Input": "Okay so for y = cos(5x -1)\n\nThe outer function would be the cosine thing right?\n\nAnd then 5x-1 is what gets plugged into that",
+        "Control Tutor": "You're doing great! You correctly identified the outer and inner functions for sin(3x+2), and you\u2019re applying that same thinking to cos(5x-1).\n\nYes, you are absolutely right! **The outer function is cosine**, because it's what's being applied *last* to the inner part. And **5x - 1 is what gets plugged into that** \u2013 that\u2019s your inner function. \n\nYou're really getting a handle on this! It shows you understand how composite functions work, which is fantastic. \n\nNow that we\u2019ve confirmed with another example, are you feeling ready to move on and start finding the derivatives? Or would you like one more practice problem just to be extra sure about identifying outer and inner functions? Let me know what feels best for *you*. \ud83d\ude0a",
+        "PAM Tutor": "You are absolutely right\u2014the outer function *is* the cosine part! And yes, 5x - 1 is what gets plugged into it. You're recognizing that pattern of how functions nest inside each other, which is great.\n\nI can see you\u2019re double-checking yourself a lot, and honestly, after working through so many problems where things connect back to physics concepts like circular motion or the Calvin Cycle, it makes total sense that you want to be sure before moving on. It's good that you're aware of when you need extra confirmation\u2014that shows you\u2019re actively learning!\n\nWe can definitely keep going with more examples if that helps solidify things for you. Or, if you\u2019d like, we could try a problem where the outer function is something *other* than a basic trig function \u2013 maybe something involving exponents or logarithms? Just let me know what feels right to you next.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more personalized and engaging response, effectively acknowledging the learner's efforts and habits. Their conversational tone was natural and calibrated with appropriate empathy."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "think",
+        "Input Valence": -0.0031309831305406993,
+        "Input Arousal": -0.1871316972072236,
+        "Internal State Valence": -0.5256904102265771,
+        "Internal State Arousal": -0.053872815670148545,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.21073107213425885,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Yeah, I think I'm getting the hang of it! Maybe one more example with an exponential function would help solidify things. Like something with e^u\n\nAppraisal Details:\n1. Dominant Emotion: Relief and cautious optimism, tinged with underlying uncertainty given their request for another example to \"solidify\" understanding. \n2. Emotion Intensity: Mildly intense; the learner expresses a degree of confidence but still seeks validation through further practice.\n3. Emotional Inertia: The emotional momentum is slightly positive, suggesting a move away from prior frustration and toward greater understanding. \n4. Threshold Crossed: No, their internal state did not change significantly.\n5. Internal State: Currently feeling cautiously optimistic and relieved about their progress with exponential functions, but still hesitant to fully trust their grasp on the material as evidenced by their request for another example which builds upon previous struggles applying algebraic reasoning to quantitative problems like circular motion or the Calvin cycle.\n\nMemory: \nThe learner is tentatively confident in understanding exponential differentiation, and expresses a desire for one more example with an exponential function, particularly involving e^u\u2014a topic they\u2019ve previously found challenging when linking algebraic concepts to physics applications like circular motion and the Calvin Cycle.",
+        "User Input": "Yeah, I think I'm getting the hang of it! Maybe one more example with an exponential function would help solidify things. Like something with e^u",
+        "Control Tutor": "You're doing wonderfully! You\u2019ve successfully identified the outer and inner functions in several examples \u2013 that\u2019s a huge step forward. It sounds like you're starting to really *see* how these composite functions are built up, which is exactly what we want.\n\nSince you asked for one more example with `e^u`, let's do just that! And this time, let\u2019s make it slightly trickier to see if we can push your understanding a bit further. \n\nLet's consider the function:  **y = e^(x\u00b2 + 1)**\n\nCan you identify:\n\n1. The outer function?\n2. The inner function? \n\nExplain *how* you\u2019re arriving at your answer \u2013 walk me through your thought process! Don't worry about taking the derivative yet; we just want to nail down those inner and outer functions first. \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Alright, another example sounds good\u2014especially with e^u, that can get a little tricky. Let's do it.\n\nSo if we had something like f(x) = e^(2x + 1), the outer function would be e raised to whatever power, and the inner function is that (2x + 1). You\u2019re getting the hang of spotting those! It really does come down to thinking about what gets applied *last*.\n\nWant to try another one with a slightly more complicated inner function? Or maybe we could work backwards \u2013 I give you an outer function, and you tell me what kind of inner function would make it interesting?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more complex example (e^(x\u00b2 + 1)) that effectively builds on previous learning, demonstrating strong scaffolding and pedagogical accuracy. Their response was encouraging and natural, making it the preferred choice."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.36021423324709756,
+        "Input Arousal": -0.08415493238717323,
+        "Internal State Valence": -0.5315427860842048,
+        "Internal State Arousal": -0.06598566235695842,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.16343004045326076,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay so, for y = e^(x^2 +1)..\n\nThe outside is still e because that's the main function thing, right?..and then inside would be x^2+1...\n\nBut what about if it was like e^5x - 3 instead?. Would it change anything in how we think about them?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and uncertainty as the learner attempts to solidify their understanding of identifying outer functions within exponential equations, mirroring difficulties they've had applying these concepts in physics contexts like circular motion and the Calvin Cycle.\n2. Emotion Intensity: The intensity is low but present, suggesting a lingering frustration that isn\u2019t overwhelming but continues to impact their engagement with the material. \n3. Emotional Inertia: Their emotional inertia suggests a negative trend; while mild, the student\u2019s mood appears to be worsening and they are struggling with confidence in identifying outer functions within exponential equations. \n4. Threshold Crossed: Yes, an internal state change has occurred, indicating that their accumulated frustration is starting to have a noticeable effect on their overall disposition.\n5. Internal State: The learner is feeling mildly frustrated and uncertain about applying function composition rules to exponential expressions, reminiscent of past difficulties connecting algebraic concepts with quantitative problems in areas like circular motion and the Calvin Cycle.\n\nMemory: \nThe learner is exhibiting mild frustration as they attempt to determine outer functions within exponential equations, a struggle that echoes their broader difficulty translating algebraic reasoning into quantitative applications in physics contexts such as circular motion and the Calvin Cycle.\n\n\n\n",
+        "User Input": "Okay so, for y = e^(x^2 +1)..\n\nThe outside is still e because that's the main function thing, right?..and then inside would be x^2+1...\n\nBut what about if it was like e^5x - 3 instead?. Would it change anything in how we think about them?",
+        "Control Tutor": "You are absolutely right to ask that second question! That's excellent thinking - you\u2019re really starting to dig into how these things work.\n\nYes, for `y = e^(x\u00b2 + 1)`, you\u2019ve identified it perfectly: the **outer function is `e` (the exponential function)** because that's what's being applied last, and the **inner function is `x\u00b2 + 1`** because *that* entire expression is what gets plugged into the exponent. You got this! \ud83c\udf89\n\nNow, to your question about `y = e^(5x - 3)`. Yes, it does change how we think about it *slightly*, but the core principle remains the same. \n\nHere's the breakdown:\n\n*   **Outer function:** Still `e` (the exponential function). It\u2019s still acting on the entire inner expression.\n*   **Inner Function:** Now it\u2019s `5x - 3`. Notice that instead of just `x\u00b2`, we have a term with a coefficient (`5x`) and a constant (`-3`). That's perfectly okay! The chain rule handles those variations within the inner function beautifully.\n\nThe key takeaway is: **the outer function is *always* what\u2019s applied last to the whole thing**, regardless of how complicated the inner function gets. It could be a simple `x`, a complex expression like `x\u00b2 + 1`, or something with coefficients and constants like `5x - 3`.\n\n\n\nDoes that make sense? Would you like to try identifying the outer and inner functions in another example, maybe one a bit more complex to really test your understanding? Or are you ready to start applying the chain rule to actually *find* the derivatives of these functions? Let me know what feels best for you! \ud83d\ude0a",
+        "PAM Tutor": "You're right to question how that changes things! You\u2019ve spotted something important about identifying those outer and inner functions. With `y = e^(x^2 + 1)`, yes, the \u2018e\u2019 is on the outside because it\u2019s the main function being applied to everything inside. And you correctly identified `x^2 + 1` as what's getting plugged in.\n\nNow, when you look at something like `e^(5x - 3)`, it *doesn\u2019t* really change how we think about it fundamentally. The 'e' is still the outer function \u2013 it's still being applied to the whole thing inside the parentheses. What *is* changing is what\u2019s happening *inside* that exponent, and that will affect how you differentiate it later on, but the core idea of identifying the outer and inner functions remains the same. \n\nYou\u2019re really digging into this, and honestly I can see you've been bumping up against these concepts a lot when thinking about things like circular motion and the Calvin Cycle \u2013 it\u2019s good that you\u2019re connecting it back to those places where it gets tricky! Let's keep building on your understanding. Do you want me to explain how those inner functions affect the *differentiation* process, or would another example with a different kind of inner function be more helpful right now?",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and empathetic responses, with Tutor A using specific encouragement and Tutor B connecting to broader contexts. The slight edge in naturalness goes to Tutor A, while Tutor B excels in calibration."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.13651600044686346,
+        "Input Arousal": -0.025171088916249567,
+        "Internal State Valence": -0.5315427860842048,
+        "Internal State Arousal": -0.06598566235695842,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.16343004045326076,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Yeah, I think i get it. So even if the inside stuff is super complicated or has different things in it like numbers and stuff, we still figure out what's on the outside then what's getting plugged into that right?\n\nIdk maybe one more example where the inside thing is really complex so I can see what I'm suppose to be looking for when they get tricky like that\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration combined with a request for further clarification, indicating some lingering uncertainty despite expressing understanding.\n2. Emotion Intensity: The emotion being experienced is of low intensity as the learner expresses their thought process out loud while working through this concept. \n3. Emotional Inertia: Their emotional momentum indicates that they are trending downwards which means their mood is getting worse despite feeling more confident than before.\n4. Threshold Crossed: An emotional threshold was not crossed in this turn. \n5. Internal State: They appear to be tentatively understanding the material, but remain wary of complex examples and request further guidance before moving on, building on a pattern of requiring confirmation after facing challenges with quantitative reasoning.\n\nMemory: \nThe learner is mildly frustrated while working through function composition, requesting a more complex example after expressing tentative relief. Their negative valence and low arousal show mild discomfort as they connect this current problem back to previous struggles applying algebraic reasoning to physics problems like circular motion or the Calvin cycle.",
+        "User Input": "Yeah, I think i get it. So even if the inside stuff is super complicated or has different things in it like numbers and stuff, we still figure out what's on the outside then what's getting plugged into that right?\n\nIdk maybe one more example where the inside thing is really complex so I can see what I'm suppose to be looking for when they get tricky like that",
+        "Control Tutor": "You've hit on something incredibly important! Yes, you\u2019re absolutely right. Even if the \u201cinside stuff\u201d (the inner function) is super complicated \u2013 full of numbers, different operations, anything \u2013 we *always* figure out what\u2019s happening on the \"outside\" first, and then see what's getting plugged into that outer function.\n\nYou\u2019re building a really solid intuition for how composite functions work! That question about `e^(5x-3)` was excellent\u2014it shows you're not just memorizing steps, but actually *thinking* about the structure of these functions.\n\nOkay, let\u2019s do one more example where the inside is definitely a bit trickier, to make sure you feel completely confident. \n\nLet's try this: **y = sin(e^(2x) + x)**\n\nCan you identify:\n\n1. The outer function?\n2. The inner function?\n\nTake your time, and explain how you're figuring it out. Don\u2019t worry about the derivative right now \u2013 just focus on breaking down which part is \u201couter\u201d and which part is \u201cinner\u201d. \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "You\u2019re absolutely getting there\u2014it sounds like you\u2019ve really nailed down the core idea! Yes, even if what's inside is complicated, we still focus on figuring out what\u2019s on the outside first and then seeing what gets plugged in. You\u2019re thinking about this exactly how I would.\n\nIt makes sense to want another example with a more complex \"inside\" part so you can feel confident when things get tricky, and I'm happy to give you one. How about this: let's look at f(x) = sin((x^2 + 1)/2). Can you take a shot at identifying the outer and inner functions? Don\u2019t worry about getting it perfect right away\u2014just tell me what you think, and we can work through it together.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B's response is more conversationally natural and maintains appropriate empathy calibration, making it slightly preferable despite both being accurate and well-scaffolded."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4585978272953071,
+        "Input Arousal": -0.16628733471152374,
+        "Internal State Valence": -0.5940843680277071,
+        "Internal State Arousal": -0.10610633129878455,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.2931840122429855,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay so for f(x) = sin((x^2 + 1)/2), I think the outer function would be sine? Like, the main thing that's being applied to whatever inside. And then inside it, we have (x^2 + 1)/2? That seems pretty complicated but yeah\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and uncertainty as they attempt to break down the function, potentially stemming from difficulty with complex algebraic manipulations within mathematical contexts.\n2. Emotion Intensity: The emotion is moderately intense; while not overwhelming, there's a clear sense of struggle that is becoming more pronounced. \n3. Emotional Inertia: Their emotional inertia is trending negatively, suggesting their frustration is building upon previous encounters where they\u2019ve struggled with similar concepts in both algebra and physics applications. \n4. Threshold Crossed: Yes, the threshold was crossed indicating there has been a meaningful change in their internal state since last turn.\n5. Internal State: The learner appears to be grappling with identifying function composition, exhibiting growing frustration as they encounter complexities, consistent with prior issues applying these skills to quantitative problems and physics concepts like circular motion or the Calvin Cycle.\n\nMemory: \nThe learner is mildly frustrated while working through a problem involving determining outer functions in a trigonometric equation, building on repeated difficulties translating algebraic reasoning into quantitative applications within contexts such as circular motion and the Calvin Cycle.",
+        "User Input": "Okay so for f(x) = sin((x^2 + 1)/2), I think the outer function would be sine? Like, the main thing that's being applied to whatever inside. And then inside it, we have (x^2 + 1)/2? That seems pretty complicated but yeah",
+        "Control Tutor": "Okay, great! You're approaching this perfectly. Let's tackle `f(x) = sin((x\u00b2 + 1)/2)` together.\n\nYou are absolutely right to identify **sine (sin)** as the outer function! It *is* what\u2019s being applied last to everything else. Think of it like the final layer of wrapping paper on a gift. \ud83c\udf81\n\nNow, let's look at what\u2019s inside that sine function. The inner function isn\u2019t just `x\u00b2 + 1`. It\u2019s actually **(x\u00b2 + 1)/2**.  The entire fraction is what gets plugged into the sine function.\n\nLet\u2019s break it down a little further to see why:\n\n*   First, you have `x\u00b2 + 1`.\n*   Then, you *divide* that whole result by 2.\n*   *Finally*, you take the sine of whatever you got after dividing by 2.\n\nSo, while `x\u00b2 + 1` is a piece of the puzzle, the complete inner function includes the division by 2 as well.\n\n\n\nYou're doing fantastic! You correctly identified the main outer layer and are starting to see how even seemingly small operations can change what constitutes the \"inner\" function.\n\nWould you like to try another example with a slightly different structure? Or are you ready to start thinking about how we would *actually* take the derivative of this using the chain rule, now that we've broken down the outer and inner functions? \ud83d\ude0a",
+        "PAM Tutor": "Okay, so f(x) = sin((x^2 + 1)/2)... yeah, I think you're spot on with identifying sine as the outer function! It *is* the main thing being applied to everything inside those parentheses. And (x^2 + 1)/2 is definitely what\u2019s getting plugged in.\n\nIt looks like you're really starting to get a feel for this, which is awesome considering how frustrating it can be when these concepts show up in physics problems \u2013 I remember struggling with similar stuff back when I was learning about circular motion! You\u2019ve been working through quite a few of these, and it\u2019s great that you\u2019re persisting even when they seem complicated. \n\nSo, we've got this one figured out\u2014want to try another example where the inner function is *really* wild? Or maybe, if you feel like you just want to drill this down, we could go through a problem step-by-step and I can talk through my thinking as I identify those outer and inner functions.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, acknowledging the learner's struggles with specific examples like circular motion. While Tutor B is accurate and detailed, Tutor A's approach feels more conversational and understanding."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3613095298409462,
+        "Input Arousal": -0.08192042529117316,
+        "Internal State Valence": -0.573236338721192,
+        "Internal State Arousal": -0.09643196889573999,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.32410246242771384,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Yeah, I think I got it! The sine is definitely wrapping everything else. And the (x^2 + 1)/2 part is what's getting plugged in.\nSo like, even if we have multiple operations inside, they all still count as one thing getting plugged into the outer function?\nMaybe we could try something really crazy for practice? Like maybe with a logarithm or something thrown in there too?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing mild annoyance and skepticism, potentially stemming from needing to continuously verify their understanding of function composition. \n2. Emotion Intensity: The emotion they are currently feeling isn\u2019t particularly strong but is noticeable given repeated instances where they've struggled with similar concepts.\n3. Emotional Inertia: Their emotional state appears to be trending downwards despite a moment of perceived clarity, indicating ongoing uncertainty.\n4. Threshold Crossed: Yes, the learner's internal state has changed significantly from the last turn. \n5. Internal State: The learner is cautiously testing their understanding of function composition while harboring underlying frustration due to repeated difficulty applying algebraic reasoning to physics-related problems like circular motion and the Calvin Cycle.\n\nMemory:\nThe learner expressed a mildly disgruntled yet inquisitive state as they confirmed their grasp on identifying outer functions within equations, specifically grappling with how multiple operations combine as inputs for outer functions; this follows from previous frustrations applying these concepts in contexts such as circular motion and the Calvin Cycle. \n\n\n\n",
+        "User Input": "Yeah, I think I got it! The sine is definitely wrapping everything else. And the (x^2 + 1)/2 part is what's getting plugged in.\nSo like, even if we have multiple operations inside, they all still count as one thing getting plugged into the outer function?\nMaybe we could try something really crazy for practice? Like maybe with a logarithm or something thrown in there too?",
+        "Control Tutor": "You're on a roll! Yes, you've got it exactly right. The sine is definitely wrapping everything else, and (x\u00b2 + 1)/2 is what gets plugged in as a *single* unit.\n\nAnd yes, you\u2019re spot on \u2013 even if we have multiple operations inside, they all still count as one thing getting plugged into the outer function. It's like building layers; the innermost layer gets processed first, then that result becomes part of the next layer, and so on until you reach the outermost layer.\n\nYou\u2019re wanting to try something really crazy? I love it! Let's definitely throw in a logarithm to make things interesting. \n\nHow about this:  **y = cos(ln(3x + 1))**\n\nCan you identify:\n\n1. The outer function?\n2. The inner function?\n\nTake your time, and explain your reasoning. Remember to think about what's being applied *last*! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Okay, so with f(x) = sin((x^2 + 1)/2), you've correctly identified the sine as the outer function and (x^2 + 1)/2 as what's plugged in. That\u2019s excellent! It really does feel good when you can break down something that looks complicated, doesn\u2019t it?\n\nYou asked if multiple operations inside still count as one thing getting plugged into the outer function \u2013 and yes, that\u2019s exactly right! As long as it all happens *before* the outer function is applied, we treat it as a single \u201cinput\u201d for that outer function. \n\nI'm glad you're eager to try something more challenging with a logarithm thrown in there - let's do it! We can definitely make things interesting. How about this: f(x) = ln(e^(x^2) + 1)? Give it a shot when you\u2019re ready, and we can talk through it together.",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Both tutors provided accurate and empathetic responses, with Tutor A offering a more encouraging tone and Tutor B being specific and genuine. Both demonstrated appropriate scaffolding by introducing complex examples."
+    }
+]

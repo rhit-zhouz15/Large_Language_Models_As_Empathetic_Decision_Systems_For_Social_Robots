@@ -85,7 +85,7 @@ def generate_context(user_input: str, label: str, input_valence: float, input_ar
         # print(f"Summary to store in db: {rag_summary}\n")
         store_memory(rag_summary, len(appraisal_engine.get_label_history()), label, round(valence, 3), round(arousal, 3))
 
-        return context.content, context_from_memory
+        return context.content, context_from_memory, valence, arousal, momentum, intensity, threshold_crossed
 
 @traceable(name="response_generator")
 def generate_response(user_input: str, context_from_memory: str, appraisal_output: str):        
@@ -110,7 +110,7 @@ def generate_control_response(user_input: str):
 @traceable(name="full_pipeline")
 def response_pipeline(user_input: str, label: str, input_valence: float, input_arousal: float):
         # Pass the information from the perception layer to the appraisal engine
-        appraisal, context_from_memory = generate_context(user_input, label, input_valence, input_arousal)
+        appraisal, context_from_memory, state_valence, state_arousal, state_momentum, state_intensity, threshold_crossed = generate_context(user_input, label, input_valence, input_arousal)
         # print(f"{appraisal}\n")
 
         # Using the appraisal, get the response model's output
@@ -124,4 +124,6 @@ def response_pipeline(user_input: str, label: str, input_valence: float, input_a
 
         return {"detected_emotion": label, "valence": input_valence, "arousal": input_arousal,"PAM_response": response, 
                 "appraisal": appraisal, "control_response": control_response, "chat_history_A": appraisal_engine.chat_history, 
-                "chat_history_B": appraisal_engine.control_chat_history, "user_input": user_input}
+                "chat_history_B": appraisal_engine.control_chat_history, "user_input": user_input, "state_valence": state_valence,
+                "state_arousal": state_arousal, "state_momentum": state_momentum, "state_intensity": state_intensity, 
+                "treshold_crossed": threshold_crossed}

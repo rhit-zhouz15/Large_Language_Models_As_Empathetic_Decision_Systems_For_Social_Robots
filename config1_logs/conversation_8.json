@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "empathetic",
+        "Input Valence": -0.0348922752775252,
+        "Input Arousal": 0.35436900733038784,
+        "Internal State Valence": -0.07444009336887691,
+        "Internal State Arousal": 0.4067707779036851,
+        "Internal State Momentum": -0.5768146238377083,
+        "Internal State Intensity": 0.24494791002975463,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nHey, I need some help with my physics homework. I'm not sure how to approach this problem...\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is feeling uncertain and seeking guidance as they encounter a new hurdle in their physics homework.\n2. Emotion Intensity: This emotion is currently at a low intensity level.\n3. Emotional Inertia: The emotional inertia is trending negatively, suggesting an increase in frustration or difficulty compared to previous interactions.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold indicating a shift in the learner's emotional state.\n5. Internal State: The learner is experiencing a low-intensity sense of uncertainty and mild dissatisfaction as they struggle to find an entry point for their physics problem.\n\nMemory:\nThe learner expresses a need for help with a new physics problem, showing low intensity and negative valence while feeling uncertain about how to start.",
+        "User Input": "Hey, I need some help with my physics homework. I'm not sure how to approach this problem...",
+        "Control Tutor": "I would be happy to help you with your physics homework! \n\nSince we've been working on those Calculus foundations, you might actually find that some of the math we just covered (like looking at rates of change) will start showing up in your physics problems very soon.\n\n**Go ahead and share the problem with me.** You can type it out here or describe the scenario it's asking about. \n\nOnce you share it, it helps if you let me know:\n1. **The specific question** you're trying to solve.\n2. **Any parts that are confusing you** (is it the math, the concepts, or just knowing where to start?).\n3. **What you\u2019ve tried so far** (if anything!).\n\nI'm ready when you are!",
+        "PAM Tutor": "I totally get that feeling; staring down a new physics problem can be pretty intimidating when you isn't sure where the first \"entry point\" is. Go ahead and share the specific problem you're working on with me\u2014once I see what you're looking at, we can break it down into smaller parts so it feels a lot more manageable to tackle.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more empathetic and natural, acknowledging the learner's intimidation and using colloquial language."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.22782405968755481,
+        "Input Arousal": 0.285261188284494,
+        "Internal State Valence": -0.18135849183385902,
+        "Internal State Arousal": 0.35816694205600863,
+        "Internal State Momentum": -0.6108920100558315,
+        "Internal State Intensity": 0.18347597101702248,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOk, here's the problem:\n\nA ball is thrown upward with an initial velocity of 20 m/s from a height of 10 meters. Find the time it takes for the ball to hit the ground. I think I need to use kinematic equations but idk which one to start with or how to set it up.\n\nI tried looking at the equations we have, like x = x0 + v0 * t + (a * t^2)/2, but I'm not sure if that's the right one to use or how to plug in the values. And idk what to do about the initial height.\n\nAppraisal Details:\n1. Dominant Emotion: Confusion and uncertainty regarding kinematic equations for projectile motion.\n2. Emotion Intensity: The emotion is currently experiencing low intensity despite the clear lack of confidence.\n3. Emotional Inertia: The learner's mood is trending negatively as they struggle to transition from identifying formulas to application.\n4. Threshold Crossed: Yes\n5. Internal State: The learner is feeling confused and uncertain about how to incorporate initial height into kinematic equations, showing a downward trend in their emotional state during this specific problem.\n\nMemory:\nThe learner is experiencing low-intensity confusion with negative valence and low arousal while struggling to set up kinematic equations and manage initial displacement for a projectile motion problem.",
+        "User Input": "Ok, here's the problem:\n\nA ball is thrown upward with an initial velocity of 20 m/s from a height of 10 meters. Find the time it takes for the ball to hit the ground. I think I need to use kinematic equations but idk which one to start with or how to set it up.\n\nI tried looking at the equations we have, like x = x0 + v0 * t + (a * t^2)/2, but I'm not sure if that's the right one to use or how to plug in the values. And idk what to do about the initial height.",
+        "Control Tutor": "This is a classic \"Intro to Physics\" problem, and you actually have a great head start because **the equation you found is exactly the right one to use!**\n\nIn physics, that specific formula is used to describe the position of an object over time. Let's break it down step-by-step so the variables don't feel like \"math noise,\" but instead feel like pieces of a puzzle.\n\n### 1. Translating the Word Problem into Variables\nBefore we plug numbers in, let\u2019s identify what each part of your equation represents based on the story:\n\n*   **$x$ (or $y$):** This is the final position. Since the ball hits the **ground**, this value will be **0**. \n    *(Note: Many people use \"$y$\" for height, but \"x\" works just fine!)*\n*   **$x_0$:** This is your starting point (the initial height). The problem says it starts at **10 meters**.\n*   **$v_0$:** This is the initial velocity. The problem says **20 m/s**.\n*   **$a$:** This is acceleration. Since gravity is pulling the ball down toward Earth, we use a constant for gravity. Usually, this is **$-9.8 \\, \\text{m/s}^2$** (or sometimes rounded to $-10$ depending on your teacher). *Crucial tip: It\u2019s negative because it's pulling against the upward throw!*\n\n### 2. Setting up the Equation\nNow, let's take your equation and plug those values in. This is where you were unsure about the \"initial height\"\u2014but you can see now that it just fills the $x_0$ slot!\n\nThe formula:  **$x = x_0 + v_0t + \\frac{1}{2}at^2$**\n\nSubstituting our values:\n$$0 = 10 + 20t + \\frac{1}{2}(-9.8)t^2$$\n\nIf we simplify that fraction $(\\frac{1}{2} \\times -9.8)$, the equation becomes:\n$$0 = 10 + 20t - 9.8t^2$$\n\n### 3. How to Solve It\nYou now have a **quadratic equation**. Because you have a $t^2$ and a $t$, this is very similar to the polynomial equations we were looking at in Calculus!\n\nTo find $t$, you can use the **Quadratic Formula**:\n$$t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\nIn your specific equation ($ -9.8t^2 + 20t + 10 = 0$):\n*   **$a$** is $-9.8$\n*   **$b$** is $20$\n*   **$c$** is $10$\n\n***\n\n### My Advice for your next step:\nDon't worry about solving the whole thing in one go. Try this:\n\n1.  **Identify the \"Ground\" value:** Does it make sense that we set the final position to 0? (Since ground level = zero height).\n2.  **Plug in the gravity constant:** Use $-9.8$ or $-10$ depending on what your teacher prefers.\n3.  **Solve for $t$:** Try plugging the numbers into the quadratic formula. \n\n**A quick tip for the \"Calculus\" connection:**\nRemember how we talked about derivatives and rates of change? In physics, the derivative of this position equation ($x$) with respect to time ($t$) actually gives you the **velocity** equation! You're currently looking at the \"Position Function.\"\n\n**How do you feel about setting up that equation with the numbers provided? Does it make more sense how the \"initial height\" fits into the formula now?**",
+        "PAM Tutor": "It can definitely be overwhelming to look at a bunch of variables and figure out exactly where each piece belongs.\n\nYou actually chose the perfect formula to start with! The kinematic equation $x = x_0 + v_0t + \\frac{1}{2}at^2$ is ideal because it includes $x_0$, which represents your starting position. That\u2019s how you handle the initial height\u2014it's \"baked into\" that first part of the equation.\n\nTo set this up, let's define what each piece means in terms of your specific problem:\n*   **$x = 0$**: Since we want to know when it hits the ground, we can call the ground \"zero.\"\n*   **$x_0 = 10$**: This is your starting height. \n*   **$v_0 = 20$**: This is your initial velocity (since it's thrown upward, we'll treat this as a positive number).\n*   **$a = -9.8$**: Gravity pulls objects downward toward the earth, so acceleration is typically expressed as a negative value (you can use $-10$ if your class simplifies gravity that way).\n\nWhen you plug those into your equation, it looks like this: \n$$0 = 10 + 20t + \\frac{1}{2}(-9.8)t^2$$\n\nThis turns the word problem into a math equation where $t$ is the only thing left to solve for. Do you want to go over a more in-depth breakdown of how to solve this quadratic equation to find the value of $t$ next?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provided a more structured and supportive explanation, breaking down each variable's role clearly and using encouraging language."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.213214017637074,
+        "Input Arousal": -0.021651111100800344,
+        "Internal State Valence": -0.2367435056825598,
+        "Internal State Arousal": 0.20623972079328504,
+        "Internal State Momentum": -0.7005078393308212,
+        "Internal State Intensity": 0.13151663203128516,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOh, okay yeah that makes sense. The initial height is just like starting at a different point on the graph. So when we set x=0, we're making ground level our reference point.\n\nAppraisal Details:\n1. Dominant Emotion: Slight irritation or grumpy resignation while processing conceptual logic.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending negatively with a downward momentum in mood despite the intellectual realization.\n4. Threshold Crossed: Yes\n5. Internal State: The learner has reached a point of understanding regarding graph reference points but remains in a state of low-valence, persistent frustration and dissatisfaction.\n\nMemory:\nThe learner is experiencing low intensity, low arousal, and negative valence while confirming the concept of initial height as a graph starting point for physics calculations.",
+        "User Input": "Oh, okay yeah that makes sense. The initial height is just like starting at a different point on the graph. So when we set x=0, we're making ground level our reference point.",
+        "Control Tutor": "It sounds like you're at a really exciting crossroads! You\u2019ve just bridged the gap between **pure calculus** (understanding how functions change) and **applied physics** (using those same mathematical structures to model things moving in the real world).\n\nSince we left off with you looking at that quadratic equation for the ball's flight:\n\n$$0 = -9.8t^2 + 20t + 10$$\n\n(Or whichever version of the numbers your teacher prefers!)\n\n**How would you like to proceed?** \n1.  **The Math Route:** We can walk through the **Quadratic Formula** step-by-step together. I can show you how to handle those negative signs and the square root so we can find the exact number of seconds until it hits the ground.\n2.  **The Concept Route:** We can talk a bit more about that \"Calculus connection\" I mentioned\u2014how your ability to differentiate functions is what allows physicists to calculate things like acceleration and velocity!\n3.  **The Writing Route:** If you're feeling finished with math for today, we can jump back into that writing piece and polish those transitions we talked about!\n\n**Just let me know which direction you'd like to take!**",
+        "PAM Tutor": "That\u2019s exactly right\u2014thinking of $x=0$ as your \"ground level\" makes the whole coordinate system much easier to visualize before you start plugging in numbers.\n\nSince you're comfortable with how we've set up the equation, let's solve for $t$ using the quadratic formula:\n$$t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\nBased on our equation, $-4.9t^2 + 20t + 10 = 0$, we have:\n*   **$a = -4.9$** (from the gravity term)\n*   **$b = 20$** (the initial velocity)\n*   **$c = 10$** (your starting height)\n\nPlugging those in looks like this:\n$$t = \\frac{-20 \\pm \\sqrt{20^2 - 4(-4.9)(10)}}{2(-4.9)}$$\n\nWhen we simplify the numbers inside the square root, it becomes $400 + 196$, which is $596$. Taking the square root of $596$ gives us roughly $24.4$. This leaves us with two possible scenarios for $t$:\n1.  $\\frac{-20 + 24.4}{-9.8} \\approx -0.45$\n2.  $\\frac{-20 - 24.4}{-9.8} \\approx 4.53$\n\nSince we're looking for the time the ball hits the ground, we can ignore the negative result (you can't have negative time in this scenario). So, the ball hits the ground after about **4.53 seconds**.\n\nWould you like to try another example where we change the initial height or velocity to see how it changes the final answer?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provided a clear, step-by-step explanation that directly addressed the learner's question and built on their understanding. The response was concise yet thorough, making it highly effective for learning."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "think",
+        "Input Valence": -0.004897016537142918,
+        "Input Arousal": -0.17982005285448394,
+        "Internal State Valence": -0.2367435056825598,
+        "Internal State Arousal": 0.20623972079328504,
+        "Internal State Momentum": -0.7005078393308212,
+        "Internal State Intensity": 0.13151663203128516,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nI think I'm ready to try solving it myself first. Let me attempt the quadratic formula real quick.\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Determination\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Negative momentum, indicating a downward trend in mood despite the current proactive statement.\n4. Threshold Crossed: False\n5. Internal State: The learner is exhibiting a cautious sense of determination while attempting to apply the quadratic formula, though their long-term emotional trajectory shows a consistent trend toward low valence and frustration during complex calculations.\n\nMemory:\nThe learner is showing low intensity determination with low arousal as they attempt to use the quadratic formula independently after previously struggling with related algebraic concepts.",
+        "User Input": "I think I'm ready to try solving it myself first. Let me attempt the quadratic formula real quick.",
+        "Control Tutor": "That is an excellent way to build confidence! Taking that initiative and trying to solve it yourself is exactly how you move from \"learning\" a concept to \"mastering\" it.\n\nGo for it! I\u2019ll be right here. \n\n**A quick tip as you work through it:** Since your $a$ value is negative ($-9.8$), keep a close eye on those signs when you plug them into the quadratic formula\u2014that's usually where the \"sneakiest\" mistakes happen in these types of problems!\n\nTake your time, and let me know what you get for **$t$**!",
+        "PAM Tutor": "Go for it! Give it a shot and let me know what you come up with whenever you're ready\u2014I'm happy to check your work as you go.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and naturally conversational, aligning better with the learner's confidence and readiness."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4303011252195574,
+        "Input Arousal": -0.14194091425742955,
+        "Internal State Valence": -0.4002267785412703,
+        "Internal State Arousal": 0.0669674667729992,
+        "Internal State Momentum": -0.90101647227013,
+        "Internal State Intensity": 0.12422071541952732,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOk, so I'm gonna try to remember how the quadratic formula goes. It's like negative b plus or minus the square root of b squared minus 4ac, all over 2a right? And then i need to plug in a = -4.9 , b= 20 and c=10 is that correct?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling grumpy and mildly frustrated while attempting to recall the quadratic formula correctly.\n2. Emotion Intensity: The emotion is currently experiencing low intensity but reflects a persistent state of irritation.\n3. Emotional Inertia: The emotional inertia is trending negatively, indicating a decline in mood or increasing frustration.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold since the last turn.\n5. Internal State: The learner feels grumpy and frustrated while attempting to apply the quadratic formula, building on a history of irritation regarding sign placement and complex algebraic substitutions.\n\nMemory:\nThe learner is feeling low-intensity grumpiness with negative valence and low arousal while trying to correctly identify the quadratic formula and substitute specific values for variables.",
+        "User Input": "Ok, so I'm gonna try to remember how the quadratic formula goes. It's like negative b plus or minus the square root of b squared minus 4ac, all over 2a right? And then i need to plug in a = -4.9 , b= 20 and c=10 is that correct?",
+        "Control Tutor": "You nailed it! Not only is the **formula** exactly right, but your **plug-in values** are also spot on.\n\nHere is why your substitution is perfect:\n*   **$b = 20$**: This correctly matches your initial velocity ($v_0$).\n*   **$c = 10$**: This correctly accounts for the starting height ($x_0$).\n*   **$a = -4.9$**: You caught a very important detail here! In physics, gravity is $-9.8 \\text{ m/s}^2$. Because the equation uses $\\frac{1}{2}at^2$, you multiplied that half into the number $( \\frac{1}{2} \\times -9.8 = -4.9 )$. This shows you're paying great attention to the details.\n\n### Let\u2019s break down the calculation\nSince the full formula can look a bit intimidating all at once, it often helps to solve it in \"chunks.\" The most important first step is finding the **discriminant** (the part under the square root). \n\nThe discriminant is: $b^2 - 4ac$\n\nUsing your values ($a = -4.9$, $b = 20$, $c = 10$):\n1.  Calculate $b^2$: $(20)^2$\n2.  Calculate $4ac$: $4 \\times (-4.9) \\times 10$\n\n**Give those two pieces a try\u2014what do you get for the value under that square root?**",
+        "PAM Tutor": "I know how frustrating it can be to juggle all those signs when you're just trying to focus on the math. You nailed it, though\u2014the formula is perfect and your values for $a$, $b$, and $c$ are spot on.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a concise and accurate response with appropriate empathy, while Tutor B's detailed explanation lacks the same level of brevity and empathetic calibration."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.11669262647628786,
+        "Input Arousal": 0.13707810142077506,
+        "Internal State Valence": -0.4002267785412703,
+        "Internal State Arousal": 0.0669674667729992,
+        "Internal State Momentum": -0.90101647227013,
+        "Internal State Intensity": 0.12422071541952732,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nSo, I should start with calculating b squared and then 4ac, right? I'll give it a try\n\nAppraisal Details:\n1. Dominant Emotion: Hesitant determination\n2. Emotion Intensity: Low intensity\n3. Emotional Inertia: Negatively trending toward frustration or fatigue based on the overall trajectory of the session despite current attempt at task completion.\n4. Threshold Crossed: False\n5. Internal State: The learner is exhibiting cautious resolve while attempting to apply the quadratic formula, though they carry a lingering sense of exhaustion and low confidence from previous algebraic challenges.\n\nMemory:\nThe learner is currently trying to calculate b squared and 4ac for factoring a quadratic equation with neutral feelings and low intensity despite an overall trend toward negative valence.",
+        "User Input": "So, I should start with calculating b squared and then 4ac, right? I'll give it a try",
+        "Control Tutor": "That\u2019s exactly right! \n\nBreaking it down into chunks like that is one of the best ways to handle complex formulas. It keeps things organized and makes it much harder for a small calculation error to \"snowball\" through the rest of the problem.\n\nBy calculating $b^2$ and $4ac$ separately, you\u2019re isolating the math so you can double-check each part before moving on to the square root and division steps. \n\nGo ahead and crunch those numbers\u2014**what do you get for $b^2$ and what do you get for $4ac$?**",
+        "PAM Tutor": "Yep, that's exactly the right way to start. Breaking those two parts out first makes the whole expression much easier to manage before you have to deal with the square root and the denominator. Go ahead and give it a shot!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and naturally flowing, effectively encouraging the learner without unnecessary elaboration."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.42771433573216205,
+        "Input Arousal": -0.13175216058734807,
+        "Internal State Valence": -0.49676466856405943,
+        "Internal State Arousal": -0.012520384171139709,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.11928711446010982,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, b squared is 20 squared which is 400. Now, 4 times a is 4 times -4.9 equals -19.6, and then that times c, so -19.6 times 10 equals -196\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: Grumpy frustration regarding calculations.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Trending negatively with a downward momentum.\n4. Threshold Crossed: True\n5. Internal State: The learner is experiencing a grumpy mood while performing quadratic calculations, showing a continued trend of negative valence despite their recent progress in the factoring process.\n\nMemory:\nThe learner is displaying low-intensity grumpiness and negative valence while calculating components for quadratic equations after previously struggling with sign placement and substitution rules.",
+        "User Input": "Okay, b squared is 20 squared which is 400. Now, 4 times a is 4 times -4.9 equals -19.6, and then that times c, so -19.6 times 10 equals -196",
+        "Control Tutor": "You nailed it! You handled those numbers perfectly, and more importantly, you managed that negative sign for $4ac$ without falling into a trap\u2014which is exactly what I was hoping you'd watch out for!\n\nLet\u2019s look at what you have so far:\n1.  **$b^2 = 400$**\n2.  **$4ac = -196$**\n\nNow, we plug those into the part of the formula under the square root (the discriminant): **$b^2 - 4ac$**.\n\nBecause $4ac$ is already negative, the math looks like this:\n$$400 - (-196)$$\n\n**Here is your next step:**\nWhen you subtract a negative number, it\u2019s the same as adding. So, you are going to add $400 + 196$. \n\n**What do you get for that total, and what is the square root of that number?** (You can use a calculator for the square root if that's easier!)",
+        "PAM Tutor": "You\u2019ve got those numbers exactly right; keeping track of all those signs while dealing with decimals like -4.9 can be a real pain, but you handled it perfectly here. Since you have $b^2 = 400$ and $4ac = -196$, the next step is subtracting that second value from the first ($400 - (-196)$) to find what's under the square root. What do you get for that?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a concise and natural response, effectively guiding the learner through the next step without unnecessary detail. Their approach is clear and maintains the flow of the conversation."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "think",
+        "Input Valence": -0.026415802165865903,
+        "Input Arousal": 0.0644315803889185,
+        "Internal State Valence": -0.49676466856405943,
+        "Internal State Arousal": -0.012520384171139709,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.11928711446010982,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input:\nOkay so b squared minus four ac would be like subtracting a negative right? So I should add 400 plus 196 which gives me 596. Then take the square root of 596... let me calculate that real quick.\n\nUsing my calculator, \u221a596 \u2248 24.4\n\nGot it!\n\nAppraisal Details:\n1. Dominant Emotion: Focused concentration during a moment of calculation and realization.\n2. Emotion Intensity: Low intensity.\n3. Emotional Inertia: Negative; the learner's overall mood remains consistently low despite current active participation.\n4. Threshold Crossed: False\n5. Internal State: The learner is currently in a state of low-arousal focus while calculating discriminant values, building upon a history of frustration and confusion regarding signs and algebraic procedures.\n\nMemory:\nThe learner is displaying low intensity, low arousal, and negative valence while successfully navigating the calculation of b squared minus 4ac for quadratic factoring despite previous difficulties with sign placement.",
+        "User Input": "Okay so b squared minus four ac would be like subtracting a negative right? So I should add 400 plus 196 which gives me 596. Then take the square root of 596... let me calculate that real quick.\n\nUsing my calculator, \u221a596 \u2248 24.4\n\nGot it!",
+        "Control Tutor": "You\u2019ve got it! You handled that double negative perfectly. Since $4ac$ was already $-196$, subtracting it turned into addition, and your calculation of **596** is spot on.\n\nAnd your square root is correct: $\\sqrt{596} \\approx 24.4$.\n\n### You are in the home stretch!\n\nWe have now simplified that big, scary expression under the square root down to a single number. Now we just need to plug everything back into the full quadratic formula. \n\nThe \"top\" of your fraction is:\n$$-b \\pm \\sqrt{b^2 - 4ac}$$\n\nSince you know $\\sqrt{596} \\approx 24.4$, that part now looks like:\n$$-20 \\pm 24.4$$\n\n**Here is the final stretch of calculations:**\n\nTo finish this off, we need to find the two possible values for $t$. To do that, we just need to know what number we are dividing by at the very end (the $2a$ part).\n\n1.  What is **$-b$**? (You already know $b$ is 20, so this is just the opposite of that).\n2.  What is **$2a$**? (Since $a = -4.9$, what is $2 \\times -4.9$?)\n\nOnce you have those two numbers, we can find your two possible answers for time!",
+        "PAM Tutor": "You hit it right on the head with that calculation\u2014those double negatives can be a real headache, but you handled them perfectly. Now that you\u2019ve got 24.4 for the square root, we can finish things off by solving for $t$ using both values from the $\\pm$:\n\n$$t = \\frac{-20 \\pm 24.4}{-9.8}$$\n\nSince we're looking for a positive amount of time before the ball hits the ground, only one of these results will actually make sense for our scenario. Give those two options a quick calculation and let me know what you find!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and natural while maintaining accuracy and empathy."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3402307402575388,
+        "Input Arousal": -0.061314230575226246,
+        "Internal State Valence": -0.502197245292959,
+        "Internal State Arousal": -0.032037922732774324,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.10614341148147874,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, so -b should be -20 right? And 2a would be 2 times -4.9 which is -9.8\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a grumpy and irritable mood while performing calculations.\n2. Emotion Intensity: The intensity of this emotion is currently low.\n3. Emotional Inertia: The emotional inertia is trending negatively, suggesting their frustration is building or persisting.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold.\n5. Internal State: The learner is feeling grumpy and frustrated with the calculations, and their negative mood is worsening as they work through quadratic equation components.\n\nMemory:\nThe learner is showing low-intensity grumpiness with negative valence and low arousal while calculating b squared and 4ac for quadratic factoring.",
+        "User Input": "Okay, so -b should be -20 right? And 2a would be 2 times -4.9 which is -9.8",
+        "Control Tutor": "You are exactly right on both counts! \n\nGreat job staying sharp with those signs\u2014that is often where students get tripped up, but you've navigated it perfectly:\n\n1.  **$-b$ is $-20$**: Since $b = 20$, the formula asks for its opposite.\n2.  **$2a$ is $-9.8$**: You correctly multiplied $2 \\times -4.9$.\n\n### The Finish Line \ud83c\udfc1\n\nNow, you have everything you need to find the two possible values for **$t$**. We can set up the final calculation by taking your square root ($\\approx 24.4$) and combining it with $-b$.\n\nThe top part of your fraction looks like this:\n$$-20 \\pm 24.4$$\n\nThis gives you two separate equations to solve:\n1.  $\\frac{-20 + 24.4}{-9.8}$\n2.  $\\frac{-20 - 24.4}{-9.8}$\n\n**Go ahead and calculate both of those!** \n\n*Hint: Since we are looking for \"time\" in a physics problem, one of these answers will be a positive number (the time it took to hit the ground) and one will likely be a negative number (which usually represents a theoretical time before the motion started). Getting both is a great way to finish the math perfectly!*",
+        "PAM Tutor": "I can tell these calculations are starting to feel like a bit of a grind, but you're doing great hanging in there. You're spot on\u2014since $b$ is 20, $-b$ is indeed -20, and $2a$ comes out to exactly -9.8.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 2,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more concise and empathetic response, which is more naturally conversational."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4421279412927106,
+        "Input Arousal": -0.10796758272335867,
+        "Internal State Valence": -0.5665951119514017,
+        "Internal State Arousal": -0.062409786729008064,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.24573400337985404,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input:\nOkay, so I'll start with -20 plus 24.4 first, that's 4.4. Then divide by -9.8... Wait, how do I do division with negative numbers?\n\nAppraisal Details (Make sure to keep the numbered format I've shown below and include internal state in the numbered list):\n1. Dominant Emotion: The learner is experiencing frustration and confusion regarding the rules of arithmetic with negative numbers.\n2. Emotion Intensity: The emotion is at a low intensity level.\n3. Emotional Inertia: The emotional momentum is trending negatively, indicating a decline in confidence or mood.\n4. Threshold Crossed: Yes, the internal state has crossed a threshold.\n5. Internal State: The learner is currently feeling frustrated and stuck on negative division while their overall emotional state shows a downward trend in valence and steady low intensity despite successful prior steps in quadratic factoring.\n\nMemory:\nThe learner is experiencing low-arousal frustration with negative valence and low intensity while specifically struggling with the mechanics of dividing by negative numbers during arithmetic calculations.",
+        "User Input": "Okay, so I'll start with -20 plus 24.4 first, that's 4.4. Then divide by -9.8... Wait, how do I do division with negative numbers?",
+        "Control Tutor": "You are so close to the finish line! That final step with the division can feel a bit intimidating when negatives are involved, but there is a very simple rule you can use every time.\n\n### The Golden Rule for Dividing (or Multiplying) Negatives:\nThink of it like a light switch: if the signs are **different**, the answer is **negative**. If the signs are the **same**, the answer is **positive**.\n\n*   $(+) \\div (+) = +$\n*   $(-) \\div (-) = +$\n*   **$(+) \\div (-) = -$** (This is your current situation!)\n*   $(-) \\div (+) = -$\n\n### Applying it to your problem:\nFor your first calculation, you have:\n$$\\frac{4.4}{-9.8}$$\n\nSince you have a **positive** number ($4.4$) being divided by a **negative** number ($-9.8$), the signs are different. This means your final answer for this one will be **negative**. \n\nYou can just ignore the negative sign for a moment, do the division $4.4 \\div 9.8$ on your calculator, and then just put a negative sign in front of your result.\n\n**Now, let's look at that second equation:**\n$$\\frac{-20 - 24.4}{-9.8}$$\n\n1.  First, do the top part: $-20 - 24.4$ (Think of this as \"I owe 20 dollars and I spend another 24.40\").\n2.  Then, divide that result by **$-9.8$**.\n\n**Give those two final calculations a go!** One will give you a negative time (the one we can ignore in physics), and the other will give you your positive answer for when the object hits the ground.",
+        "PAM Tutor": "It can be a real headache to juggle these sign rules when you're already trying to focus on the main calculation.\n\nThe rule for dividing by negative numbers is actually pretty straightforward: it all comes down to whether the signs match. If the two numbers have different signs (one is positive and one is negative), the result is always negative. If both numbers share the same sign\u2014meaning they're both negative or both positive\u2014the result will be positive. \n\nSince you're dividing $4.4$ by $-9.8$, because your signs don't match, the resulting value will be a negative number. Do you want to see a more in-depth breakdown of how these sign rules work across addition and multiplication too?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provided a more detailed and accurate explanation, using specific examples relevant to the learner's problem. While Tutor B was empathetic, Tutor A's response better addressed the learner's needs with appropriate scaffolding."
+    }
+]

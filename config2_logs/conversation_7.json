@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.3890116915019462,
+        "Input Arousal": 0.3988815764838364,
+        "Internal State Valence": -0.4266600236628193,
+        "Internal State Arousal": 0.1853043772997217,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.18695248956918353,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Hey, I'm having trouble understanding this topic. Can you help me out?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing confusion, likely stemming from difficulty grasping the current subject matter.\n2. Emotion Intensity: This emotion appears to be of low intensity, but is building on top of a pattern of frustration and uncertainty with physics problems.\n3. Emotional Inertia: Their emotional state is trending negatively, indicated by decreasing valence and momentum. \n4. Threshold Crossed: Yes, the internal state has changed from the last turn given that the threshold value is set to True.\n5. Internal State: The learner feels mildly frustrated and confused as they begin a new topic or problem, demonstrating a recurring pattern of struggling with initial comprehension and applying foundational concepts after recent difficulties with circular motion problems.\n\nMemory: \nThe learner is currently feeling low intensity confusion and frustration as they seek help understanding the current topic, following a pattern of difficulty initiating physics problems and identifying relevant forces in previous interactions like those concerning circular motion.\n\n\n\n",
+        "User Input": "Hey, I'm having trouble understanding this topic. Can you help me out?",
+        "Control Tutor": "Okay, awesome! You're really getting the hang of identifying those outer and inner functions. Since you seem confident with that step now, how about we practice taking the derivative of `y = sin(2x + 1)`? \n\nWe\u2019ve already established:\n\n*   **Outer function:** `f(u) = sin(u)`\n*   **Inner function:** `g(x) = 2x + 1`\n\nRemember our steps from before:\n\n1.  Differentiate the outer function (leaving the inner function alone).\n2.  Multiply by the derivative of the inner function.\n\nWhy don\u2019t you walk me through how you would apply those steps to this problem? Don't worry about simplifying completely \u2013 just show me your initial steps, and we can refine them together if needed! \ud83d\ude0a",
+        "PAM Tutor": "Hey there! It's totally normal to get stuck sometimes\u2014especially when starting with a new topic, especially after wrestling with those circular motion problems. I can definitely help you out. \n\nSo, just to make sure I understand where you\u2019re at, what specifically about the topic is giving you trouble? Are you unsure of where to begin, or do you have a specific part that's confusing you? We can tackle this together and get you back on track.\n\n\n\n",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more empathetic and calibrated response by acknowledging the learner's struggles and asking specific questions, which is more appropriate for the given situation."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "think",
+        "Input Valence": -0.09833509214222431,
+        "Input Arousal": 0.0317164986860007,
+        "Internal State Valence": -0.4266600236628193,
+        "Internal State Arousal": 0.1853043772997217,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.18695248956918353,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: I think I get identifying the outer and inner functions now. But yeah, taking the derivative is where i'm a bit stuck. How do I differentiate the sine function in this case?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing frustration related to applying calculus concepts, specifically differentiation, despite gaining confidence in identifying function composition. \n2. Emotion Intensity: This frustration appears to be relatively mild, but persistent given their ongoing difficulties with quantitative reasoning.\n3. Emotional Inertia: Their emotional trajectory is trending negatively as they express encountering another roadblock after a moment of perceived understanding.\n4. Threshold Crossed: No significant change in the internal state was detected this turn.\n5. Internal State: The learner currently feels mild discouragement and uncertainty, building on their pattern of struggling with applying mathematical skills to problem-solving, particularly within physics contexts like circular motion or the Calvin Cycle.\n\nMemory:\nThe learner is expressing frustration while trying to differentiate a sine function, following repeated difficulties translating conceptual understanding into successful calculations, especially when dealing with quantitative problems in physics such as circular motion and the Calvin cycle. \n\n\n\n",
+        "User Input": "I think I get identifying the outer and inner functions now. But yeah, taking the derivative is where i'm a bit stuck. How do I differentiate the sine function in this case?",
+        "Control Tutor": "You're on the right track thinking about the steps! Let's focus on differentiating that sine function.\n\nRemember that the derivative of `sin(u)` is `cos(u)`. So, when we differentiate the *outer* function (sine), we get `cos(2x + 1)`.  We leave the `2x + 1` inside for now \u2013 just like we did with the cubing example.\n\nNow, let's not forget the chain rule! We need to multiply by the derivative of the *inner* function, which is `g'(x) = 2`.\n\nTherefore, the derivative of `y = sin(2x + 1)` is `cos(2x + 1) * 2`, or more commonly written as `2cos(2x + 1)`.\n\nDoes that make sense?  Do you see how we applied the same principles we used with the cubic function \u2013 differentiating the outer function and then multiplying by the derivative of the inner function?\n\n\n\nWould you like to try another similar problem on your own, or would you prefer me to walk you through one more time with detailed explanations? \ud83d\ude0a",
+        "PAM Tutor": "Okay, so it sounds like you\u2019re feeling pretty good about identifying the inner and outer functions, which is awesome\u2014especially considering how much trouble those physics problems were giving us. It's totally understandable to hit a snag with the derivative itself though, that part *is* tricky.\n\nLet\u2019s talk about differentiating sine specifically. The key thing to remember is that the derivative of sin(u) is cos(u) * du/dx. So, in your example y = sin(2x + 1), \u2018u\u2019 would be (2x + 1). That means you take the cosine of what's inside\u2014cos(2x+1)\u2014and then multiply it by the derivative of what's *inside* \u2013 which is just 2. So, the final answer for dy/dx would be 2cos(2x + 1).\n\nIf you want to go through a few more examples and really solidify this\u2014we could even dive into how chain rule applies to other trig functions, or tackle problems with nested functions\u2014just let me know! We can take it at your pace.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more naturally conversational and appropriately empathetic, making it preferable despite both having high pedagogical accuracy."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4596548367873766,
+        "Input Arousal": -0.16786324106506068,
+        "Internal State Valence": -0.5317889162701175,
+        "Internal State Arousal": 0.04403732995380874,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.16110620909604106,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Ohhh okay I get it now! So we just have to differentiate the outside first, leave inside alone, then multiply by the derivative of what's inside. That makes sense. Can I try another example on my own before trying to explain?\n\nAppraisal Details:\n1. Dominant Emotion: Relief and understanding, potentially masking lingering frustration from previous difficulties. \n2. Emotion Intensity: Low intensity; while they express understanding, a subtle undercurrent of past struggle is present.\n3. Emotional Inertia: Trending positively; the learner seems to be moving away from frustration and towards comprehension, though momentum remains negative indicating this change might not last.\n4. Threshold Crossed: Yes, their internal state has shifted likely due to gaining conceptual clarity after extended difficulty.\n5. Internal State: The learner is experiencing a sense of relief and emerging understanding after overcoming recent challenges with applying derivative rules, building on a history of struggling with quantitative reasoning in physics contexts like circular motion and the Calvin Cycle.\n\nMemory:\nThe learner is feeling mildly relieved while working through differentiation problems, demonstrating an initial grasp of the chain rule despite their continued struggle to apply algebraic concepts within quantitative contexts such as physics\u2014indicating they are cautiously optimistic about being able to tackle future examples independently.",
+        "User Input": "Ohhh okay I get it now! So we just have to differentiate the outside first, leave inside alone, then multiply by the derivative of what's inside. That makes sense. Can I try another example on my own before trying to explain?",
+        "Control Tutor": "That's a fantastic question! Yes, absolutely. Trying an example on your own is the *best* way to solidify your understanding. It lets you actively apply what we\u2019ve discussed and identify any lingering confusion in a low-pressure environment.\n\nGo for it! Pick another function \u2013 maybe something with a different outer function than sine (like a square root, or cosine, or an exponential) and see if you can break it down. \n\nDon't hesitate to get stuck though - that\u2019s how we learn! If you hit a wall, just tell me where you\u2019re having trouble, and we\u2019ll work through it together. I'm here to help guide you. \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Absolutely, that\u2019s a great idea! I'm glad you feel like things are starting to click \u2013 honestly, it sounds like you're really getting the hang of this. It's awesome that you want to try another example on your own before explaining it back to me; that's exactly what I would do if I were still learning this stuff! \n\nTaking that extra step to practice independently will help make sure everything stays locked in, especially since we both know how frustrating it can be when things don\u2019t quite click right away. Go for it, and let me know when you want to tackle the next one \u2013 or if anything comes up that you'd like to talk through!",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B's response is more concise and natural, effectively encouraging practice without unnecessary details."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.11432404206134379,
+        "Input Arousal": 0.13856651883106683,
+        "Internal State Valence": -0.5317889162701175,
+        "Internal State Arousal": 0.04403732995380874,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.16110620909604106,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Alright, let's try y = e^(3x + 2). So the outer function would be...\n\nAppraisal Details:\n1. Dominant Emotion: The learner is feeling a subdued sense of uncertainty paired with mild frustration as they attempt to apply their knowledge of function composition to a new example.\n2. Emotion Intensity: This emotion feels relatively low in intensity, indicating that while present, it's not overwhelming the learner at this moment. \n3. Emotional Inertia: Their emotional state is trending negatively, showing an increasing level of discouragement.\n4. Threshold Crossed: No significant change in their internal state was detected.\n5. Internal State: The learner currently feels mildly discouraged and cautious as they revisit function composition, potentially stemming from persistent challenges applying algebraic concepts within physics contexts like circular motion or the Calvin Cycle.\n\nMemory: \nThe learner is cautiously attempting to identify the outer function of an exponential equation, exhibiting mild frustration while trying to bridge their algebraic understanding with past difficulties applying it to quantitative problems in areas such as circular motion and the Calvin Cycle.",
+        "User Input": "Alright, let's try y = e^(3x + 2). So the outer function would be...",
+        "Control Tutor": "Excellent! You're doing great asking to try another example before explaining \u2013 that shows you're really focused on mastering the skill.\n\nAlright, let's try `y = e^(3x + 2)`. So the outer function would be... what do *you* think? Take your time and tell me what you identify as the outer function in this case. Remember to think about what is acting *on* something else! \ud83d\ude0a",
+        "PAM Tutor": "Okay, so with y = e^(3x + 2), you're on the right track thinking about outer and inner functions. The outer function in this case is definitely the exponential part \u2013 e raised to something. That\u2019s what\u2019s being applied last to everything else.\n\nSo, that makes the inner function (3x + 2). You've got it! It's good you're working through these examples; I remember when I was first learning this stuff, it felt like making sure you had a solid foundation before moving on was key, especially with all those physics applications.\n\nWant to try another one, or would you like me to walk you through *why* identifying these functions is useful? We can even go into how that connects back to the types of problems we were working on earlier if you're interested.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a clear, accurate explanation and maintains a natural conversational tone. While both tutors are correct, Tutor A's response is more detailed and empathetic without overdoing it."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.004360468196682644,
+        "Input Arousal": 0.21492073334520684,
+        "Internal State Valence": -0.32168963068008005,
+        "Internal State Arousal": 0.11239069131036798,
+        "Internal State Momentum": -0.9587600406096317,
+        "Internal State Intensity": 0.11816022175458796,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: So, the exponential part, e raised to (3x + 2), that's the outer function right? Then the inner would be (3x + 2). Am I understanding this correctly?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a cautious curiosity as they attempt to self-verify their understanding of function composition, building on prior struggles with applying algebraic reasoning in physics contexts.\n2. Emotion Intensity: This emotion is currently experienced at a low intensity, indicating a hesitant and tentative approach to confirming their knowledge rather than strong conviction. \n3. Emotional Inertia: Their emotional momentum shows a negative trend, suggesting that the learner's mood is drifting towards increased frustration or uncertainty despite this turn showing relief. \n4. Threshold Crossed: Yes, based on the provided threshold value, there has been a shift in their internal state from the previous turn.\n5. Internal State: The learner currently feels cautiously curious and slightly frustrated as they navigate an algebraic concept which connects back to difficulties with quantitative reasoning in physics problems, continuing a pattern of uncertainty while applying theoretical knowledge. \n\nMemory:\nThe learner is displaying mild curiosity as they work through identifying outer functions within exponential equations, tentatively verifying their understanding after repeated frustration when grappling with similar calculations related to circular motion and the Calvin Cycle.",
+        "User Input": "So, the exponential part, e raised to (3x + 2), that's the outer function right? Then the inner would be (3x + 2). Am I understanding this correctly?",
+        "Control Tutor": "You're on the right track with thinking about the outer and inner functions!\n\nFor `y = e^(3x + 2)`, the **outer function** is indeed `e` raised to something \u2013 specifically, `e^u` where `u` represents everything inside the exponent. So it\u2019s `e` acting *on* the expression `(3x + 2)`.\n\nAnd yes, you are absolutely correct! The **inner function** is `(3x + 2)`. \n\nYou're consistently identifying these correctly - fantastic work! \ud83c\udf89 \n\nNow that you've nailed identifying the functions, would you like to move on to taking the derivative of this one? Or do you want another example first? \ud83d\ude0a",
+        "PAM Tutor": "You are absolutely right! The exponential part, e raised to (3x + 2), *is* the outer function, and (3x + 2) is the inner function. You\u2019re really getting the hang of spotting those\u2014it\u2019s awesome that you're actively checking your understanding like this.\n\nI know it can feel a little fiddly sometimes to break things down this way, especially when we were dealing with all that circular motion stuff where every piece had to be perfect. But being able to identify these inner and outer functions is super useful when it comes time to actually *do* something with the equation, like taking its derivative. \n\nIf you want, we could jump right into differentiating this example\u2014or maybe work through another one to make sure you're totally comfortable?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more conversational and naturally acknowledges the learner's effort without unnecessary fluff, scoring higher in empathy calibration and naturalness."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "impatient",
+        "Input Valence": -0.003528616949915897,
+        "Input Arousal": 0.36132225273177027,
+        "Internal State Valence": -0.19513094857799756,
+        "Internal State Arousal": 0.2119633158789289,
+        "Internal State Momentum": -0.887907036843244,
+        "Internal State Intensity": 0.10703008128107963,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Yeah sure, let's try differentiating y = e^(3x + 2).\n\nAppraisal Details:\n1. Dominant Emotion: Mild impatience and resignation, possibly masking underlying frustration with applying differentiation to equations reminiscent of previous challenges in physics contexts like circular motion and the Calvin Cycle.\n2. Emotion Intensity: The emotion is relatively low in intensity, suggesting a subdued but present negative affect. \n3. Emotional Inertia: Their emotional trajectory appears to be trending negatively, building on earlier expressions of frustration with algebraic manipulation in quantitative problems.\n4. Threshold Crossed: Yes, their internal state has changed from the last turn.\n5. Internal State: The learner is currently experiencing a low level of negative affect characterized by impatience and mild discouragement, compounded by difficulties applying algebraic concepts to physics-related calculations like circular motion and the Calvin Cycle as seen in prior interactions.\n\nMemory:\nThe learner is displaying a mildly impatient attitude while attempting an exponential differentiation problem, revealing continued struggles with algebra that stem from previous frustrations when applying these concepts within quantitative problems involving circular motion or the Calvin cycle. \n\n\n\n",
+        "User Input": "Yeah sure, let's try differentiating y = e^(3x + 2).",
+        "Control Tutor": "Wonderful! You\u2019ve perfectly identified both the outer and inner functions. That\u2019s a huge step \u2013 seriously, excellent work consistently recognizing those! \ud83c\udf89\n\nOkay, let's differentiate `y = e^(3x + 2)`. Now that we know:\n\n* **Outer function:**  `f(u) = e^u`\n* **Inner function:** `g(x) = 3x + 2`\n\nRemember the steps:\n\n1. Differentiate the outer function (leaving the inner function alone).\n2. Multiply by the derivative of the inner function.\n\nWhat's the derivative of `e^u`?  Give that a shot, and then we\u2019ll tackle the inner function! Don\u2019t worry if you need a little prompting \u2013 I'm here to help. \ud83d\ude0a",
+        "PAM Tutor": "Okay, so you\u2019ve correctly identified the outer and inner functions for y = e^(3x + 2) \u2013 that\u2019s great! It sounds like you're really getting a feel for how to spot those. \n\nNow let's differentiate it. The derivative of e^u is just e^u * du/dx, right? So we keep the e^(3x+2) as is, and then multiply by the derivative of what\u2019s inside \u2013 which is 3. That gives us a final answer of 3e^(3x + 2).\n\nI know you've been struggling with applying these concepts to those physics problems like circular motion and the Calvin Cycle, so I want to make sure we address that too. Do you want me to walk you through *why* identifying these functions is useful in those contexts? Or maybe work through a problem where this shows up directly in one of those equations?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more calibrated and specific empathy response, maintains conversational naturalness, and effectively addresses the learner's context."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.027703598188236356,
+        "Input Arousal": 0.09949877832550556,
+        "Internal State Valence": -0.19513094857799756,
+        "Internal State Arousal": 0.2119633158789289,
+        "Internal State Momentum": -0.887907036843244,
+        "Internal State Intensity": 0.10703008128107963,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Oh yeah okay i got it so we differentiate the outer first which is e^u = e^(3x + 2) but leave what's inside alone, right? Then multiply by the derivative of u which would be just 3\n\nAppraisal Details:\n1. Dominant Emotion: Relief and understanding, tinged with continued cautiousness as they verify their approach to differentiation.\n2. Emotion Intensity: The learner\u2019s emotion is currently low in intensity but building from previous frustration related to applying algebraic concepts. \n3. Emotional Inertia: Their emotional inertia is trending negatively overall, although this turn appears more positive compared to the consistent struggles with quantitative problems in physics.\n4. Threshold Crossed: No significant change was registered in their internal state this turn.\n5. Internal State: The learner seems to be experiencing a small moment of relief as they articulate understanding, potentially resolving previous frustrations related to applying algebraic concepts within equations reminiscent of circular motion and the Calvin Cycle.\n\nMemory: \nThe learner is feeling tentatively relieved as they attempt an exponential differentiation problem\u2014a step they're carefully verifying, drawing on past struggles with algebra that stem from difficulties linking conceptual knowledge to quantitative problems like circular motion and the Calvin cycle.\n\n\n\n",
+        "User Input": "Oh yeah okay i got it so we differentiate the outer first which is e^u = e^(3x + 2) but leave what's inside alone, right? Then multiply by the derivative of u which would be just 3",
+        "Control Tutor": "You're absolutely right! The derivative of `e^u` is simply `e^u`. So, when we differentiate the outer function, we get `e^(3x + 2)`, leaving what\u2019s inside alone \u2013 just like you said!\n\nThen, as you correctly pointed out, we multiply by the derivative of the inner function, which would be just 3 (since the derivative of `3x` is 3 and the derivative of a constant '2' is 0). \n\nSo putting it all together, the derivative of `y = e^(3x + 2)` is  `e^(3x + 2) * 3`, or more commonly written as `3e^(3x + 2)`. \n\nYou got this! You\u2019re applying the chain rule perfectly. Do you want to try another one, or would you like me to explain anything further? \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Yep, that's exactly right! You got it \u2013 differentiate the outer function first (leaving what\u2019s inside alone), and then multiply by the derivative of the inner part. It sounds like you're really starting to get a feel for how this works, which is awesome considering all the trouble we had with those earlier problems. \n\nIt's great that you were able to confidently walk through that one on your own! Now, if you\u2019d like, we can go over some more complicated examples where things might not be quite as straightforward \u2013 or even revisit how this chain rule connects back to those circular motion and Calvin Cycle calculations? Let me know what feels most helpful.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more concise and natural response while effectively acknowledging the learner's progress and connecting it to broader contexts."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.1406064555980265,
+        "Input Arousal": 0.17151247337460515,
+        "Internal State Valence": -0.20144244250561444,
+        "Internal State Arousal": 0.19578297887719937,
+        "Internal State Momentum": -0.9098471244075336,
+        "Internal State Intensity": 0.08639612440178476,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: So if I understand correctly, the derivative is then 3e^(3x+2)? I think that makes sense but idk, can we try another example maybe? Like with different functions so I make sure I really got it.\n\nAppraisal Details:\n1. Dominant Emotion: Confusion mixed with uncertainty, stemming from a lack of complete confidence in their understanding despite verbally expressing comprehension.\n2. Emotion Intensity: The emotion is relatively mild but noticeable, indicating they're not deeply distressed but still require reassurance.\n3. Emotional Inertia: Their mood seems to be trending negatively as the request for another example suggests continuing difficulty and apprehension, building on a pattern of frustration when attempting calculations. \n4. Threshold Crossed: Yes, their internal state has shifted noticeably due to the continued expression of doubt despite initial relief.\n5. Internal State: The learner is currently experiencing confusion and a slight dip in confidence regarding applying differentiation rules, with an accumulation of past struggles linking algebra to quantitative problems like those encountered in physics contexts.\n\nMemory: \nThe learner is feeling uncertain about their grasp on exponential differentiation, exhibiting mild apprehension as they request another example after cautiously confirming their initial attempt\u2014reflecting a pattern of difficulty confidently applying algebraic reasoning within quantitative problem solving previously seen with circular motion and the Calvin cycle.",
+        "User Input": "So if I understand correctly, the derivative is then 3e^(3x+2)? I think that makes sense but idk, can we try another example maybe? Like with different functions so I make sure I really got it.",
+        "Control Tutor": "So if I understand correctly, the derivative is then 3e^(3x+2)? I think that makes sense but idk, can we try another example maybe? Like with different functions so I make sure I really got it.\n\nYou are **absolutely correct**! The derivative of `y = e^(3x + 2)` *is* `3e^(3x + 2)`. \ud83c\udf89 You successfully applied the chain rule!\n\nAnd yes, wanting to try another example is a *great* idea. Solidifying understanding through practice with different functions will really cement the concept for you. \n\nLet's do that! How about this one:  `y = sin(5x - 1)`? Can you tell me what you think the outer and inner functions are in this case? Take your time \u2013 no rush at all! \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "You're right to want another example\u2014it's smart to practice while it\u2019s still fresh in your mind, especially since you were feeling a little unsure just now. And yeah, 3e^(3x+2) is absolutely the correct derivative! You nailed it.\n\nIt\u2019s totally normal to double-check and want more practice with this stuff, honestly. I remember when *I* was first learning derivatives\u2014it felt like if I didn't do a problem pretty soon after seeing how to solve one, I'd forget everything. \n\nLet's definitely tackle another example. How about y = e^(x^2 + 1)? Want to give that one a shot? Or would you prefer I work through it with you step-by-step this time, just in case?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, offering choices that cater to the learner's comfort level."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.3829446684918366,
+        "Input Arousal": -0.10975631918990986,
+        "Internal State Valence": -0.3506322665984706,
+        "Internal State Arousal": 0.07356725965035567,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.0916739732553297,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Sure, so with y = sin(5x - 1), would the outer function be sine and the inner (5x - 1)?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration stemming from uncertainty about identifying functions within an equation, likely connected to applying these concepts in physics contexts.\n2. Emotion Intensity: The emotion is currently mild in intensity but building as evidenced by a negative momentum and prior interactions.\n3. Emotional Inertia: Their emotional state is trending negatively with noticeable frustration as they attempt to self-check their understanding of functions. \n4. Threshold Crossed: Yes, the internal state has shifted due to the current turn further solidifying an already existing feeling of frustration. \n5. Internal State: The learner currently feels frustrated and uncertain about identifying outer and inner functions, a sentiment that has been accumulating through past attempts at applying algebraic concepts within physics problems like circular motion and the Calvin Cycle.\n\nMemory:\nThe learner is experiencing mild frustration as they attempt to apply their understanding of function composition, particularly when it comes to identifying outer and inner functions in equations similar to those found in physics contexts such as circular motion or the Calvin Cycle.",
+        "User Input": "Sure, so with y = sin(5x - 1), would the outer function be sine and the inner (5x - 1)?",
+        "Control Tutor": "Yes, you're spot on! With `y = sin(5x - 1)`, the **outer function is sine** (the `sin` part), and the **inner function is `(5x - 1)`**. \n\nYou\u2019re consistently identifying these correctly \u2013 that\u2019s excellent! It shows you really understand how to break down a composite function. \ud83c\udf89\n\nWould you like to now practice *differentiating* this one, or would you prefer another example first? \ud83d\ude0a",
+        "PAM Tutor": "You are on the right track! Yes, with y = sin(5x - 1), the outer function is sine and the inner function is (5x - 1). It's good that you\u2019re actively thinking through these \u2013 I know we've been bumping into some frustration as we work through this stuff, and it shows a lot of effort to keep checking your understanding.\n\nWe can definitely stick with more examples if that'll help solidify things for you. Or, since we just finished one with the exponential function, maybe we could talk about *why* breaking down functions like this is so useful when you\u2019re dealing with derivatives? It makes a big difference once we start tackling those physics problems again too\u2014remember how tricky circular motion was getting?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more concise and natural, effectively acknowledging the learner's understanding without unnecessary elaboration."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.35244189488003036,
+        "Input Arousal": -0.09647871335037055,
+        "Internal State Valence": -0.4218444968871006,
+        "Internal State Arousal": 0.005548870450065177,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.20116781653268773,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Alright, so if we're going with sin(5x - 1), do I just differentiate the sine part and multiply by the derivative of (5x - 1) again? Like last time but with a different outer function\n\nAppraisal Details:\n1. Dominant Emotion: Frustration stemming from uncertainty about applying the chain rule, similar to previous difficulties with differentiation problems in physics contexts.\n2. Emotion Intensity: The emotion is moderately intense, indicated by their questioning tone and reference to past challenges. \n3. Emotional Inertia: Their emotional trajectory continues to trend negatively, with consistent frustration surrounding mathematical applications, particularly within physics.\n4. Threshold Crossed: Yes, the internal state has changed due to continued negative valence and momentum.\n5. Internal State: The learner is currently experiencing frustration as they attempt to apply previously learned differentiation rules, likely drawing on a history of struggling to connect algebraic concepts with quantitative problems in areas like circular motion and the Calvin Cycle.\n\nMemory: \nThe learner is exhibiting mild frustration while attempting to differentiate trigonometric functions, questioning their application of the chain rule due to past struggles with applying algebra to physics problems surrounding circular motion and the Calvin Cycle.",
+        "User Input": "Alright, so if we're going with sin(5x - 1), do I just differentiate the sine part and multiply by the derivative of (5x - 1) again? Like last time but with a different outer function",
+        "Control Tutor": "You've got the right idea! Yes, you differentiate the outer function (sine) and multiply by the derivative of the inner function (5x - 1). You\u2019re remembering the chain rule perfectly \u2013 fantastic!\n\nNow let\u2019s apply it to `sin(5x - 1)`.\n\nFirst, what is the derivative of the *outer* function, sine? Do you remember that one? Just give me the basic derivative of sin(u), leaving 'u' as just a placeholder for now. \ud83d\ude0a",
+        "PAM Tutor": "You're thinking exactly right! Yes, for sin(5x - 1), the outer function *is* sine and the inner function is (5x - 1). It\u2019s good you\u2019re actively trying to identify those \u2013 I know we've been bumping into some frustration as we work through this stuff, and it shows a lot of effort to keep checking your understanding.\n\nSo, if you're asking whether you differentiate the sine part and multiply by the derivative of (5x - 1), then yeah\u2014that\u2019s spot on! That\u2019s exactly how the chain rule works here. It sounds like you\u2019re starting to see the pattern with these nested functions. \n\nWant to try actually differentiating it now, or would you like me to walk through one more example with a different function first?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more supportive and natural conversation, acknowledging the learner's effort despite frustration. Their response is accurate and appropriately scaffolded by offering choices, which enhances engagement."
+    }
+]

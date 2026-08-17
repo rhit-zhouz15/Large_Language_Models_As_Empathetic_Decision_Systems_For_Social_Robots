@@ -14,7 +14,7 @@ class AppraisalEngine:
     def __init__(self):
         self.valence = 0.0 # scale of -1 to 1 where the positives measure pleasure and negatives measure displeasure. Uses positives and negatives so decay rate resets close to neutral
         self.arousal = 0.0 # same scale and reasoning as valence
-        self.decay_rate = 0.2 # scale of 0 to 1 for how quickly the valence and arousal decays
+        self.decay_rate = 0.4 # scale of 0 to 1 for how quickly the valence and arousal decays
         self.momentum = 0.0 # scale of -1 to 1 for positive or negative valence/arousal change
         self.intensity = 0.0 # scale of 0 to 1 where repeated emotions raise the intensity
         self.threshold = 0.2 # scale of 0 to 1 where emotions with a norm that's above the threshold changes the internal state and a norm below doesn't affect the internal state
@@ -45,7 +45,7 @@ class AppraisalEngine:
             self.momentum = self.clamp(self.momentum + 
                                        ((input_valence * MOMENTUM_VALENCE_MULT) + (input_arousal * MOMENTUM_AROUSAL_MULT)), -1, 1)
             
-            intensity_mult = 0.4 if repeated_emotion else 0.2
+            intensity_mult = 0.4 if repeated_emotion else 0.1
             self.intensity = self.clamp(((self.intensity * (1 - self.decay_rate)) + (distance * intensity_mult)), 0, 1)
 
             # print(f'''

@@ -1,0 +1,106 @@
+{
+    "analysis_by_interaction": {
+        "total_interactions": 100,
+        "pam_wins": 66,
+        "control_wins": 27,
+        "ties": 6,
+        "none_or_errors": 1,
+        "pam_pct": 66.0,
+        "control_pct": 27.0,
+        "tie_pct": 6.0,
+        "none_pct": 1.0,
+        "pam_wins_by_turn": {
+            "1": 8,
+            "2": 8,
+            "4": 10,
+            "6": 8,
+            "8": 7,
+            "9": 7,
+            "10": 4,
+            "7": 4,
+            "3": 4,
+            "5": 6
+        }
+    },
+    "analysis_by_conversation": {
+        "total_conversations": 10,
+        "pam_wins": 9,
+        "control_wins": 0,
+        "ties": 1,
+        "pam_pct": 90.0,
+        "control_pct": 0.0,
+        "tie_pct": 10.0
+    },
+    "analysis_by_dimension": {
+        "skipped_bad_format": 1,
+        "n_scored_interactions": 99,
+        "per_dimension": {
+            "pedagogical_accuracy": {
+                "mean_delta": -0.12121212121212122,
+                "pct_pam_gt_control": 11.11111111111111,
+                "pct_control_gt_pam": 27.27272727272727,
+                "pct_tied": 61.61616161616161,
+                "wilcoxon_stat": 250.0,
+                "wilcoxon_p": 0.054773406041349004,
+                "significant_at_0.05": false
+            },
+            "empathy_calibration": {
+                "mean_delta": 0.48484848484848486,
+                "pct_pam_gt_control": 56.56565656565656,
+                "pct_control_gt_pam": 19.19191919191919,
+                "pct_tied": 24.242424242424242,
+                "wilcoxon_stat": 636.5,
+                "wilcoxon_p": 5.048300610165677e-06,
+                "significant_at_0.05": true
+            },
+            "conversational_naturalness": {
+                "mean_delta": 0.6565656565656566,
+                "pct_pam_gt_control": 70.70707070707071,
+                "pct_control_gt_pam": 21.21212121212121,
+                "pct_tied": 8.080808080808081,
+                "wilcoxon_stat": 843.0,
+                "wilcoxon_p": 9.765419083608494e-08,
+                "significant_at_0.05": true
+            },
+            "scaffolding_appropriateness": {
+                "mean_delta": -0.030303030303030304,
+                "pct_pam_gt_control": 25.252525252525253,
+                "pct_control_gt_pam": 32.323232323232325,
+                "pct_tied": 42.42424242424242,
+                "wilcoxon_stat": 790.5,
+                "wilcoxon_p": 0.7529093901963995,
+                "significant_at_0.05": false
+            }
+        },
+        "conditional_means_by_pick": {
+            "Judge picked PAM": {
+                "pedagogical_accuracy": 0.030303030303030304,
+                "empathy_calibration": 0.9090909090909091,
+                "conversational_naturalness": 1.196969696969697,
+                "scaffolding_appropriateness": 0.21212121212121213
+            },
+            "Judge picked Control": {
+                "pedagogical_accuracy": -0.5185185185185185,
+                "empathy_calibration": -0.5185185185185185,
+                "conversational_naturalness": -0.4074074074074074,
+                "scaffolding_appropriateness": -0.6296296296296297
+            }
+        },
+        "logistic_regression": {
+            "coefficients": {
+                "pedagogical_accuracy": 1.0547536755575453,
+                "empathy_calibration": 1.6683636087347058,
+                "conversational_naturalness": 1.755591436285624,
+                "scaffolding_appropriateness": 0.8489722339308385
+            },
+            "train_accuracy": 0.956989247311828
+        }
+    },
+    "sign_test": {
+        "pam_wins": 9,
+        "control_wins": 0,
+        "ties": 1,
+        "decisive_conversations": 9,
+        "p_value": 0.00390625
+    }
+}

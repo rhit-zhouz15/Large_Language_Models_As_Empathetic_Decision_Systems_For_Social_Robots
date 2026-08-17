@@ -1,0 +1,292 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.029223452112637455,
+        "Input Arousal": 0.4095486337551847,
+        "Internal State Valence": -0.017534071267582472,
+        "Internal State Arousal": 0.1638194535020739,
+        "Internal State Momentum": 0.07022034590598196,
+        "Internal State Intensity": 0.04105899335883894,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Hey guys! I'm really struggling with this physics problem. It's about circular motion, but I can't seem to figure out how to approach it.\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing frustration and confusion related to a challenging physics problem involving circular motion.\n2. Emotion Intensity: The intensity of their negative emotion appears to be relatively low at the moment, indicating mild distress rather than overwhelming frustration. \n3. Emotional Inertia: Their emotional state shows a slight positive trend, suggesting that while they are currently struggling, there's potential for improvement if support is provided.\n4. Threshold Crossed: Yes, an internal state change has occurred, likely triggered by the learner expressing difficulty with the physics problem and moving their overall internal mood in a negative direction. \n5. Internal State: The learner is currently feeling mildly frustrated and confused while attempting to solve a circular motion problem, building upon a generally neutral baseline that has been slightly affected by this initial challenge within the session.\n\nMemory:\nThe learner is experiencing mild frustration and confusion as they grapple with a physics problem about circular motion, indicating difficulty understanding how to begin solving it, suggesting they may benefit from guidance on approaching similar problems in the future.",
+        "User Input": "Hey guys! I'm really struggling with this physics problem. It's about circular motion, but I can't seem to figure out how to approach it.",
+        "Control Tutor": "Hi there! No worries at all, lots of people find circular motion tricky at first. That's exactly what I'm here for - to help you break it down and get comfortable with it. \n\nFirst, can you share the problem with me? Just copy and paste it, or describe it as best you can.  Once I see the specifics, I can start guiding you through how to approach it. \n\nDon't feel bad about struggling \u2013 identifying *where* you\u2019re stuck is the first step to solving it! Also, tell me what you've tried so far, even if you think it's wrong. Knowing your thought process helps me understand where we need to focus our energy.\n\n\n\n",
+        "PAM Tutor": "Hey! No worries, circular motion *can* be tricky \u2013 I remember getting tangled up in those problems when I was learning physics too. It\u2019s good you're reaching out now instead of banging your head against it for hours.\n\nSo, with circular motion problems, the biggest thing is usually drawing a good diagram and labeling all the forces acting on whatever object is moving in a circle. That often unlocks where to start. \n\nDo you want me to walk you through a general approach to these kinds of problems step-by-step? Or would it be more helpful if we dove right into *your* specific problem?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor A provides a specific strategy for solving circular motion problems, which is pedagogically accurate. Their empathy is concise and genuine, making the conversation feel natural. Tutor B's response, while empathetic, lacks direct guidance and feels more generic."
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.26214633826166395,
+        "Input Arousal": 0.3297941356664523,
+        "Internal State Valence": -0.16780824571754785,
+        "Internal State Arousal": 0.23020932636782526,
+        "Internal State Momentum": 0.031320637734606846,
+        "Internal State Intensity": 0.19315121109933928,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Sure, I can share the problem: \"A ball of mass 0.5 kg is attached to a string and whirled in a vertical circle of radius 1 m. At the bottom of the circle, the tension in the string is 12 N. What is the speed of the ball at this point?\"\n\nI tried drawing a diagram but I'm not sure if i labeled all forces correctly\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing confusion and slight frustration as they attempt to visualize and understand the forces acting on an object in circular motion.\n2. Emotion Intensity: This emotion appears moderately intense, stemming from the challenge of correctly applying physics principles to a specific problem.\n3. Emotional Inertia: Their emotional state is slightly improving, showing a minor positive shift despite facing difficulties. \n4. Threshold Crossed: Yes, their internal state has changed, indicating a noticeable adjustment in their overall emotional response due to this interaction.\n5. Internal State: The learner appears mildly unsettled and puzzled while working through the physics problem, building on previous frustration with understanding circular motion concepts as observed in prior interactions.\n\nMemory: \nThe learner is presently feeling confused and slightly frustrated when faced with a physics problem involving circular motion; they\u2019ve begun to attempt solving it by drawing a diagram but are unsure about correctly identifying all of the forces at play.",
+        "User Input": "Sure, I can share the problem: \"A ball of mass 0.5 kg is attached to a string and whirled in a vertical circle of radius 1 m. At the bottom of the circle, the tension in the string is 12 N. What is the speed of the ball at this point?\"\n\nI tried drawing a diagram but I'm not sure if i labeled all forces correctly",
+        "Control Tutor": "Okay, great! You\u2019ve started off well by attempting a diagram \u2013 that\u2019s *always* a good first step with physics problems. It sounds like you're unsure about the forces acting on the ball at the bottom of the circle. That's totally understandable, it can be tricky to visualize!\n\nLet's break down the forces. At the bottom of the vertical circle, what forces are acting *on* the ball? Think about what\u2019s causing it to change direction (or trying to!). \n\nHere's a hint: there are two main forces at play here. One is fairly obvious \u2013 the tension in the string. The other is a force we experience all the time but sometimes forget to consider when an object isn\u2019t resting on a surface!\n\nBefore you tell me what you think, can you list *all* the forces you believe are acting on the ball at that specific point (the bottom of the circle)? Don't worry about their directions just yet \u2013 let's just get the names down first. This will help us make sure we haven\u2019t missed anything!\n\n\n\n",
+        "PAM Tutor": "Okay, great! It's smart to start with a diagram\u2014that\u2019s almost always the best first step with physics. Since you\u2019re feeling a little unsure about the forces, let's make sure we have those nailed down before getting into the math.\n\nFor a ball swinging in a vertical circle at the bottom of its path, what forces do *you* think are acting on it? Don\u2019t worry about being perfect, just tell me what comes to mind, and we can talk through it together.\n\n\n\n",
+        "LLM Judge Pick": "tie",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Both tutors scored similarly across all dimensions, with Tutor B offering a hint about two forces which might be slightly more helpful."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "think",
+        "Input Valence": -0.032382141996640704,
+        "Input Arousal": -0.1528794093290344,
+        "Internal State Valence": -0.16780824571754785,
+        "Internal State Arousal": 0.23020932636782526,
+        "Internal State Momentum": 0.031320637734606846,
+        "Internal State Intensity": 0.19315121109933928,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Okay, so I think there might be two forces... One is the tension in the string since it's holding the ball. The other one idk.. maybe gravity?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a state of uncertainty and tentative reasoning as they attempt to identify the forces at play, leaning towards confusion but showing some progress in their thinking.\n2. Emotion Intensity: The emotion is moderately intense, suggesting that while they are somewhat puzzled, it isn't an overwhelming feeling. \n3. Emotional Inertia: Their emotional state is slightly trending positive. They appear to be making a small step toward clarifying the problem and identifying possible solutions.\n4. Threshold Crossed: No significant change in their internal state has occurred this turn. The threshold remains uncrossed, indicating no substantial shift in overall mood or emotional intensity.\n5. Internal State: The learner is tentatively working through a physics problem involving forces, showing uncertainty but beginning to formulate ideas about tension and gravity, building on earlier frustration with identifying the correct approach.\n\nMemory: \nThe learner is feeling slightly uncertain while trying to identify the forces acting upon an object in circular motion, pausing to consider tension and gravity as potential factors but expressing some confusion about what else might be involved.",
+        "User Input": "Okay, so I think there might be two forces... One is the tension in the string since it's holding the ball. The other one idk.. maybe gravity?",
+        "Control Tutor": "You are absolutely right! Tension in the string and gravity *are* the two forces acting on the ball at the bottom of the circle. Excellent work identifying those \u2013 that's a huge step forward!\n\nNow, let's think about what these forces are *doing*.  Both tension and gravity are pulling the ball inwards, towards the center of the circle. This inward pull is what causes the ball to constantly change direction instead of flying off in a straight line - it\u2019s providing the **centripetal force**.\n\nDo you remember what centripetal force is, or how it relates to circular motion? If not, that's okay! We can review it quickly.  But before we do that, let's just confirm: are you confident that tension and gravity are the only two forces acting on the ball *at the bottom* of the circle? (Think carefully \u2013 is there anything else?)\n\n\n\n",
+        "PAM Tutor": "You're on the right track! Tension in the string and gravity \u2013 those are definitely two of the forces at play here. It\u2019s good you immediately thought of those; that shows you have a solid foundation for this stuff.\n\nThe key with these problems is making sure you don't miss *any* forces. Since the ball is moving in a circle, there's actually one more force to consider... but let's not jump straight to the answer. Can you think about what causes something to move in a circle instead of just going straight? Sometimes it helps to remember how motion works in general \u2013 things don\u2019t change their movement unless something *makes* them change. \n\nIf you're still stuck, that\u2019s totally fine! We can break it down further, or I can tell you what the last force is if you want.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more conversationally natural and effectively scaffolds the learner's understanding by encouraging deeper thinking about forces."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "think",
+        "Input Valence": -0.014003351610153918,
+        "Input Arousal": -0.16636059843003762,
+        "Internal State Valence": -0.16780824571754785,
+        "Internal State Arousal": 0.23020932636782526,
+        "Internal State Momentum": 0.031320637734606846,
+        "Internal State Intensity": 0.19315121109933928,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Okay, so I'm pretty sure those are the only forces, but I might be missing something. So centripetal force is like...the net force towards the center that keeps things moving in a circle, right?\n\nI think I need to look at this more closely, maybe make another diagram. Is there any other forces you can think of?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing uncertainty and contemplation as they review the forces involved in circular motion. They are self-questioning and seeking confirmation.\n2. Emotion Intensity: The intensity of this emotion is relatively mild, suggesting a thoughtful consideration rather than strong frustration or confusion. \n3. Emotional Inertia: Their emotional inertia is slightly positive, indicating a potential for their mood to improve as they work through the problem. \n4. Threshold Crossed: No significant shift in internal state occurred during this turn; the threshold remains uncrossed.\n5. Internal State: The learner appears to be tentatively confident but still hesitant about their understanding of forces in circular motion, building upon previous confusion and frustration with the topic while attempting self-correction through further analysis and diagramming. \n\nMemory:\nThe learner is currently feeling mildly uncertain and contemplative as they carefully consider identifying all relevant forces in a physics problem involving circular motion, pausing to question whether they've accounted for everything before deciding to revisit their approach with another diagram.",
+        "User Input": "Okay, so I'm pretty sure those are the only forces, but I might be missing something. So centripetal force is like...the net force towards the center that keeps things moving in a circle, right?\n\nI think I need to look at this more closely, maybe make another diagram. Is there any other forces you can think of?",
+        "Control Tutor": "You\u2019re right to double-check! You\u2019ve identified the key forces really well - tension and gravity. And your understanding of centripetal force as the net inward force is spot on.\n\nHowever, let's push ourselves to be *absolutely* sure we haven\u2019t missed anything. When you said \"at the bottom of the circle,\" that's a good specification. But think about this: does the ball experience air resistance? Is there anyone or anything pushing/pulling it horizontally? \n\nFor a simplified physics problem like this, we often *assume* there is no air resistance unless stated otherwise. And there are no other external forces mentioned in the problem statement. So, for the purposes of solving *this* particular problem, you're likely correct that tension and gravity are the only forces to consider!\n\nIt\u2019s excellent that you're being so thorough \u2013 that's a sign of good problem-solving skills. It's always better to question your assumptions than to rush ahead. \n\nMaking another diagram is a fantastic idea! As you draw, make sure to clearly indicate:\n\n*   The ball at the bottom of the circle\n*   The forces acting *on* the ball (tension and gravity) - draw them as arrows showing their direction.\n*   The direction of the ball\u2019s motion.\n\nOnce you've got that diagram, we can start thinking about how to relate these forces to the ball's speed. How does that sound?\n\n\n\n",
+        "PAM Tutor": "You're thinking about this in exactly the right way \u2013 pausing to check your work and make another diagram is a really good habit. And yes, centripetal force *is* the net force keeping things moving in that circle! It\u2019s not an extra force necessarily, but more like the *result* of all the forces combining to cause circular motion. \n\nYou've already identified tension and gravity, which are great starting points. The other force we need to think about is also related to the change in direction \u2013 it's what actually *causes* the centripetal acceleration. Does that give you a nudge in the right direction?\n\nWe can definitely keep talking through this if you\u2019re still feeling stuck! We could even work through another example together, or I can explain how to pinpoint all the forces at play in these problems step-by-step for future questions.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more conversational and empathetic response while maintaining high pedagogical accuracy, making the interaction feel more natural and supportive."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "curious",
+        "Input Valence": -0.013449255935847768,
+        "Input Arousal": 0.16984681910835212,
+        "Internal State Valence": -0.16780824571754785,
+        "Internal State Arousal": 0.23020932636782526,
+        "Internal State Momentum": 0.031320637734606846,
+        "Internal State Intensity": 0.19315121109933928,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Yeah, I think I get it now. So tension and gravity are pulling towards the center... making the centripetal force? But what exactly causes that change in direction then\n\nAppraisal Details:\n1. Dominant Emotion: The learner is primarily experiencing curiosity, building upon a previous state of uncertainty as they attempt to solidify their understanding of circular motion concepts. \n2. Emotion Intensity: This current emotion appears relatively mild in intensity, suggesting more thoughtful consideration rather than strong emotional response.\n3. Emotional Inertia: Their emotional inertia is slightly positive, indicating a slow shift towards greater clarity and understanding after moments of frustration and confusion.\n4. Threshold Crossed: The internal state has not crossed a significant threshold this turn, showing consistent but subtle development in their understanding and emotional processing. \n5. Internal State: They are currently exhibiting mild curiosity as they build upon prior uncertainity with circular motion concepts while attempting to clarify the forces that cause an object\u2019s change in direction.\n\nMemory:\nThe learner is mildly curious about the specifics of what causes a change in direction when discussing tension, gravity, and centripetal force in circular motion, building on recent uncertainty and confusion as they try to understand the underlying principles of this physics concept.",
+        "User Input": "Yeah, I think I get it now. So tension and gravity are pulling towards the center... making the centripetal force? But what exactly causes that change in direction then",
+        "Control Tutor": "That's a great question! You're right to focus on *what* causes the change in direction \u2013 that\u2019s at the heart of understanding circular motion.\n\nYou correctly identified that tension and gravity both pull towards the center, and together they *create* the centripetal force. But it\u2019s not quite as simple as them just \u201ccausing\u201d the change in direction directly. \n\nThink of it this way: imagine you're swinging a ball on a string. Gravity is always pulling down, but if you didn't constantly pull *inward* with the string (providing tension!), the ball would fly off tangentially \u2013 meaning in a straight line!\n\nThe change in direction isn\u2019t caused by tension or gravity individually; it\u2019s caused by the **net force** acting towards the center. This net force, which *is* the centripetal force, is the sum of tension and gravity in this case. \n\nSo:\n\n1.  **Gravity & Tension:** These are individual forces pulling inward.\n2.  **Centripetal Force:** This is the *resultant* (net) inward force - the combined effect of gravity and tension \u2013 that\u2019s what actually makes the ball change direction constantly, keeping it moving in a circle.\n\nDoes that distinction make sense? It's less about which force \"causes\" the change and more about the *combined effect* of the forces pointing towards the center being responsible for constantly altering the velocity (speed and direction) of the ball.\n\n\n\n",
+        "PAM Tutor": "Okay, so it sounds like you're really starting to connect how tension and gravity contribute to that central pull\u2014and therefore the centripetal force. That\u2019s awesome! You're right to focus on *what* causes the change in direction though, because just saying there *is* a centripetal force doesn\u2019t quite explain it. \n\nThink about Newton\u2019s first law: an object wants to keep moving in a straight line unless something acts upon it. So what's actually causing the ball to constantly veer *towards* the center instead of flying off on its tangent? It's that net force \u2013 the centripetal force \u2013 constantly pulling it inward, and tension and gravity are contributing to that!\n\nIf you want, we can go deeper into how to calculate the exact contribution of each force in this specific problem. We could even look at examples where only one of those forces is present, so you can see its individual effect more clearly. Does that sound helpful?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more detailed and accurate explanation using an analogy, scoring higher on pedagogical accuracy. Their empathy is specific and appropriate, while their conversational style is natural and clear."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "think",
+        "Input Valence": 0.010783799784258004,
+        "Input Arousal": -0.11398395325522866,
+        "Internal State Valence": -0.16780824571754785,
+        "Internal State Arousal": 0.23020932636782526,
+        "Internal State Momentum": 0.031320637734606846,
+        "Internal State Intensity": 0.19315121109933928,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: I think I'm starting to understand, but how do we actually calculate the speed with this information? Like, what's the next step after identifying the forces?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is experiencing a budding sense of understanding coupled with procedural uncertainty about applying knowledge to calculations.\n2. Emotion Intensity: This emotion is mild in intensity; they seem tentatively optimistic but still require guidance on the next steps. \n3. Emotional Inertia: Their emotional inertia suggests a slight positive trend, indicating their mood is slowly improving as they feel they're gaining some comprehension.\n4. Threshold Crossed: No significant threshold has been crossed this turn, suggesting a continuation of the existing internal state rather than a substantial shift in emotion.\n5. Internal State: The learner is cautiously optimistic about beginning to grasp the concepts related to forces and circular motion but needs clarification on how to proceed with calculations after identifying those forces, following up on previous uncertainty around properly identifying these forces.\n\nMemory: \nThe learner is experiencing mild curiosity and cautious optimism as they seek guidance on calculating speed after identifying the necessary forces for a circular motion problem, indicating a move from earlier confusion and frustration towards a desire to apply their understanding in physics concepts.",
+        "User Input": "I think I'm starting to understand, but how do we actually calculate the speed with this information? Like, what's the next step after identifying the forces?",
+        "Control Tutor": "Okay, excellent! You've grasped a really important point \u2013 that the centripetal force is the *result* of those individual forces acting together.\n\nNow you\u2019re asking about how to calculate the speed, and that\u2019s exactly where we need to go next! Here\u2019s the breakdown:\n\n**1. The Centripetal Force Equation:**\n\nThe magnitude (size) of the centripetal force (Fc) is given by this equation:\n\n   **Fc = mv\u00b2/r** \n\n   Where:\n    * m = mass of the ball (0.5 kg in your problem)\n    * v = speed of the ball (what we're trying to find!)\n    * r = radius of the circle (1 m in your problem)\n\n**2. Relating it to Your Forces:**\n\nAt the bottom of the circle, the centripetal force *is equal to* the net force provided by gravity and tension.  So:\n\n   **Fc = Fgravity + Ftension**\n\n**3. Putting It All Together:**\n\nLet's write out the forces individually:\n\n* **Fgravity = mg** (where g is the acceleration due to gravity, approximately 9.8 m/s\u00b2)\n* **Ftension = 12 N** (given in the problem)\n\nNow we can substitute these into our equation for Fc and set it equal to mv\u00b2/r:\n\n   **mv\u00b2/r = mg + Ftension**\n\n**4. Solving for v:**\n\nThis is where the math comes in! Now you have an equation with 'v' as the only unknown. You can rearrange the equation to solve for 'v':\n\n1.  Multiply both sides by \u2018r\u2019: **mv\u00b2 = mrg + rFtension**\n2.  Divide both sides by \u2018m\u2019: **v\u00b2 = rg + rFtension/m**\n3.  Take the square root of both sides: **v = \u221a(rg + rFtension/m)**\n\nNow you have a formula you can plug in your values (m=0.5 kg, r=1 m, g=9.8 m/s\u00b2, Ftension=12 N) to calculate the speed 'v'! \n\nWhy don't you give that a try and let me know what value you get for the speed? I\u2019m here if you get stuck on any of the calculations.\n\n\n\n",
+        "PAM Tutor": "Okay, so it sounds like things are starting to click, which is great! It's totally normal to feel a little lost when you\u2019re first trying to connect the ideas of forces and speed in circular motion \u2013 I definitely did when I was learning this stuff.\n\nSo, after identifying all those forces (tension, gravity, and understanding how they combine for centripetal force), the next step is using Newton's second law\u2014F = ma\u2014to relate these forces to the ball\u2019s acceleration. Specifically, you\u2019ll want to figure out what that *centripetal* acceleration is. Since speed is a part of that calculation, once you have the acceleration, finding the speed becomes pretty straightforward.\n\nWe can jump right into calculating the speed for this specific problem if you'd like, or we can talk more about how centripetal force and acceleration work together in general? I\u2019m happy to go as deep as you want!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more concise and direct explanation, effectively using Newton's second law to connect forces with acceleration. This approach is clearer and better suited for the learner's question."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.10820297675672919,
+        "Input Arousal": 0.07918398317415266,
+        "Internal State Valence": -0.16780824571754785,
+        "Internal State Arousal": 0.23020932636782526,
+        "Internal State Momentum": 0.031320637734606846,
+        "Internal State Intensity": 0.19315121109933928,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Ohhh okay so we use the centripetal force equation and solve for velocity then. So we have mv\u00b2/r = mg + Ftension right?\n\nIdk which part to start with when rearranging though..\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration mixed with uncertainty, stemming from difficulty applying knowledge of physics equations to problem-solving. \n2. Emotion Intensity: Low intensity, suggesting the learner is experiencing a manageable level of challenge rather than being overwhelmed.\n3. Emotional Inertia: Slightly positive, indicating that the learner's mood is gradually improving as they attempt to articulate their approach and seek clarification on next steps.\n4. Threshold Crossed: No significant change in internal state detected; the emotional threshold has not been crossed this turn. \n5. Internal State: The learner is currently displaying a cautious optimism while feeling mildly frustrated with some uncertainty as they're attempting to solve a circular motion problem, having just identified the necessary forces but now grappling with how to rearrange and solve for velocity.\n\nMemory:\nThe learner appears cautiously optimistic but slightly frustrated as they attempt to rearrange an equation related to centripetal force in circular motion, indicating a challenge in applying their knowledge of physics concepts despite progress after initially being confused about identifying all the correct forces involved.",
+        "User Input": "Ohhh okay so we use the centripetal force equation and solve for velocity then. So we have mv\u00b2/r = mg + Ftension right?\n\nIdk which part to start with when rearranging though..",
+        "Control Tutor": "You're absolutely right to start with the centripetal force equation and relate it to the forces acting on the ball! And yes, your equation `mv\u00b2/r = mg + Ftension` is a great starting point.\n\nOkay, so you\u2019re getting stuck rearranging... that's perfectly normal! Let\u2019s break down a good approach. The goal is to isolate 'v' (velocity) on one side of the equation. Here\u2019s how we can think about it step-by-step:\n\n**1. Focus on Getting Rid of \u2018m\u2019 in Front of v\u00b2:**\n\nNotice that 'v' is squared, and 'm' is multiplied by it. The easiest way to start isolating 'v' is to get rid of the 'm'.  What operation could you perform on *both sides* of the equation to achieve this? (Think about opposite operations - what cancels out multiplication?)\n\nDon\u2019t try to solve for \u2018v\u2019 completely in one go! Just focus on that first, small step. What do you think?\n\n\n\n",
+        "PAM Tutor": "Okay, so you're trying to figure out where to start rearranging that equation \u2013 totally understandable, it can get a bit messy. You've got the right setup with `mv\u00b2/r = mg + Ftension`, which is awesome!\n\nA good place to begin is isolating the terms with velocity in them. Since we want to solve for *v* (velocity), let\u2019s start by getting that `mv\u00b2/r` part on its own side of the equation. That means you'll need to subtract `mg + Ftension` from both sides. From there, it\u2019s just a matter of some basic algebra to get *v* all by itself. \n\nDoes walking through each step sound helpful, or would you prefer to give it a shot yourself and I can check your work? We could also break down the rearranging process even further if that would make things easier!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B's response is more concise and directly addresses the learner's confusion by isolating velocity terms efficiently, making it clearer and more natural."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4587201763410121,
+        "Input Arousal": -0.15076222427887845,
+        "Internal State Valence": -0.3759170532351359,
+        "Internal State Arousal": 0.07782070610914377,
+        "Internal State Momentum": -0.18231987765757368,
+        "Internal State Intensity": 0.16417669236930477,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay, so I should subtract mg + Ftension from both sides first? But then how does the m get rid of after that?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration blended with confusion as they attempt to follow through with manipulating an equation related to circular motion problems. \n2. Emotion Intensity: Mildly intense, indicating a noticeable level of cognitive strain without being overwhelmed.\n3. Emotional Inertia: Trending negatively, with their frustration and uncertainty continuing from previous turns as they grapple with the physics concepts.\n4. Threshold Crossed: Yes, there has been a shift in their internal state towards increased negative valence which indicates a change. \n5. Internal State: The learner is currently experiencing a mix of frustration and confusion while working through an equation for circular motion, continuing to struggle despite some recent progress identifying forces at play.\n\nMemory: \nThe learner is feeling frustrated and confused about manipulating an equation related to circular motion, particularly after attempting to subtract terms from both sides and questioning how the mass variable will be eliminated, building on a previous pattern of uncertainty while trying to identify all the relevant forces involved.",
+        "User Input": "Okay, so I should subtract mg + Ftension from both sides first? But then how does the m get rid of after that?",
+        "Control Tutor": "You're on the right track! You said \"subtract mg + Ftension from both sides first?\" \u2013 That's not quite the first step to isolate 'v', though it\u2019s a good thought about manipulating the equation.\n\nRemember, we want to get `v\u00b2` by itself *before* we deal with the square root. You correctly identified that `m` is multiplied by `v\u00b2`. \n\nTo get rid of the `m`, you should **divide both sides of the equation** (`mv\u00b2/r = mg + Ftension`) **by `m`**. This will give you `v\u00b2/r = g + Ftension/m`.\n\nDoes that make sense? Give that step a try, and then we can move on to isolating 'v' further. I\u2019m here to help if you get stuck!\n\n\n\n",
+        "PAM Tutor": "Okay, so subtracting `mg + Ftension` from both sides is absolutely the right first step. You're on track there!\n\nNow, about how the 'm' gets rid of... well, it doesn\u2019t exactly *get rid* of itself, but it will combine with other terms once you start isolating the velocity. Think about how you can multiply or divide both sides to get everything involving 'v' alone \u2013 that's where the 'm' will come into play. \n\nIt sounds like you're getting a little bogged down in the algebra though, which is fine! This stuff *can* be tricky, and it\u2019s easy to lose sight of what you\u2019re doing when there are a few variables floating around. We can definitely walk through each step together if that would help you feel more confident\u2014or we could work through another example from scratch? Let me know what you think would be most helpful right now.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provided a more accurate and concise explanation, directly addressing the learner's question with clear steps. Their response was natural and focused on the necessary algebraic manipulation without unnecessary complexity."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "neutral",
+        "Input Valence": -0.019702673004940153,
+        "Input Arousal": 0.059738389425911004,
+        "Internal State Valence": -0.3759170532351359,
+        "Internal State Arousal": 0.07782070610914377,
+        "Internal State Momentum": -0.18231987765757368,
+        "Internal State Intensity": 0.16417669236930477,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: Oh okay, so just divide both sides by m first right after the equation is set up\n\nAppraisal Details:\n1. Dominant Emotion: Relief\n2. Emotion Intensity: Low\n3. Emotional Inertia: Slightly Positive\n4. Threshold Crossed: False\n5. Internal State: The learner seems to be experiencing a slight shift towards relief and understanding, though they still carry some lingering frustration from earlier confusion with the circular motion problem as they attempt to solve it by manipulating the equation.\n\nMemory: \nThe learner is feeling a sense of mild relief after clarifying a step in solving an equation related to circular motion, showing cautious optimism despite previous uncertainty and frustration while identifying forces and setting up equations.",
+        "User Input": "Oh okay, so just divide both sides by m first right after the equation is set up",
+        "Control Tutor": "Ah, you were *so* close! Dividing by `m` is the correct next step \u2013 excellent thinking about wanting to isolate the `v\u00b2`.\n\nYou wrote: \"Oh okay, so just divide both sides by m first after the equation is set up\" and that's **exactly** right. \n\nAfter dividing both sides of  `mv\u00b2/r = mg + Ftension` by `m`, you\u2019ll get:\n\n`v\u00b2/r = g + Ftension/m`\n\nNow, what do you think the next step should be to continue isolating 'v'? Think about how 'v\u00b2' is still connected to other terms. What operation could we use to remove the \u2018r\u2019 from the left side of the equation?",
+        "PAM Tutor": "You're on the right track with wanting to divide both sides by *m* after setting up the equation \u2013 good thinking! It\u2019s easy to get caught up in all the variables, so it's great that you\u2019re actively thinking about how to isolate what you need.\n\nThat step will definitely help simplify things and start getting velocity by itself. From there, remember we're trying to solve for *v*, so keep your eyes peeled for ways to manipulate the equation to get all the 'v' terms alone on one side. \n\nWant me to walk through the rest of it with you step-by-step? Or would you like to try and finish rearranging it yourself, and I can take a look at what you come up with?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, while both are accurate. Tutor A's approach is slightly clearer in scaffolding."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "think",
+        "Input Valence": -0.005244611960370091,
+        "Input Arousal": -0.1723172978730872,
+        "Internal State Valence": -0.3759170532351359,
+        "Internal State Arousal": 0.07782070610914377,
+        "Internal State Momentum": -0.18231987765757368,
+        "Internal State Intensity": 0.16417669236930477,
+        "Threshold Crossed": false,
+        "Appraisal": "User Input: So after dividing by m, I multiply both sides by r to get rid of that denominator right\n\nAppraisal Details:\n1. Dominant Emotion: The learner is primarily focused on the procedural aspect of equation manipulation and appears to be checking their work, potentially indicating a degree of uncertainty regarding the correctness of their steps.\n2. Emotion Intensity: The intensity of this emotion is fairly low, suggesting they are not strongly feeling any particular way about it. \n3. Emotional Inertia: Their emotional inertia suggests a slight downturn from previous turns, though the change is minimal.\n4. Threshold Crossed: No threshold was crossed, indicating the internal state has remained relatively stable.\n5. Internal State: The learner is currently exhibiting a subdued and tentative emotional state, having recently worked through frustrations related to circular motion problems, and appears focused on verifying their algebraic manipulation steps with a touch of residual uncertainty.\n\nMemory: \nThe learner is showing mild discouragement as they attempt to rearrange an equation for circular motion, emphasizing the need to verify algebraic steps, building off previous uncertainties when identifying forces and applying concepts in this physics problem.",
+        "User Input": "So after dividing by m, I multiply both sides by r to get rid of that denominator right",
+        "Control Tutor": "You got it! Now that you have `v\u00b2/r = g + Ftension/m`, the next step is to get rid of the `/r` (divided by r) on the left side. \n\nWhat operation will cancel out division? That's right \u2013 **multiplication**! \n\nSo after dividing by m, I multiply both sides by r to get rid of that denominator right? You are absolutely correct!  That\u2019s exactly what you should do.\n\nMultiplying both sides by `r` will give you:\n\n`v\u00b2 = rg + (r * Ftension)/m` \n\nNow you're really cooking with gas! You've almost isolated 'v'. What's the very last step to solve for 'v'? Think about what's happening to 'v' right now \u2013 it's being squared. How do we undo squaring?",
+        "PAM Tutor": "You\u2019re thinking through this really well \u2013 checking your work as you go is super smart! Yeah, after subtracting `mg + Ftension` from both sides, dividing by *m* is exactly the right move to start isolating the velocity.\n\nIt's easy to get tripped up with these rearrangements, so don't sweat it if it feels a little slow going. After that division though, you\u2019re right \u2013 multiplying both sides by *r* will indeed get rid of that denominator and bring you even closer to solving for velocity. \n\nIf you want to walk through the rest of it together, we can definitely do that. Or if you'd prefer, you can give the next step a shot and I\u2019ll take a look? Just let me know what feels best for you right now.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A's response is more concise and naturally flowing, effectively guiding the learner through the next steps without unnecessary elaboration."
+    }
+]

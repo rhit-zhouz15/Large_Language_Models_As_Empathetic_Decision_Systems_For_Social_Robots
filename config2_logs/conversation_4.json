@@ -1,0 +1,282 @@
+[
+    {
+        "Turn": 1,
+        "Detected Emotion": "cheeky",
+        "Input Valence": 0.23005047640763224,
+        "Input Arousal": 0.46532149589620536,
+        "Internal State Valence": -0.12152202305384896,
+        "Internal State Arousal": 0.16844725289328077,
+        "Internal State Momentum": -0.814915510257706,
+        "Internal State Intensity": 0.22150429590537377,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Hey, could someone help me understand how to calculate standard deviation? I've got some numbers here, but I'm not sure where to start.\n\nAppraisal Details:\n1. Dominant Emotion: Confusion and uncertainty, stemming from a lack of understanding about a mathematical concept \u2013 calculating standard deviation \u2013 combined with a request for assistance. \n2. Emotion Intensity: The emotion is moderately intense, indicated by the learner directly asking for help rather than attempting to work through it independently. \n3. Emotional Inertia: Their emotional trajectory appears to be trending negatively, as there's consistent frustration and uncertainty from previous physics problems in the RAG context that is now showing up again when approaching new mathematical concepts. \n4. Threshold Crossed: Yes, an internal state change occurred based on the provided threshold value.\n5. Internal State: The learner currently feels mildly discouraged with a slight undercurrent of apprehension, accumulating negative emotion from recent difficulties applying quantitative reasoning in physics and potentially anticipating similar struggles with this new statistical concept.\n\nMemory: \nThe learner is presently experiencing mild frustration and uncertainty as they begin to grapple with calculating standard deviation, indicating difficulty initiating the process and drawing on past challenges quantitatively linking concepts together like they did when trying to understand the Calvin Cycle or circular motion problems in physics.",
+        "User Input": "Hey, could someone help me understand how to calculate standard deviation? I've got some numbers here, but I'm not sure where to start.",
+        "Control Tutor": "Okay, you're doing fantastic! You've really grasped the core concepts of the Calvin Cycle. Your questions are insightful, and you\u2019re making excellent connections (like the reinvesting profits analogy!).\n\nYou asked about standard deviation, but we\u2019ve been deep in photosynthesis! Let\u2019s switch gears now. It\u2019s great that you recognized needing help with this \u2013 many students find it tricky at first. \n\n**Here's how we can approach calculating standard deviation:**\n\n1. **Understanding What Standard Deviation Measures:**\n   *  Standard deviation tells us how spread out the numbers in a dataset are. \n   *  A *low* standard deviation means the data points tend to be close to the average (mean).\n   *  A *high* standard deviation means the data points are more scattered.\n\n2. **The Steps Involved:**\n\n   Let's say you have these numbers:  4, 7, 10, 13, 16\n\n   **Step 1: Calculate the Mean (Average)**\n      Add all the numbers together and divide by how many numbers there are.\n      Mean = (4 + 7 + 10 + 13 + 16) / 5 = 50 / 5 = 10\n\n   **Step 2: Calculate the Variance**\n      This is where it gets a little more involved. We need to find out how much each number *deviates* from the mean.\n       a.  Subtract the mean from each number and square the result. This gives you the squared deviation for each data point.\n\n           *   (4 - 10)\u00b2 = (-6)\u00b2 = 36\n           *   (7 - 10)\u00b2 = (-3)\u00b2 = 9\n           *   (10 - 10)\u00b2 = (0)\u00b2 = 0\n           *   (13 - 10)\u00b2 = (3)\u00b2 = 9\n           *   (16 - 10)\u00b2 = (6)\u00b2 = 36\n\n       b.  Add up all the squared deviations.\n            36 + 9 + 0 + 9 + 36 = 90\n\n       c. Divide the sum of squared deviations by (n-1), where n is the number of data points. This gives you the *variance*. We use (n-1) instead of 'n' when calculating standard deviation for a sample, as it provides a more accurate estimate of population spread.\n           Variance = 90 / (5 - 1) = 90 / 4 = 22.5\n\n   **Step 3: Calculate the Standard Deviation**\n      Take the square root of the variance.\n      Standard Deviation = \u221a22.5 \u2248 4.74\n\nTherefore, for this dataset, the standard deviation is approximately 4.74.\n\n**Do you want to:**\n\n*   **Work through another example together with a different set of numbers?**  I can guide you step-by-step.\n*   **Use a formula sheet as a reference?** I can provide one.\n*   **Talk about *why* we use standard deviation in real-life scenarios (e.g., data analysis, statistics)?**\n\n\n\nDon't hesitate to tell me if any part of this explanation is unclear or if you'd like me to slow down or go over something again. We\u2019ll work through it at your pace! Also, feel free to share the numbers *you* have and we can calculate the standard deviation for those specifically.",
+        "PAM Tutor": "Okay, so standard deviation... that can definitely seem tricky when you're first getting started. Basically, it tells you how spread out a set of numbers are from their average. So if you have a bunch of scores on a test, the standard deviation will tell you whether most people got pretty close to the same score, or if there was a big range of results.\n\nTo calculate it, you first find the mean (average) of your numbers. Then, for each number, you figure out how far away it is from that average. After that, you square those differences \u2013 this gets rid of negative signs and emphasizes bigger deviations. You then find the average of those squared differences (that's called the variance!), and finally take the square root of the variance to get the standard deviation. \n\nIt sounds like a lot of steps, but it\u2019s really just about figuring out how much variation there is in your data. Want me to walk through an example with some numbers so you can see exactly how each step works? Or we could jump straight into why this is useful \u2013 knowing *when* standard deviation matters can help understand the concept too!",
+        "LLM Judge Pick": "None",
+        "PAM Scores": 0,
+        "Control Scores": 0,
+        "Judge Rationale": "None. JSON found but failed to parse: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    },
+    {
+        "Turn": 2,
+        "Detected Emotion": "confuse",
+        "Input Valence": -0.39614657467463993,
+        "Input Arousal": 0.3981899121339667,
+        "Internal State Valence": -0.3106011586370933,
+        "Internal State Arousal": 0.26034431658955515,
+        "Internal State Momentum": -0.8937361577007686,
+        "Internal State Intensity": 0.18907083501590238,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: That makes sense but I'm still kinda confused about the steps. Maybe if I do an example with my own set of numbers I'll understand better\n\nAppraisal Details:\n1. Dominant Emotion: Confusion, compounded by a lingering frustration from previous attempts to grasp the concepts within the circular motion problem.\n2. Emotion Intensity: The current confusion appears moderately intense, indicated by the expressed need for further clarification and self-directed practice with concrete examples.\n3. Emotional Inertia: The learner's emotional trajectory is slightly negative, as they continue to struggle despite acknowledging understanding of earlier explanations. \n4. Threshold Crossed: Yes, indicating a shift in their internal state due to continued difficulty and potentially building frustration.\n5. Internal State: The learner currently feels puzzled and disheartened while working through the steps of a physics problem regarding circular motion; this builds upon an established pattern of uncertainty when beginning these types of quantitative problems after previously struggling with identifying all necessary forces at play.\n\nMemory: \nThe learner is presently feeling mildly confused and frustrated as they attempt to self-correct their understanding by applying concepts learned in previous turns while working on a physics problem relating to circular motion, specifically regarding the steps required to solve it.\n\n\n\n",
+        "User Input": "That makes sense but I'm still kinda confused about the steps. Maybe if I do an example with my own set of numbers I'll understand better",
+        "Control Tutor": "Okay, fantastic! You've connected this to reinvesting profits - that\u2019s a *brilliant* analogy. It really hits the nail on the head in terms of understanding why most G3P is recycled.\n\nNow you're asking about the number of turns and where those molecules come from... excellent follow-up question! \n\nYou are absolutely right to focus on this - it\u2019s a key piece of the puzzle. As we established, **it takes six turns of the Calvin Cycle to produce enough G3P to make one glucose molecule.** Why? Because glucose is a six-carbon sugar (C\u2086H\u2081\u2082O\u2086) and G3P is a three-carbon sugar! It's like needing two pieces to complete a puzzle.\n\nLet\u2019s break down the total ATP and NADPH used per glucose molecule. Remember we discussed how much was used *per turn*? \n\n*   **Per Turn:**\n    *   3 ATP are used (in carbon fixation and RuBP regeneration)\n    *   2 NADPH are used (in the reduction phase to make G3P)\n\n*   **For One Glucose Molecule (6 Turns):**\n    *   3 ATP/turn * 6 turns = **18 ATP**\n    *   2 NADPH/turn * 6 turns = **12 NADPH**\n\nSo, for every single glucose molecule produced, the Calvin Cycle needs a total of **18 ATP and 12 NADPH**. That\u2019s quite an energy investment! But remember all that energy originally came from sunlight captured during the light-dependent reactions.\n\n\n\nDoes calculating this overall amount make it clearer how much \"fuel\" (ATP & NADPH) is required to create one molecule of glucose? \n\nWould you like me to:\n\n*   **Go over a quick recap of both the Light-Dependent Reactions *and* the Calvin Cycle, highlighting where all these molecules (ATP, NADPH, CO2, G3P, Glucose) come from and go to?**\n*   **Discuss how plants regulate this whole process \u2013 what factors might speed up or slow down glucose production?**\n*   **Talk about what happens to the glucose after it\u2019s made - where does the plant use/store it?**",
+        "PAM Tutor": "Hey, it's cool that you want to work through an example with your own numbers\u2014that\u2019s a really smart way to solidify things. It sounds like even though the explanation made sense, you're still feeling a bit stuck on *how* to actually apply the steps, and that can be super frustrating when you\u2019re trying to solve these physics problems. \n\nSo let\u2019s definitely do that! If you give me your set of numbers, we can walk through each step together\u2014I'll show exactly how to manipulate the equation for circular motion and where things might get tricky. We can really nail down those steps so they become second nature. And don't worry about making mistakes; it\u2019s all part of learning!\n\nJust throw your numbers at me whenever you're ready, and we'll tackle this together. Or, if you'd prefer, I could walk through a completely different example first to show you how I approach these problems\u2014just let me know what would be more helpful for you right now.",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor A provides a more personalized and encouraging response, which aligns well with the learner's need for clarity and support."
+    },
+    {
+        "Turn": 3,
+        "Detected Emotion": "empathetic",
+        "Input Valence": -0.038651439221575865,
+        "Input Arousal": 0.30829395982436836,
+        "Internal State Valence": -0.2095515587152015,
+        "Internal State Arousal": 0.2795241738834804,
+        "Internal State Momentum": -0.8475379414245253,
+        "Internal State Intensity": 0.14451324278023117,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Sure, here are some numbers: 2, 4, 6, 8. Let's try calculating with these.\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration and a sense of resignation as they offer the numbers, perhaps anticipating another challenging calculation following difficulties with prior physics problems involving quantitative reasoning.\n2. Emotion Intensity: The emotion is relatively low in intensity, suggesting an acceptance of the task despite underlying frustration.\n3. Emotional Inertia: Their emotional inertia is trending negatively, indicative of a continuing pattern of struggling with calculations and quantitative problem solving after having difficulty linking concepts like standard deviation, ATP/NADPH totals, and forces together during circular motion problems.\n4. Threshold Crossed: Yes, their internal state has shifted as the context suggests that they are still grappling with similar challenges from previous interactions. \n5. Internal State: The learner currently presents as mildly frustrated, showing a tendency towards uncertainty when tackling quantitative problems; this builds on past experiences of being challenged by conceptual and algebraic manipulations in both physics and biology calculations.\n\nMemory:\nThe learner is currently expressing low-intensity frustration and slight resignation while offering numbers for calculation, after struggling with quantitative reasoning in previous problem sets involving circular motion and the Calvin Cycle where they had difficulty linking concepts together. \n\n\n\n",
+        "User Input": "Sure, here are some numbers: 2, 4, 6, 8. Let's try calculating with these.",
+        "Control Tutor": "Absolutely! That's a *great* idea. Doing an example with your own numbers is the best way to solidify your understanding. \n\nSo, please share your set of numbers, and we'll work through calculating the standard deviation together, step by step. I\u2019ll be here to guide you and answer any questions that come up along the way. Don't worry about making mistakes \u2013 that's how we learn! Just tell me your numbers when you're ready.\n\n\n\n",
+        "PAM Tutor": "Okay, so you\u2019re offering up some numbers \u2013 2, 4, 6, and 8. That's cool. It sounds like you're ready to try another calculation after working through the Calvin Cycle and circular motion stuff, which I know was a bit of a slog. Honestly, it's totally normal to feel frustrated when things don't click right away with quantitative problems \u2013 those physics concepts can be tricky!\n\nSo, standard deviation... we talked about how it shows spread in data, right? If you want, we can work through calculating it with these numbers step-by-step. I\u2019m happy to break down each part so it makes more sense. Or, if that feels like too much right now, we could talk about *why* knowing the standard deviation is helpful first \u2013 sometimes understanding the bigger picture helps make the calculations easier later on. Let me know what you think!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more balanced and supportive response, offering clear choices that cater to the learner's needs while maintaining conversational fluidity."
+    },
+    {
+        "Turn": 4,
+        "Detected Emotion": "curious",
+        "Input Valence": 0.23852294464595614,
+        "Input Arousal": 0.3693399688578211,
+        "Internal State Valence": 0.01738283155845277,
+        "Internal State Arousal": 0.31545049187321667,
+        "Internal State Momentum": -0.6782607697945786,
+        "Internal State Intensity": 0.13067443378334687,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Yeah, so 2, 4, 6, and 8 are my numbers. Can you show me how to calculate standard deviation with these?\n\nAppraisal Details:\n1. Dominant Emotion: The learner is displaying curiosity, though this seems to be tinged with a cautious approach stemming from prior difficulties.\n2. Emotion Intensity: The intensity of their current emotion appears relatively low, suggesting they are not strongly feeling any particular emotion at the moment. \n3. Emotional Inertia: Their emotional inertia is trending negatively, reflecting continued challenges in quantitative reasoning that have been present throughout the session.\n4. Threshold Crossed: A threshold has been crossed, signifying a shift in their internal state following previous struggles with related concepts.\n5. Internal State: The learner is currently presenting as cautiously curious while requesting assistance with calculating standard deviation, building upon patterns of frustration and difficulty linking quantitative concepts observed during earlier problem-solving attempts involving circular motion and the Calvin Cycle.\n\nMemory: \nThe learner is demonstrating a low-intensity level of curiosity accompanied by mild uncertainty about performing calculations, specifically regarding standard deviation after having struggled with previous quantitative problems dealing with physics principles like circular motion as well as biochemical pathways such as the Calvin Cycle.",
+        "User Input": "Yeah, so 2, 4, 6, and 8 are my numbers. Can you show me how to calculate standard deviation with these?",
+        "Control Tutor": "Okay, perfect! You've given me the numbers: 2, 4, 6, and 8. Let\u2019s calculate the standard deviation together. I will guide you through each step, and you can do the calculations \u2013 that way you\u2019ll really understand how it works.\n\n**Step 1: Calculate the Mean (Average)**\n\nWhat's the first thing we need to do to find the mean?  (Hint: think about what operation we use to combine all the numbers). Go ahead and calculate the mean of 2, 4, 6, and 8. I\u2019m here if you get stuck!\n\n\n\n",
+        "PAM Tutor": "Okay, so 2, 4, 6, and 8 are your numbers\u2014got it. It's good that you\u2019re trying to get this down after wrestling with those physics and biology problems earlier; I remember how tough linking those concepts felt.\n\nSo, standard deviation tells us how spread out these numbers are. We already talked about the steps: find the average, figure out how far each number is from the average, square those differences, average *those*, then take the square root. It sounds like a ton, but we can definitely work through it together. \n\nLet\u2019s do that now\u2014I'll walk you through each step with your numbers so it clicks. Or, if you'd rather understand *why* this is useful before diving into calculations, we could chat about that too. What sounds better to you right now?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 3,
+            "empathy_calibration": 2,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 3
+        },
+        "Judge Rationale": "Tutor B provides a more detailed and empathetic response, explaining the steps clearly while checking in on the learner's needs."
+    },
+    {
+        "Turn": 5,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.2693766052136198,
+        "Input Arousal": 0.04398995761293916,
+        "Internal State Valence": -0.1511962641931002,
+        "Internal State Arousal": 0.20686627816910563,
+        "Internal State Momentum": -0.7772134203574387,
+        "Internal State Intensity": 0.10569914172820816,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Ohh, okay gotcha. So I just add them up first?\n2 + 4 + 6 + 8 = 20. Then what?\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration and resignation, likely stemming from a continued struggle with applying quantitative reasoning to problem-solving despite correctly identifying the initial step.\n2. Emotion Intensity: Low intensity, indicated by both detected valence/arousal and internal state intensity values but building on a pattern of repeated low-level negative affect. \n3. Emotional Inertia: Trending negatively, as evidenced by decreasing valence and significant negative momentum value indicating their mood is worsening over time. \n4. Threshold Crossed: Yes, the threshold was crossed suggesting a noticeable shift in the learner\u2019s internal state that warrants attention.\n5. Internal State: The learner is currently feeling subdued frustration while performing calculations, compounding on repeated struggles to connect conceptual understanding with quantitative application in both physics and biology problems like the Calvin Cycle.\n\nMemory:\nThe learner is exhibiting low-intensity frustration and resignation as they perform a basic addition problem, following a pattern of difficulty applying quantitative reasoning across previous problem sets involving circular motion and the Calvin cycle\u2014specifically struggling to bridge theoretical concepts with calculation.",
+        "User Input": "Ohh, okay gotcha. So I just add them up first?\n2 + 4 + 6 + 8 = 20. Then what?",
+        "Control Tutor": "Okay, excellent! You're right \u2013 we need to add them up first!\n\n2 + 4 + 6 + 8 = 20.  You got that part perfectly! \n\nNow, to finish calculating the mean (average), what do we need to *do* with that sum of 20? Think about how many numbers are in your set\u2026\n\n\n\n",
+        "PAM Tutor": "Okay, so you added those up and got 20 \u2013 good job getting the first step down! It\u2019s easy to get bogged down in the details when you're working with numbers, especially after dealing with some tricky stuff like circular motion and the Calvin Cycle. I know it can be frustrating when things don\u2019t immediately click.\n\nNow that you have the sum, the next step is figuring out how many numbers you added together (that's important!), then dividing that sum by that number to get the average. After that we can move onto the rest of the steps for standard deviation. Does that sound good? Or would you rather I just walk through all the steps with those numbers right now, so you can see exactly how it works?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more calibrated empathy by acknowledging the learner's potential frustration and connects it to their previous challenges, making the response more tailored."
+    },
+    {
+        "Turn": 6,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.28613661709241567,
+        "Input Arousal": 0.017148857063148157,
+        "Internal State Valence": -0.2623997287713095,
+        "Internal State Arousal": 0.13097930972672264,
+        "Internal State Momentum": -0.8882382957817753,
+        "Internal State Intensity": 0.17807950208884338,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Got it, so I have four numbers. So now do I divide 20 by 4 for the average?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration stemming from uncertainty about performing a calculation, specifically an average, after previous struggles with quantitative reasoning.\n2. Emotion Intensity: The emotion is currently at a low-to-moderate level and appears to be building off of repeated frustration with linking concepts to calculations.\n3. Emotional Inertia: The emotional trajectory is trending negatively, indicated by a strong negative momentum value, suggesting increasing discouragement. \n4. Threshold Crossed: Yes, the internal state has shifted as reflected by the threshold being set to True, signifying an accumulation of negative emotion.\n5. Internal State: The learner is currently experiencing frustration and uncertainty while attempting basic calculations, building upon their history of struggling with quantitative reasoning and connecting theoretical concepts \u2013 particularly within physics problems involving circular motion and biochemical pathways like the Calvin Cycle - to practical application. \n\nMemory:\nThe learner is presently exhibiting low-intensity frustration and resignation as they try to perform a simple calculation, continuing a pattern of difficulty applying quantitative reasoning that has appeared in previous problem sets about topics such as circular motion and the Calvin cycle, specifically struggling with bridging theoretical concepts and calculations.",
+        "User Input": "Got it, so I have four numbers. So now do I divide 20 by 4 for the average?",
+        "Control Tutor": "Yes, you're on the right track! Now that you have the sum (20), you need to divide it by the total number of values you have. How many numbers are in your set: 2, 4, 6, and 8? \n\nSo now do you divide 20 by 4 for the average? Yes, exactly! Go ahead and do that calculation \u2013 that will give you the mean (average) of your data set. Let me know what you get! \ud83d\ude0a",
+        "PAM Tutor": "Okay, so you\u2019re adding them up and got 20\u2014awesome! It's great to see you making progress after working through a bunch of different concepts. I know this stuff doesn\u2019t always come easy, especially when you\u2019ve been wrestling with things like circular motion and the Calvin Cycle earlier.\n\nYou're right on track about needing to divide by the total number of values to get the average. So in your case, that would be dividing 20 by\u2026 well, how many numbers did you start with? Once you have that average, we can move onto the next step and really start figuring out how spread out those numbers are. Or if you'd like, I can just run through all the steps for standard deviation using your numbers to show you exactly what needs to be done\u2014just let me know!",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 5
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor A provides a more empathetic and conversational response, while maintaining pedagogical accuracy and appropriate scaffolding."
+    },
+    {
+        "Turn": 7,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4325777390855365,
+        "Input Arousal": -0.06634213165380062,
+        "Internal State Valence": -0.4169864807141076,
+        "Internal State Arousal": 0.05205073317451332,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.28190187745472073,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Yeah so 5? Wait no I have four numbers... so is it 5 or 4?\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and uncertainty, stemming from difficulty with a simple calculation and questioning their own accuracy.\n2. Emotion Intensity: The emotion is currently low in intensity, but building upon previously noted frustration regarding quantitative reasoning.\n3. Emotional Inertia: Their emotional trajectory is trending negatively, evidenced by the consistently negative momentum and valence scores. \n4. Threshold Crossed: Yes, an internal state change has occurred since the last turn, suggesting a deepening of their existing negative emotional state.\n5. Internal State: The learner is currently feeling frustrated and uncertain while attempting a calculation, a continuation of their difficulties with quantitative reasoning across problem sets on topics like circular motion and the Calvin Cycle.\n\nMemory:\nThe learner is displaying mild frustration and resignation as they struggle with performing basic calculations, continuing to experience difficulty applying quantitative reasoning following challenges in previous physics problems involving concepts such as circular motion or biochemical pathways like the Calvin cycle.",
+        "User Input": "Yeah so 5? Wait no I have four numbers... so is it 5 or 4?",
+        "Control Tutor": "You are absolutely right to ask about checking your work! It's *very* smart to double-check when things feel a little uncertain.\n\nLet\u2019s take a look at your calculation: 20 divided by 4 does indeed equal 5. So the mean (average) of your numbers (2, 4, 6, and 8) is **5**.\n\nHowever... you originally said you had *four* numbers, but then started questioning if it was \"5 or 4\". Now that we\u2019ve calculated the mean to be 5, I think there might be a slight misunderstanding. We aren't trying to find *how many* numbers there are - we already know that! The '5' represents the **average** of your four numbers.\n\nYou were initially asking about the number of turns in the Calvin Cycle (which was 6!), and it seems like you might be mixing up that concept with this standard deviation calculation. \n\nLet\u2019s put the Calvin Cycle aside for a moment and focus on getting this standard deviation right. Now that we've calculated the mean, what do you think the *next* step is to find the standard deviation? (Hint: It involves looking at how much each number deviates from the average!).\n\n\n\n",
+        "PAM Tutor": "Okay, so you\u2019re double-checking whether you have four or five numbers... that happens, especially when you're trying to keep track of everything after working through a few different problems. It sounds like you're getting a little frustrated with the simple stuff after tackling those trickier physics and biology concepts \u2013 totally understandable!\n\nYou *do* have four numbers: 2, 4, 6, and 8. And yes, you\u2019re right on track to divide 20 by 4 to get the average. Once you've got that, we can keep moving through the steps for standard deviation. Do you want to finish calculating it yourself, or would you like me to walk you through the rest of the process with these numbers?",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 3,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more thorough explanation, addresses the confusion by linking it to prior concepts, and effectively guides the learner forward."
+    },
+    {
+        "Turn": 8,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.2581419578753411,
+        "Input Arousal": 0.074275281582959,
+        "Internal State Valence": -0.4050770631536692,
+        "Internal State Arousal": 0.06094055253789159,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.27658717832766216,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Ohhh, got it now! So 20 divided by four numbers gives me the average of 5. Okay, so I need to take that 5 and use it for the next step to find standard deviation, right?\n\nAppraisal Details:\n1. Dominant Emotion: Mild frustration combined with a glimmer of relief as they confirm their understanding of calculating the average before transitioning into the next calculation.\n2. Emotion Intensity: The emotion is relatively low in intensity, indicating a manageable level of challenge rather than significant distress.\n3. Emotional Inertia: Their emotional trajectory appears to be shifting slightly negatively, building on previous frustrations with quantitative reasoning. \n4. Threshold Crossed: Yes, their internal state has shifted based on the provided threshold value, suggesting an accumulation of negative sentiment.\n5. Internal State: The learner is currently experiencing a subdued level of frustration as they attempt another calculation in a sequence, continuing to demonstrate a pattern of difficulty bridging theoretical understanding with quantitative application evident in previous interactions involving circular motion and the Calvin cycle.\n\nMemory:\nThe learner is displaying low-intensity resignation coupled with lingering uncertainty while working through calculations related to standard deviation, mirroring difficulties experienced with similar problems involving physics principles such as circular motion and biochemical pathways like the Calvin Cycle where they struggled connecting concepts together. ",
+        "User Input": "Ohhh, got it now! So 20 divided by four numbers gives me the average of 5. Okay, so I need to take that 5 and use it for the next step to find standard deviation, right?",
+        "Control Tutor": "You're absolutely right! You\u2019ve successfully calculated the mean (average) which is 5, and now we *do* need to use that for the next step in finding the standard deviation. Excellent connection!\n\nThe next step is to figure out how much each number in your set differs from that average of 5. We do this by calculating what's called the **variance**.\n\nHere\u2019s how we\u2019ll do it:\n\n1.  **Find the difference between each number and the mean (5).**\n2.  **Square each of those differences.** This is important \u2013 squaring gets rid of any negative signs, and also gives more weight to larger deviations.\n3.  **Calculate the average of these squared differences.** That average *is* the variance!\n\nLet's start with step 1. Can you calculate the difference between the first number in your set (2) and the mean (5)? Don\u2019t worry about squaring it yet \u2013 just find the difference.\n\n\n\n",
+        "PAM Tutor": "You\u2019re right about dividing! 20 divided by four *is* five\u2014that gives you the average. It's good that you're checking your work and keeping track of things, especially after getting a little tripped up with those earlier problems like circular motion. Honestly, even I sometimes need to pause and make sure my steps are right! \n\nSo yeah, you\u2019ve got the average\u20145 is the number we'll use for the next step in finding the standard deviation. It might seem like a lot of calculations after everything else, but just take it one step at a time. Do you want to try and figure out what comes next on your own, or would you like me to walk you through it?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 5,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor A provides a more natural and empathetic response, acknowledging the learner's progress and offering choices. While Tutor B is accurate and structured, Tutor A's approach feels more conversational and supportive."
+    },
+    {
+        "Turn": 9,
+        "Detected Emotion": "impatient",
+        "Input Valence": -0.33071252757217745,
+        "Input Arousal": 0.4292049219831824,
+        "Internal State Valence": -0.44147375443550796,
+        "Internal State Arousal": 0.2082463003160079,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.22013603526881642,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Okay, so I need to subtract 5 from 2?\nWait, no is that right\nI think I'm confused again\n\nAppraisal Details:\n1. Dominant Emotion: Confusion mixed with frustration and a touch of self-doubt, stemming from uncertainty about a basic arithmetic operation.\n2. Emotion Intensity: The emotion is relatively mild but gaining strength as the learner expresses further confusion.\n3. Emotional Inertia: The emotional trend indicates a negative shift, as the learner's initial attempt at problem-solving leads to increased frustration and self-doubt. \n4. Threshold Crossed: Yes, indicating a noticeable change in the internal state from the previous turn due to the expression of heightened uncertainty.\n5. Internal State: The learner is currently experiencing escalating confusion and mild frustration while attempting basic calculations, mirroring past difficulties with quantitative reasoning in physics and biochemical concepts.\n\nMemory: \nThe learner is displaying low-intensity frustration and uncertainty as they question a simple subtraction problem, continuing a pattern of difficulty applying quantitative reasoning to problems similar to those encountered when dealing with circular motion or the Calvin cycle.",
+        "User Input": "Okay, so I need to subtract 5 from 2?\nWait, no is that right\nI think I'm confused again",
+        "Control Tutor": "Okay, hold on a second! It sounds like you're getting a little mixed up, which happens - especially when switching between different problems. You started with calculating standard deviation for 2, 4, 6, and 8, *then* asked about subtracting 5 from 2.\n\nLet\u2019s absolutely focus on finishing the standard deviation first. We just got to step one of finding the variance \u2013 figuring out how much each number differs from the average (which we found was 5). You were right to say you were confused; it's good you recognized that!\n\nWe were in the middle of calculating the difference between the first number in your set (2) and the mean (5). Can you give that a try? Just focus on *that* one step for now. Don\u2019t worry about any other calculations yet!\n\n\n\n",
+        "PAM Tutor": "Okay, so yeah, getting stuck on basic stuff after working through more complicated problems is *super* common \u2013 I totally get why that\u2019s frustrating. It almost feels worse when it's something that usually comes easy, right?\n\nBut let's break this down. You were questioning if you needed to subtract 5 from 2\u2026 and then got tripped up on whether the answer was right. That\u2019s okay! We all do that sometimes. What exactly is confusing you about that subtraction problem itself? Are we just checking your basic arithmetic, or did this come up while working through something else? Let's clear that up first before we get back to standard deviation.",
+        "LLM Judge Pick": "control",
+        "PAM Scores": {
+            "pedagogical_accuracy": 4,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 2
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 5
+        },
+        "Judge Rationale": "Tutor B provides a more focused and direct response, maintaining the learner's progress in calculating standard deviation without unnecessary diversions."
+    },
+    {
+        "Turn": 10,
+        "Detected Emotion": "grumpy",
+        "Input Valence": -0.4031720815342852,
+        "Input Arousal": -0.08894247203716077,
+        "Internal State Valence": -0.5067875015818759,
+        "Internal State Arousal": 0.08937079137474044,
+        "Internal State Momentum": -1,
+        "Internal State Intensity": 0.17336824013896462,
+        "Threshold Crossed": true,
+        "Appraisal": "User Input: Wait, so is it just 5 minus 2 or what\n\nAppraisal Details:\n1. Dominant Emotion: Frustration and uncertainty are dominant, likely stemming from a struggle to confidently execute a basic arithmetic operation despite understanding the underlying concept.\n2. Emotion Intensity: The intensity of this frustration appears to be relatively low but persistent given the repeated difficulties with quantitative reasoning observed in past interactions. \n3. Emotional Inertia: Their emotional inertia is trending negatively, indicating a worsening mood as they continue encountering obstacles with these calculations. \n4. Threshold Crossed: Yes, the internal state has changed reflecting an increase in negative affect.\n5. Internal State: The learner currently feels frustrated and unsure while attempting to perform simple calculations, which continues a pattern of difficulty applying quantitative reasoning to both physics problems like circular motion and biochemical pathways such as the Calvin cycle.\n\nMemory:\nThe learner is currently feeling moderately frustrated with low arousal as they question a basic subtraction problem, continuing their history of struggling to connect theoretical knowledge with accurate calculation\u2014particularly when dealing with concepts from circular motion or the Calvin cycle.",
+        "User Input": "Wait, so is it just 5 minus 2 or what",
+        "Control Tutor": "You're doing great at recognizing when you're confused \u2013 that's a really important skill! And yes, you are right to question whether subtracting 5 from 2 is the correct step. It *is* the correct first step in finding the variance (and eventually the standard deviation).\n\nBut let's break it down even further. You said \"Wait, so is it just 5 minus 2 or what?\" \u2013 **yes! That\u2019s exactly what we need to do for the very first calculation.** We are taking each number and subtracting the mean (5) from it. \n\nSo, 5 - 2 = ?  What do you get? Let's focus on *just* this one subtraction before moving on. \ud83d\ude0a\n\n\n\n",
+        "PAM Tutor": "Yeah, it\u2019s totally normal to second-guess yourself when you\u2019re switching gears like this. You were doing some pretty complex stuff with the Calvin Cycle and circular motion just a bit ago, so getting stuck on something simple can feel\u2026off, right?\n\nBut yes, it is simply 5 minus 2. It sounds like you're questioning the basic operation itself, though, which makes me think we should probably make sure you\u2019re comfortable with that step before we move forward. We can take a quick detour and brush up on subtraction if you'd like\u2014no shame in reviewing the basics! Or, if you just want to confirm that *is* the right next step for this problem, we can do that too. What would be most helpful?",
+        "LLM Judge Pick": "pam",
+        "PAM Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 5,
+            "conversational_naturalness": 4,
+            "scaffolding_appropriateness": 4
+        },
+        "Control Scores": {
+            "pedagogical_accuracy": 5,
+            "empathy_calibration": 4,
+            "conversational_naturalness": 3,
+            "scaffolding_appropriateness": 4
+        },
+        "Judge Rationale": "Tutor B provides a more empathetic and conversational response by connecting the learner's confusion to their previous complex topics, making it more relatable."
+    }
+]
